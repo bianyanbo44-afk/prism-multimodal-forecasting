@@ -8,7 +8,9 @@ Research artifact for **PRISM separates model reliance from context value in mul
 
 PRISM preserves forecast units and the observed event process while comparing fixed-model content reliance, cue-specific controls and information value after condition-specific retraining. Generated irregular controls discriminate direction from source cues. An independent photovoltaic ridge comparison gives 19.65% fixed-model alignment gain versus 8.97% after retraining. Interpretation remains conditional on the specified predictors, learning procedures and intervention laws.
 
-[Manuscript PDF](artifacts/PRISM_InformationFusion_Extended.pdf) · [Editable LaTeX](artifacts/PRISM_InformationFusion_LaTeX_Source.zip) · [Figure assets](artifacts/PRISM_Figure_Assets.zip) · [Versioned release](https://github.com/bianyanbo44-afk/prism-multimodal-forecasting/releases/tag/v0.1.1)
+[Manuscript PDF](artifacts/PRISM_InformationFusion_Extended.pdf) · [Editable LaTeX](artifacts/PRISM_InformationFusion_LaTeX_Source.zip) · [Figure assets](artifacts/PRISM_Figure_Assets.zip) · [Versioned release](https://github.com/bianyanbo44-afk/prism-multimodal-forecasting/releases/tag/v0.1.2)
+
+[Reference audit, 13 October 2026](paper_rewriting_output/journal_extension_20261012/literature/REFERENCE_CHECK_20261013.md): all 40 bibliography records, including the 25 cited references, were found in fresh official sources. All 20 supplied DOIs resolve to the corresponding works. This update corrects one unused author spelling and normalizes one unused title symbol; the rendered manuscript is unchanged.
 
 ![Event-preserving protocol](paper_rewriting_output/journal_extension_20261012/manuscript/figures/fig1_estimands.png)
 

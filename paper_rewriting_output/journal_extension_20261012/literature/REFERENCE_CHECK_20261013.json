@@ -1,0 +1,3318 @@
+{
+  "audit_date": "2026-10-13",
+  "timezone": "Asia/Shanghai",
+  "checked_at": "2026-10-12T17:18:25.366018+00:00",
+  "scope": {
+    "bib_entries": 40,
+    "current_pdf_references": 25,
+    "unused_library_entries": 15,
+    "doi_entries_in_input": 20,
+    "input_dois_resolved_to_same_work": 20,
+    "existence_verified": 40,
+    "unconfirmed": 0
+  },
+  "input_bib_sha256": "bf2c09a58eeb4d0c6585967af1e715b1b21cec5172a281339c4257fd1d10b791",
+  "current_bib_sha256": "11ebdd1550221aac62d9d2200a77d748ee1ef35926b6a274d41c6ab084c2d1a6",
+  "method": "Fresh official publisher/conference/arXiv/model-release records, registered DOI metadata, field comparison, and original PDFs/author institutional page when records conflict. No existence inference from HTTP status alone.",
+  "before_agent_metadata_counts": {
+    "verified": 34,
+    "check_suggested": 5,
+    "needs_fix": 1
+  },
+  "corrections_applied": [
+    {
+      "key": "seo2025air",
+      "field": "author",
+      "before": "Kang, Junhyuk",
+      "after": "Kang, Junhyeok",
+      "kind": "confirmed_spelling_correction",
+      "cited": false,
+      "source_url": "https://arxiv.org/abs/2512.10229"
+    },
+    {
+      "key": "parcalabescu2023mmshap",
+      "field": "title",
+      "before": "Models and Tasks",
+      "after": "Models \\& Tasks",
+      "kind": "punctuation_normalization",
+      "cited": false,
+      "source_url": "https://aclanthology.org/2023.acl-long.223/"
+    }
+  ],
+  "external_page_conflicts": [
+    {
+      "key": "reimers2019sentencebert",
+      "official_pages": "3982–3992",
+      "crossref_pages": "3980–3990",
+      "decision": "采用ACL官方页码；当前值正确。"
+    },
+    {
+      "key": "peng2022ogm",
+      "official_pages": "8238–8247",
+      "crossref_pages": "8228–8237",
+      "decision": "采用CVF官方页码；当前值正确。"
+    },
+    {
+      "key": "dancette2021vqa",
+      "official_pages": "1574–1583",
+      "crossref_pages": "1554–1563",
+      "decision": "采用CVF官网及原PDF页码；当前值正确。"
+    },
+    {
+      "key": "wang2020hard",
+      "official_pages": "12695–12705",
+      "crossref_pages": "12692–12702",
+      "decision": "采用CVF官网及原PDF页码；当前值正确。"
+    },
+    {
+      "key": "zhang2024mla",
+      "official_pages": "27456–27466",
+      "crossref_pages": "27446–27456",
+      "decision": "采用CVF官网及原PDF页码；当前值正确。"
+    },
+    {
+      "key": "moebus2025contimask",
+      "official_pages": "54779–54804",
+      "crossref_pages": "61017–61042",
+      "decision": "两个正式来源存在冲突；当前条目不列页码，保留此做法。"
+    }
+  ],
+  "records": [
+    {
+      "key": "liu2024timemmd",
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "source_urls": [
+        "https://proceedings.neurips.cc/paper_files/paper/2024/hash/8e7768122f3eeec6d77cd2b424b72413-Abstract-Datasets_and_Benchmarks_Track.html",
+        "https://proceedings.neurips.cc/paper_files/paper/26533-/bibtex",
+        "https://api.crossref.org/works/10.52202/079017-2476"
+      ],
+      "actual_metadata": {
+        "title": "Time-MMD: Multi-Domain Multimodal Dataset for Time Series Analysis",
+        "authors": [
+          "Haoxin Liu",
+          "Shangqing Xu",
+          "Zhiyuan Zhao",
+          "Lingkai Kong",
+          "Harshavardhan Kamarthi",
+          "Aditya B. Sasanur",
+          "Megha Sharma",
+          "Jiaming Cui",
+          "Qingsong Wen",
+          "Chao Zhang",
+          "B. Aditya Prakash"
+        ],
+        "year": 2024,
+        "source_type": "published proceedings",
+        "venue": "Advances in Neural Information Processing Systems",
+        "volume": "37",
+        "pages": "77888--77933",
+        "doi": "10.52202/079017-2476",
+        "online_publication_date": "2024-12-16"
+      },
+      "input_metadata": {
+        "key": "liu2024timemmd",
+        "type": "inproceedings",
+        "title": "{Time-MMD}: Multi-Domain Multimodal Dataset for Time Series Analysis",
+        "author": "Liu, Haoxin and Xu, Shangqing and Zhao, Zhiyuan and Kong, Lingkai and Kamarthi, Harshavardhan and Sasanur, Aditya B. and Sharma, Megha and Cui, Jiaming and Wen, Qingsong and Zhang, Chao and Prakash, B. Aditya",
+        "booktitle": "Advances in Neural Information Processing Systems",
+        "volume": "37",
+        "year": "2024",
+        "doi": "10.52202/079017-2476",
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/8e7768122f3eeec6d77cd2b424b72413-Abstract-Datasets_and_Benchmarks_Track.html",
+        "citation_number": 1
+      },
+      "field_comparisons": {
+        "title_matches": true,
+        "author_count_matches": true,
+        "author_order_matches": true,
+        "author_mismatches": [],
+        "year_matches": true,
+        "volume_matches": true,
+        "pages_match": true,
+        "doi_matches": true
+      },
+      "issues": [],
+      "information_notes": [
+        "可补官方页码77888--77933；DOI与本文对应。Crossref省略部分作者中间名，出版方完整姓名优先。"
+      ],
+      "checked_at": "2026-10-12T17:05:49.772263+00:00",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/8e7768122f3eeec6d77cd2b424b72413-Abstract-Datasets_and_Benchmarks_Track.html",
+          "http_status": 200,
+          "path": "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\recent\\liu2024timemmd_official.html",
+          "sha256": "c68d9e154ac72b308980932cc5e1280ec5df49f6136e51f901fbab0dd5a3e536",
+          "checked_at": "2026-10-12T17:05:49.772263+00:00"
+        },
+        {
+          "kind": "bibtex",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/26533-/bibtex",
+          "http_status": 200,
+          "path": "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\recent\\liu2024timemmd_bibtex.html",
+          "sha256": "7ce5c6d09e34dc915a6f611290bb9def46069b03cfdfe5838acca7047680cdc4",
+          "checked_at": "2026-10-12T17:05:52.881631+00:00"
+        },
+        {
+          "kind": "crossref",
+          "url": "https://api.crossref.org/works/10.52202/079017-2476",
+          "http_status": 200,
+          "path": "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\crossref\\liu2024timemmd.json",
+          "sha256": "d463c1d332e15f710df43cc9b40fee70ea486eee5f941907eabf4d3f9b87d15a",
+          "checked_at": "2026-10-12T17:04:35.666843+00:00"
+        }
+      ],
+      "audit_batch": "recent",
+      "citation_number": 1,
+      "cited_in_current_pdf": true,
+      "current_metadata": {
+        "key": "liu2024timemmd",
+        "type": "inproceedings",
+        "title": "{Time-MMD}: Multi-Domain Multimodal Dataset for Time Series Analysis",
+        "author": "Liu, Haoxin and Xu, Shangqing and Zhao, Zhiyuan and Kong, Lingkai and Kamarthi, Harshavardhan and Sasanur, Aditya B. and Sharma, Megha and Cui, Jiaming and Wen, Qingsong and Zhang, Chao and Prakash, B. Aditya",
+        "booktitle": "Advances in Neural Information Processing Systems",
+        "volume": "37",
+        "year": "2024",
+        "doi": "10.52202/079017-2476",
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/8e7768122f3eeec6d77cd2b424b72413-Abstract-Datasets_and_Benchmarks_Track.html"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "chang2025timeimm",
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "source_urls": [
+        "https://proceedings.neurips.cc/paper_files/paper/2025/hash/4199594d3c15736df2bf5274fa3155f4-Abstract-Datasets_and_Benchmarks_Track.html",
+        "https://proceedings.neurips.cc/paper_files/paper/33000-/bibtex",
+        "https://api.crossref.org/works/10.52202/085713-1533"
+      ],
+      "actual_metadata": {
+        "title": "Time-IMM: A Dataset and Benchmark for Irregular Multimodal Multivariate Time Series",
+        "authors": [
+          "Ching Chang",
+          "Jeehyun Hwang",
+          "Yidan Shi",
+          "Haixin Wang",
+          "Wei Wang",
+          "Wen-Chih Peng",
+          "Tien-Fu Chen"
+        ],
+        "year": 2025,
+        "source_type": "published proceedings",
+        "venue": "Advances in Neural Information Processing Systems",
+        "volume": "38, Main Conference",
+        "pages": null,
+        "doi": "10.52202/085713-1533",
+        "online_publication_date": "2026-04-23"
+      },
+      "input_metadata": {
+        "key": "chang2025timeimm",
+        "type": "inproceedings",
+        "title": "{Time-IMM}: A Dataset and Benchmark for Irregular Multimodal Multivariate Time Series",
+        "author": "Chang, Ching and Hwang, Jeehyun and Shi, Yidan and Wang, Haixin and Wang, Wei and Peng, Wen-Chih and Chen, Tien-Fu",
+        "booktitle": "Advances in Neural Information Processing Systems",
+        "volume": "38",
+        "year": "2025",
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/4199594d3c15736df2bf5274fa3155f4-Abstract-Datasets_and_Benchmarks_Track.html",
+        "citation_number": 2
+      },
+      "field_comparisons": {
+        "title_matches": true,
+        "author_count_matches": true,
+        "author_order_matches": true,
+        "author_mismatches": [],
+        "year_matches": true,
+        "volume_matches": true,
+        "pages_match": true,
+        "doi_matches": true
+      },
+      "issues": [],
+      "information_notes": [
+        "官方网页在线日期2026-04-23，官方BibTeX会议年2025、卷38；现有2025年正确。可补DOI 10.52202/085713-1533；官方BibTeX未列页码。"
+      ],
+      "checked_at": "2026-10-12T17:05:49.771156+00:00",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/4199594d3c15736df2bf5274fa3155f4-Abstract-Datasets_and_Benchmarks_Track.html",
+          "http_status": 200,
+          "path": "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\recent\\chang2025timeimm_official.html",
+          "sha256": "fb33b9b97b54ba60a22c5713d6ecb4360d0a78ae31cdbce8d041bb0e94de16a5",
+          "checked_at": "2026-10-12T17:05:49.771156+00:00"
+        },
+        {
+          "kind": "bibtex",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/33000-/bibtex",
+          "http_status": 200,
+          "path": "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\recent\\chang2025timeimm_bibtex.html",
+          "sha256": "8f63a5cda0d16d93a545a77317b1241ffb67f9274f194a81c43d801ed38f071e",
+          "checked_at": "2026-10-12T17:05:52.881631+00:00"
+        },
+        {
+          "kind": "crossref",
+          "url": "https://api.crossref.org/works/10.52202/085713-1533",
+          "http_status": 200,
+          "path": "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\recent\\chang2025timeimm_crossref.json",
+          "sha256": "86958827f7ca01ca35ff32d96a3a3bed7141caad600eb4feec490e3442c9fdf8",
+          "checked_at": "2026-10-12T17:06:33.688657+00:00"
+        }
+      ],
+      "audit_batch": "recent",
+      "citation_number": 2,
+      "cited_in_current_pdf": true,
+      "current_metadata": {
+        "key": "chang2025timeimm",
+        "type": "inproceedings",
+        "title": "{Time-IMM}: A Dataset and Benchmark for Irregular Multimodal Multivariate Time Series",
+        "author": "Chang, Ching and Hwang, Jeehyun and Shi, Yidan and Wang, Haixin and Wang, Wei and Peng, Wen-Chih and Chen, Tien-Fu",
+        "booktitle": "Advances in Neural Information Processing Systems",
+        "volume": "38",
+        "year": "2025",
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/4199594d3c15736df2bf5274fa3155f4-Abstract-Datasets_and_Benchmarks_Track.html"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "williams2025context",
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "source_urls": [
+        "https://proceedings.mlr.press/v267/williams25a.html"
+      ],
+      "actual_metadata": {
+        "title": "Context is Key: A Benchmark for Forecasting with Essential Textual Information",
+        "authors": [
+          "Andrew Robert Williams",
+          "Arjun Ashok",
+          "Étienne Marcotte",
+          "Valentina Zantedeschi",
+          "Jithendaraa Subramanian",
+          "Roland Riachi",
+          "James Requeima",
+          "Alexandre Lacoste",
+          "Irina Rish",
+          "Nicolas Chapados",
+          "Alexandre Drouin"
+        ],
+        "year": 2025,
+        "source_type": "published proceedings",
+        "venue": "Proceedings of the 42nd International Conference on Machine Learning",
+        "series": "Proceedings of Machine Learning Research",
+        "volume": "267",
+        "pages": "66887--66944",
+        "online_publication_date": "2025/10/06"
+      },
+      "input_metadata": {
+        "key": "williams2025context",
+        "type": "inproceedings",
+        "title": "Context is Key: A Benchmark for Forecasting with Essential Textual Information",
+        "author": "Williams, Andrew Robert and Ashok, Arjun and Marcotte, {\\'E}tienne and Zantedeschi, Valentina and Subramanian, Jithendaraa and Riachi, Roland and Requeima, James and Lacoste, Alexandre and Rish, Irina and Chapados, Nicolas and Drouin, Alexandre",
+        "booktitle": "Proceedings of the 42nd International Conference on Machine Learning",
+        "series": "Proceedings of Machine Learning Research",
+        "volume": "267",
+        "pages": "66887--66944",
+        "year": "2025",
+        "url": "https://proceedings.mlr.press/v267/williams25a.html",
+        "citation_number": 3
+      },
+      "field_comparisons": {
+        "title_matches": true,
+        "author_count_matches": true,
+        "author_order_matches": true,
+        "author_mismatches": [],
+        "year_matches": true,
+        "volume_matches": true,
+        "pages_match": true,
+        "doi_matches": true
+      },
+      "issues": [],
+      "information_notes": [],
+      "checked_at": "2026-10-12T17:05:51.458848+00:00",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://proceedings.mlr.press/v267/williams25a.html",
+          "http_status": 200,
+          "path": "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\recent\\williams2025context_official.html",
+          "sha256": "15236596ac7a1034b4883e77c7fb6a478bcc264bbea232744cafe61097511636",
+          "checked_at": "2026-10-12T17:05:51.458848+00:00"
+        }
+      ],
+      "audit_batch": "recent",
+      "citation_number": 3,
+      "cited_in_current_pdf": true,
+      "current_metadata": {
+        "key": "williams2025context",
+        "type": "inproceedings",
+        "title": "Context is Key: A Benchmark for Forecasting with Essential Textual Information",
+        "author": "Williams, Andrew Robert and Ashok, Arjun and Marcotte, {\\'E}tienne and Zantedeschi, Valentina and Subramanian, Jithendaraa and Riachi, Roland and Requeima, James and Lacoste, Alexandre and Rish, Irina and Chapados, Nicolas and Drouin, Alexandre",
+        "booktitle": "Proceedings of the 42nd International Conference on Machine Learning",
+        "series": "Proceedings of Machine Learning Research",
+        "volume": "267",
+        "pages": "66887--66944",
+        "year": "2025",
+        "url": "https://proceedings.mlr.press/v267/williams25a.html"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "xu2025fidelts",
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "source_urls": [
+        "https://arxiv.org/abs/2509.24789v4"
+      ],
+      "actual_metadata": {
+        "title": "Fidel-TS: A High-Fidelity Multimodal Benchmark for Time Series Forecasting",
+        "authors": [
+          "Zhijian Xu",
+          "Wanxu Cai",
+          "Xilin Dai",
+          "Zhaorong Deng",
+          "Qiang Xu"
+        ],
+        "year": 2025,
+        "source_type": "arXiv preprint",
+        "arxiv_id": "2509.24789",
+        "first_submission_date": "2025/09/29",
+        "version_date": "2026/05/07",
+        "doi": "10.48550/arXiv.2509.24789",
+        "checked_version": "v4"
+      },
+      "input_metadata": {
+        "key": "xu2025fidelts",
+        "type": "misc",
+        "title": "{Fidel-TS}: A High-Fidelity Multimodal Benchmark for Time Series Forecasting",
+        "author": "Xu, Zhijian and Cai, Wanxu and Dai, Xilin and Deng, Zhaorong and Xu, Qiang",
+        "year": "2025",
+        "eprint": "2509.24789",
+        "archiveprefix": "arXiv",
+        "url": "https://arxiv.org/abs/2509.24789v4",
+        "note": "Version 4 revised 7 May 2026",
+        "citation_number": 4
+      },
+      "field_comparisons": {
+        "title_matches": true,
+        "author_count_matches": true,
+        "author_order_matches": true,
+        "author_mismatches": [],
+        "year_matches": true,
+        "volume_matches": true,
+        "pages_match": true,
+        "doi_matches": true
+      },
+      "issues": [],
+      "information_notes": [
+        "明确核查v4：初发2025-09-29，v4修订2026-05-07；现有year2025与v4修订说明可以并存。"
+      ],
+      "checked_at": "2026-10-12T17:05:49.772263+00:00",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://arxiv.org/abs/2509.24789v4",
+          "http_status": 200,
+          "path": "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\recent\\xu2025fidelts_official.html",
+          "sha256": "e0cc134507036326ec919861d76dfb50d31b201ca3688fe5ebb66c421addfbc6",
+          "checked_at": "2026-10-12T17:05:49.772263+00:00"
+        }
+      ],
+      "audit_batch": "recent",
+      "citation_number": 4,
+      "cited_in_current_pdf": true,
+      "current_metadata": {
+        "key": "xu2025fidelts",
+        "type": "misc",
+        "title": "{Fidel-TS}: A High-Fidelity Multimodal Benchmark for Time Series Forecasting",
+        "author": "Xu, Zhijian and Cai, Wanxu and Dai, Xilin and Deng, Zhaorong and Xu, Qiang",
+        "year": "2025",
+        "eprint": "2509.24789",
+        "archiveprefix": "arXiv",
+        "url": "https://arxiv.org/abs/2509.24789v4",
+        "note": "Version 4 revised 7 May 2026"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "liu2026timesx",
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "source_urls": [
+        "https://proceedings.mlr.press/v306/liu26go.html"
+      ],
+      "actual_metadata": {
+        "title": "Rethinking Multimodal Time-Series Forecasting Evaluation",
+        "authors": [
+          "Haoxin Liu",
+          "Yichen Zhou",
+          "Rajat Sen",
+          "B. Aditya Prakash",
+          "Abhimanyu Das"
+        ],
+        "year": 2026,
+        "source_type": "published proceedings",
+        "venue": "Proceedings of the 43rd International Conference on Machine Learning",
+        "series": "Proceedings of Machine Learning Research",
+        "volume": "306",
+        "pages": "80183--80283",
+        "online_publication_date": "2026/09/29"
+      },
+      "input_metadata": {
+        "key": "liu2026timesx",
+        "type": "inproceedings",
+        "title": "Rethinking Multimodal Time-Series Forecasting Evaluation",
+        "author": "Liu, Haoxin and Zhou, Yichen and Sen, Rajat and Prakash, B. Aditya and Das, Abhimanyu",
+        "booktitle": "Proceedings of the 43rd International Conference on Machine Learning",
+        "series": "Proceedings of Machine Learning Research",
+        "volume": "306",
+        "pages": "80183--80283",
+        "year": "2026",
+        "url": "https://proceedings.mlr.press/v306/liu26go.html",
+        "citation_number": 5
+      },
+      "field_comparisons": {
+        "title_matches": true,
+        "author_count_matches": true,
+        "author_order_matches": true,
+        "author_mismatches": [],
+        "year_matches": true,
+        "volume_matches": true,
+        "pages_match": true,
+        "doi_matches": true
+      },
+      "issues": [],
+      "information_notes": [],
+      "checked_at": "2026-10-12T17:05:50.574446+00:00",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://proceedings.mlr.press/v306/liu26go.html",
+          "http_status": 200,
+          "path": "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\recent\\liu2026timesx_official.html",
+          "sha256": "2c03ff1b369cd6355562d40a50c162bcb44ea9367466d5b3006e4ee88802b58d",
+          "checked_at": "2026-10-12T17:05:50.574446+00:00"
+        }
+      ],
+      "audit_batch": "recent",
+      "citation_number": 5,
+      "cited_in_current_pdf": true,
+      "current_metadata": {
+        "key": "liu2026timesx",
+        "type": "inproceedings",
+        "title": "Rethinking Multimodal Time-Series Forecasting Evaluation",
+        "author": "Liu, Haoxin and Zhou, Yichen and Sen, Rajat and Prakash, B. Aditya and Das, Abhimanyu",
+        "booktitle": "Proceedings of the 43rd International Conference on Machine Learning",
+        "series": "Proceedings of Machine Learning Research",
+        "volume": "306",
+        "pages": "80183--80283",
+        "year": "2026",
+        "url": "https://proceedings.mlr.press/v306/liu26go.html"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "zhou2025motime",
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "source_urls": [
+        "https://arxiv.org/abs/2505.15072"
+      ],
+      "actual_metadata": {
+        "title": "MoTime: A Dataset Suite for Multimodal Time Series Forecasting",
+        "authors": [
+          "Xin Zhou",
+          "Weiqing Wang",
+          "Francisco J. Baldán",
+          "Wray Buntine",
+          "Christoph Bergmeir"
+        ],
+        "year": 2025,
+        "source_type": "arXiv preprint",
+        "arxiv_id": "2505.15072",
+        "first_submission_date": "2025/05/21",
+        "version_date": "2025/05/30",
+        "doi": "10.48550/arXiv.2505.15072",
+        "checked_version": "v2"
+      },
+      "input_metadata": {
+        "key": "zhou2025motime",
+        "type": "misc",
+        "title": "{MoTime}: A Dataset Suite for Multimodal Time Series Forecasting",
+        "author": "Zhou, Xin and Wang, Weiqing and Bald{\\'a}n, Francisco J. and Buntine, Wray and Bergmeir, Christoph",
+        "year": "2025",
+        "eprint": "2505.15072",
+        "archiveprefix": "arXiv",
+        "url": "https://arxiv.org/abs/2505.15072",
+        "citation_number": 6
+      },
+      "field_comparisons": {
+        "title_matches": true,
+        "author_count_matches": true,
+        "author_order_matches": true,
+        "author_mismatches": [],
+        "year_matches": true,
+        "volume_matches": true,
+        "pages_match": true,
+        "doi_matches": true
+      },
+      "issues": [],
+      "information_notes": [],
+      "checked_at": "2026-10-12T17:05:51.667324+00:00",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://arxiv.org/abs/2505.15072",
+          "http_status": 200,
+          "path": "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\recent\\zhou2025motime_official.html",
+          "sha256": "a8e4e8f8bf627875ee29af08a3db2772ccd2648cfcd7a0820cc07162849194e8",
+          "checked_at": "2026-10-12T17:05:51.667324+00:00"
+        }
+      ],
+      "audit_batch": "recent",
+      "citation_number": 6,
+      "cited_in_current_pdf": true,
+      "current_metadata": {
+        "key": "zhou2025motime",
+        "type": "misc",
+        "title": "{MoTime}: A Dataset Suite for Multimodal Time Series Forecasting",
+        "author": "Zhou, Xin and Wang, Weiqing and Bald{\\'a}n, Francisco J. and Buntine, Wray and Bergmeir, Christoph",
+        "year": "2025",
+        "eprint": "2505.15072",
+        "archiveprefix": "arXiv",
+        "url": "https://arxiv.org/abs/2505.15072"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "lin2026timi",
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "source_urls": [
+        "https://proceedings.mlr.press/v306/lin26al.html"
+      ],
+      "actual_metadata": {
+        "title": "TiMi: Empower Time Series Transformers with Multimodal Mixture of Experts",
+        "authors": [
+          "Jiafeng Lin",
+          "Yuxuan Wang",
+          "Huakun Luo",
+          "Jianmin Wang",
+          "Zhongyi Pei"
+        ],
+        "year": 2026,
+        "source_type": "published proceedings",
+        "venue": "Proceedings of the 43rd International Conference on Machine Learning",
+        "series": "Proceedings of Machine Learning Research",
+        "volume": "306",
+        "pages": "74988--75006",
+        "online_publication_date": "2026/09/29"
+      },
+      "input_metadata": {
+        "key": "lin2026timi",
+        "type": "inproceedings",
+        "title": "{TiMi}: Empower Time Series Transformers with Multimodal Mixture of Experts",
+        "author": "Lin, Jiafeng and Wang, Yuxuan and Luo, Huakun and Wang, Jianmin and Pei, Zhongyi",
+        "booktitle": "Proceedings of the 43rd International Conference on Machine Learning",
+        "series": "Proceedings of Machine Learning Research",
+        "volume": "306",
+        "year": "2026",
+        "pages": "74988--75006",
+        "url": "https://proceedings.mlr.press/v306/lin26al.html",
+        "citation_number": 7
+      },
+      "field_comparisons": {
+        "title_matches": true,
+        "author_count_matches": true,
+        "author_order_matches": true,
+        "author_mismatches": [],
+        "year_matches": true,
+        "volume_matches": true,
+        "pages_match": true,
+        "doi_matches": true
+      },
+      "issues": [],
+      "information_notes": [],
+      "checked_at": "2026-10-12T17:05:49.772263+00:00",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://proceedings.mlr.press/v306/lin26al.html",
+          "http_status": 200,
+          "path": "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\recent\\lin2026timi_official.html",
+          "sha256": "41f6c332a967e344d4202b0e0764bd05a23f9727fb2e7671128cbe68746b955e",
+          "checked_at": "2026-10-12T17:05:49.772263+00:00"
+        }
+      ],
+      "audit_batch": "recent",
+      "citation_number": 7,
+      "cited_in_current_pdf": true,
+      "current_metadata": {
+        "key": "lin2026timi",
+        "type": "inproceedings",
+        "title": "{TiMi}: Empower Time Series Transformers with Multimodal Mixture of Experts",
+        "author": "Lin, Jiafeng and Wang, Yuxuan and Luo, Huakun and Wang, Jianmin and Pei, Zhongyi",
+        "booktitle": "Proceedings of the 43rd International Conference on Machine Learning",
+        "series": "Proceedings of Machine Learning Research",
+        "volume": "306",
+        "year": "2026",
+        "pages": "74988--75006",
+        "url": "https://proceedings.mlr.press/v306/lin26al.html"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "wang2026vot",
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "audit_batch": "root",
+      "actual_metadata": {
+        "title": "Unlocking the Value of Text: Event-Driven Reasoning and Multi-Level Alignment for Time Series Forecasting",
+        "authors": [
+          "Siyuan Wang",
+          "Peng Chen",
+          "Yihang Wang",
+          "Wanghui Qiu",
+          "Chenjuan Guo",
+          "Bin Yang",
+          "Yang Shu"
+        ],
+        "year": 2026,
+        "venue": "International Conference on Learning Representations",
+        "pages": "31182–31210",
+        "source_type": "published proceedings"
+      },
+      "source_urls": [
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/34a1fc7890141f1ada3d8bc6199cce07-Abstract-Conference.html",
+        "https://proceedings.iclr.cc/paper_files/paper/7606-/bibtex",
+        "https://proceedings.iclr.cc/paper_files/paper/2026/file/34a1fc7890141f1ada3d8bc6199cce07-Paper-Conference.pdf",
+        "https://arxiv.org/abs/2603.15452"
+      ],
+      "checked_at": "2026-10-12T17:06:47.293011+00:00",
+      "evidence_paths": [
+        "qa\\reference_verification_20261013\\primary\\vot_iclr.html",
+        "qa\\reference_verification_20261013\\primary\\vot_bibtex.bib",
+        "qa\\reference_verification_20261013\\primary\\vot_pdf.pdf",
+        "qa\\reference_verification_20261013\\primary\\vot_arxiv.html",
+        "qa\\reference_verification_20261013\\primary\\vot_pdf_first_page.txt"
+      ],
+      "source_checks": [
+        {
+          "name": "vot_iclr",
+          "source_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/34a1fc7890141f1ada3d8bc6199cce07-Abstract-Conference.html",
+          "checked_at": "2026-10-12T17:06:47.293011+00:00",
+          "http_status": 200,
+          "final_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/34a1fc7890141f1ada3d8bc6199cce07-Abstract-Conference.html",
+          "content_type": "text/html; charset=utf-8",
+          "evidence_file": "qa\\reference_verification_20261013\\primary\\vot_iclr.html",
+          "response_sha256": "3c25961a1558d073d0fd7a4597673cdc5fc7fc11559eeb62e53b569aec42a30f",
+          "bytes": 9965
+        },
+        {
+          "name": "vot_bibtex",
+          "source_url": "https://proceedings.iclr.cc/paper_files/paper/7606-/bibtex",
+          "checked_at": "2026-10-12T17:06:47.294011+00:00",
+          "http_status": 200,
+          "final_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/34a1fc7890141f1ada3d8bc6199cce07-Bibtex-Conference.bib",
+          "content_type": "application/x-bibtex",
+          "evidence_file": "qa\\reference_verification_20261013\\primary\\vot_bibtex.bib",
+          "response_sha256": "151b7415b29269b1ef464c98e30a6da611fbe33b861577a2ac9bc11f3ed59250",
+          "bytes": 611
+        },
+        {
+          "name": "vot_pdf",
+          "source_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/34a1fc7890141f1ada3d8bc6199cce07-Paper-Conference.pdf",
+          "checked_at": "2026-10-12T17:06:48.525901+00:00",
+          "http_status": 200,
+          "final_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/34a1fc7890141f1ada3d8bc6199cce07-Paper-Conference.pdf",
+          "content_type": "application/pdf",
+          "evidence_file": "qa\\reference_verification_20261013\\primary\\vot_pdf.pdf",
+          "response_sha256": "c87a8ffee0ac89bc64353ec719058e287bca11a694977779d57ee83ab31815f4",
+          "bytes": 1475191,
+          "pages": 29,
+          "first_page_text_file": "qa\\reference_verification_20261013\\primary\\vot_pdf_first_page.txt"
+        },
+        {
+          "name": "vot_arxiv",
+          "source_url": "https://arxiv.org/abs/2603.15452",
+          "checked_at": "2026-10-12T17:06:49.718723+00:00",
+          "http_status": 200,
+          "final_url": "https://arxiv.org/abs/2603.15452",
+          "content_type": "text/html; charset=utf-8",
+          "evidence_file": "qa\\reference_verification_20261013\\primary\\vot_arxiv.html",
+          "response_sha256": "4ec678ed8d04c6d4d98bda68a32aa9cb35601cad9836d6b689264e4133bda288",
+          "bytes": 43369
+        }
+      ],
+      "issues": [
+        {
+          "severity": "info",
+          "field": "external_author_record",
+          "detail": "ICLR网页及导出BibTeX将第5作者误显示为Guo/Guo Guo；同站正式PDF首页与arXiv完整署名均为Chenjuan Guo。当前BibTeX采用完整正确姓名，不跟随导出错误。"
+        }
+      ],
+      "verification_notes": "本次ICLR官方论文集、官方正式PDF与arXiv交叉确认；不依赖旧OpenReview访问记录。",
+      "citation_number": 8,
+      "cited_in_current_pdf": true,
+      "input_metadata": {
+        "key": "wang2026vot",
+        "type": "inproceedings",
+        "title": "Unlocking the Value of Text: Event-Driven Reasoning and Multi-Level Alignment for Time Series Forecasting",
+        "author": "Wang, Siyuan and Chen, Peng and Wang, Yihang and Qiu, Wanghui and Guo, Chenjuan and Yang, Bin and Shu, Yang",
+        "booktitle": "International Conference on Learning Representations",
+        "year": "2026",
+        "url": "https://openreview.net/forum?id=0TAFiyHgEl",
+        "citation_number": 8
+      },
+      "current_metadata": {
+        "key": "wang2026vot",
+        "type": "inproceedings",
+        "title": "Unlocking the Value of Text: Event-Driven Reasoning and Multi-Level Alignment for Time Series Forecasting",
+        "author": "Wang, Siyuan and Chen, Peng and Wang, Yihang and Qiu, Wanghui and Guo, Chenjuan and Yang, Bin and Shu, Yang",
+        "booktitle": "International Conference on Learning Representations",
+        "year": "2026",
+        "url": "https://openreview.net/forum?id=0TAFiyHgEl"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "li2026tats",
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "audit_batch": "root",
+      "actual_metadata": {
+        "title": "Language in the Flow of Time: Time-Series-Paired Texts Weaved into a Unified Temporal Narrative",
+        "authors": [
+          "Zihao Li",
+          "Xiao Lin",
+          "Zhining Liu",
+          "Jiaru Zou",
+          "Ziwei Wu",
+          "Lecheng Zheng",
+          "Dongqi Fu",
+          "Yada Zhu",
+          "Hendrik Hamann",
+          "Hanghang Tong",
+          "Jingrui He"
+        ],
+        "year": 2026,
+        "venue": "International Conference on Learning Representations",
+        "pages": "24437–24484",
+        "source_type": "published proceedings"
+      },
+      "source_urls": [
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/29de5722d7d2a6946c08d0c0162a1c71-Abstract-Conference.html",
+        "https://proceedings.iclr.cc/paper_files/paper/9218-/bibtex",
+        "https://proceedings.iclr.cc/paper_files/paper/2026/file/29de5722d7d2a6946c08d0c0162a1c71-Paper-Conference.pdf",
+        "https://arxiv.org/abs/2502.08942"
+      ],
+      "checked_at": "2026-10-12T17:06:47.294011+00:00",
+      "evidence_paths": [
+        "qa\\reference_verification_20261013\\primary\\tats_iclr.html",
+        "qa\\reference_verification_20261013\\primary\\tats_bibtex.bib",
+        "qa\\reference_verification_20261013\\primary\\tats_pdf.pdf",
+        "qa\\reference_verification_20261013\\primary\\tats_arxiv.html",
+        "qa\\reference_verification_20261013\\primary\\tats_pdf_first_page.txt"
+      ],
+      "source_checks": [
+        {
+          "name": "tats_iclr",
+          "source_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/29de5722d7d2a6946c08d0c0162a1c71-Abstract-Conference.html",
+          "checked_at": "2026-10-12T17:06:47.294011+00:00",
+          "http_status": 200,
+          "final_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/29de5722d7d2a6946c08d0c0162a1c71-Abstract-Conference.html",
+          "content_type": "text/html; charset=utf-8",
+          "evidence_file": "qa\\reference_verification_20261013\\primary\\tats_iclr.html",
+          "response_sha256": "2e39057ea48179292d0c5e256be3a96829b39acaefb6306d27e2d50001099442",
+          "bytes": 10140
+        },
+        {
+          "name": "tats_bibtex",
+          "source_url": "https://proceedings.iclr.cc/paper_files/paper/9218-/bibtex",
+          "checked_at": "2026-10-12T17:06:48.404985+00:00",
+          "http_status": 200,
+          "final_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/29de5722d7d2a6946c08d0c0162a1c71-Bibtex-Conference.bib",
+          "content_type": "application/x-bibtex",
+          "evidence_file": "qa\\reference_verification_20261013\\primary\\tats_bibtex.bib",
+          "response_sha256": "62b6f123e1765f8dfbc1773c9a47213fc76498422a4d93e4907cee9ef96f95ad",
+          "bytes": 671
+        },
+        {
+          "name": "tats_pdf",
+          "source_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/29de5722d7d2a6946c08d0c0162a1c71-Paper-Conference.pdf",
+          "checked_at": "2026-10-12T17:06:48.656704+00:00",
+          "http_status": 200,
+          "final_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/29de5722d7d2a6946c08d0c0162a1c71-Paper-Conference.pdf",
+          "content_type": "application/pdf",
+          "evidence_file": "qa\\reference_verification_20261013\\primary\\tats_pdf.pdf",
+          "response_sha256": "5ac41cbbe42271bd796cc104c46c1b5f5b3c0be5b49cbd134b63fad50518a01c",
+          "bytes": 11434007,
+          "pages": 48,
+          "first_page_text_file": "qa\\reference_verification_20261013\\primary\\tats_pdf_first_page.txt"
+        },
+        {
+          "name": "tats_arxiv",
+          "source_url": "https://arxiv.org/abs/2502.08942",
+          "checked_at": "2026-10-12T17:06:50.600279+00:00",
+          "http_status": 200,
+          "final_url": "https://arxiv.org/abs/2502.08942",
+          "content_type": "text/html; charset=utf-8",
+          "evidence_file": "qa\\reference_verification_20261013\\primary\\tats_arxiv.html",
+          "response_sha256": "65b5e825d22d750d08f0d01411ea8fc0776eebf15b2c9518b0c8a4712a0f0fa6",
+          "bytes": 44315
+        }
+      ],
+      "issues": [],
+      "verification_notes": "本次ICLR官方论文集、官方正式PDF与arXiv交叉确认；不依赖旧OpenReview访问记录。",
+      "citation_number": 9,
+      "cited_in_current_pdf": true,
+      "input_metadata": {
+        "key": "li2026tats",
+        "type": "inproceedings",
+        "title": "Language in the Flow of Time: Time-Series-Paired Texts Weaved into a Unified Temporal Narrative",
+        "author": "Li, Zihao and Lin, Xiao and Liu, Zhining and Zou, Jiaru and Wu, Ziwei and Zheng, Lecheng and Fu, Dongqi and Zhu, Yada and Hamann, Hendrik and Tong, Hanghang and He, Jingrui",
+        "booktitle": "International Conference on Learning Representations",
+        "year": "2026",
+        "url": "https://openreview.net/forum?id=a1zBg9cBvt",
+        "citation_number": 9
+      },
+      "current_metadata": {
+        "key": "li2026tats",
+        "type": "inproceedings",
+        "title": "Language in the Flow of Time: Time-Series-Paired Texts Weaved into a Unified Temporal Narrative",
+        "author": "Li, Zihao and Lin, Xiao and Liu, Zhining and Zou, Jiaru and Wu, Ziwei and Zheng, Lecheng and Fu, Dongqi and Zhu, Yada and Hamann, Hendrik and Tong, Hanghang and He, Jingrui",
+        "booktitle": "International Conference on Learning Representations",
+        "year": "2026",
+        "url": "https://openreview.net/forum?id=a1zBg9cBvt"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "lee2026cfa",
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "source_urls": [
+        "https://arxiv.org/abs/2603.22372"
+      ],
+      "actual_metadata": {
+        "title": "Rethinking Multimodal Fusion for Time Series: Text Modalities Need Constrained Fusion",
+        "authors": [
+          "Seunghan Lee",
+          "Jun Seo",
+          "Jaehoon Lee",
+          "Sungdong Yoo",
+          "Minjae Kim",
+          "Tae Yoon Lim",
+          "Dongwan Kang",
+          "Hwanil Choi",
+          "SoonYoung Lee",
+          "Wonbin Ahn"
+        ],
+        "year": 2026,
+        "source_type": "arXiv preprint",
+        "arxiv_id": "2603.22372",
+        "first_submission_date": "2026/03/23",
+        "version_date": "2026/07/15",
+        "doi": "10.48550/arXiv.2603.22372",
+        "checked_version": "v3"
+      },
+      "input_metadata": {
+        "key": "lee2026cfa",
+        "type": "misc",
+        "title": "Rethinking Multimodal Fusion for Time Series: Text Modalities Need Constrained Fusion",
+        "author": "Lee, Seunghan and Seo, Jun and Lee, Jaehoon and Yoo, Sungdong and Kim, Minjae and Lim, Tae Yoon and Kang, Dongwan and Choi, Hwanil and Lee, SoonYoung and Ahn, Wonbin",
+        "year": "2026",
+        "eprint": "2603.22372",
+        "archiveprefix": "arXiv",
+        "url": "https://arxiv.org/abs/2603.22372",
+        "citation_number": 10
+      },
+      "field_comparisons": {
+        "title_matches": true,
+        "author_count_matches": true,
+        "author_order_matches": true,
+        "author_mismatches": [],
+        "year_matches": true,
+        "volume_matches": true,
+        "pages_match": true,
+        "doi_matches": true
+      },
+      "issues": [],
+      "information_notes": [
+        "以arXiv预印本核验。页面comments称2026 KDD时间序列workshop口头报告，此作者备注未用于宣称正式期刊/主会出版。"
+      ],
+      "checked_at": "2026-10-12T17:05:51.907877+00:00",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://arxiv.org/abs/2603.22372",
+          "http_status": 200,
+          "path": "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\recent\\lee2026cfa_official.html",
+          "sha256": "949b536c93807f459854ddd504745108aa7838ed0968b137fc9636e56cff72aa",
+          "checked_at": "2026-10-12T17:05:51.907877+00:00"
+        }
+      ],
+      "audit_batch": "recent",
+      "citation_number": 10,
+      "cited_in_current_pdf": true,
+      "current_metadata": {
+        "key": "lee2026cfa",
+        "type": "misc",
+        "title": "Rethinking Multimodal Fusion for Time Series: Text Modalities Need Constrained Fusion",
+        "author": "Lee, Seunghan and Seo, Jun and Lee, Jaehoon and Yoo, Sungdong and Kim, Minjae and Lim, Tae Yoon and Kang, Dongwan and Choi, Hwanil and Lee, SoonYoung and Ahn, Wonbin",
+        "year": "2026",
+        "eprint": "2603.22372",
+        "archiveprefix": "arXiv",
+        "url": "https://arxiv.org/abs/2603.22372"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "geirhos2020shortcut",
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "checked_at": "2026-10-12T17:05:01.595974+00:00",
+      "source_urls": [
+        "https://www.nature.com/articles/s42256-020-00257-z",
+        "https://api.crossref.org/works/10.1038/s42256-020-00257-z"
+      ],
+      "actual_metadata": {
+        "title": "Shortcut learning in deep neural networks",
+        "authors": [
+          "Robert Geirhos",
+          "Jörn-Henrik Jacobsen",
+          "Claudio Michaelis",
+          "Richard Zemel",
+          "Wieland Brendel",
+          "Matthias Bethge",
+          "Felix A. Wichmann"
+        ],
+        "year": 2020,
+        "venue": "Nature Machine Intelligence",
+        "volume": "2",
+        "issue": "11",
+        "pages": "665–673",
+        "doi": "10.1038/s42256-020-00257-z"
+      },
+      "issues": [
+        {
+          "severity": "info",
+          "field": "issue",
+          "detail": "官网与Crossref均为2(11)；当前条目仅列卷2，未列期11。这是可补全项，不影响文献存在性或卷页身份。",
+          "suggested_action": "可补number = {11}。"
+        }
+      ],
+      "evidence_paths": [
+        "qa\\reference_verification_20261013\\classic\\evidence\\geirhos2020shortcut_publisher.html",
+        "qa\\reference_verification_20261013\\classic\\evidence\\geirhos2020shortcut_publisher.txt",
+        "qa\\reference_verification_20261013\\crossref\\geirhos2020shortcut.json"
+      ],
+      "source_checks": [
+        {
+          "url": "https://www.nature.com/articles/s42256-020-00257-z",
+          "final_url": "https://www.nature.com/articles/s42256-020-00257-z",
+          "status_code": 200,
+          "checked_at": "2026-10-12T17:05:01.595974+00:00",
+          "sha256": "464f0ecf136c57db1c5e4e131ccbb5f623257c4a5e1ac12837344a836fd637ba",
+          "bytes": 365872
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1038/s42256-020-00257-z",
+          "http_status": 200,
+          "checked_at": "2026-10-12T17:04:35.665843+00:00",
+          "response_sha256": "e3e5d5e972facde7373b30a8d53c45553f484b796202c81d276f6aa9d2bec84c"
+        }
+      ],
+      "input_metadata": {
+        "key": "geirhos2020shortcut",
+        "type": "article",
+        "title": "Shortcut learning in deep neural networks",
+        "author": "Geirhos, Robert and Jacobsen, J{\\\"o}rn-Henrik and Michaelis, Claudio and Zemel, Richard and Brendel, Wieland and Bethge, Matthias and Wichmann, Felix A.",
+        "journal": "Nature Machine Intelligence",
+        "year": "2020",
+        "volume": "2",
+        "pages": "665--673",
+        "doi": "10.1038/s42256-020-00257-z",
+        "citation_number": 11
+      },
+      "field_assessment": {
+        "title": "match_ignoring_case_and_tex_escaping",
+        "author_order": "match",
+        "year": "match",
+        "doi": "same_work",
+        "volume_issue_pages": "match_or_article_identifier"
+      },
+      "audit_batch": "classic",
+      "citation_number": 11,
+      "cited_in_current_pdf": true,
+      "current_metadata": {
+        "key": "geirhos2020shortcut",
+        "type": "article",
+        "title": "Shortcut learning in deep neural networks",
+        "author": "Geirhos, Robert and Jacobsen, J{\\\"o}rn-Henrik and Michaelis, Claudio and Zemel, Richard and Brendel, Wieland and Bethge, Matthias and Wichmann, Felix A.",
+        "journal": "Nature Machine Intelligence",
+        "year": "2020",
+        "volume": "2",
+        "pages": "665--673",
+        "doi": "10.1038/s42256-020-00257-z"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "wu2022greedy",
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "checked_at": "2026-10-12T17:05:02.461384+00:00",
+      "source_urls": [
+        "https://proceedings.mlr.press/v162/wu22d.html"
+      ],
+      "actual_metadata": {
+        "title": "Characterizing and Overcoming the Greedy Nature of Learning in Multi-modal Deep Neural Networks",
+        "authors": [
+          "Nan Wu",
+          "Stanislaw Jastrzebski",
+          "Kyunghyun Cho",
+          "Krzysztof J Geras"
+        ],
+        "year": 2022,
+        "venue": "Proceedings of the 39th International Conference on Machine Learning",
+        "series": "Proceedings of Machine Learning Research",
+        "volume": "162",
+        "pages": "24043–24055",
+        "doi": null
+      },
+      "issues": [
+        {
+          "severity": "info",
+          "field": "title",
+          "detail": "官网Multi-modal与当前Multi-Modal仅大小写不同，无核心题名差异；Krzysztof J Geras的J后句点也仅格式差异。"
+        }
+      ],
+      "evidence_paths": [
+        "qa\\reference_verification_20261013\\classic\\evidence\\wu2022greedy_publisher.html",
+        "qa\\reference_verification_20261013\\classic\\evidence\\wu2022greedy_publisher.txt"
+      ],
+      "source_checks": [
+        {
+          "url": "https://proceedings.mlr.press/v162/wu22d.html",
+          "final_url": "https://proceedings.mlr.press/v162/wu22d.html",
+          "status_code": 200,
+          "checked_at": "2026-10-12T17:05:02.461384+00:00",
+          "sha256": "60567b96f586d08c854e715166079e5dc6c2007a0fe4dff7bc94a88a3d1bbd70",
+          "bytes": 15757
+        }
+      ],
+      "input_metadata": {
+        "key": "wu2022greedy",
+        "type": "inproceedings",
+        "title": "Characterizing and Overcoming the Greedy Nature of Learning in Multi-Modal Deep Neural Networks",
+        "author": "Wu, Nan and Jastrzebski, Stanislaw and Cho, Kyunghyun and Geras, Krzysztof J.",
+        "booktitle": "Proceedings of the 39th International Conference on Machine Learning",
+        "series": "Proceedings of Machine Learning Research",
+        "volume": "162",
+        "pages": "24043--24055",
+        "year": "2022",
+        "url": "https://proceedings.mlr.press/v162/wu22d.html",
+        "citation_number": 12
+      },
+      "field_assessment": {
+        "title": "match_ignoring_case_and_tex_escaping",
+        "author_order": "match",
+        "year": "match",
+        "doi": "not_in_current_entry",
+        "volume_issue_pages": "match_or_article_identifier"
+      },
+      "audit_batch": "classic",
+      "citation_number": 12,
+      "cited_in_current_pdf": true,
+      "current_metadata": {
+        "key": "wu2022greedy",
+        "type": "inproceedings",
+        "title": "Characterizing and Overcoming the Greedy Nature of Learning in Multi-Modal Deep Neural Networks",
+        "author": "Wu, Nan and Jastrzebski, Stanislaw and Cho, Kyunghyun and Geras, Krzysztof J.",
+        "booktitle": "Proceedings of the 39th International Conference on Machine Learning",
+        "series": "Proceedings of Machine Learning Research",
+        "volume": "162",
+        "pages": "24043--24055",
+        "year": "2022",
+        "url": "https://proceedings.mlr.press/v162/wu22d.html"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "peng2022ogm",
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "checked_at": "2026-10-12T17:05:03.045343+00:00",
+      "source_urls": [
+        "https://openaccess.thecvf.com/content/CVPR2022/html/Peng_Balanced_Multimodal_Learning_via_On-the-Fly_Gradient_Modulation_CVPR_2022_paper.html",
+        "https://api.crossref.org/works/10.1109/CVPR52688.2022.00806"
+      ],
+      "actual_metadata": {
+        "title": "Balanced Multimodal Learning via On-the-Fly Gradient Modulation",
+        "authors": [
+          "Xiaokang Peng",
+          "Yake Wei",
+          "Andong Deng",
+          "Dong Wang",
+          "Di Hu"
+        ],
+        "year": 2022,
+        "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+        "pages": "8238–8247",
+        "crossref_pages": "8228–8237",
+        "doi": "10.1109/CVPR52688.2022.00806"
+      },
+      "issues": [
+        {
+          "severity": "info",
+          "field": "pages",
+          "detail": "本次CVF官网及BibTeX均给8238–8247，当前值正确。Crossref同一DOI为8228–8237；以大会官网为准，数据库冲突已明确裁定。"
+        }
+      ],
+      "evidence_paths": [
+        "qa\\reference_verification_20261013\\classic\\evidence\\peng2022ogm_publisher.html",
+        "qa\\reference_verification_20261013\\classic\\evidence\\peng2022ogm_publisher.txt",
+        "qa\\reference_verification_20261013\\crossref\\peng2022ogm.json"
+      ],
+      "source_checks": [
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Peng_Balanced_Multimodal_Learning_via_On-the-Fly_Gradient_Modulation_CVPR_2022_paper.html",
+          "final_url": "https://openaccess.thecvf.com/content/CVPR2022/html/Peng_Balanced_Multimodal_Learning_via_On-the-Fly_Gradient_Modulation_CVPR_2022_paper.html",
+          "status_code": 200,
+          "checked_at": "2026-10-12T17:05:03.045343+00:00",
+          "sha256": "0fdc7c696ef77064ab837877704287a022b53d8361602a4d3b6c75be0dda5c74",
+          "bytes": 6287
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1109/CVPR52688.2022.00806",
+          "http_status": 200,
+          "checked_at": "2026-10-12T17:04:38.029384+00:00",
+          "response_sha256": "3100170ad14cb278d4b4869e6436549527dc63e7d61d2a2abe61bff761b9f2c1"
+        }
+      ],
+      "input_metadata": {
+        "key": "peng2022ogm",
+        "type": "inproceedings",
+        "title": "Balanced Multimodal Learning via On-the-Fly Gradient Modulation",
+        "author": "Peng, Xiaokang and Wei, Yake and Deng, Andong and Wang, Dong and Hu, Di",
+        "booktitle": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+        "pages": "8238--8247",
+        "year": "2022",
+        "doi": "10.1109/CVPR52688.2022.00806",
+        "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Peng_Balanced_Multimodal_Learning_via_On-the-Fly_Gradient_Modulation_CVPR_2022_paper.html",
+        "citation_number": 13
+      },
+      "field_assessment": {
+        "title": "match_ignoring_case_and_tex_escaping",
+        "author_order": "match",
+        "year": "match",
+        "doi": "same_work",
+        "volume_issue_pages": "match_or_article_identifier"
+      },
+      "audit_batch": "classic",
+      "citation_number": 13,
+      "cited_in_current_pdf": true,
+      "current_metadata": {
+        "key": "peng2022ogm",
+        "type": "inproceedings",
+        "title": "Balanced Multimodal Learning via On-the-Fly Gradient Modulation",
+        "author": "Peng, Xiaokang and Wei, Yake and Deng, Andong and Wang, Dong and Hu, Di",
+        "booktitle": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+        "pages": "8238--8247",
+        "year": "2022",
+        "doi": "10.1109/CVPR52688.2022.00806",
+        "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Peng_Balanced_Multimodal_Learning_via_On-the-Fly_Gradient_Modulation_CVPR_2022_paper.html"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified_with_external_source_conflict"
+    },
+    {
+      "key": "chaudhuri2025collapse",
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "checked_at": "2026-10-12T17:05:03.176472+00:00",
+      "source_urls": [
+        "https://proceedings.mlr.press/v267/chaudhuri25a.html"
+      ],
+      "actual_metadata": {
+        "title": "A Closer Look at Multimodal Representation Collapse",
+        "authors": [
+          "Abhra Chaudhuri",
+          "Anjan Dutta",
+          "Tu Bui",
+          "Serban Georgescu"
+        ],
+        "year": 2025,
+        "venue": "Proceedings of the 42nd International Conference on Machine Learning",
+        "series": "Proceedings of Machine Learning Research",
+        "volume": "267",
+        "pages": "7555–7577",
+        "doi": null
+      },
+      "issues": [],
+      "evidence_paths": [
+        "qa\\reference_verification_20261013\\classic\\evidence\\chaudhuri2025collapse_publisher.html",
+        "qa\\reference_verification_20261013\\classic\\evidence\\chaudhuri2025collapse_publisher.txt"
+      ],
+      "source_checks": [
+        {
+          "url": "https://proceedings.mlr.press/v267/chaudhuri25a.html",
+          "final_url": "https://proceedings.mlr.press/v267/chaudhuri25a.html",
+          "status_code": 200,
+          "checked_at": "2026-10-12T17:05:03.176472+00:00",
+          "sha256": "c8ce03b3875575a57257d8f89715f2a918ec497a9a9765668eda14beb650731c",
+          "bytes": 15893
+        }
+      ],
+      "input_metadata": {
+        "key": "chaudhuri2025collapse",
+        "type": "inproceedings",
+        "title": "A Closer Look at Multimodal Representation Collapse",
+        "author": "Chaudhuri, Abhra and Dutta, Anjan and Bui, Tu and Georgescu, Serban",
+        "booktitle": "Proceedings of the 42nd International Conference on Machine Learning",
+        "series": "Proceedings of Machine Learning Research",
+        "volume": "267",
+        "pages": "7555--7577",
+        "year": "2025",
+        "url": "https://proceedings.mlr.press/v267/chaudhuri25a.html",
+        "citation_number": 14
+      },
+      "field_assessment": {
+        "title": "match_ignoring_case_and_tex_escaping",
+        "author_order": "match",
+        "year": "match",
+        "doi": "not_in_current_entry",
+        "volume_issue_pages": "match_or_article_identifier"
+      },
+      "audit_batch": "classic",
+      "citation_number": 14,
+      "cited_in_current_pdf": true,
+      "current_metadata": {
+        "key": "chaudhuri2025collapse",
+        "type": "inproceedings",
+        "title": "A Closer Look at Multimodal Representation Collapse",
+        "author": "Chaudhuri, Abhra and Dutta, Anjan and Bui, Tu and Georgescu, Serban",
+        "booktitle": "Proceedings of the 42nd International Conference on Machine Learning",
+        "series": "Proceedings of Machine Learning Research",
+        "volume": "267",
+        "pages": "7555--7577",
+        "year": "2025",
+        "url": "https://proceedings.mlr.press/v267/chaudhuri25a.html"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "zhang2025when",
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "source_urls": [
+        "https://arxiv.org/abs/2506.21611"
+      ],
+      "actual_metadata": {
+        "title": "When Does Multimodality Lead to Better Time Series Forecasting?",
+        "authors": [
+          "Xiyuan Zhang",
+          "Boran Han",
+          "Haoyang Fang",
+          "Abdul Fatir Ansari",
+          "Shuai Zhang",
+          "Danielle C. Maddix",
+          "Cuixiong Hu",
+          "Andrew Gordon Wilson",
+          "Michael W. Mahoney",
+          "Hao Wang",
+          "Yan Liu",
+          "Huzefa Rangwala",
+          "George Karypis",
+          "Bernie Wang"
+        ],
+        "year": 2025,
+        "source_type": "arXiv preprint",
+        "arxiv_id": "2506.21611",
+        "first_submission_date": "2025/06/20",
+        "version_date": "2025/09/29",
+        "doi": "10.48550/arXiv.2506.21611",
+        "checked_version": "v2"
+      },
+      "input_metadata": {
+        "key": "zhang2025when",
+        "type": "misc",
+        "title": "When Does Multimodality Lead to Better Time Series Forecasting?",
+        "author": "Zhang, Xiyuan and Han, Boran and Fang, Haoyang and Ansari, Abdul Fatir and Zhang, Shuai and Maddix, Danielle C. and Hu, Cuixiong and Wilson, Andrew Gordon and Mahoney, Michael W. and Wang, Hao and Liu, Yan and Rangwala, Huzefa and Karypis, George and Wang, Bernie",
+        "year": "2025",
+        "eprint": "2506.21611",
+        "archiveprefix": "arXiv",
+        "url": "https://arxiv.org/abs/2506.21611",
+        "citation_number": 15
+      },
+      "field_comparisons": {
+        "title_matches": true,
+        "author_count_matches": true,
+        "author_order_matches": true,
+        "author_mismatches": [],
+        "year_matches": true,
+        "volume_matches": true,
+        "pages_match": true,
+        "doi_matches": true
+      },
+      "issues": [],
+      "information_notes": [],
+      "checked_at": "2026-10-12T17:05:51.075221+00:00",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://arxiv.org/abs/2506.21611",
+          "http_status": 200,
+          "path": "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\recent\\zhang2025when_official.html",
+          "sha256": "1408797a290d9fd11dd4b2a85025e10cfaa3989e6f76e1cd9863b310a75f6093",
+          "checked_at": "2026-10-12T17:05:51.075221+00:00"
+        }
+      ],
+      "audit_batch": "recent",
+      "citation_number": 15,
+      "cited_in_current_pdf": true,
+      "current_metadata": {
+        "key": "zhang2025when",
+        "type": "misc",
+        "title": "When Does Multimodality Lead to Better Time Series Forecasting?",
+        "author": "Zhang, Xiyuan and Han, Boran and Fang, Haoyang and Ansari, Abdul Fatir and Zhang, Shuai and Maddix, Danielle C. and Hu, Cuixiong and Wilson, Andrew Gordon and Mahoney, Michael W. and Wang, Hao and Liu, Yan and Rangwala, Huzefa and Karypis, George and Wang, Bernie",
+        "year": "2025",
+        "eprint": "2506.21611",
+        "archiveprefix": "arXiv",
+        "url": "https://arxiv.org/abs/2506.21611"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "tan2024llmuseful",
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "source_urls": [
+        "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6ed5bf446f59e2c6646d23058c86424b-Abstract-Conference.html",
+        "https://proceedings.neurips.cc/paper_files/paper/26305-/bibtex",
+        "https://api.crossref.org/works/10.52202/079017-1922"
+      ],
+      "actual_metadata": {
+        "title": "Are Language Models Actually Useful for Time Series Forecasting?",
+        "authors": [
+          "Mingtian Tan",
+          "Mike A. Merrill",
+          "Vinayak Gupta",
+          "Tim Althoff",
+          "Thomas Hartvigsen"
+        ],
+        "year": 2024,
+        "source_type": "published proceedings",
+        "venue": "Advances in Neural Information Processing Systems",
+        "volume": "37",
+        "pages": "60162--60191",
+        "doi": "10.52202/079017-1922",
+        "online_publication_date": "2024-12-16"
+      },
+      "input_metadata": {
+        "key": "tan2024llmuseful",
+        "type": "inproceedings",
+        "title": "Are Language Models Actually Useful for Time Series Forecasting?",
+        "author": "Tan, Mingtian and Merrill, Mike A. and Gupta, Vinayak and Althoff, Tim and Hartvigsen, Thomas",
+        "booktitle": "Advances in Neural Information Processing Systems",
+        "volume": "37",
+        "year": "2024",
+        "doi": "10.52202/079017-1922",
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6ed5bf446f59e2c6646d23058c86424b-Abstract-Conference.html",
+        "citation_number": 16
+      },
+      "field_comparisons": {
+        "title_matches": true,
+        "author_count_matches": true,
+        "author_order_matches": true,
+        "author_mismatches": [],
+        "year_matches": true,
+        "volume_matches": true,
+        "pages_match": true,
+        "doi_matches": true
+      },
+      "issues": [],
+      "information_notes": [
+        "可补官方页码60162--60191；DOI与本文对应。Crossref将Mike A.简化为Mike，出版方完整姓名优先。"
+      ],
+      "checked_at": "2026-10-12T17:05:51.661550+00:00",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6ed5bf446f59e2c6646d23058c86424b-Abstract-Conference.html",
+          "http_status": 200,
+          "path": "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\recent\\tan2024llmuseful_official.html",
+          "sha256": "e0957c53645cce12f31236a9813598371718ef6a8d4c3120f66bbfc4731f1747",
+          "checked_at": "2026-10-12T17:05:51.661550+00:00"
+        },
+        {
+          "kind": "bibtex",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/26305-/bibtex",
+          "http_status": 200,
+          "path": "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\recent\\tan2024llmuseful_bibtex.html",
+          "sha256": "ea9b1c7900b52618d0c8869e1635c4581feeeb10618ba654291fdce358a12e84",
+          "checked_at": "2026-10-12T17:05:52.882172+00:00"
+        },
+        {
+          "kind": "crossref",
+          "url": "https://api.crossref.org/works/10.52202/079017-1922",
+          "http_status": 200,
+          "path": "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\crossref\\tan2024llmuseful.json",
+          "sha256": "a9e0b1b630c6691dc2f58c5503a39fe52873f9ef85618232dad44b61705d88a9",
+          "checked_at": "2026-10-12T17:04:36.918292+00:00"
+        }
+      ],
+      "audit_batch": "recent",
+      "citation_number": 16,
+      "cited_in_current_pdf": true,
+      "current_metadata": {
+        "key": "tan2024llmuseful",
+        "type": "inproceedings",
+        "title": "Are Language Models Actually Useful for Time Series Forecasting?",
+        "author": "Tan, Mingtian and Merrill, Mike A. and Gupta, Vinayak and Althoff, Tim and Hartvigsen, Thomas",
+        "booktitle": "Advances in Neural Information Processing Systems",
+        "volume": "37",
+        "year": "2024",
+        "doi": "10.52202/079017-1922",
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6ed5bf446f59e2c6646d23058c86424b-Abstract-Conference.html"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "fisher2019allmodels",
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "checked_at": "2026-10-12T17:05:01.595974+00:00",
+      "source_urls": [
+        "https://jmlr.org/papers/v20/18-760.html"
+      ],
+      "actual_metadata": {
+        "title": "All Models are Wrong, but Many are Useful: Learning a Variable's Importance by Studying an Entire Class of Prediction Models Simultaneously",
+        "authors": [
+          "Aaron Fisher",
+          "Cynthia Rudin",
+          "Francesca Dominici"
+        ],
+        "year": 2019,
+        "venue": "Journal of Machine Learning Research",
+        "volume": "20",
+        "article_number": "177",
+        "pages": "1–81",
+        "doi": null
+      },
+      "issues": [],
+      "evidence_paths": [
+        "qa\\reference_verification_20261013\\classic\\evidence\\fisher2019allmodels_publisher.html",
+        "qa\\reference_verification_20261013\\classic\\evidence\\fisher2019allmodels_publisher.txt"
+      ],
+      "source_checks": [
+        {
+          "url": "https://jmlr.org/papers/v20/18-760.html",
+          "final_url": "https://jmlr.org/papers/v20/18-760.html",
+          "status_code": 200,
+          "checked_at": "2026-10-12T17:05:01.595974+00:00",
+          "sha256": "09fa5503e79f786f85e46fe0d0fa8c1e2933ee101c1e7bac276e7b4c5fde6c69",
+          "bytes": 6324
+        }
+      ],
+      "input_metadata": {
+        "key": "fisher2019allmodels",
+        "type": "article",
+        "title": "All Models are Wrong, but Many are Useful: Learning a Variable's Importance by Studying an Entire Class of Prediction Models Simultaneously",
+        "author": "Fisher, Aaron and Rudin, Cynthia and Dominici, Francesca",
+        "journal": "Journal of Machine Learning Research",
+        "year": "2019",
+        "volume": "20",
+        "number": "177",
+        "pages": "1--81",
+        "url": "https://jmlr.org/papers/v20/18-760.html",
+        "citation_number": 17
+      },
+      "field_assessment": {
+        "title": "match_ignoring_case_and_tex_escaping",
+        "author_order": "match",
+        "year": "match",
+        "doi": "not_in_current_entry",
+        "volume_issue_pages": "match_or_article_identifier"
+      },
+      "audit_batch": "classic",
+      "citation_number": 17,
+      "cited_in_current_pdf": true,
+      "current_metadata": {
+        "key": "fisher2019allmodels",
+        "type": "article",
+        "title": "All Models are Wrong, but Many are Useful: Learning a Variable's Importance by Studying an Entire Class of Prediction Models Simultaneously",
+        "author": "Fisher, Aaron and Rudin, Cynthia and Dominici, Francesca",
+        "journal": "Journal of Machine Learning Research",
+        "year": "2019",
+        "volume": "20",
+        "number": "177",
+        "pages": "1--81",
+        "url": "https://jmlr.org/papers/v20/18-760.html"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "strobl2008conditional",
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "checked_at": "2026-10-12T17:05:01.596974+00:00",
+      "source_urls": [
+        "https://link.springer.com/article/10.1186/1471-2105-9-307",
+        "https://api.crossref.org/works/10.1186/1471-2105-9-307"
+      ],
+      "actual_metadata": {
+        "title": "Conditional variable importance for random forests",
+        "authors": [
+          "Carolin Strobl",
+          "Anne-Laure Boulesteix",
+          "Thomas Kneib",
+          "Thomas Augustin",
+          "Achim Zeileis"
+        ],
+        "year": 2008,
+        "venue": "BMC Bioinformatics",
+        "volume": "9",
+        "article_number": "307",
+        "doi": "10.1186/1471-2105-9-307"
+      },
+      "issues": [
+        {
+          "severity": "info",
+          "field": "article_number",
+          "detail": "307是文章号，不是单页页码；当前BibTeX pages={307}符合该旧式参考文献模板的文章号输出习惯。"
+        }
+      ],
+      "evidence_paths": [
+        "qa\\reference_verification_20261013\\classic\\evidence\\strobl2008conditional_publisher.html",
+        "qa\\reference_verification_20261013\\classic\\evidence\\strobl2008conditional_publisher.txt",
+        "qa\\reference_verification_20261013\\crossref\\strobl2008conditional.json",
+        "qa\\reference_verification_20261013\\classic\\evidence\\web_primary_evidence.txt"
+      ],
+      "source_checks": [
+        {
+          "url": "https://link.springer.com/article/10.1186/1471-2105-9-307",
+          "final_url": "https://link.springer.com/article/10.1186/1471-2105-9-307",
+          "status_code": 200,
+          "checked_at": "2026-10-12T17:05:01.596974+00:00",
+          "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+          "bytes": 3038
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1186/1471-2105-9-307",
+          "http_status": 200,
+          "checked_at": "2026-10-12T17:04:35.665843+00:00",
+          "response_sha256": "3330f156216980c873c73c8c0b39d5e298d16118a8337402e3362568c8d034fd"
+        }
+      ],
+      "input_metadata": {
+        "key": "strobl2008conditional",
+        "type": "article",
+        "title": "Conditional variable importance for random forests",
+        "author": "Strobl, Carolin and Boulesteix, Anne-Laure and Kneib, Thomas and Augustin, Thomas and Zeileis, Achim",
+        "journal": "BMC Bioinformatics",
+        "year": "2008",
+        "volume": "9",
+        "pages": "307",
+        "doi": "10.1186/1471-2105-9-307",
+        "citation_number": 18
+      },
+      "field_assessment": {
+        "title": "match_ignoring_case_and_tex_escaping",
+        "author_order": "match",
+        "year": "match",
+        "doi": "same_work",
+        "volume_issue_pages": "match_or_article_identifier"
+      },
+      "audit_batch": "classic",
+      "citation_number": 18,
+      "cited_in_current_pdf": true,
+      "current_metadata": {
+        "key": "strobl2008conditional",
+        "type": "article",
+        "title": "Conditional variable importance for random forests",
+        "author": "Strobl, Carolin and Boulesteix, Anne-Laure and Kneib, Thomas and Augustin, Thomas and Zeileis, Achim",
+        "journal": "BMC Bioinformatics",
+        "year": "2008",
+        "volume": "9",
+        "pages": "307",
+        "doi": "10.1186/1471-2105-9-307"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "moebus2025contimask",
+      "existence_status": "verified",
+      "metadata_status": "check_suggested",
+      "checked_at": "2026-10-12T17:05:02.287792+00:00",
+      "source_urls": [
+        "https://proceedings.neurips.cc/paper_files/paper/2025/hash/4eb5daabc45b45a9a312aa2c8fca8a74-Abstract-Conference.html",
+        "https://api.crossref.org/works/10.52202/085713-1832"
+      ],
+      "actual_metadata": {
+        "title": "Contimask: Explaining Irregular Time Series via Perturbations in Continuous Time",
+        "authors": [
+          "Max Moebus",
+          "Björn Braun",
+          "Christian Holz"
+        ],
+        "year": 2025,
+        "venue": "Advances in Neural Information Processing Systems",
+        "volume": "38",
+        "publisher_pages": "54779–54804",
+        "crossref_pages": "61017–61042",
+        "online_publication_date": "2026-04-23",
+        "doi": "10.52202/085713-1832"
+      },
+      "issues": [
+        {
+          "severity": "warning",
+          "field": "pages",
+          "detail": "当天官方NeurIPS元标签为54779–54804；当天DOI注册页为61017–61042。当前BibTeX未列页码，因而没有错误页码；存在数据库/官方版本差异。",
+          "suggested_action": "保留省略页码，或明确按官网页码填54779–54804；不要盲目采用Crossref页码。"
+        },
+        {
+          "severity": "info",
+          "field": "year",
+          "detail": "会议及第38卷归属2025；官网citation_publication_date为2026-04-23。这是会议年与上线年差异，当前2025正确。"
+        },
+        {
+          "severity": "info",
+          "field": "doi",
+          "detail": "官方与Crossref均给出真实DOI10.52202/085713-1832，当前条目未列DOI，可选补全。"
+        }
+      ],
+      "evidence_paths": [
+        "qa\\reference_verification_20261013\\classic\\evidence\\moebus2025contimask_publisher.html",
+        "qa\\reference_verification_20261013\\classic\\evidence\\moebus2025contimask_publisher.txt",
+        "qa\\reference_verification_20261013\\classic\\evidence\\moebus2025contimask_crossref.json"
+      ],
+      "source_checks": [
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/4eb5daabc45b45a9a312aa2c8fca8a74-Abstract-Conference.html",
+          "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/4eb5daabc45b45a9a312aa2c8fca8a74-Abstract-Conference.html",
+          "status_code": 200,
+          "checked_at": "2026-10-12T17:05:02.287792+00:00",
+          "sha256": "48774bbb7eb75942c51eab1664b4f8641ef1dff46119070171a022911776d663",
+          "bytes": 10082
+        },
+        {
+          "url": "https://api.crossref.org/works/10.52202/085713-1832",
+          "http_status": 200,
+          "evidence_saved_at": "2026-10-12T17:06:35.826970+00:00",
+          "response_sha256": "fbb63175a411c916079f638d5b7b317508f90da66480ecc765d542bd1737bd4e"
+        }
+      ],
+      "input_metadata": {
+        "key": "moebus2025contimask",
+        "type": "inproceedings",
+        "title": "Contimask: Explaining Irregular Time Series via Perturbations in Continuous Time",
+        "author": "Moebus, Max and Braun, Bj{\\\"o}rn and Holz, Christian",
+        "booktitle": "Advances in Neural Information Processing Systems",
+        "volume": "38",
+        "year": "2025",
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/4eb5daabc45b45a9a312aa2c8fca8a74-Abstract-Conference.html",
+        "citation_number": 19
+      },
+      "field_assessment": {
+        "title": "match_ignoring_case_and_tex_escaping",
+        "author_order": "match",
+        "year": "match",
+        "doi": "same_work",
+        "volume_issue_pages": "page_sources_conflict_current_entry_omits_pages"
+      },
+      "audit_batch": "classic",
+      "citation_number": 19,
+      "cited_in_current_pdf": true,
+      "current_metadata": {
+        "key": "moebus2025contimask",
+        "type": "inproceedings",
+        "title": "Contimask: Explaining Irregular Time Series via Perturbations in Continuous Time",
+        "author": "Moebus, Max and Braun, Bj{\\\"o}rn and Holz, Christian",
+        "booktitle": "Advances in Neural Information Processing Systems",
+        "volume": "38",
+        "year": "2025",
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/4eb5daabc45b45a9a312aa2c8fca8a74-Abstract-Conference.html"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified_with_external_source_conflict"
+    },
+    {
+      "key": "bergmeir2018cv",
+      "cited_in_current_pdf": true,
+      "citation_number": 20,
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "source_urls": [
+        "https://www.sciencedirect.com/science/article/pii/S0167947317302384",
+        "https://api.crossref.org/works/10.1016/j.csda.2017.11.003",
+        "https://robjhyndman.com/publications/cv-time-series/"
+      ],
+      "actual_metadata": {
+        "title": "A note on the validity of cross-validation for evaluating autoregressive time series prediction",
+        "authors_ordered": [
+          "Christoph Bergmeir",
+          "Rob J. Hyndman",
+          "Bonsoo Koo"
+        ],
+        "publication": "Computational Statistics & Data Analysis",
+        "year": 2018,
+        "volume": "120",
+        "issue": null,
+        "pages": "70-83",
+        "doi": "10.1016/j.csda.2017.11.003"
+      },
+      "issues": [],
+      "verification_notes": "ScienceDirect本次HTTP403；作者Rob J Hyndman官网本次HTTP200与Crossref一致确认题名、3位作者顺序、CSDA卷120、70–83、2018、DOI。DOI编号含2017不意味着引用年错误。",
+      "checked_at": "2026-10-12T17:04:58.340432+00:00",
+      "checked_local_date": "2026-10-13 Asia/Shanghai",
+      "evidence_paths": [
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\unused\\bergmeir2018cv.html",
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\crossref\\bergmeir2018cv.json",
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\unused\\bergmeir2018cv_author.html"
+      ],
+      "primary_request_status": 403,
+      "crossref_http_status": 200,
+      "audit_batch": "unused",
+      "input_metadata": {
+        "key": "bergmeir2018cv",
+        "type": "article",
+        "title": "A Note on the Validity of Cross-Validation for Evaluating Autoregressive Time Series Prediction",
+        "author": "Bergmeir, Christoph and Hyndman, Rob J. and Koo, Bonsoo",
+        "journal": "Computational Statistics and Data Analysis",
+        "volume": "120",
+        "pages": "70--83",
+        "year": "2018",
+        "doi": "10.1016/j.csda.2017.11.003",
+        "citation_number": 20
+      },
+      "current_metadata": {
+        "key": "bergmeir2018cv",
+        "type": "article",
+        "title": "A Note on the Validity of Cross-Validation for Evaluating Autoregressive Time Series Prediction",
+        "author": "Bergmeir, Christoph and Hyndman, Rob J. and Koo, Bonsoo",
+        "journal": "Computational Statistics and Data Analysis",
+        "volume": "120",
+        "pages": "70--83",
+        "year": "2018",
+        "doi": "10.1016/j.csda.2017.11.003"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "kunsch1989block",
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "checked_at": "2026-10-12T17:05:03.386038+00:00",
+      "source_urls": [
+        "https://projecteuclid.org/journals/annals-of-statistics/volume-17/issue-3/The-Jackknife-and-the-Bootstrap-for-General-Stationary-Observations/10.1214/aos/1176347265.full",
+        "https://api.crossref.org/works/10.1214/aos/1176347265",
+        "https://people.math.ethz.ch/~hkuensch/papers/"
+      ],
+      "actual_metadata": {
+        "title": "The Jackknife and the Bootstrap for General Stationary Observations",
+        "authors": [
+          "Hans R. Künsch"
+        ],
+        "year": 1989,
+        "venue": "The Annals of Statistics",
+        "volume": "17",
+        "issue": "3",
+        "pages": "1217–1241",
+        "doi": "10.1214/aos/1176347265"
+      },
+      "issues": [
+        {
+          "severity": "info",
+          "field": "source_access",
+          "detail": "Project Euclid HTTP200实际为Incapsula拦截，不能把200当作读取成功。Crossref确认题名、作者、17(3)、1989、DOI但缺页；作者ETH官网当天可读且列1217–1241，补齐新页码证据。"
+        }
+      ],
+      "evidence_paths": [
+        "qa\\reference_verification_20261013\\classic\\evidence\\kunsch1989block_publisher.html",
+        "qa\\reference_verification_20261013\\classic\\evidence\\kunsch1989block_publisher.txt",
+        "qa\\reference_verification_20261013\\crossref\\kunsch1989block.json",
+        "qa\\reference_verification_20261013\\classic\\evidence\\kunsch1989block_author_publisher.html",
+        "qa\\reference_verification_20261013\\classic\\evidence\\kunsch1989block_author_publisher.txt",
+        "qa\\reference_verification_20261013\\classic\\evidence\\web_primary_evidence.txt"
+      ],
+      "source_checks": [
+        {
+          "url": "https://projecteuclid.org/journals/annals-of-statistics/volume-17/issue-3/The-Jackknife-and-the-Bootstrap-for-General-Stationary-Observations/10.1214/aos/1176347265.full",
+          "final_url": "https://projecteuclid.org/journals/annals-of-statistics/volume-17/issue-3/The-Jackknife-and-the-Bootstrap-for-General-Stationary-Observations/10.1214/aos/1176347265.full",
+          "status_code": 200,
+          "checked_at": "2026-10-12T17:05:03.386038+00:00",
+          "sha256": "d67a8195895306296f973320af9a48938a4ff32d2cdc5581e30bcb83bd4e6d22",
+          "bytes": 1169
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1214/aos/1176347265",
+          "http_status": 200,
+          "checked_at": "2026-10-12T17:04:40.141200+00:00",
+          "response_sha256": "3e1c09281506e24ec81b3d9ee5a3e7b9912402887c6279617b02a7f5a134812e"
+        },
+        {
+          "url": "https://people.math.ethz.ch/~hkuensch/papers/",
+          "status_code": 200,
+          "checked_at": "2026-10-12T17:06:33.053962+00:00",
+          "sha256": "6ce69c0f474e62134ae269504b9fcd99575291f1948b2d3cd5590fea4d8c4352",
+          "bytes": 36023
+        }
+      ],
+      "input_metadata": {
+        "key": "kunsch1989block",
+        "type": "article",
+        "title": "The Jackknife and the Bootstrap for General Stationary Observations",
+        "author": "K{\\\"u}nsch, Hans R.",
+        "journal": "The Annals of Statistics",
+        "volume": "17",
+        "number": "3",
+        "pages": "1217--1241",
+        "year": "1989",
+        "doi": "10.1214/aos/1176347265",
+        "citation_number": 21
+      },
+      "field_assessment": {
+        "title": "match_ignoring_case_and_tex_escaping",
+        "author_order": "match",
+        "year": "match",
+        "doi": "same_work",
+        "volume_issue_pages": "match_or_article_identifier"
+      },
+      "audit_batch": "classic",
+      "citation_number": 21,
+      "cited_in_current_pdf": true,
+      "current_metadata": {
+        "key": "kunsch1989block",
+        "type": "article",
+        "title": "The Jackknife and the Bootstrap for General Stationary Observations",
+        "author": "K{\\\"u}nsch, Hans R.",
+        "journal": "The Annals of Statistics",
+        "volume": "17",
+        "number": "3",
+        "pages": "1217--1241",
+        "year": "1989",
+        "doi": "10.1214/aos/1176347265"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "politis1994stationary",
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "checked_at": "2026-10-12T17:05:03.851990+00:00",
+      "source_urls": [
+        "https://www.tandfonline.com/doi/abs/10.1080/01621459.1994.10476870",
+        "https://api.crossref.org/works/10.1080/01621459.1994.10476870"
+      ],
+      "actual_metadata": {
+        "title": "The Stationary Bootstrap",
+        "authors": [
+          "Dimitris N. Politis",
+          "Joseph P. Romano"
+        ],
+        "year": 1994,
+        "venue": "Journal of the American Statistical Association",
+        "volume": "89",
+        "issue": "428",
+        "pages": "1303–1313",
+        "doi": "10.1080/01621459.1994.10476870"
+      },
+      "issues": [
+        {
+          "severity": "info",
+          "field": "source_access",
+          "detail": "Taylor & Francis直接访问403，web open也失败；当天Crossref完整元数据与官方搜索记录均确认89(428):1303–1313及作者/DOI。引用年1994，勿误用2012网上发布日期。"
+        }
+      ],
+      "evidence_paths": [
+        "qa\\reference_verification_20261013\\classic\\evidence\\politis1994stationary_publisher.html",
+        "qa\\reference_verification_20261013\\classic\\evidence\\politis1994stationary_publisher.txt",
+        "qa\\reference_verification_20261013\\crossref\\politis1994stationary.json",
+        "qa\\reference_verification_20261013\\classic\\evidence\\web_primary_evidence.txt"
+      ],
+      "source_checks": [
+        {
+          "url": "https://www.tandfonline.com/doi/abs/10.1080/01621459.1994.10476870",
+          "final_url": "https://www.tandfonline.com/doi/abs/10.1080/01621459.1994.10476870",
+          "status_code": 403,
+          "checked_at": "2026-10-12T17:05:03.851990+00:00",
+          "sha256": "b875bd641ca121ee87ea3671661675976415495e5d98acdc70f20996743c2657",
+          "bytes": 5683
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1080/01621459.1994.10476870",
+          "http_status": 200,
+          "checked_at": "2026-10-12T17:04:40.160630+00:00",
+          "response_sha256": "6fbbe1297990ee9dc70daed9c853d0387f71b8b296451e26724263a688c416fe"
+        }
+      ],
+      "input_metadata": {
+        "key": "politis1994stationary",
+        "type": "article",
+        "title": "The Stationary Bootstrap",
+        "author": "Politis, Dimitris N. and Romano, Joseph P.",
+        "journal": "Journal of the American Statistical Association",
+        "volume": "89",
+        "number": "428",
+        "pages": "1303--1313",
+        "year": "1994",
+        "doi": "10.1080/01621459.1994.10476870",
+        "citation_number": 22
+      },
+      "field_assessment": {
+        "title": "match_ignoring_case_and_tex_escaping",
+        "author_order": "match",
+        "year": "match",
+        "doi": "same_work",
+        "volume_issue_pages": "match_or_article_identifier"
+      },
+      "audit_batch": "classic",
+      "citation_number": 22,
+      "cited_in_current_pdf": true,
+      "current_metadata": {
+        "key": "politis1994stationary",
+        "type": "article",
+        "title": "The Stationary Bootstrap",
+        "author": "Politis, Dimitris N. and Romano, Joseph P.",
+        "journal": "Journal of the American Statistical Association",
+        "volume": "89",
+        "number": "428",
+        "pages": "1303--1313",
+        "year": "1994",
+        "doi": "10.1080/01621459.1994.10476870"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "reimers2019sentencebert",
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "checked_at": "2026-10-12T17:05:01.596974+00:00",
+      "source_urls": [
+        "https://aclanthology.org/D19-1410/",
+        "https://api.crossref.org/works/10.18653/v1/D19-1410"
+      ],
+      "actual_metadata": {
+        "title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+        "authors": [
+          "Nils Reimers",
+          "Iryna Gurevych"
+        ],
+        "year": 2019,
+        "venue": "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+        "pages": "3982–3992",
+        "doi": "10.18653/v1/D19-1410"
+      },
+      "issues": [
+        {
+          "severity": "info",
+          "field": "pages",
+          "detail": "当天ACL官网明确3982–3992，当前条目正确。本次Crossref同一DOI确认题名作者，但页码为3980–3990；优先采用ACL官方页码，来源冲突已裁定。"
+        }
+      ],
+      "evidence_paths": [
+        "qa\\reference_verification_20261013\\classic\\evidence\\reimers2019sentencebert_publisher.html",
+        "qa\\reference_verification_20261013\\classic\\evidence\\reimers2019sentencebert_publisher.txt",
+        "qa\\reference_verification_20261013\\crossref\\reimers2019sentencebert.json"
+      ],
+      "source_checks": [
+        {
+          "url": "https://aclanthology.org/D19-1410/",
+          "final_url": "https://aclanthology.org/D19-1410/",
+          "status_code": 200,
+          "checked_at": "2026-10-12T17:05:01.596974+00:00",
+          "sha256": "f341f68ab26033093f23278addb88fb6b5232d7f2aaf61b35017b2b4bb807dcf",
+          "bytes": 41699
+        },
+        {
+          "url": "https://api.crossref.org/works/10.18653/v1/D19-1410",
+          "http_status": 200,
+          "checked_at": "2026-10-12T17:07:15.111189+00:00",
+          "response_sha256": "c3b9de05538f4f884fa1b658823e1c44c2a1a10e28879bbb3f5214adb25f3fcd"
+        }
+      ],
+      "input_metadata": {
+        "key": "reimers2019sentencebert",
+        "type": "inproceedings",
+        "title": "Sentence-{BERT}: Sentence Embeddings using Siamese {BERT}-Networks",
+        "author": "Reimers, Nils and Gurevych, Iryna",
+        "booktitle": "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing",
+        "year": "2019",
+        "pages": "3982--3992",
+        "doi": "10.18653/v1/D19-1410",
+        "url": "https://aclanthology.org/D19-1410/",
+        "citation_number": 23
+      },
+      "field_assessment": {
+        "title": "match_ignoring_case_and_tex_escaping",
+        "author_order": "match",
+        "year": "match",
+        "doi": "same_work",
+        "volume_issue_pages": "match_or_article_identifier"
+      },
+      "audit_batch": "classic",
+      "citation_number": 23,
+      "cited_in_current_pdf": true,
+      "current_metadata": {
+        "key": "reimers2019sentencebert",
+        "type": "inproceedings",
+        "title": "Sentence-{BERT}: Sentence Embeddings using Siamese {BERT}-Networks",
+        "author": "Reimers, Nils and Gurevych, Iryna",
+        "booktitle": "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing",
+        "year": "2019",
+        "pages": "3982--3992",
+        "doi": "10.18653/v1/D19-1410",
+        "url": "https://aclanthology.org/D19-1410/"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified_with_external_source_conflict"
+    },
+    {
+      "key": "minilmmodel",
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "audit_batch": "root",
+      "actual_metadata": {
+        "title": "all-MiniLM-L6-v2 model release",
+        "corporate_author": "Sentence Transformers",
+        "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+        "snapshot_sha": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "source_type": "model release",
+        "publication_year": null
+      },
+      "source_urls": [
+        "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+        "https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/revision/1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+      ],
+      "checked_at": "2026-10-12T17:06:52.157820+00:00",
+      "evidence_paths": [
+        "qa\\reference_verification_20261013\\primary\\minilm_card.html",
+        "qa\\reference_verification_20261013\\primary\\minilm_revision.json"
+      ],
+      "source_checks": [
+        {
+          "name": "minilm_card",
+          "source_url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+          "checked_at": "2026-10-12T17:06:52.157820+00:00",
+          "http_status": 200,
+          "final_url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+          "content_type": "text/html; charset=utf-8",
+          "evidence_file": "qa\\reference_verification_20261013\\primary\\minilm_card.html",
+          "response_sha256": "99af33e0308a54905e20075de8f9cebad54608ffb96deb50f4c2f3406c9bc7e4",
+          "bytes": 320772
+        },
+        {
+          "name": "minilm_revision",
+          "source_url": "https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/revision/1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+          "checked_at": "2026-10-12T17:06:51.388268+00:00",
+          "http_status": 200,
+          "final_url": "https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/revision/1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+          "content_type": "application/json; charset=utf-8",
+          "evidence_file": "qa\\reference_verification_20261013\\primary\\minilm_revision.json",
+          "response_sha256": "532b194124fb36d847472a90e7577a6c1ba3ec4466f6eee955a2b813e97c0879",
+          "bytes": 7054,
+          "metadata": {
+            "id": "sentence-transformers/all-MiniLM-L6-v2",
+            "author": "sentence-transformers",
+            "sha": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+            "createdAt": "2022-03-02T23:29:05.000Z",
+            "lastModified": "2026-06-01T06:29:13.000Z",
+            "pipeline_tag": "sentence-similarity"
+          }
+        }
+      ],
+      "issues": [],
+      "verification_notes": "这是模型版本资源引用；发行机构、仓库身份及固定完整SHA均已由官方API重新确认，不作为期刊论文。未虚构出版年。",
+      "citation_number": 24,
+      "cited_in_current_pdf": true,
+      "input_metadata": {
+        "key": "minilmmodel",
+        "type": "misc",
+        "title": "all-{MiniLM}-L6-v2 model release",
+        "author": "{Sentence Transformers}",
+        "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+        "note": "Model snapshot 1110a243fdf4; full identity in the reproducibility manifest; accessed 12 October 2026",
+        "citation_number": 24
+      },
+      "current_metadata": {
+        "key": "minilmmodel",
+        "type": "misc",
+        "title": "all-{MiniLM}-L6-v2 model release",
+        "author": "{Sentence Transformers}",
+        "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+        "note": "Model snapshot 1110a243fdf4; full identity in the reproducibility manifest; accessed 12 October 2026"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "finbertmodel",
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "audit_batch": "root",
+      "actual_metadata": {
+        "title": "FinBERT model release",
+        "corporate_author": "ProsusAI",
+        "model_id": "ProsusAI/finbert",
+        "snapshot_sha": "4556d13015211d73dccd3fdd39d39232506f3e43",
+        "source_type": "model release",
+        "publication_year": null
+      },
+      "source_urls": [
+        "https://huggingface.co/ProsusAI/finbert",
+        "https://huggingface.co/api/models/ProsusAI/finbert/revision/4556d13015211d73dccd3fdd39d39232506f3e43"
+      ],
+      "checked_at": "2026-10-12T17:06:51.811743+00:00",
+      "evidence_paths": [
+        "qa\\reference_verification_20261013\\primary\\finbert_card.html",
+        "qa\\reference_verification_20261013\\primary\\finbert_revision.json"
+      ],
+      "source_checks": [
+        {
+          "name": "finbert_card",
+          "source_url": "https://huggingface.co/ProsusAI/finbert",
+          "checked_at": "2026-10-12T17:06:51.811743+00:00",
+          "http_status": 200,
+          "final_url": "https://huggingface.co/ProsusAI/finbert",
+          "content_type": "text/html; charset=utf-8",
+          "evidence_file": "qa\\reference_verification_20261013\\primary\\finbert_card.html",
+          "response_sha256": "a1941d799be0ff6af1a4b1c80e3efba3fad6c37d586e69927020cf68ba919a0a",
+          "bytes": 217658
+        },
+        {
+          "name": "finbert_revision",
+          "source_url": "https://huggingface.co/api/models/ProsusAI/finbert/revision/4556d13015211d73dccd3fdd39d39232506f3e43",
+          "checked_at": "2026-10-12T17:06:50.630856+00:00",
+          "http_status": 200,
+          "final_url": "https://huggingface.co/api/models/ProsusAI/finbert/revision/4556d13015211d73dccd3fdd39d39232506f3e43",
+          "content_type": "application/json; charset=utf-8",
+          "evidence_file": "qa\\reference_verification_20261013\\primary\\finbert_revision.json",
+          "response_sha256": "ea2f95a743e395c139400ccb565b37a5affaaa673a4fba479b31f5b5e7ba3f6e",
+          "bytes": 4850,
+          "metadata": {
+            "id": "ProsusAI/finbert",
+            "author": "ProsusAI",
+            "sha": "4556d13015211d73dccd3fdd39d39232506f3e43",
+            "createdAt": "2022-03-02T23:29:04.000Z",
+            "lastModified": "2023-05-23T12:43:35.000Z",
+            "pipeline_tag": "text-classification"
+          }
+        }
+      ],
+      "issues": [],
+      "verification_notes": "这是模型版本资源引用；发行机构、仓库身份及固定完整SHA均已由官方API重新确认，不作为期刊论文。未虚构出版年。",
+      "citation_number": 25,
+      "cited_in_current_pdf": true,
+      "input_metadata": {
+        "key": "finbertmodel",
+        "type": "misc",
+        "title": "{FinBERT} model release",
+        "author": "{ProsusAI}",
+        "url": "https://huggingface.co/ProsusAI/finbert",
+        "note": "Model snapshot 4556d1301521; full identity in the reproducibility manifest; accessed 12 October 2026",
+        "citation_number": 25
+      },
+      "current_metadata": {
+        "key": "finbertmodel",
+        "type": "misc",
+        "title": "{FinBERT} model release",
+        "author": "{ProsusAI}",
+        "url": "https://huggingface.co/ProsusAI/finbert",
+        "note": "Model snapshot 4556d1301521; full identity in the reproducibility manifest; accessed 12 October 2026"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "liu2026posttime",
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "source_urls": [
+        "https://arxiv.org/abs/2605.29401"
+      ],
+      "actual_metadata": {
+        "title": "Rethinking Post-Training Recipes for Multimodal Time-Series Forecasting",
+        "authors": [
+          "Haoxin Liu",
+          "Yichen Zhou",
+          "Rajat Sen",
+          "B. Aditya Prakash",
+          "Abhimanyu Das"
+        ],
+        "year": 2026,
+        "source_type": "arXiv preprint",
+        "arxiv_id": "2605.29401",
+        "first_submission_date": "2026/05/28",
+        "version_date": "2026/05/28",
+        "doi": "10.48550/arXiv.2605.29401",
+        "checked_version": "v1"
+      },
+      "input_metadata": {
+        "key": "liu2026posttime",
+        "type": "misc",
+        "title": "Rethinking Post-Training Recipes for Multimodal Time-Series Forecasting",
+        "author": "Liu, Haoxin and Zhou, Yichen and Sen, Rajat and Prakash, B. Aditya and Das, Abhimanyu",
+        "year": "2026",
+        "eprint": "2605.29401",
+        "archiveprefix": "arXiv",
+        "url": "https://arxiv.org/abs/2605.29401",
+        "citation_number": null
+      },
+      "field_comparisons": {
+        "title_matches": true,
+        "author_count_matches": true,
+        "author_order_matches": true,
+        "author_mismatches": [],
+        "year_matches": true,
+        "volume_matches": true,
+        "pages_match": true,
+        "doi_matches": true
+      },
+      "issues": [],
+      "information_notes": [],
+      "checked_at": "2026-10-12T17:05:52.079107+00:00",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://arxiv.org/abs/2605.29401",
+          "http_status": 200,
+          "path": "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\recent\\liu2026posttime_official.html",
+          "sha256": "149bb8ac9ab337da7a94eb9a20a904334b2825665ca4044af93925935badf47b",
+          "checked_at": "2026-10-12T17:05:52.079107+00:00"
+        }
+      ],
+      "audit_batch": "recent",
+      "citation_number": null,
+      "cited_in_current_pdf": false,
+      "current_metadata": {
+        "key": "liu2026posttime",
+        "type": "misc",
+        "title": "Rethinking Post-Training Recipes for Multimodal Time-Series Forecasting",
+        "author": "Liu, Haoxin and Zhou, Yichen and Sen, Rajat and Prakash, B. Aditya and Das, Abhimanyu",
+        "year": "2026",
+        "eprint": "2605.29401",
+        "archiveprefix": "arXiv",
+        "url": "https://arxiv.org/abs/2605.29401"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "seo2025air",
+      "existence_status": "verified",
+      "metadata_status": "needs_fix",
+      "source_urls": [
+        "https://arxiv.org/abs/2512.10229",
+        "https://arxiv.org/html/2512.10229v3"
+      ],
+      "actual_metadata": {
+        "title": "Adaptive Information Routing for Multimodal Time Series Forecasting",
+        "authors": [
+          "Jun Seo",
+          "Hyeokjun Choe",
+          "Seohui Bae",
+          "Soyeon Park",
+          "Wonbin Ahn",
+          "Taeyoon Lim",
+          "Junhyeok Kang",
+          "Sangjun Han",
+          "Jaehoon Lee",
+          "Dongwan Kang",
+          "Minjae Kim",
+          "Sungdong Yoo",
+          "Soonyoung Lee"
+        ],
+        "year": 2025,
+        "source_type": "arXiv preprint",
+        "arxiv_id": "2512.10229",
+        "first_submission_date": "2025/12/11",
+        "version_date": "2025/12/23",
+        "doi": "10.48550/arXiv.2512.10229",
+        "checked_version": "v3"
+      },
+      "input_metadata": {
+        "key": "seo2025air",
+        "type": "misc",
+        "title": "Adaptive Information Routing for Multimodal Time Series Forecasting",
+        "author": "Seo, Jun and Choe, Hyeokjun and Bae, Seohui and Park, Soyeon and Ahn, Wonbin and Lim, Taeyoon and Kang, Junhyuk and Han, Sangjun and Lee, Jaehoon and Kang, Dongwan and Kim, Minjae and Yoo, Sungdong and Lee, Soonyoung",
+        "year": "2025",
+        "eprint": "2512.10229",
+        "archiveprefix": "arXiv",
+        "url": "https://arxiv.org/abs/2512.10229",
+        "citation_number": null
+      },
+      "field_comparisons": {
+        "title_matches": true,
+        "author_count_matches": true,
+        "author_order_matches": false,
+        "author_mismatches": [
+          {
+            "position": 7,
+            "input": "Junhyuk Kang",
+            "official": "Junhyeok Kang"
+          }
+        ],
+        "year_matches": true,
+        "volume_matches": true,
+        "pages_match": true,
+        "doi_matches": true
+      },
+      "issues": [
+        {
+          "severity": "critical",
+          "field": "author",
+          "detail": "第7位作者名拼写错误，需将 Kang, Junhyuk 改为 Kang, Junhyeok。",
+          "differences": [
+            {
+              "position": 7,
+              "input": "Junhyuk Kang",
+              "official": "Junhyeok Kang"
+            }
+          ]
+        }
+      ],
+      "information_notes": [],
+      "checked_at": "2026-10-12T17:05:52.314232+00:00",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://arxiv.org/abs/2512.10229",
+          "http_status": 200,
+          "path": "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\recent\\seo2025air_official.html",
+          "sha256": "89a69b0d84993aba1251a16adca77830d01739a297477ee2ae9f1c35a7c74920",
+          "checked_at": "2026-10-12T17:05:52.314232+00:00"
+        },
+        {
+          "kind": "fulltext",
+          "url": "https://arxiv.org/html/2512.10229v3",
+          "http_status": 200,
+          "path": "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\recent\\seo2025air_fulltext.html",
+          "sha256": "b0c1188cf622960895d3eff915a82223f15e8286162d9753776c41a78e07a222",
+          "checked_at": "2026-10-12T17:06:34.524996+00:00"
+        }
+      ],
+      "audit_batch": "recent",
+      "citation_number": null,
+      "cited_in_current_pdf": false,
+      "current_metadata": {
+        "key": "seo2025air",
+        "type": "misc",
+        "title": "Adaptive Information Routing for Multimodal Time Series Forecasting",
+        "author": "Seo, Jun and Choe, Hyeokjun and Bae, Seohui and Park, Soyeon and Ahn, Wonbin and Lim, Taeyoon and Kang, Junhyeok and Han, Sangjun and Lee, Jaehoon and Kang, Dongwan and Kim, Minjae and Yoo, Sungdong and Lee, Soonyoung",
+        "year": "2025",
+        "eprint": "2512.10229",
+        "archiveprefix": "arXiv",
+        "url": "https://arxiv.org/abs/2512.10229"
+      },
+      "corrections_applied": [
+        {
+          "key": "seo2025air",
+          "field": "author",
+          "before": "Kang, Junhyuk",
+          "after": "Kang, Junhyeok",
+          "kind": "confirmed_spelling_correction",
+          "cited": false,
+          "source_url": "https://arxiv.org/abs/2512.10229"
+        }
+      ],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "zhang2024tpatchgnn",
+      "cited_in_current_pdf": false,
+      "citation_number": null,
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "source_urls": [
+        "https://proceedings.mlr.press/v235/zhang24bw.html"
+      ],
+      "actual_metadata": {
+        "title": "Irregular Multivariate Time Series Forecasting: A Transformable Patching Graph Neural Networks Approach",
+        "authors_ordered": [
+          "Weijia Zhang",
+          "Chenlong Yin",
+          "Hao Liu",
+          "Xiaofang Zhou",
+          "Hui Xiong"
+        ],
+        "publication": "Proceedings of the 41st International Conference on Machine Learning",
+        "year": 2024,
+        "volume": "235",
+        "pages": "60179–60196",
+        "doi": null
+      },
+      "issues": [],
+      "verification_notes": "PMLR官方网页及官方BibTeX确认题名、5位作者顺序、ICML 2024、卷235、60179–60196。",
+      "checked_at": "2026-10-12T17:04:55.279909+00:00",
+      "checked_local_date": "2026-10-13 Asia/Shanghai",
+      "evidence_paths": [
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\unused\\zhang2024tpatchgnn.html"
+      ],
+      "primary_request_status": 200,
+      "crossref_http_status": null,
+      "audit_batch": "unused",
+      "input_metadata": {
+        "key": "zhang2024tpatchgnn",
+        "type": "inproceedings",
+        "title": "Irregular Multivariate Time Series Forecasting: A Transformable Patching Graph Neural Networks Approach",
+        "author": "Zhang, Weijia and Yin, Chenlong and Liu, Hao and Zhou, Xiaofang and Xiong, Hui",
+        "booktitle": "Proceedings of the 41st International Conference on Machine Learning",
+        "series": "Proceedings of Machine Learning Research",
+        "volume": "235",
+        "pages": "60179--60196",
+        "year": "2024",
+        "url": "https://proceedings.mlr.press/v235/zhang24bw.html",
+        "citation_number": null
+      },
+      "current_metadata": {
+        "key": "zhang2024tpatchgnn",
+        "type": "inproceedings",
+        "title": "Irregular Multivariate Time Series Forecasting: A Transformable Patching Graph Neural Networks Approach",
+        "author": "Zhang, Weijia and Yin, Chenlong and Liu, Hao and Zhou, Xiaofang and Xiong, Hui",
+        "booktitle": "Proceedings of the 41st International Conference on Machine Learning",
+        "series": "Proceedings of Machine Learning Research",
+        "volume": "235",
+        "pages": "60179--60196",
+        "year": "2024",
+        "url": "https://proceedings.mlr.press/v235/zhang24bw.html"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "hessel2020emap",
+      "cited_in_current_pdf": false,
+      "citation_number": null,
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "source_urls": [
+        "https://aclanthology.org/2020.emnlp-main.62/",
+        "https://api.crossref.org/works/10.18653/v1/2020.emnlp-main.62"
+      ],
+      "actual_metadata": {
+        "title": "Does my multimodal model learn cross-modal interactions? It’s harder to tell than you might think!",
+        "authors_ordered": [
+          "Jack Hessel",
+          "Lillian Lee"
+        ],
+        "publication": "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+        "year": 2020,
+        "volume": null,
+        "pages": "861–877",
+        "doi": "10.18653/v1/2020.emnlp-main.62"
+      },
+      "issues": [],
+      "verification_notes": "ACL网页确认题名、2位作者、EMNLP 2020、861–877和DOI；大小写及直/弯引号为排版差异。",
+      "checked_at": "2026-10-12T17:04:55.280601+00:00",
+      "checked_local_date": "2026-10-13 Asia/Shanghai",
+      "evidence_paths": [
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\unused\\hessel2020emap.html",
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\crossref\\hessel2020emap.json"
+      ],
+      "primary_request_status": 200,
+      "crossref_http_status": 200,
+      "audit_batch": "unused",
+      "input_metadata": {
+        "key": "hessel2020emap",
+        "type": "inproceedings",
+        "title": "Does My Multimodal Model Learn Cross-Modal Interactions? It's Harder to Tell Than You Might Think!",
+        "author": "Hessel, Jack and Lee, Lillian",
+        "booktitle": "Proceedings of EMNLP",
+        "pages": "861--877",
+        "year": "2020",
+        "doi": "10.18653/v1/2020.emnlp-main.62",
+        "url": "https://aclanthology.org/2020.emnlp-main.62/",
+        "citation_number": null
+      },
+      "current_metadata": {
+        "key": "hessel2020emap",
+        "type": "inproceedings",
+        "title": "Does My Multimodal Model Learn Cross-Modal Interactions? It's Harder to Tell Than You Might Think!",
+        "author": "Hessel, Jack and Lee, Lillian",
+        "booktitle": "Proceedings of EMNLP",
+        "pages": "861--877",
+        "year": "2020",
+        "doi": "10.18653/v1/2020.emnlp-main.62",
+        "url": "https://aclanthology.org/2020.emnlp-main.62/"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "frank2021visionlanguage",
+      "cited_in_current_pdf": false,
+      "citation_number": null,
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "source_urls": [
+        "https://aclanthology.org/2021.emnlp-main.775/",
+        "https://api.crossref.org/works/10.18653/v1/2021.emnlp-main.775"
+      ],
+      "actual_metadata": {
+        "title": "Vision-and-Language or Vision-for-Language? On Cross-Modal Influence in Multimodal Transformers",
+        "authors_ordered": [
+          "Stella Frank",
+          "Emanuele Bugliarello",
+          "Desmond Elliott"
+        ],
+        "publication": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+        "year": 2021,
+        "volume": null,
+        "pages": "9847–9857",
+        "doi": "10.18653/v1/2021.emnlp-main.775"
+      },
+      "issues": [],
+      "verification_notes": "ACL网页及Crossref确认题名、3位作者顺序、EMNLP 2021、9847–9857、DOI。",
+      "checked_at": "2026-10-12T17:04:55.280601+00:00",
+      "checked_local_date": "2026-10-13 Asia/Shanghai",
+      "evidence_paths": [
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\unused\\frank2021visionlanguage.html",
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\crossref\\frank2021visionlanguage.json"
+      ],
+      "primary_request_status": 200,
+      "crossref_http_status": 200,
+      "audit_batch": "unused",
+      "input_metadata": {
+        "key": "frank2021visionlanguage",
+        "type": "inproceedings",
+        "title": "Vision-and-Language or Vision-for-Language? On Cross-Modal Influence in Multimodal Transformers",
+        "author": "Frank, Stella and Bugliarello, Emanuele and Elliott, Desmond",
+        "booktitle": "Proceedings of EMNLP",
+        "pages": "9847--9857",
+        "year": "2021",
+        "doi": "10.18653/v1/2021.emnlp-main.775",
+        "url": "https://aclanthology.org/2021.emnlp-main.775/",
+        "citation_number": null
+      },
+      "current_metadata": {
+        "key": "frank2021visionlanguage",
+        "type": "inproceedings",
+        "title": "Vision-and-Language or Vision-for-Language? On Cross-Modal Influence in Multimodal Transformers",
+        "author": "Frank, Stella and Bugliarello, Emanuele and Elliott, Desmond",
+        "booktitle": "Proceedings of EMNLP",
+        "pages": "9847--9857",
+        "year": "2021",
+        "doi": "10.18653/v1/2021.emnlp-main.775",
+        "url": "https://aclanthology.org/2021.emnlp-main.775/"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "dancette2021vqa",
+      "cited_in_current_pdf": false,
+      "citation_number": null,
+      "existence_status": "verified",
+      "metadata_status": "check_suggested",
+      "source_urls": [
+        "https://openaccess.thecvf.com/content/ICCV2021/html/Dancette_Beyond_Question-Based_Biases_Assessing_Multimodal_Shortcut_Learning_in_Visual_Question_ICCV_2021_paper.html",
+        "https://api.crossref.org/works/10.1109/ICCV48922.2021.00160",
+        "https://openaccess.thecvf.com/content/ICCV2021/papers/Dancette_Beyond_Question-Based_Biases_Assessing_Multimodal_Shortcut_Learning_in_Visual_Question_ICCV_2021_paper.pdf"
+      ],
+      "actual_metadata": {
+        "title": "Beyond Question-Based Biases: Assessing Multimodal Shortcut Learning in Visual Question Answering",
+        "authors_ordered": [
+          "Dancette, Corentin",
+          "Cadène, Rémi",
+          "Teney, Damien",
+          "Cord, Matthieu"
+        ],
+        "publication": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
+        "year": 2021,
+        "volume": null,
+        "pages": "1574–1583",
+        "doi": "10.1109/iccv48922.2021.00160"
+      },
+      "issues": [
+        {
+          "severity": "source_disagreement",
+          "field": "pages",
+          "input": "1574--1583",
+          "primary_source": "1574–1583",
+          "crossref": "1554-1563",
+          "message": "CVF官方网页和原PDF页码与Crossref/IEEE注册页码不同；当前bib采用CVF页码，有直接出版证据支持。",
+          "recommended_action": "保留当前CVF页码，报告外部元数据差异。"
+        }
+      ],
+      "verification_notes": "CVF网页及原PDF确认题名、4位作者顺序、ICCV 2021、1574–1583；Crossref DOI确认同一作品，IEEE数据库页码不同。",
+      "checked_at": "2026-10-12T17:04:55.281210+00:00",
+      "checked_local_date": "2026-10-13 Asia/Shanghai",
+      "evidence_paths": [
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\unused\\dancette2021vqa.html",
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\crossref\\dancette2021vqa.json",
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\unused\\dancette2021vqa_publisher_pdf.pdf"
+      ],
+      "primary_request_status": 200,
+      "crossref_http_status": 200,
+      "audit_batch": "unused",
+      "input_metadata": {
+        "key": "dancette2021vqa",
+        "type": "inproceedings",
+        "title": "Beyond Question-Based Biases: Assessing Multimodal Shortcut Learning in Visual Question Answering",
+        "author": "Dancette, Corentin and Cad{\\`e}ne, R{\\'e}mi and Teney, Damien and Cord, Matthieu",
+        "booktitle": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
+        "pages": "1574--1583",
+        "year": "2021",
+        "doi": "10.1109/ICCV48922.2021.00160",
+        "url": "https://openaccess.thecvf.com/content/ICCV2021/html/Dancette_Beyond_Question-Based_Biases_Assessing_Multimodal_Shortcut_Learning_in_Visual_Question_ICCV_2021_paper.html",
+        "citation_number": null
+      },
+      "current_metadata": {
+        "key": "dancette2021vqa",
+        "type": "inproceedings",
+        "title": "Beyond Question-Based Biases: Assessing Multimodal Shortcut Learning in Visual Question Answering",
+        "author": "Dancette, Corentin and Cad{\\`e}ne, R{\\'e}mi and Teney, Damien and Cord, Matthieu",
+        "booktitle": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
+        "pages": "1574--1583",
+        "year": "2021",
+        "doi": "10.1109/ICCV48922.2021.00160",
+        "url": "https://openaccess.thecvf.com/content/ICCV2021/html/Dancette_Beyond_Question-Based_Biases_Assessing_Multimodal_Shortcut_Learning_in_Visual_Question_ICCV_2021_paper.html"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified_with_external_source_conflict"
+    },
+    {
+      "key": "parcalabescu2023mmshap",
+      "cited_in_current_pdf": false,
+      "citation_number": null,
+      "existence_status": "verified",
+      "metadata_status": "check_suggested",
+      "source_urls": [
+        "https://aclanthology.org/2023.acl-long.223/",
+        "https://api.crossref.org/works/10.18653/v1/2023.acl-long.223",
+        "https://aclanthology.org/2023.acl-long.223.pdf"
+      ],
+      "actual_metadata": {
+        "title": "MM-SHAP: A Performance-agnostic Metric for Measuring Multimodal Contributions in Vision and Language Models & Tasks",
+        "authors_ordered": [
+          "Letitia Parcalabescu",
+          "Anette Frank"
+        ],
+        "publication": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        "year": 2023,
+        "volume": null,
+        "pages": "4032–4059",
+        "doi": "10.18653/v1/2023.acl-long.223"
+      },
+      "issues": [
+        {
+          "severity": "minor",
+          "field": "title",
+          "input": "{MM-SHAP}: A Performance-Agnostic Metric for Measuring Multimodal Contributions in Vision and Language Models and Tasks",
+          "primary_source": "MM-SHAP: A Performance-agnostic Metric for Measuring Multimodal Contributions in Vision and Language Models & Tasks",
+          "message": "当前题名用and Tasks，官方原题名用& Tasks；作品身份完全一致。",
+          "recommended_action": "若规范题名，改为MM-SHAP: A Performance-agnostic Metric for Measuring Multimodal Contributions in Vision and Language Models \\& Tasks。"
+        }
+      ],
+      "verification_notes": "ACL网页、原PDF和Crossref确认存在性、2位作者、ACL 2023、4032–4059和DOI。原题名末尾为Models & Tasks。",
+      "checked_at": "2026-10-12T17:04:56.111778+00:00",
+      "checked_local_date": "2026-10-13 Asia/Shanghai",
+      "evidence_paths": [
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\unused\\parcalabescu2023mmshap.html",
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\crossref\\parcalabescu2023mmshap.json",
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\unused\\parcalabescu2023mmshap_publisher_pdf.pdf"
+      ],
+      "primary_request_status": 200,
+      "crossref_http_status": 200,
+      "audit_batch": "unused",
+      "input_metadata": {
+        "key": "parcalabescu2023mmshap",
+        "type": "inproceedings",
+        "title": "{MM-SHAP}: A Performance-Agnostic Metric for Measuring Multimodal Contributions in Vision and Language Models and Tasks",
+        "author": "Parcalabescu, Letitia and Frank, Anette",
+        "booktitle": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics",
+        "pages": "4032--4059",
+        "year": "2023",
+        "doi": "10.18653/v1/2023.acl-long.223",
+        "url": "https://aclanthology.org/2023.acl-long.223/",
+        "citation_number": null
+      },
+      "current_metadata": {
+        "key": "parcalabescu2023mmshap",
+        "type": "inproceedings",
+        "title": "{MM-SHAP}: A Performance-Agnostic Metric for Measuring Multimodal Contributions in Vision and Language Models \\& Tasks",
+        "author": "Parcalabescu, Letitia and Frank, Anette",
+        "booktitle": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics",
+        "pages": "4032--4059",
+        "year": "2023",
+        "doi": "10.18653/v1/2023.acl-long.223",
+        "url": "https://aclanthology.org/2023.acl-long.223/"
+      },
+      "corrections_applied": [
+        {
+          "key": "parcalabescu2023mmshap",
+          "field": "title",
+          "before": "Models and Tasks",
+          "after": "Models \\& Tasks",
+          "kind": "punctuation_normalization",
+          "cited": false,
+          "source_url": "https://aclanthology.org/2023.acl-long.223/"
+        }
+      ],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "wang2020hard",
+      "cited_in_current_pdf": false,
+      "citation_number": null,
+      "existence_status": "verified",
+      "metadata_status": "check_suggested",
+      "source_urls": [
+        "https://openaccess.thecvf.com/content_CVPR_2020/html/Wang_What_Makes_Training_Multi-Modal_Classification_Networks_Hard_CVPR_2020_paper.html",
+        "https://api.crossref.org/works/10.1109/CVPR42600.2020.01271",
+        "https://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_What_Makes_Training_Multi-Modal_Classification_Networks_Hard_CVPR_2020_paper.pdf"
+      ],
+      "actual_metadata": {
+        "title": "What Makes Training Multi-Modal Classification Networks Hard?",
+        "authors_ordered": [
+          "Wang, Weiyao",
+          "Tran, Du",
+          "Feiszli, Matt"
+        ],
+        "publication": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+        "year": 2020,
+        "volume": null,
+        "pages": "12695–12705",
+        "doi": "10.1109/cvpr42600.2020.01271"
+      },
+      "issues": [
+        {
+          "severity": "source_disagreement",
+          "field": "pages",
+          "input": "12695--12705",
+          "primary_source": "12695–12705",
+          "crossref": "12692-12702",
+          "message": "CVF官方网页和原PDF页码与Crossref/IEEE注册页码不同；当前bib采用CVF页码，有直接出版证据支持。",
+          "recommended_action": "保留当前CVF页码，报告外部元数据差异。"
+        }
+      ],
+      "verification_notes": "CVF网页及原PDF确认题名、3位作者顺序、CVPR 2020、12695–12705；Crossref DOI确认同一作品但数据库页码不同。",
+      "checked_at": "2026-10-12T17:04:56.366681+00:00",
+      "checked_local_date": "2026-10-13 Asia/Shanghai",
+      "evidence_paths": [
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\unused\\wang2020hard.html",
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\crossref\\wang2020hard.json",
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\unused\\wang2020hard_publisher_pdf.pdf"
+      ],
+      "primary_request_status": 200,
+      "crossref_http_status": 200,
+      "audit_batch": "unused",
+      "input_metadata": {
+        "key": "wang2020hard",
+        "type": "inproceedings",
+        "title": "What Makes Training Multi-Modal Classification Networks Hard?",
+        "author": "Wang, Weiyao and Tran, Du and Feiszli, Matt",
+        "booktitle": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+        "pages": "12695--12705",
+        "year": "2020",
+        "doi": "10.1109/CVPR42600.2020.01271",
+        "url": "https://openaccess.thecvf.com/content_CVPR_2020/html/Wang_What_Makes_Training_Multi-Modal_Classification_Networks_Hard_CVPR_2020_paper.html",
+        "citation_number": null
+      },
+      "current_metadata": {
+        "key": "wang2020hard",
+        "type": "inproceedings",
+        "title": "What Makes Training Multi-Modal Classification Networks Hard?",
+        "author": "Wang, Weiyao and Tran, Du and Feiszli, Matt",
+        "booktitle": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+        "pages": "12695--12705",
+        "year": "2020",
+        "doi": "10.1109/CVPR42600.2020.01271",
+        "url": "https://openaccess.thecvf.com/content_CVPR_2020/html/Wang_What_Makes_Training_Multi-Modal_Classification_Networks_Hard_CVPR_2020_paper.html"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified_with_external_source_conflict"
+    },
+    {
+      "key": "zhang2024mla",
+      "cited_in_current_pdf": false,
+      "citation_number": null,
+      "existence_status": "verified",
+      "metadata_status": "check_suggested",
+      "source_urls": [
+        "https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_Multimodal_Representation_Learning_by_Alternating_Unimodal_Adaptation_CVPR_2024_paper.html",
+        "https://api.crossref.org/works/10.1109/CVPR52733.2024.02592",
+        "https://openaccess.thecvf.com/content/CVPR2024/papers/Zhang_Multimodal_Representation_Learning_by_Alternating_Unimodal_Adaptation_CVPR_2024_paper.pdf"
+      ],
+      "actual_metadata": {
+        "title": "Multimodal Representation Learning by Alternating Unimodal Adaptation",
+        "authors_ordered": [
+          "Zhang, Xiaohui",
+          "Yoon, Jaehong",
+          "Bansal, Mohit",
+          "Yao, Huaxiu"
+        ],
+        "publication": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+        "year": 2024,
+        "volume": null,
+        "pages": "27456–27466",
+        "doi": "10.1109/cvpr52733.2024.02592"
+      },
+      "issues": [
+        {
+          "severity": "source_disagreement",
+          "field": "pages",
+          "input": "27456--27466",
+          "primary_source": "27456–27466",
+          "crossref": "27446-27456",
+          "message": "CVF官方网页和原PDF页码与Crossref/IEEE注册页码不同；当前bib采用CVF页码，有直接出版证据支持。",
+          "recommended_action": "保留当前CVF页码，报告外部元数据差异。"
+        }
+      ],
+      "verification_notes": "CVF网页及原PDF确认题名、4位作者顺序、CVPR 2024、27456–27466；Crossref DOI确认同一作品但数据库页码不同。",
+      "checked_at": "2026-10-12T17:04:56.665419+00:00",
+      "checked_local_date": "2026-10-13 Asia/Shanghai",
+      "evidence_paths": [
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\unused\\zhang2024mla.html",
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\crossref\\zhang2024mla.json",
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\unused\\zhang2024mla_publisher_pdf.pdf"
+      ],
+      "primary_request_status": 200,
+      "crossref_http_status": 200,
+      "audit_batch": "unused",
+      "input_metadata": {
+        "key": "zhang2024mla",
+        "type": "inproceedings",
+        "title": "Multimodal Representation Learning by Alternating Unimodal Adaptation",
+        "author": "Zhang, Xiaohui and Yoon, Jaehong and Bansal, Mohit and Yao, Huaxiu",
+        "booktitle": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+        "pages": "27456--27466",
+        "year": "2024",
+        "doi": "10.1109/CVPR52733.2024.02592",
+        "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_Multimodal_Representation_Learning_by_Alternating_Unimodal_Adaptation_CVPR_2024_paper.html",
+        "citation_number": null
+      },
+      "current_metadata": {
+        "key": "zhang2024mla",
+        "type": "inproceedings",
+        "title": "Multimodal Representation Learning by Alternating Unimodal Adaptation",
+        "author": "Zhang, Xiaohui and Yoon, Jaehong and Bansal, Mohit and Yao, Huaxiu",
+        "booktitle": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+        "pages": "27456--27466",
+        "year": "2024",
+        "doi": "10.1109/CVPR52733.2024.02592",
+        "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_Multimodal_Representation_Learning_by_Alternating_Unimodal_Adaptation_CVPR_2024_paper.html"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified_with_external_source_conflict"
+    },
+    {
+      "key": "liang2021multibench",
+      "cited_in_current_pdf": false,
+      "citation_number": null,
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "source_urls": [
+        "https://datasets-benchmarks-proceedings.neurips.cc/paper_files/paper/2021/hash/37693cfc748049e45d87b8c7d8b9aacd-Abstract-round1.html",
+        "https://datasets-benchmarks-proceedings.neurips.cc/paper_files/paper/2021/file/37693cfc748049e45d87b8c7d8b9aacd-Paper-round1.pdf"
+      ],
+      "actual_metadata": {
+        "title": "MultiBench: Multiscale Benchmarks for Multimodal Representation Learning",
+        "authors_ordered": [
+          "Liang, Paul Pu",
+          "Lyu, Yiwei",
+          "Fan, Xiang",
+          "Wu, Zetian",
+          "Cheng, Yun",
+          "Wu, Jason",
+          "Chen, Leslie (Yufan)",
+          "Wu, Peter",
+          "Lee, Michelle A.",
+          "Zhu, Yuke",
+          "Salakhutdinov, Ruslan",
+          "Morency, Louis-Philippe"
+        ],
+        "publication": "Proceedings of the Neural Information Processing Systems Track on Datasets and Benchmarks",
+        "year": 2021,
+        "volume": "1",
+        "pages": null,
+        "doi": null
+      },
+      "issues": [],
+      "verification_notes": "NeurIPS官网及原PDF确认题名、12位作者顺序、2021年独立Datasets and Benchmarks卷1。官网Leslie (Yufan) Chen与bib的Leslie Yufan Chen属同一作者；PDF简写Leslie Chen。",
+      "checked_at": "2026-10-12T17:04:56.686932+00:00",
+      "checked_local_date": "2026-10-13 Asia/Shanghai",
+      "evidence_paths": [
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\unused\\liang2021multibench.html",
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\unused\\liang2021multibench_publisher_pdf.pdf"
+      ],
+      "primary_request_status": 200,
+      "crossref_http_status": null,
+      "audit_batch": "unused",
+      "input_metadata": {
+        "key": "liang2021multibench",
+        "type": "inproceedings",
+        "title": "{MultiBench}: Multiscale Benchmarks for Multimodal Representation Learning",
+        "author": "Liang, Paul Pu and Lyu, Yiwei and Fan, Xiang and Wu, Zetian and Cheng, Yun and Wu, Jason and Chen, Leslie Yufan and Wu, Peter and Lee, Michelle A. and Zhu, Yuke and Salakhutdinov, Ruslan and Morency, Louis-Philippe",
+        "booktitle": "Proceedings of the Neural Information Processing Systems Track on Datasets and Benchmarks",
+        "volume": "1",
+        "year": "2021",
+        "url": "https://datasets-benchmarks-proceedings.neurips.cc/paper_files/paper/2021/hash/37693cfc748049e45d87b8c7d8b9aacd-Abstract-round1.html",
+        "citation_number": null
+      },
+      "current_metadata": {
+        "key": "liang2021multibench",
+        "type": "inproceedings",
+        "title": "{MultiBench}: Multiscale Benchmarks for Multimodal Representation Learning",
+        "author": "Liang, Paul Pu and Lyu, Yiwei and Fan, Xiang and Wu, Zetian and Cheng, Yun and Wu, Jason and Chen, Leslie Yufan and Wu, Peter and Lee, Michelle A. and Zhu, Yuke and Salakhutdinov, Ruslan and Morency, Louis-Philippe",
+        "booktitle": "Proceedings of the Neural Information Processing Systems Track on Datasets and Benchmarks",
+        "volume": "1",
+        "year": "2021",
+        "url": "https://datasets-benchmarks-proceedings.neurips.cc/paper_files/paper/2021/hash/37693cfc748049e45d87b8c7d8b9aacd-Abstract-round1.html"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "chen2023causal",
+      "cited_in_current_pdf": false,
+      "citation_number": null,
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "source_urls": [
+        "https://aclanthology.org/2023.acl-long.37/",
+        "https://api.crossref.org/works/10.18653/v1/2023.acl-long.37"
+      ],
+      "actual_metadata": {
+        "title": "Causal Intervention and Counterfactual Reasoning for Multi-modal Fake News Detection",
+        "authors_ordered": [
+          "Ziwei Chen",
+          "Linmei Hu",
+          "Weixin Li",
+          "Yingxia Shao",
+          "Liqiang Nie"
+        ],
+        "publication": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        "year": 2023,
+        "volume": null,
+        "pages": "627–638",
+        "doi": "10.18653/v1/2023.acl-long.37"
+      },
+      "issues": [],
+      "verification_notes": "ACL网页及Crossref确认题名、5位作者顺序、ACL 2023、627–638、DOI。Multi-modal大小写差异不影响书目信息。",
+      "checked_at": "2026-10-12T17:04:57.481346+00:00",
+      "checked_local_date": "2026-10-13 Asia/Shanghai",
+      "evidence_paths": [
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\unused\\chen2023causal.html",
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\crossref\\chen2023causal.json"
+      ],
+      "primary_request_status": 200,
+      "crossref_http_status": 200,
+      "audit_batch": "unused",
+      "input_metadata": {
+        "key": "chen2023causal",
+        "type": "inproceedings",
+        "title": "Causal Intervention and Counterfactual Reasoning for Multi-Modal Fake News Detection",
+        "author": "Chen, Ziwei and Hu, Linmei and Li, Weixin and Shao, Yingxia and Nie, Liqiang",
+        "booktitle": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics",
+        "pages": "627--638",
+        "year": "2023",
+        "doi": "10.18653/v1/2023.acl-long.37",
+        "url": "https://aclanthology.org/2023.acl-long.37/",
+        "citation_number": null
+      },
+      "current_metadata": {
+        "key": "chen2023causal",
+        "type": "inproceedings",
+        "title": "Causal Intervention and Counterfactual Reasoning for Multi-Modal Fake News Detection",
+        "author": "Chen, Ziwei and Hu, Linmei and Li, Weixin and Shao, Yingxia and Nie, Liqiang",
+        "booktitle": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics",
+        "pages": "627--638",
+        "year": "2023",
+        "doi": "10.18653/v1/2023.acl-long.37",
+        "url": "https://aclanthology.org/2023.acl-long.37/"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "lin2023counterfactual",
+      "cited_in_current_pdf": false,
+      "citation_number": null,
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "source_urls": [
+        "https://aclanthology.org/2023.findings-emnlp.43/",
+        "https://api.crossref.org/works/10.18653/v1/2023.findings-emnlp.43"
+      ],
+      "actual_metadata": {
+        "title": "Counterfactual Augmentation for Multimodal Learning Under Presentation Bias",
+        "authors_ordered": [
+          "Victoria Lin",
+          "Louis-Philippe Morency",
+          "Dimitrios Dimitriadis",
+          "Srinagesh Sharma"
+        ],
+        "publication": "Findings of the Association for Computational Linguistics: EMNLP 2023",
+        "year": 2023,
+        "volume": null,
+        "pages": "592–606",
+        "doi": "10.18653/v1/2023.findings-emnlp.43"
+      },
+      "issues": [],
+      "verification_notes": "ACL网页及Crossref确认题名、4位作者顺序、Findings EMNLP 2023、592–606、DOI。",
+      "checked_at": "2026-10-12T17:04:57.648421+00:00",
+      "checked_local_date": "2026-10-13 Asia/Shanghai",
+      "evidence_paths": [
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\unused\\lin2023counterfactual.html",
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\crossref\\lin2023counterfactual.json"
+      ],
+      "primary_request_status": 200,
+      "crossref_http_status": 200,
+      "audit_batch": "unused",
+      "input_metadata": {
+        "key": "lin2023counterfactual",
+        "type": "inproceedings",
+        "title": "Counterfactual Augmentation for Multimodal Learning Under Presentation Bias",
+        "author": "Lin, Victoria and Morency, Louis-Philippe and Dimitriadis, Dimitrios and Sharma, Srinagesh",
+        "booktitle": "Findings of the Association for Computational Linguistics: EMNLP 2023",
+        "pages": "592--606",
+        "year": "2023",
+        "doi": "10.18653/v1/2023.findings-emnlp.43",
+        "url": "https://aclanthology.org/2023.findings-emnlp.43/",
+        "citation_number": null
+      },
+      "current_metadata": {
+        "key": "lin2023counterfactual",
+        "type": "inproceedings",
+        "title": "Counterfactual Augmentation for Multimodal Learning Under Presentation Bias",
+        "author": "Lin, Victoria and Morency, Louis-Philippe and Dimitriadis, Dimitrios and Sharma, Srinagesh",
+        "booktitle": "Findings of the Association for Computational Linguistics: EMNLP 2023",
+        "pages": "592--606",
+        "year": "2023",
+        "doi": "10.18653/v1/2023.findings-emnlp.43",
+        "url": "https://aclanthology.org/2023.findings-emnlp.43/"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "hewamalage2023forecast",
+      "cited_in_current_pdf": false,
+      "citation_number": null,
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "source_urls": [
+        "https://link.springer.com/article/10.1007/s10618-022-00894-5",
+        "https://api.crossref.org/works/10.1007/s10618-022-00894-5"
+      ],
+      "actual_metadata": {
+        "title": "Forecast evaluation for data scientists: common pitfalls and best practices",
+        "authors_ordered": [
+          "Hansika Hewamalage",
+          "Klaus Ackermann",
+          "Christoph Bergmeir"
+        ],
+        "publication": "Data Mining and Knowledge Discovery",
+        "year": 2023,
+        "volume": "37",
+        "issue": "2",
+        "pages": "788-832",
+        "doi": "10.1007/s10618-022-00894-5"
+      },
+      "issues": [],
+      "verification_notes": "Springer官方网页经web工具可读取；直接requests返回HTTP200挑战页，不能用该状态证明元数据。官方web内容及Crossref确认卷37(2)、788–832、卷年2023；2022是先行上线年，当前bib年2023正确。",
+      "checked_at": "2026-10-12T17:04:57.731728+00:00",
+      "checked_local_date": "2026-10-13 Asia/Shanghai",
+      "evidence_paths": [
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\unused\\hewamalage2023forecast.html",
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\crossref\\hewamalage2023forecast.json",
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\unused\\hewamalage2023forecast_web.txt"
+      ],
+      "primary_request_status": 200,
+      "crossref_http_status": 200,
+      "audit_batch": "unused",
+      "input_metadata": {
+        "key": "hewamalage2023forecast",
+        "type": "article",
+        "title": "Forecast Evaluation for Data Scientists: Common Pitfalls and Best Practices",
+        "author": "Hewamalage, Hansika and Ackermann, Klaus and Bergmeir, Christoph",
+        "journal": "Data Mining and Knowledge Discovery",
+        "volume": "37",
+        "pages": "788--832",
+        "year": "2023",
+        "doi": "10.1007/s10618-022-00894-5",
+        "url": "https://link.springer.com/article/10.1007/s10618-022-00894-5",
+        "citation_number": null
+      },
+      "current_metadata": {
+        "key": "hewamalage2023forecast",
+        "type": "article",
+        "title": "Forecast Evaluation for Data Scientists: Common Pitfalls and Best Practices",
+        "author": "Hewamalage, Hansika and Ackermann, Klaus and Bergmeir, Christoph",
+        "journal": "Data Mining and Knowledge Discovery",
+        "volume": "37",
+        "pages": "788--832",
+        "year": "2023",
+        "doi": "10.1007/s10618-022-00894-5",
+        "url": "https://link.springer.com/article/10.1007/s10618-022-00894-5"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "kaufman2012leakage",
+      "cited_in_current_pdf": false,
+      "citation_number": null,
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "source_urls": [
+        "https://dl.acm.org/doi/10.1145/2382577.2382579",
+        "https://api.crossref.org/works/10.1145/2382577.2382579",
+        "https://cris.tau.ac.il/en/publications/leakage-in-data-mining-formulation-detection-and-avoidance/"
+      ],
+      "actual_metadata": {
+        "title": "Leakage in data mining: Formulation, detection, and avoidance",
+        "authors_ordered": [
+          "Shachar Kaufman",
+          "Saharon Rosset",
+          "Claudia Perlich",
+          "Ori Stitelman"
+        ],
+        "publication": "ACM Transactions on Knowledge Discovery from Data",
+        "year": 2012,
+        "volume": "6",
+        "issue": "4",
+        "pages": "15:1–15:21",
+        "doi": "10.1145/2382577.2382579",
+        "article_number": "15"
+      },
+      "issues": [],
+      "verification_notes": "ACM页面本次HTTP403；Crossref注册元数据含title与subtitle，组合即当前完整题名。作者所属Tel Aviv University机构库本次HTTP200确认4位作者顺序、ACM TKDD 6(4)、2012、Article 15；Crossref页1–21与文章号15组合支持15:1–15:21。",
+      "checked_at": "2026-10-12T17:04:57.770993+00:00",
+      "checked_local_date": "2026-10-13 Asia/Shanghai",
+      "evidence_paths": [
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\unused\\kaufman2012leakage.html",
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\crossref\\kaufman2012leakage.json",
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\unused\\kaufman2012leakage_institution.html"
+      ],
+      "primary_request_status": 403,
+      "crossref_http_status": 200,
+      "audit_batch": "unused",
+      "input_metadata": {
+        "key": "kaufman2012leakage",
+        "type": "article",
+        "title": "Leakage in Data Mining: Formulation, Detection, and Avoidance",
+        "author": "Kaufman, Shachar and Rosset, Saharon and Perlich, Claudia and Stitelman, Ori",
+        "journal": "ACM Transactions on Knowledge Discovery from Data",
+        "volume": "6",
+        "number": "4",
+        "pages": "15:1--15:21",
+        "year": "2012",
+        "doi": "10.1145/2382577.2382579",
+        "citation_number": null
+      },
+      "current_metadata": {
+        "key": "kaufman2012leakage",
+        "type": "article",
+        "title": "Leakage in Data Mining: Formulation, Detection, and Avoidance",
+        "author": "Kaufman, Shachar and Rosset, Saharon and Perlich, Claudia and Stitelman, Ori",
+        "journal": "ACM Transactions on Knowledge Discovery from Data",
+        "volume": "6",
+        "number": "4",
+        "pages": "15:1--15:21",
+        "year": "2012",
+        "doi": "10.1145/2382577.2382579"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    },
+    {
+      "key": "qiu2024tfb",
+      "cited_in_current_pdf": false,
+      "citation_number": null,
+      "existence_status": "verified",
+      "metadata_status": "verified",
+      "source_urls": [
+        "https://www.vldb.org/pvldb/vol17/p2363-hu.pdf",
+        "https://api.crossref.org/works/10.14778/3665844.3665863"
+      ],
+      "actual_metadata": {
+        "title": "TFB: Towards Comprehensive and Fair Benchmarking of Time Series Forecasting Methods",
+        "authors_ordered": [
+          "Xiangfei Qiu",
+          "Jilin Hu",
+          "Lekui Zhou",
+          "Xingjian Wu",
+          "Junyang Du",
+          "Buang Zhang",
+          "Chenjuan Guo",
+          "Aoying Zhou",
+          "Christian S. Jensen",
+          "Zhenli Sheng",
+          "Bin Yang"
+        ],
+        "publication": "Proceedings of the VLDB Endowment",
+        "year": 2024,
+        "volume": "17",
+        "issue": "9",
+        "pages": "2363-2377",
+        "doi": "10.14778/3665844.3665863"
+      },
+      "issues": [],
+      "verification_notes": "VLDB原PDF首页视觉核对及文本核对确认全部11位作者、卷17(9)、2363–2377、2024、DOI。第6作者明确写作Buang Zhang，与当前bib一致，不应猜改。",
+      "checked_at": "2026-10-12T17:04:58.320876+00:00",
+      "checked_local_date": "2026-10-13 Asia/Shanghai",
+      "evidence_paths": [
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\unused\\qiu2024tfb.pdf",
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\crossref\\qiu2024tfb.json",
+        "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\qa\\reference_verification_20261013\\unused\\qiu2024tfb_first_page.png"
+      ],
+      "primary_request_status": 200,
+      "crossref_http_status": 200,
+      "audit_batch": "unused",
+      "input_metadata": {
+        "key": "qiu2024tfb",
+        "type": "article",
+        "title": "{TFB}: Towards Comprehensive and Fair Benchmarking of Time Series Forecasting Methods",
+        "author": "Qiu, Xiangfei and Hu, Jilin and Zhou, Lekui and Wu, Xingjian and Du, Junyang and Zhang, Buang and Guo, Chenjuan and Zhou, Aoying and Jensen, Christian S. and Sheng, Zhenli and Yang, Bin",
+        "journal": "Proceedings of the VLDB Endowment",
+        "volume": "17",
+        "number": "9",
+        "pages": "2363--2377",
+        "year": "2024",
+        "doi": "10.14778/3665844.3665863",
+        "url": "https://www.vldb.org/pvldb/vol17/p2363-hu.pdf",
+        "citation_number": null
+      },
+      "current_metadata": {
+        "key": "qiu2024tfb",
+        "type": "article",
+        "title": "{TFB}: Towards Comprehensive and Fair Benchmarking of Time Series Forecasting Methods",
+        "author": "Qiu, Xiangfei and Hu, Jilin and Zhou, Lekui and Wu, Xingjian and Du, Junyang and Zhang, Buang and Guo, Chenjuan and Zhou, Aoying and Jensen, Christian S. and Sheng, Zhenli and Yang, Bin",
+        "journal": "Proceedings of the VLDB Endowment",
+        "volume": "17",
+        "number": "9",
+        "pages": "2363--2377",
+        "year": "2024",
+        "doi": "10.14778/3665844.3665863",
+        "url": "https://www.vldb.org/pvldb/vol17/p2363-hu.pdf"
+      },
+      "corrections_applied": [],
+      "current_bibliography_assessment": "verified"
+    }
+  ],
+  "scope_note": "核查作品身份和书目信息；未评估每篇论文的实验是否正确，也未逐句核对本稿对原文观点的引用。"
+}

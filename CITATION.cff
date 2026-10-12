@@ -11,10 +11,10 @@ authors:
     given-names: Zhihai
     affiliation: "Beijing Jiaotong University"
     email: "zhhwang@bjtu.edu.cn"
-version: v0.1.1
+version: v0.1.2
 date-released: 2026-10-13
 repository-code: "https://github.com/bianyanbo44-afk/prism-multimodal-forecasting"
-url: "https://github.com/bianyanbo44-afk/prism-multimodal-forecasting/releases/tag/v0.1.1"
+url: "https://github.com/bianyanbo44-afk/prism-multimodal-forecasting/releases/tag/v0.1.2"
 keywords:
   - multimodal forecasting
   - content reliance

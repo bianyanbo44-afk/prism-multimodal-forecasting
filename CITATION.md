@@ -6,11 +6,11 @@ Title: **PRISM separates model reliance from context value in multimodal forecas
 
 Method: Paired Reliance Interventions with Structured Matching (PRISM)
 
-Version: `v0.1.1` — 13 October 2026
+Version: `v0.1.2` — 13 October 2026
 
 Repository: https://github.com/bianyanbo44-afk/prism-multimodal-forecasting
 
-Release: https://github.com/bianyanbo44-afk/prism-multimodal-forecasting/releases/tag/v0.1.1
+Release: https://github.com/bianyanbo44-afk/prism-multimodal-forecasting/releases/tag/v0.1.2
 
 Yanbo Bian: Weihai International College, Beijing Jiaotong University, Weihai, Shandong 264401, China; 2832325140@qq.com.
 

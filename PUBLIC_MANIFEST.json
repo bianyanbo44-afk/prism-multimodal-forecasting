@@ -1,5 +1,5 @@
 {
-  "version": "v0.1.1",
+  "version": "v0.1.2",
   "date": "2026-10-13",
   "files": [
     {
@@ -29,18 +29,18 @@
     },
     {
       "path": "artifacts/PRISM_InformationFusion_LaTeX_Source.zip",
-      "bytes": 541543,
-      "sha256": "2fb761fa6b12784b51c5d9c7956aa379e3d2268ef4ab27430727d3d061f99c6a"
+      "bytes": 541547,
+      "sha256": "61269d9d009f1cd256496d2f936057d70780897be3cda0e4eb65e2342e25061c"
     },
     {
       "path": "CITATION.cff",
       "bytes": 842,
-      "sha256": "09e2dcdffcd15f404b575437bb2d78c4136fc97a1016b7e714e07c4411912cb0"
+      "sha256": "618386bd0cb3748a35153c34d28b32f98c1f5822a5b164092cca60efaa7fa773"
     },
     {
       "path": "CITATION.md",
       "bytes": 960,
-      "sha256": "1860dc9d80fa1b99819bdca0984e796f304d548e2d71fe4d725ac0ad42f7f2f1"
+      "sha256": "947eae7fd23ff179602adbf55cd54836f8f569630828c02c496af43cab8602fe"
     },
     {
       "path": "DATA_ACCESS.md",
@@ -7138,6 +7138,16 @@
       "sha256": "8ad40b826bd4ba05bf34519332608202081c1d9e3e2499b4d9fb51e6a177b74d"
     },
     {
+      "path": "paper_rewriting_output/journal_extension_20261012/literature/REFERENCE_CHECK_20261013.json",
+      "bytes": 150679,
+      "sha256": "26b3b813fbed4a60548f9c808fda44ea5a7814ca2b7d951058679df260954fc3"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/literature/REFERENCE_CHECK_20261013.md",
+      "bytes": 15249,
+      "sha256": "062dbfde6b9f92b2d36e98ce589514254202ac9fde1f2564d0025ca6af2e50ef"
+    },
+    {
       "path": "paper_rewriting_output/journal_extension_20261012/manuscript/abstract.tex",
       "bytes": 1328,
       "sha256": "2c654ea4032542b67c776a07e99d6ef018e241a5dee901e128937825bccb24de"
@@ -7585,7 +7595,7 @@
     {
       "path": "paper_rewriting_output/journal_extension_20261012/manuscript/references.bib",
       "bytes": 18892,
-      "sha256": "bf2c09a58eeb4d0c6585967af1e715b1b21cec5172a281339c4257fd1d10b791"
+      "sha256": "11ebdd1550221aac62d9d2200a77d748ee1ef35926b6a274d41c6ab084c2d1a6"
     },
     {
       "path": "paper_rewriting_output/journal_extension_20261012/manuscript/repeated_map_results.tex",
@@ -8094,8 +8104,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5106,
-      "sha256": "942b14068b1ae2dcabea7d7ea368ef072228405d04c8a5c27eb8d96e569b6162"
+      "bytes": 5520,
+      "sha256": "0b70c66f02ce8ede1c4a0035b3f240443ad8b299e6cd480a2df5529c50129464"
     },
     {
       "path": "requirements-analysis.txt",
@@ -8120,7 +8130,7 @@
     {
       "path": "update_public_manifest.py",
       "bytes": 1702,
-      "sha256": "b558add8887a2ae3013dc22cee9428f7668c1d4867d8e66adb0f20397e3bc33d"
+      "sha256": "53216c4e2c70ac20a1348d2bd214b385eb0ce17c643d5b61a507d06e56b0aa45"
     },
     {
       "path": "verify_public_release.py",
