@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Please cite this research artifact using the authors, title and version below."
+type: software
+title: "PRISM separates model reliance from context value in multimodal forecasting"
+authors:
+  - family-names: Bian
+    given-names: Yanbo
+    affiliation: "Weihai International College, Beijing Jiaotong University"
+    email: "2832325140@qq.com"
+  - family-names: Wang
+    given-names: Zhihai
+    affiliation: "Beijing Jiaotong University"
+    email: "zhhwang@bjtu.edu.cn"
+version: v0.1.1
+date-released: 2026-10-13
+repository-code: "https://github.com/bianyanbo44-afk/prism-multimodal-forecasting"
+url: "https://github.com/bianyanbo44-afk/prism-multimodal-forecasting/releases/tag/v0.1.1"
+keywords:
+  - multimodal forecasting
+  - content reliance
+  - irregular time series
+  - model evaluation

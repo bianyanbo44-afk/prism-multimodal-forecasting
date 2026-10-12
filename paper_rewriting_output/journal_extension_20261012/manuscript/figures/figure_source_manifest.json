@@ -21,7 +21,7 @@
       "source_files": [
         {
           "path": "manuscript/main.tex",
-          "sha256": "a271758c802f8ed2ec98ea81a36f48b2654090d6c8416cf798820988d98caa69"
+          "sha256": "592e361761cb9270a4a8556bf3109dee6214b14f59fb60203ee270c54c033518"
         },
         {
           "path": "manuscript/protocol_worked_examples.tex",
@@ -236,7 +236,7 @@
     },
     {
       "path": "manuscript/main.tex",
-      "sha256": "a271758c802f8ed2ec98ea81a36f48b2654090d6c8416cf798820988d98caa69"
+      "sha256": "592e361761cb9270a4a8556bf3109dee6214b14f59fb60203ee270c54c033518"
     },
     {
       "path": "manuscript/protocol_worked_examples.tex",

@@ -21,6 +21,6 @@ for path in sorted(ROOT.rglob("*")):
             assert not re.search(pattern, text), f"Credential-shaped literal in {name}"
     rows.append({"path": name, "bytes": path.stat().st_size,
                  "sha256": hashlib.sha256(path.read_bytes()).hexdigest()})
-(ROOT / "PUBLIC_MANIFEST.json").write_text(json.dumps({"version": "v0.1.0", "date": "2026-10-13", "files": rows,
+(ROOT / "PUBLIC_MANIFEST.json").write_text(json.dumps({"version": "v0.1.1", "date": "2026-10-13", "files": rows,
     "scope": "Public code, manuscript, generated states, reporting summaries and one committed training/selection example; additional generated arrays are a release asset."}, indent=2) + "\n", encoding="utf-8")
 print("Public manifest:", len(rows), "files;", round(sum(x["bytes"] for x in rows) / 2**20, 2), "MiB; credential-shaped literal scan passed")

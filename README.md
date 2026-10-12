@@ -2,11 +2,13 @@
 
 **Paired Reliance Interventions with Structured Matching**
 
-Research artifact for **PRISM separates model reliance from context value in multimodal forecasting**. The current manuscript targets *Information Fusion* and is a research draft. The repository and release do not imply journal submission or acceptance.
+Research artifact for **PRISM separates model reliance from context value in multimodal forecasting**.
+
+**Authors:** Yanbo Bian and Zhihai Wang (corresponding author). The current manuscript targets *Information Fusion* and is a research draft. The repository and release do not imply journal submission or acceptance.
 
 PRISM preserves forecast units and the observed event process while comparing fixed-model content reliance, cue-specific controls and information value after condition-specific retraining. Generated irregular controls discriminate direction from source cues. An independent photovoltaic ridge comparison gives 19.65% fixed-model alignment gain versus 8.97% after retraining. Interpretation remains conditional on the specified predictors, learning procedures and intervention laws.
 
-[Manuscript PDF](artifacts/PRISM_InformationFusion_Extended.pdf) · [Editable LaTeX](artifacts/PRISM_InformationFusion_LaTeX_Source.zip) · [Figure assets](artifacts/PRISM_Figure_Assets.zip) · [Versioned release](https://github.com/bianyanbo44-afk/prism-multimodal-forecasting/releases/tag/v0.1.0)
+[Manuscript PDF](artifacts/PRISM_InformationFusion_Extended.pdf) · [Editable LaTeX](artifacts/PRISM_InformationFusion_LaTeX_Source.zip) · [Figure assets](artifacts/PRISM_Figure_Assets.zip) · [Versioned release](https://github.com/bianyanbo44-afk/prism-multimodal-forecasting/releases/tag/v0.1.1)
 
 ![Event-preserving protocol](paper_rewriting_output/journal_extension_20261012/manuscript/figures/fig1_estimands.png)
 
@@ -52,6 +54,6 @@ Plotting requires Matplotlib and the analysis dependencies. Compile `manuscript/
 
 Generated cue discrimination is confined to the stated vocabulary and empirical timing templates. The construct validation bound follows same-sample penalty selection and is descriptive. Unscreened null detections of 15% and 10% remain reported. Natural irregular transfer is inconsistent, and photovoltaic report issuance/arrival times are unavailable. See the manuscript for the complete evidence and limitations.
 
-See `CITATION.md` for the title, version and repository identifier. No DOI or final author list is assigned by this release. Public inspection is enabled; no blanket reuse licence has been assigned. Third-party providers retain their own terms, as recorded in `DATA_ACCESS.md` and `THIRD_PARTY_NOTICES.md`.
+See `CITATION.md` for the title, version and repository identifier. Authors are Yanbo Bian and Zhihai Wang; Zhihai Wang is the corresponding author. No DOI is assigned by this release. Public inspection is enabled; no blanket reuse licence has been assigned. Third-party providers retain their own terms, as recorded in `DATA_ACCESS.md` and `THIRD_PARTY_NOTICES.md`.
 
-中文：这是 PRISM 的公开稿件、代码、生成实验与汇总证据仓库。原始 Time-IMM/Fidel 数据、自然数据设计矩阵、文本表示缓存、预训练权重和 384 MiB 本地评阅包不在公开发布范围。当前 PDF 保留匿名占位署名；Information Fusion 官方采用单盲审稿，正式投稿需要补全真实作者元数据。
+中文：这是 PRISM 的公开稿件、代码、生成实验与汇总证据仓库。原始 Time-IMM/Fidel 数据、自然数据设计矩阵、文本表示缓存、预训练权重和 384 MiB 本地评阅包不在公开发布范围。当前 PDF 已补齐 Yanbo Bian、Zhihai Wang 的署名、单位、邮箱和通讯标记，Zhihai Wang 为通讯作者；Information Fusion 官方采用单盲审稿。
