@@ -1,0 +1,48 @@
+{
+  "seeds": [7],
+  "models": [
+    "eventgru",
+    "eventmamba_full",
+    "selective_eventmamba_full",
+    "selective_eventmamba_no_reliability"
+  ],
+  "data": {
+    "train_samples": 512,
+    "val_samples": 128,
+    "test_samples": 256,
+    "cutoff": 12.0,
+    "forecast_horizon": 1.5,
+    "rates": [2.2, 1.2, 0.65],
+    "drop_probability": 0.12,
+    "block_missing_probability": 0.35,
+    "delay_scale": 0.15,
+    "noise_multipliers": [1.0, 1.0, 1.0],
+    "simultaneous_groups": 3,
+    "time_resolution": 0.1
+  },
+  "test_conditions": {
+    "normal": {},
+    "missing": {"drop_probability": 0.40, "block_missing_probability": 0.75},
+    "noisy": {"noise_multipliers": [1.0, 2.0, 5.0]},
+    "delayed": {"delay_scale": 0.75},
+    "combined": {
+      "drop_probability": 0.30,
+      "block_missing_probability": 0.65,
+      "delay_scale": 0.60,
+      "noise_multipliers": [1.0, 2.0, 4.0]
+    }
+  },
+  "model": {
+    "event_width": 64,
+    "state_dim": 64,
+    "readout_width": 128
+  },
+  "training": {
+    "epochs": 15,
+    "batch_size": 64,
+    "learning_rate": 0.002,
+    "weight_decay": 0.0001,
+    "grad_clip": 1.0,
+    "torch_threads": 8
+  }
+}

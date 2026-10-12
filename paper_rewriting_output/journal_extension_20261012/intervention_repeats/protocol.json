@@ -1,0 +1,18 @@
+{
+  "freeze_date": "2026-10-12 Asia/Shanghai; saved before repeated-map scoring",
+  "status": "Exploratory repeat of existing fixed-model evaluation, historical results viewed",
+  "model_conditions": "Saved aligned residual-ridge coefficients, scalers and PCA only; no refit or hyperparameter search",
+  "tasks": ["FNSPID all10 local entities x GPT-2/MiniLM/FinBERT", "EPA-Air all8 local entities x GPT-2/MiniLM/FinBERT", "Fidel regular hourly solar all9 plants x existing published weather representation"],
+  "base_seeds": [120001,120002,120003,120004,120005,120006,120007,120008,120009,120010,120011,120012,120013,120014,120015,120016,120017,120018,120019,120020],
+  "map_family": "Independently seeded nonzero circular derangements, not uniform draws from all possible permutations",
+  "timeimm_groups": "Selected latest-four source positions within entity and chronological split, same eligible slot set as original protocol; all20 maps reused across representations within a dataset",
+  "timeimm_rng": "np.random.default_rng(np.random.SeedSequence([base_seed, group_index])) for sorted entity/split keys; shift uniform1..n-1 if n>=2, else0",
+  "fidel_groups": "All published weather report positions within original chronological split; matches earlier map candidate set, even if only some recipient reports are used by daily windows; shared across all9 plants",
+  "fidel_rng": "np.random.default_rng(np.random.SeedSequence([base_seed, split_index, 91801])); shift uniform1..n-1",
+  "dose": "Report selected/eligible slots, changed source index, changed raw text where available, changed vectors, changed pooled/window representations and unique maps; singleton slots remain visible",
+  "invariants": "Same target/mask and identifier multiset, numerical inputs, recipient timestamps and event count; same saved checkpoint file hash in every map; verify original baseline prediction reproduces prior MSE before map scoring",
+  "endpoints": "Observed-scalar-target MSE difference loss(map)-loss(aligned), original map-denominator relative effect, macro-entity/plant MSE difference; all signs and per-unit records",
+  "summary": "Mean and empirical2.5/97.5percent quantiles across20 map draws. This is between-map sensitivity over a specified cyclic family, NOT a sampling confidence interval, a hypothesis-test null distribution, or uncertainty over trained neural checkpoints",
+  "fidel_timing": "Recipient report timestamp <= cutoff under prior assumption; export donor report time and recipient cutoff, donor-after-cutoff fraction. Replacement content may be from later in the same split, an offline synthetic intervention; issuance availability still unverified",
+  "runtime": "CPU closed-form fixed inference; all original inputs, scripts, outputs and checkpoints preserved"
+}

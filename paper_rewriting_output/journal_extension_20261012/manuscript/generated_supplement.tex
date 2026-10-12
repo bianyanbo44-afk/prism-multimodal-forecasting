@@ -1,0 +1,59 @@
+\begin{table}[htbp]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\caption{Full known-signal calibration means over twenty generated worlds after optimizer-seed and entity averaging. Detected means the unscreened within-world one-sided paired test rejects. Zero-strength rows retain false detections. Worlds are independent conditional on eight empirical timing templates; strengths reuse inputs within worlds.}
+\label{tab:calibration_full}
+\begin{tabular}{llllll}
+\toprule
+Input & Strength & Aligned & Fixed shuffle & Retrained shuffle & Detected\\
+\midrule
+Oracle & 0.00 & 0.122392 & 0.122404 & 0.122377 & 3/20\\
+Oracle & 0.25 & 0.122397 & 0.175142 & 0.161587 & 20/20\\
+Oracle & 0.50 & 0.122405 & 0.332963 & 0.278290 & 20/20\\
+Oracle & 1.00 & 0.122432 & 0.963841 & 0.744111 & 20/20\\
+MiniLM & 0.00 & 0.122493 & 0.122548 & 0.122522 & 2/20\\
+MiniLM & 0.25 & 0.132547 & 0.179351 & 0.164057 & 20/20\\
+MiniLM & 0.50 & 0.162285 & 0.348925 & 0.287499 & 20/20\\
+MiniLM & 1.00 & 0.280815 & 1.026389 & 0.780037 & 20/20\\
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{table}[htbp]
+\centering\footnotesize
+\setlength{\tabcolsep}{4pt}
+\caption{Full-derangement fixed effects: raw feature-macro $\Delta$ MSE and secondary control-denominator SAG. Ranges use the paired block-length-two bootstrap; length-four/eight records are retained separately. These are exploratory uncertainty descriptions under the specified entity/block resampling, conditional on the selected checkpoints and realized maps. Small entity counts constrain their wider-population interpretation (Table~\ref{tab:fixed_population}). Each cell averages three aligned checkpoints; initialized selections and coverage remain visible.}
+\label{tab:fixed_full}
+\begin{tabular}{lllll}
+\toprule
+Dataset & Mechanism & $\Delta$ MSE & Fixed SAG (\%) & SAG 95\% range (\%)\\
+\midrule
+CESNET & RecAvg & $+1.094\times10^{-6}$ & +0.000059 & [-0.000108, +0.000272]\\
+CESNET & XAttn & $-8.596\times10^{-5}$ & -0.005868 & [-0.016515, +0.000175]\\
+CESNET & Selective & $-5.234\times10^{-7}$ & -0.000029 & [-0.000099, +0.000035]\\
+ClusterTrace & RecAvg & $-1.838\times10^{-5}$ & -0.000963 & [-0.004681, +0.001091]\\
+ClusterTrace & XAttn & $-2.673\times10^{-5}$ & -0.000781 & [-0.004212, +0.002413]\\
+ClusterTrace & Selective & $-3.450\times10^{-6}$ & -0.000186 & [-0.000730, +0.000289]\\
+EPA-Air & RecAvg & $-1.891\times10^{-5}$ & -0.001549 & [-0.006282, +0.002163]\\
+EPA-Air & XAttn & $+8.205\times10^{-5}$ & +0.005534 & [-0.003253, +0.013631]\\
+EPA-Air & Selective & $-2.221\times10^{-5}$ & -0.001848 & [-0.007526, +0.002499]\\
+FNSPID & RecAvg & $-1.091\times10^{-7}$ & -0.000034 & [-0.000146, +0.000054]\\
+FNSPID & XAttn & $-3.240\times10^{-5}$ & -0.000856 & [-0.005397, +0.003315]\\
+FNSPID & Selective & $+3.239\times10^{-6}$ & +0.001208 & [-0.139676, +0.167266]\\
+RepoHealth & RecAvg & $+1.960\times10^{-6}$ & +0.000139 & [-0.000157, +0.000757]\\
+RepoHealth & XAttn & $+2.007\times10^{-5}$ & +0.000967 & [-0.000751, +0.005386]\\
+RepoHealth & Selective & $+9.488\times10^{-7}$ & +0.000077 & [-0.000354, +0.000595]\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Calibration null behaviour and validation screening}
+
+The unscreened null rejection rates are 3/20 for oracle and 2/20 for MiniLM, with Wilson 95\% intervals [5.24,36.04]\% and [2.79,30.10]\%. The incremental-benefit screen retains no null world, giving screened detections 0/20 for each representation and Wilson interval [0,16.11]\%. These are joint screening-and-detection outcomes over all worlds. No retained null world is available to estimate a conditional rejection rate among screen-positive null worlds.
+
+The screen uses the two-sided 95\% paired-entity lower bound and the more-than-1\% relative improvement rule in Eq.~\ref{eq:validation_content_screen}. Calibration fitting settings are fixed and training-only; the three optimizer seeds are averaged within each of 32 validation entities before the comparison. The construct batch uses the same algebra after ridge selection on those validation entities, so its bound is post-selection nominal and its screening interpretation descriptive. Neither batch establishes general 5\% error control, and the chosen margin may exclude weaker real signals.
+
+\section{Independent model and encoder identities}
+
+MiniLM revision is \nolinkurl{1110a243fdf4706b3f48f1d95db1a4f5529b4d41}; FinBERT revision is \nolinkurl{4556d13015211d73dccd3fdd39d39232506f3e43}. Pooling, maximum token length, cache file hashes and original CSV hashes are in the representation manifest. FinBERT's pinned model card does not supply explicit licence metadata, so the study package includes retrieval instructions rather than redistributing those weights. The two encoders have distinct domain adaptation and pooling provenance.
+
+The independent photovoltaic ridge model selects its penalty from 1, 10, 100 and 1000 using 2021 validation data. Numerical-only features include daily and weekly lag summaries and annual sine/cosine; the content condition adds the most recent published weather-vector summary and training-only PCA. Forecast origin stride is 24 hours; the recorded weather timestamp is exactly at the daily cutoff in this retained population. Neither report issuance nor future-report knowability follows from that equality. Saved validation comparisons appear in Table~\ref{tab:ridge_capability_details}.

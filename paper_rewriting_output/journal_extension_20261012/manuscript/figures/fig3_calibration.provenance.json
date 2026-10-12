@@ -1,0 +1,16 @@
+{
+  "name": "fig3_calibration",
+  "pdf": "fig3_calibration.pdf",
+  "panels": 2,
+  "width_in": 7.2,
+  "height_in": 3.55,
+  "source_files": [
+    {
+      "path": "calibration/results/summary.json",
+      "sha256": "e436edb43a5dc5e90b0889554f3f9e95bc65b3ba91e3a762bc2e4cac63d515eb"
+    }
+  ],
+  "source_csv": "fig3_calibration_source.csv",
+  "note": "All eight cells retained. Effect intervals are saved 20-world t intervals; detection intervals are saved Wilson intervals with denominator 20. Screened detection is a joint fraction, not conditional null error among passing worlds.",
+  "all_observations_preserved": true
+}

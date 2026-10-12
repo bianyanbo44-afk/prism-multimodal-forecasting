@@ -1,0 +1,277 @@
+{
+  "protocol_id": "semaudit_irregular_calibration_v1",
+  "conditions": [
+    {
+      "representation": "oracle",
+      "strength": 0.0,
+      "worlds": 20,
+      "test_entities_per_world": 128,
+      "training_seeds_per_world": 3,
+      "detected_worlds": 3,
+      "detection_rate": 0.15,
+      "detection_rate_wilson95": [
+        0.052368745896216595,
+        0.36041886474075696
+      ],
+      "capability_qualified_worlds": 0,
+      "gated_detected_worlds": 0,
+      "gated_detection_rate": 0.0,
+      "gated_rate_wilson95": [
+        0.0,
+        0.16112515805281938
+      ],
+      "mean_fixed_shuffle_delta": 1.2303596085409948e-05,
+      "mean_delta_world_ci95": [
+        -2.773744074732663e-05,
+        5.234463291814653e-05
+      ],
+      "mean_relative_shuffle_degradation": 0.00010048873426647694,
+      "mean_test_MSE": {
+        "aligned": 0.12239162534542931,
+        "fixed_shuffle": 0.12240392894151472,
+        "fixed_zero": 0.12235570348690177,
+        "retrained_shuffle": 0.12237675707068255,
+        "timing": 0.12235283210510309
+      }
+    },
+    {
+      "representation": "oracle",
+      "strength": 0.25,
+      "worlds": 20,
+      "test_entities_per_world": 128,
+      "training_seeds_per_world": 3,
+      "detected_worlds": 20,
+      "detection_rate": 1.0,
+      "detection_rate_wilson95": [
+        0.8388748419471806,
+        1.0
+      ],
+      "capability_qualified_worlds": 20,
+      "gated_detected_worlds": 20,
+      "gated_detection_rate": 1.0,
+      "gated_rate_wilson95": [
+        0.8388748419471806,
+        1.0
+      ],
+      "mean_fixed_shuffle_delta": 0.05274437686610676,
+      "mean_delta_world_ci95": [
+        0.05097849921576514,
+        0.05451025451644838
+      ],
+      "mean_relative_shuffle_degradation": 0.30090474166125925,
+      "mean_test_MSE": {
+        "aligned": 0.12239728516221189,
+        "fixed_shuffle": 0.17514166202831863,
+        "fixed_zero": 0.17237964581736503,
+        "retrained_shuffle": 0.16158678104389262,
+        "timing": 0.1724527534616571
+      }
+    },
+    {
+      "representation": "oracle",
+      "strength": 0.5,
+      "worlds": 20,
+      "test_entities_per_world": 128,
+      "training_seeds_per_world": 3,
+      "detected_worlds": 20,
+      "detection_rate": 1.0,
+      "detection_rate_wilson95": [
+        0.8388748419471806,
+        1.0
+      ],
+      "capability_qualified_worlds": 20,
+      "gated_detected_worlds": 20,
+      "gated_detection_rate": 1.0,
+      "gated_rate_wilson95": [
+        0.8388748419471806,
+        1.0
+      ],
+      "mean_fixed_shuffle_delta": 0.2105578688006052,
+      "mean_delta_world_ci95": [
+        0.2063386370932926,
+        0.21477710050791782
+      ],
+      "mean_relative_shuffle_degradation": 0.6321666927285412,
+      "mean_test_MSE": {
+        "aligned": 0.1224051597402744,
+        "fixed_shuffle": 0.33296302854087967,
+        "fixed_zero": 0.3210381118852442,
+        "retrained_shuffle": 0.27828975063896544,
+        "timing": 0.32135070265134713
+      }
+    },
+    {
+      "representation": "oracle",
+      "strength": 1.0,
+      "worlds": 20,
+      "test_entities_per_world": 128,
+      "training_seeds_per_world": 3,
+      "detected_worlds": 20,
+      "detection_rate": 1.0,
+      "detection_rate_wilson95": [
+        0.8388748419471806,
+        1.0
+      ],
+      "capability_qualified_worlds": 20,
+      "gated_detected_worlds": 20,
+      "gated_detection_rate": 1.0,
+      "gated_rate_wilson95": [
+        0.8388748419471806,
+        1.0
+      ],
+      "mean_fixed_shuffle_delta": 0.8414098229805751,
+      "mean_delta_world_ci95": [
+        0.8294519257207092,
+        0.8533677202404409
+      ],
+      "mean_relative_shuffle_degradation": 0.8728966627920043,
+      "mean_test_MSE": {
+        "aligned": 0.12243153264709479,
+        "fixed_shuffle": 0.9638413556276699,
+        "fixed_zero": 0.9142601702990388,
+        "retrained_shuffle": 0.7441108669806689,
+        "timing": 0.9155669485032837
+      }
+    },
+    {
+      "representation": "sentence",
+      "strength": 0.0,
+      "worlds": 20,
+      "test_entities_per_world": 128,
+      "training_seeds_per_world": 3,
+      "detected_worlds": 2,
+      "detection_rate": 0.1,
+      "detection_rate_wilson95": [
+        0.027866481213768224,
+        0.3010336452284873
+      ],
+      "capability_qualified_worlds": 0,
+      "gated_detected_worlds": 0,
+      "gated_detection_rate": 0.0,
+      "gated_rate_wilson95": [
+        0.0,
+        0.16112515805281938
+      ],
+      "mean_fixed_shuffle_delta": 5.477653598086439e-05,
+      "mean_delta_world_ci95": [
+        -7.668635200843959e-07,
+        0.00011031993548181319
+      ],
+      "mean_relative_shuffle_degradation": 0.00045575849719963976,
+      "mean_test_MSE": {
+        "aligned": 0.12249323653562423,
+        "fixed_shuffle": 0.1225480130716051,
+        "fixed_zero": 0.12234055129329016,
+        "retrained_shuffle": 0.1225220459461516,
+        "timing": 0.12235283210510309
+      }
+    },
+    {
+      "representation": "sentence",
+      "strength": 0.25,
+      "worlds": 20,
+      "test_entities_per_world": 128,
+      "training_seeds_per_world": 3,
+      "detected_worlds": 20,
+      "detection_rate": 1.0,
+      "detection_rate_wilson95": [
+        0.8388748419471806,
+        1.0
+      ],
+      "capability_qualified_worlds": 20,
+      "gated_detected_worlds": 20,
+      "gated_detection_rate": 1.0,
+      "gated_rate_wilson95": [
+        0.8388748419471806,
+        1.0
+      ],
+      "mean_fixed_shuffle_delta": 0.04680414659375325,
+      "mean_delta_world_ci95": [
+        0.045029974698271046,
+        0.04857831848923546
+      ],
+      "mean_relative_shuffle_degradation": 0.2607111622685159,
+      "mean_test_MSE": {
+        "aligned": 0.13254673075999154,
+        "fixed_shuffle": 0.17935087735374483,
+        "fixed_zero": 0.17236447668731628,
+        "retrained_shuffle": 0.16405674940620463,
+        "timing": 0.1724527534616571
+      }
+    },
+    {
+      "representation": "sentence",
+      "strength": 0.5,
+      "worlds": 20,
+      "test_entities_per_world": 128,
+      "training_seeds_per_world": 3,
+      "detected_worlds": 20,
+      "detection_rate": 1.0,
+      "detection_rate_wilson95": [
+        0.8388748419471806,
+        1.0
+      ],
+      "capability_qualified_worlds": 20,
+      "gated_detected_worlds": 20,
+      "gated_detection_rate": 1.0,
+      "gated_rate_wilson95": [
+        0.8388748419471806,
+        1.0
+      ],
+      "mean_fixed_shuffle_delta": 0.18664038615971762,
+      "mean_delta_world_ci95": [
+        0.18250586023767637,
+        0.19077491208175887
+      ],
+      "mean_relative_shuffle_degradation": 0.5346973842289313,
+      "mean_test_MSE": {
+        "aligned": 0.16228469196563636,
+        "fixed_shuffle": 0.3489250781253539,
+        "fixed_zero": 0.3210230571368565,
+        "retrained_shuffle": 0.2874990289996483,
+        "timing": 0.32135070265134713
+      }
+    },
+    {
+      "representation": "sentence",
+      "strength": 1.0,
+      "worlds": 20,
+      "test_entities_per_world": 128,
+      "training_seeds_per_world": 3,
+      "detected_worlds": 20,
+      "detection_rate": 1.0,
+      "detection_rate_wilson95": [
+        0.8388748419471806,
+        1.0
+      ],
+      "capability_qualified_worlds": 20,
+      "gated_detected_worlds": 20,
+      "gated_detection_rate": 1.0,
+      "gated_rate_wilson95": [
+        0.8388748419471806,
+        1.0
+      ],
+      "mean_fixed_shuffle_delta": 0.7455739457489642,
+      "mean_delta_world_ci95": [
+        0.7342306045670525,
+        0.7569172869308759
+      ],
+      "mean_relative_shuffle_degradation": 0.726329835822674,
+      "mean_test_MSE": {
+        "aligned": 0.280815485285687,
+        "fixed_shuffle": 1.026389431034651,
+        "fixed_zero": 0.9142439009566781,
+        "retrained_shuffle": 0.7800371537971664,
+        "timing": 0.9155669485032837
+      }
+    }
+  ],
+  "limits": [
+    "Controlled template language and synthetic targets, not real-world semantic utility.",
+    "Empirical schedules reused across generated entities; inference is conditional on those fixed schedules.",
+    "SGD training seeds are averaged, not counted as independent domains or data replications.",
+    "Single-note history windows cannot support within-history content permutation; these remain in analysis.",
+    "Null rejection rate from 20 worlds has limited resolution and broad uncertainty.",
+    "These linear pipeline results do not establish sensitivity of the original Time-IMM fusion models."
+  ]
+}

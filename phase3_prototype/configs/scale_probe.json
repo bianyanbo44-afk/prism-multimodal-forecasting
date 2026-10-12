@@ -1,0 +1,29 @@
+{
+  "seed": 7,
+  "data": {
+    "train_samples": 1024,
+    "val_samples": 256,
+    "test_samples": 256,
+    "cutoff": 20.0,
+    "forecast_horizon": 2.0,
+    "rates": [3.0, 1.6, 0.8],
+    "drop_probability": 0.12,
+    "block_missing_probability": 0.35,
+    "delay_scale": 0.18,
+    "simultaneous_groups": 4,
+    "time_resolution": 0.1
+  },
+  "model": {
+    "event_width": 128,
+    "state_dim": 128,
+    "readout_width": 256
+  },
+  "training": {
+    "epochs": 10,
+    "batch_size": 64,
+    "learning_rate": 0.0015,
+    "weight_decay": 0.0001,
+    "grad_clip": 1.0,
+    "torch_threads": 8
+  }
+}

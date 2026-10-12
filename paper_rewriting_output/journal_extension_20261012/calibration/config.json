@@ -1,0 +1,38 @@
+{
+  "protocol_id": "semaudit_irregular_calibration_v1",
+  "source_root": "F:/CCFA/phase3_prototype/external/Time-IMM/data/EPA-Air/processed",
+  "encoder_path": "F:/CCFA/paper_rewriting_output/journal_extension_20261012/external_validation/models/minilm",
+  "encoder_id": "sentence-transformers/all-MiniLM-L6-v2",
+  "encoder_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "data_seeds": [1103, 1217, 1321, 1429, 1543, 1657, 1759, 1871, 1993, 2111, 2237, 2351, 2477, 2591, 2713, 2833, 2953, 3079, 3203, 3323],
+  "training_seeds": [53, 67, 79],
+  "strengths": [0.0, 0.25, 0.5, 1.0],
+  "entities_per_split": {"train": 128, "val": 32, "test": 128},
+  "history_days": 7.0,
+  "stride_days": 7.0,
+  "max_queries_per_entity": 40,
+  "forecast_horizon_days": 1.0,
+  "semantic_decay_days": 1.0,
+  "simulated_arrival_delay_mean_days": 0.15,
+  "target_noise_sd": 0.35,
+  "numeric_ar1_phi": 0.985,
+  "train_pca_max_components": 7,
+  "sgd": {"alpha": 0.003, "max_iter": 300, "tol": 0.000001, "eta0": 0.02, "power_t": 0.25},
+  "threads": 2,
+  "primary_alpha_one_sided": 0.05,
+  "validation_capability_min_relative_gain": 0.01,
+  "rate_intervals": "Wilson 95% across 20 independent generated worlds; average the three SGD seed losses within each entity before inference",
+  "effect_intervals": "Student t 95% over independent generated test entities, conditional on eight fixed empirical time templates",
+  "train_phrase_pairs": [
+    ["The next interval will have an increase in demand.", "The next interval will have a decrease in demand."],
+    ["Demand is expected to rise during the next interval.", "Demand is expected to fall during the next interval."],
+    ["The coming period is forecast to show growing demand.", "The coming period is forecast to show declining demand."],
+    ["A higher level of demand is anticipated for the next period.", "A lower level of demand is anticipated for the next period."]
+  ],
+  "heldout_phrase_pairs": [
+    ["We predict that demand will increase in the upcoming interval.", "We predict that demand will decrease in the upcoming interval."],
+    ["In the following period, demand should move upward.", "In the following period, demand should move downward."],
+    ["The forecast points to a rise in demand for the coming interval.", "The forecast points to a fall in demand for the coming interval."],
+    ["Demand in the forthcoming period is projected to be higher.", "Demand in the forthcoming period is projected to be lower."]
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "files": [
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/calibration/results/raw/world_1103.npz",
+      "bytes": 1586499,
+      "sha256": "42ffe6ac0174cb623220cdf19fba01d2786297f72184ae397297cd186dcf7098"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/calibration/results/raw/world_1217.npz",
+      "bytes": 1585390,
+      "sha256": "e5caabec71cfb423aaf800d9c7216b7472924e74f087912d2f9d4ae17f11bb37"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/calibration/results/raw/world_1321.npz",
+      "bytes": 1587794,
+      "sha256": "25656d32ee64ffbedab5f10f4a62be093b85b93a25e88d8ccfecfeff7249906d"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/calibration/results/raw/world_1429.npz",
+      "bytes": 1586583,
+      "sha256": "6cfb1383efea834f1fc37cef61cd58ab9400af9efb22d62f3491af3578ff7fc4"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/calibration/results/raw/world_1543.npz",
+      "bytes": 1587999,
+      "sha256": "40b4d3e380d5c363084bd2d4370781a8cbd0d83bb217b6ab6c3655af334663ed"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/calibration/results/raw/world_1657.npz",
+      "bytes": 1587335,
+      "sha256": "fe7f831f5b32eae472dfa14f0762e9b554661bbcab5e413c7d26814d3a5a5814"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/calibration/results/raw/world_1759.npz",
+      "bytes": 1587991,
+      "sha256": "d4762846516d3a12f903f6203bec55b970b3da0da093da2bf40834acfa2ce764"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/calibration/results/raw/world_1871.npz",
+      "bytes": 1587634,
+      "sha256": "81c65a4212d6c32983efd181efeef30bb74e3ef6e3cdf231899485fad263e554"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/calibration/results/raw/world_1993.npz",
+      "bytes": 1586516,
+      "sha256": "475d566619a0b9e2fcc46aa9aecc23efaf764f381867e0f6c912555eecfe082d"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/calibration/results/raw/world_2111.npz",
+      "bytes": 1586709,
+      "sha256": "39e586fe01e47b4f02333b4ef6d5f823fef61f6f7aba0b74f4eebc1b5dea38b7"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/calibration/results/raw/world_2237.npz",
+      "bytes": 1587129,
+      "sha256": "e46a410e895735fd7b5900cfe73852e56556b766dc4630e64dcf743fb3487e50"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/calibration/results/raw/world_2351.npz",
+      "bytes": 1588375,
+      "sha256": "04c15bec0b52d20e05894f89c8914b0811459388c2a22d17795f7a3deca51189"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/calibration/results/raw/world_2477.npz",
+      "bytes": 1588212,
+      "sha256": "f450dc9fa226a613799d7ae6aba87bcbf20f7c6d97dd660b3d99b86c5095e570"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/calibration/results/raw/world_2591.npz",
+      "bytes": 1587811,
+      "sha256": "4c555feb6872baab9c8dadbf89a5ea50bc7838c50dee416f6003e0f5e2f77f2a"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/calibration/results/raw/world_2713.npz",
+      "bytes": 1587654,
+      "sha256": "cfa9ca4ceaa5e286cfcd68ea1e7333b87357c9e416d99d02e021733d572ef089"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/calibration/results/raw/world_2833.npz",
+      "bytes": 1587932,
+      "sha256": "3d1977e63bb1f644c548bfecbd4438be3f074ee350699695cb9774c0c680ef41"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/calibration/results/raw/world_2953.npz",
+      "bytes": 1586641,
+      "sha256": "383fad37a06a3b006897a9e9e5ff2c36db0ab161a690fb76110e84da4dbe3fc6"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/calibration/results/raw/world_3079.npz",
+      "bytes": 1586528,
+      "sha256": "ef5cd6aee7030d1e4ad5f4f2876f906823ed5179b508303eff19f8efa51adf80"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/calibration/results/raw/world_3203.npz",
+      "bytes": 1586709,
+      "sha256": "7b6147f4155269e8a0be9ea97b53996dee3603590205517e50807ccfed798cb2"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/calibration/results/raw/world_3323.npz",
+      "bytes": 1586368,
+      "sha256": "5d19f78b21981bf5b241cb6a2195c6306804589a7d9edffbbddae81c29459ae3"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/construct_controls/results/raw/world_4001.npz",
+      "bytes": 4388680,
+      "sha256": "509cb47df73bd952e4e2745a07d2db80f9b1d924a155e9a417506489cf27810f"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/construct_controls/results/raw/world_4111.npz",
+      "bytes": 4394124,
+      "sha256": "d0ab708fb619516d9b2daa2cfd867beb5bbff5de88c81bd93ae5542381609eca"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/construct_controls/results/raw/world_4229.npz",
+      "bytes": 4388903,
+      "sha256": "4d2ffb95caa2c46cb71d09ac23d5a518898addb115c7d2ad3f40749967aaad3e"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/construct_controls/results/raw/world_4349.npz",
+      "bytes": 4386537,
+      "sha256": "4cc6bb531d177da88e8f6df24b3bf0b48c8edb24383957cfe77bbdbccd62f087"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/construct_controls/results/raw/world_4463.npz",
+      "bytes": 4391237,
+      "sha256": "35c1375bfb572ca12198640d6463f773f321a1d90df5043a6d6619a73f245a39"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/construct_controls/results/raw/world_4583.npz",
+      "bytes": 4391090,
+      "sha256": "7906c9e5248a0036076eb2dc7f4701223ad38be76d2db9aefe3626d3f3bf89b5"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/construct_controls/results/raw/world_4703.npz",
+      "bytes": 4392394,
+      "sha256": "42d2b69695a338763ab98c5750fbb66efc7796aa17bd41d9e5d685670c6d5dbf"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/construct_controls/results/raw/world_4817.npz",
+      "bytes": 4386405,
+      "sha256": "8d568f9d2a7314253fed5f1551a4c7b0f782a1719c3e4182196d46df9ed24d7a"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/construct_controls/results/raw/world_4937.npz",
+      "bytes": 4388741,
+      "sha256": "e7a8f3a51d0aa9750b385196c2a8c989c612afbc6fcd57bee0d7c988732a2dfc"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/construct_controls/results/raw/world_5051.npz",
+      "bytes": 4385695,
+      "sha256": "090e1029c5c46e2bec0416f67b319177990269b7908e6c827ff3411c20886e68"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/construct_controls/results/raw/world_5171.npz",
+      "bytes": 4386570,
+      "sha256": "46aa26ec0f221a6fd00992e159e4ce2a6bd949e831256e60b09c3fe71e1dc5d1"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/construct_controls/results/raw/world_5297.npz",
+      "bytes": 4388147,
+      "sha256": "59596cd5d22b27ed19192ee4b80739090e44f0f3191bc68aa7ec18b28460b54d"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/construct_controls/results/raw/world_5413.npz",
+      "bytes": 4388280,
+      "sha256": "9fa0ef6a2c39e372aead49263086dbfbadb95c7b3575ec30a9295f1c23accf27"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/construct_controls/results/raw/world_5527.npz",
+      "bytes": 4388600,
+      "sha256": "cf1c3cfb26d9ddcb411c8ee3b73cebef36dc9439775e4129a514f5ff38ee10db"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/construct_controls/results/raw/world_5651.npz",
+      "bytes": 4389319,
+      "sha256": "fbddfce41d969e6fd8dd4b41c826ec4fb8a6e10d1b3b9d8745c0f4ed69cc4fb4"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/construct_controls/results/raw/world_5779.npz",
+      "bytes": 4384450,
+      "sha256": "0cf108dec6e856941e04bea1cf2f2bcbac12f1690988bf9c3ac25bff2c36ecdc"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/construct_controls/results/raw/world_5897.npz",
+      "bytes": 4390031,
+      "sha256": "100e7b52394ffd39ad980acbae824efeae731db9e812466555303ad9bbf3839a"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/construct_controls/results/raw/world_6011.npz",
+      "bytes": 4388857,
+      "sha256": "e21fecf10f9e870188223f49aff0d8e7564fa952392e8d3edb6a9f0014cf9a2e"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/construct_controls/results/raw/world_6133.npz",
+      "bytes": 4384612,
+      "sha256": "7973487c97ce0bb1f162858007d3ff7992d8eeb142c1fcc8cefad67e661697df"
+    },
+    {
+      "path": "paper_rewriting_output/journal_extension_20261012/construct_controls/results/raw/world_6257.npz",
+      "bytes": 4388530,
+      "sha256": "8494d11d228a96a906304bfa93f87a7ea7810ee06a72660ee2cac073707d7ca5"
+    }
+  ],
+  "scope": "Generated features, targets and numerical designs under fixed empirical timing templates; no natural benchmark values or text.",
+  "archive_url": "https://github.com/bianyanbo44-afk/prism-multimodal-forecasting/releases/download/v0.1.0/PRISM_Synthetic_Evidence.zip"
+}

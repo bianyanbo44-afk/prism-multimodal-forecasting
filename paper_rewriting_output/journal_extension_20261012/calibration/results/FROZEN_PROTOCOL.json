@@ -1,0 +1,226 @@
+{
+  "frozen_at_utc": "2026-10-12T05:33:01.016771+00:00",
+  "protocol_id": "semaudit_irregular_calibration_v1",
+  "implementation_hashes": {
+    "config.json": "23e469a809f1fd5d21bb778d2c08379e79f1d868e8b4268aea74f080857e0940",
+    "run_calibration.py": "10066c5d376b0daac6c3d7cce61cdcec108fd9668e03972a176778144ec2169f",
+    "test_calibration.py": "595bbda1ad0cbe6bc7f6b06db3d60009add3842900fe980e89783017e89fe282"
+  },
+  "config": {
+    "protocol_id": "semaudit_irregular_calibration_v1",
+    "source_root": "F:/CCFA/phase3_prototype/external/Time-IMM/data/EPA-Air/processed",
+    "encoder_path": "F:/CCFA/paper_rewriting_output/journal_extension_20261012/external_validation/models/minilm",
+    "encoder_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "encoder_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "data_seeds": [
+      1103,
+      1217,
+      1321,
+      1429,
+      1543,
+      1657,
+      1759,
+      1871,
+      1993,
+      2111,
+      2237,
+      2351,
+      2477,
+      2591,
+      2713,
+      2833,
+      2953,
+      3079,
+      3203,
+      3323
+    ],
+    "training_seeds": [
+      53,
+      67,
+      79
+    ],
+    "strengths": [
+      0.0,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "entities_per_split": {
+      "train": 128,
+      "val": 32,
+      "test": 128
+    },
+    "history_days": 7.0,
+    "stride_days": 7.0,
+    "max_queries_per_entity": 40,
+    "forecast_horizon_days": 1.0,
+    "semantic_decay_days": 1.0,
+    "simulated_arrival_delay_mean_days": 0.15,
+    "target_noise_sd": 0.35,
+    "numeric_ar1_phi": 0.985,
+    "train_pca_max_components": 7,
+    "sgd": {
+      "alpha": 0.003,
+      "max_iter": 300,
+      "tol": 1e-06,
+      "eta0": 0.02,
+      "power_t": 0.25
+    },
+    "threads": 2,
+    "primary_alpha_one_sided": 0.05,
+    "validation_capability_min_relative_gain": 0.01,
+    "rate_intervals": "Wilson 95% across 20 independent generated worlds; average the three SGD seed losses within each entity before inference",
+    "effect_intervals": "Student t 95% over independent generated test entities, conditional on eight fixed empirical time templates",
+    "train_phrase_pairs": [
+      [
+        "The next interval will have an increase in demand.",
+        "The next interval will have a decrease in demand."
+      ],
+      [
+        "Demand is expected to rise during the next interval.",
+        "Demand is expected to fall during the next interval."
+      ],
+      [
+        "The coming period is forecast to show growing demand.",
+        "The coming period is forecast to show declining demand."
+      ],
+      [
+        "A higher level of demand is anticipated for the next period.",
+        "A lower level of demand is anticipated for the next period."
+      ]
+    ],
+    "heldout_phrase_pairs": [
+      [
+        "We predict that demand will increase in the upcoming interval.",
+        "We predict that demand will decrease in the upcoming interval."
+      ],
+      [
+        "In the following period, demand should move upward.",
+        "In the following period, demand should move downward."
+      ],
+      [
+        "The forecast points to a rise in demand for the coming interval.",
+        "The forecast points to a fall in demand for the coming interval."
+      ],
+      [
+        "Demand in the forthcoming period is projected to be higher.",
+        "Demand in the forthcoming period is projected to be lower."
+      ]
+    ]
+  },
+  "source_schedule_identity": [
+    {
+      "name": "Bexar",
+      "source_hashes": {
+        "time_series.csv": "a5d617678336629ad4d7b76b5ae884b931eb6dbe7e7f7aa9bd5642851893a168",
+        "text.csv": "1be07464c56e7b113decfc5fe0c385075b4a18281ea65a305141561c7387d8ea"
+      },
+      "numeric_records": 4369,
+      "text_records": 17,
+      "query_count": 25,
+      "text_interarrival_sd_days": 19.864848387618856,
+      "text_interarrival_min_days": 8.101851851805009e-05,
+      "text_interarrival_max_days": 63.97155092592593
+    },
+    {
+      "name": "Dallas",
+      "source_hashes": {
+        "time_series.csv": "b85d75087336adbc537e4bceac81bd1911912ea894afba79444afd378ec1da64",
+        "text.csv": "789e8e5eee1d4b4c01a3d16fe6c84076bbe1e34f60e39eb7c67dfa4f2ccf64e5"
+      },
+      "numeric_records": 4369,
+      "text_records": 209,
+      "query_count": 25,
+      "text_interarrival_sd_days": 1.4486472011241338,
+      "text_interarrival_min_days": 6.944444443490738e-05,
+      "text_interarrival_max_days": 6.08827546296294
+    },
+    {
+      "name": "Denver",
+      "source_hashes": {
+        "time_series.csv": "b6b2d07b6069060f4348e80eb3f29845820182d8321d9f04b364f874d49b2989",
+        "text.csv": "4500efdfe23e7a49ddbf514a76d380b8f553049913e2cfd50aef831690a1a7c9"
+      },
+      "numeric_records": 5957,
+      "text_records": 213,
+      "query_count": 40,
+      "text_interarrival_sd_days": 1.6353725710630165,
+      "text_interarrival_min_days": 6.944444444201281e-05,
+      "text_interarrival_max_days": 10.04302083333333
+    },
+    {
+      "name": "Hillsborough",
+      "source_hashes": {
+        "time_series.csv": "9fc3b86023d3c3172a027853b33cac216ea033a4a33ddee4d70d99f8c04be097",
+        "text.csv": "f661bf39ea6da46ec2a1d94d30b9fa6506d6c632775f53e956e3ed8eff737bc8"
+      },
+      "numeric_records": 4369,
+      "text_records": 73,
+      "query_count": 25,
+      "text_interarrival_sd_days": 8.1111078441683,
+      "text_interarrival_min_days": 5.7870370369528246e-05,
+      "text_interarrival_max_days": 41.036701388888886
+    },
+    {
+      "name": "Los_Angeles",
+      "source_hashes": {
+        "time_series.csv": "07ca6a0f3a7e3242ef844f162c6106cf3cb4628a25d6b41d0d1103a491066972",
+        "text.csv": "a7ce1e53190c089610b76e4e7f85535a44bfbf2ff6a441807c63a9e9a460393e"
+      },
+      "numeric_records": 5851,
+      "text_records": 222,
+      "query_count": 34,
+      "text_interarrival_sd_days": 1.5491964042228996,
+      "text_interarrival_min_days": 2.3148148159179982e-05,
+      "text_interarrival_max_days": 8.030833333333334
+    },
+    {
+      "name": "Maricopa",
+      "source_hashes": {
+        "time_series.csv": "492df0a7943c3163d44bdb6b977147ed8193e9e8a4b3b3e22dff56a8edb8a0b6",
+        "text.csv": "c975962e2c08115ac953f90e4061e1d433ebfa4524c18ef94e75840be105ff40"
+      },
+      "numeric_records": 6567,
+      "text_records": 99,
+      "query_count": 38,
+      "text_interarrival_sd_days": 4.593942174418545,
+      "text_interarrival_min_days": 6.944444444201281e-05,
+      "text_interarrival_max_days": 28.068020833333335
+    },
+    {
+      "name": "Philadelphia",
+      "source_hashes": {
+        "time_series.csv": "b44360f432c6acd0318fa0b497f41316faaf467ba81fcba3b371aa3779c1d9ac",
+        "text.csv": "2877b0cc17313185fdac1d6356feae413ad304072be0b45febc93697ac9bfd99"
+      },
+      "numeric_records": 4337,
+      "text_records": 203,
+      "query_count": 25,
+      "text_interarrival_sd_days": 1.8233259858166249,
+      "text_interarrival_min_days": 0.0,
+      "text_interarrival_max_days": 11.05740740740741
+    },
+    {
+      "name": "Richmond",
+      "source_hashes": {
+        "time_series.csv": "89f0a18c3f58f3f6917236ab041c828b828121267ce7e340a7d578b37d363f9a",
+        "text.csv": "37d4d5c46e235e05e05082519dbf95747cddcb0b33d2ff7c03fb51257bc7e67c"
+      },
+      "numeric_records": 6487,
+      "text_records": 208,
+      "query_count": 38,
+      "text_interarrival_sd_days": 2.111171693630833,
+      "text_interarrival_min_days": 6.944444442069653e-05,
+      "text_interarrival_max_days": 15.952407407407406
+    }
+  ],
+  "registration_status": "local time-stamped protocol freeze before generated outcome evaluation; not externally preregistered",
+  "past_exposure": "The source dataset and original manuscript test results have already been examined; new generated numeric/text/noise draws are distinct.",
+  "analysis_unit": "generated entity conditional on empirical schedules; training seeds averaged within entity; detection rates use independently generated worlds",
+  "availability": "event_time <= cutoff AND simulated_arrival_time <= cutoff within seven-day history; simulated independent exponential latency is not observed real publication latency",
+  "primary": "fixed aligned SGD checkpoint: aligned vs within-current-available-history cyclic content permutation; one-sided paired entity-level t test alpha=.05; positive delta means permutation harmed prediction",
+  "secondary": "fixed zero-content test control, retrained shuffled model, numerical-plus-timing retrained comparator; validation capability gate requires positive entity-level lower CI and at least 1% relative improvement over timing baseline",
+  "multiplicity": "each strength/representation is a pre-specified calibration condition; rate intervals reported descriptively; no pooled claim from selecting significant cells",
+  "target": "0.8 last_numeric + 0.2 history_mean + strength * variance-normalized exponentially weighted available random text direction + independent N(0, .35²) noise",
+  "scope": "independent recency-pooled linear prediction pipeline on controlled templated prose; oracle direction vectors alone do not validate language representations or Time-IMM fusion architectures"
+}

@@ -1,0 +1,226 @@
+\documentclass[preprint,11pt]{elsarticle}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,booktabs,graphicx,array,longtable,enumitem}
+\usepackage[margin=26mm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\usepackage{microtype}
+\usepackage{placeins}
+\graphicspath{{figures/}}
+\newcommand{\prism}{\textsc{PRISM}}
+\newcommand{\sag}{\mathrm{SAG}}
+\newcommand{\cbtg}{\mathrm{CBTG}}
+\newcommand{\mmu}{\mathrm{MMU}}
+\newcommand{\fixed}{\mathrm{fixed}}
+\newcommand{\retrain}{\mathrm{retrain}}
+\journal{Information Fusion}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\topfraction}{0.90}
+\renewcommand{\bottomfraction}{0.90}
+\renewcommand{\textfraction}{0.08}
+\renewcommand{\floatpagefraction}{0.72}
+\begin{document}
+\begin{frontmatter}
+\title{PRISM separates model reliance from context value in multimodal forecasting}
+\author{Anonymous authors}
+\begin{abstract}
+\input{abstract}
+\end{abstract}
+\begin{keyword}
+Multimodal forecasting \sep Information fusion \sep Content reliance \sep Irregular time series \sep Model evaluation \sep Temporal dependence
+\end{keyword}
+\end{frontmatter}
+
+\section{Introduction}
+
+Forecasting systems increasingly combine numerical measurements with financial news, operational notes and other textual context. Prediction gains, however, leave the contribution of that context unresolved. A report can carry a directional proposition, identify a source or mark a change in activity through its arrival. Moreover, a fitted model's sensitivity to disrupted content can differ from the information value recovered by retraining. Interpreting contextual forecasts therefore requires separating what the model relies on, which cue it uses and what the learning procedure can recover.
+
+Irregular event schedules make these questions difficult to isolate. Removing text removes its content and occurrence process together. Permuting across entities changes identity and domain; permuting across chronological splits changes evaluation membership. Restricting the permutation preserves those relations but may leave singleton or repeated content unchanged. A small loss difference then has limited reach, while a positive difference can reflect any cue carried by the reassigned content. Both outcomes require the intervention's achieved coverage and the predictor's capability to be made explicit.
+
+Recent benchmarks provide complementary settings for this evaluation. Time-MMD supplies paired numerical and textual series, Time-IMM independently timestamped modalities, and CiK tasks with essential textual information \cite{liu2024timemmd,chang2025timeimm,williams2025context}. Fidel-TS compares original, random and all-zero context on regular tasks \cite{xu2025fidelts}. TimesX extends real-world context diversity and timestamp isolation, and shows that context quality changes forecasting outcomes under a fixed numerical series and prompt \cite{liu2026timesx}. These advances sharpen a complementary question: what does a content intervention establish when the observed event process and forecasting population are held fixed?
+
+Here we introduce \prism{}---Paired Reliance Interventions with Structured Matching---to separate these evaluation questions. The protocol changes text content while retaining entities, split membership, event times, occurrence counts, numerical inputs, targets and forecast windows. It pairs fixed-model and condition-retrained comparisons with achieved coverage, capability evidence and, when a cue is specified, targeted content edits. Structured matching refers to the retained forecast units and event metadata, together with the stated donor restrictions. Tables~\ref{tab:protocol_steps} and~\ref{tab:protocol_worked} make the operations and resulting judgments explicit.
+
+Generated irregular tasks show why this separation matters: whole-content reassignment responds to both a directional proposition and a source cue, whereas selective edits distinguish them. An independent photovoltaic experiment demonstrates the gap between fixed-model reliance and context value after retraining. Historical irregular checkpoints, signal/null calibration, representation alternatives and normalization checks establish where these conclusions remain limited. Together, the comparisons provide an executable route from a content perturbation to the specific inference it supports.
+
+\section{Related work}
+
+\subsection{Contextual forecasting and fusion capability}
+
+Textual context ranges from series metadata and calendar information to event reports and explanatory covariates. The distinctions affect both availability and predictive use. Time-MMD and Time-IMM emphasize complementary temporal settings, whereas MoTime broadens histories and cold-start evaluation \cite{liu2024timemmd,chang2025timeimm,zhou2025motime}. CiK evaluates contexts deliberately required for forecasting, and Fidel-TS provides high-fidelity context controls \cite{williams2025context,xu2025fidelts}. TimesX addresses real-world scale, contamination and context quality; its synthetic-versus-real comparisons also show why constructed tasks cannot establish a real-world model ranking \cite{liu2026timesx}. We use constructed calibration only to assess a diagnostic under known truth.
+
+Forecasting methods increasingly integrate language through mixtures of experts, event-driven reasoning, temporal narratives and constrained auxiliary fusion \cite{lin2026timi,wang2026vot,li2026tats,lee2026cfa}. Their performance comparisons establish capability under their respective designs. \prism{} complements those comparisons by specifying dependence questions for an evaluated function and information-value questions for its learning procedure.
+
+\subsection{Modality reliance and shortcut explanations}
+
+A modality can appear useful while its intended signal remains underused. Shortcut learning, greedy modality learning, gradient imbalance and representation collapse provide mechanisms for such behaviour \cite{geirhos2020shortcut,wu2022greedy,peng2022ogm,chaudhuri2025collapse}. Multimodality can also be redundant conditional on numerical history \cite{zhang2025when}. Ablation studies of language models in forecasting reinforce the need to identify what a language component contributes \cite{tan2024llmuseful}. The content and alignment contrasts measured by \prism{} describe a predictor's response; identifying its optimization mechanism requires additional evidence.
+
+Controlled input changes require a fixed interpretation. Permutation feature importance measures model dependence under a chosen permutation distribution, while conditional importance addresses the effect of dependencies between predictors \cite{fisher2019allmodels,strobl2008conditional}. Continuous-time perturbation methods such as ContiMask explain irregular models in their own temporal setting \cite{moebus2025contimask}. Restricted permutation importance is the closest fixed-model comparator here, and original/random/zero benchmark comparisons already supply content contrasts. A correctly interpreted restricted permutation measures operational reliance under its intervention. Our protocol retains that inference and adds three explicit judgments: coverage identifies the portion of the relation that was tested, targeted edits discriminate stipulated cues, and a separate refit measures adaptation under the changed inputs. Table~\ref{tab:protocol_worked} demonstrates those additions using the same existing contrasts, without attributing unique linguistic meaning to a whole-content effect.
+
+\subsection{Evaluation protocols and dependent uncertainty}
+
+Chronological forecasting can be affected by leakage, inconsistent normalization and mismatched forecast units. Valid time-series evaluation must account for temporal structure \cite{bergmeir2018cv}. Moving-block and stationary bootstrap methods address correlated sequences under their assumptions \cite{kunsch1989block,politis1994stationary}. In our study, training seeds represent algorithmic variation, entities represent application heterogeneity, and repeated windows represent correlated observations. We report those layers explicitly. A post hoc reanalysis of historical test data remains exploratory, even when its new configuration was fixed before that reanalysis.
+
+\section{The PRISM protocol}
+\label{sec:protocol}
+
+\subsection{Forecast units and observable invariants}
+
+For entity $i$, an event $e_{ik}=(t_{ik},a_{ik},m_{ik},x_{ik})$ has event time $t_{ik}$, availability time $a_{ik}$, modality $m_{ik}$ and content $x_{ik}$. At forecast origin $q$, eligible inputs satisfy $a_{ik}\leq q$. The text event process contains the entity, split, modality, event and availability times, masks and counts. Content is evaluated conditionally on this observed process; independence between content and process is unnecessary for defining the intervention.
+
+A paired evaluation fixes the numerical observations, target values, target masks, forecast horizons and retained window identifiers. Text content changes at existing eligible positions. Offline Time-IMM loading uses event time as assumed availability time because independent delivery logs are unavailable. This assumption defines the offline experiment and cannot certify availability in an operational deployment.
+
+\subsection{Two distinct evaluation objects}
+
+Let $f=\mathcal{A}(D_{\rm tr})$ denote the aligned predictor selected on validation data, where $\mathcal{A}$ is a specified learning procedure. An input transformation $\mathcal{T}$ changes text content in an evaluation set $D_{\rm te}$, either by a draw from a stated distribution $Q$ or by a specified deterministic edit. Fixed-model evaluation estimates
+\begin{equation}
+\Delta_{\fixed}(\mathcal{T})=
+L(f,\mathcal{T}D_{\rm te})-L(f,D_{\rm te}).
+\label{eq:fixed}
+\end{equation}
+The same checkpoint evaluates every condition. A positive difference indicates sensitivity to the specified content change on the evaluated units. This effect remains defined for a predictor with poor or unassessed forecasting capability. Unless multiple maps are explicitly averaged, the reported effect conditions on the realized $\mathcal{T}$; distributional changes caused by that intervention remain part of its interpretation.
+
+Condition-retrained evaluation instead fits $f_{\mathcal{T}}=\mathcal{A}(\mathcal{T}D_{\rm tr})$, with the corresponding validation condition, and estimates
+\begin{equation}
+\Delta_{\retrain}(\mathcal{T})=
+L(f_{\mathcal{T}},\mathcal{T}D_{\rm te})-L(f,D_{\rm te}).
+\label{eq:retrain}
+\end{equation}
+It evaluates information value achievable by that learning procedure under altered inputs. The exact decomposition
+\begin{equation}
+\Delta_{\retrain}=\Delta_{\fixed}
++\{L(f_{\mathcal{T}},\mathcal{T}D_{\rm te})-L(f,\mathcal{T}D_{\rm te})\}
+\end{equation}
+separates the perturbation effect from adaptation under retraining. This is an accounting identity, not a new estimator. The second term can have either sign. We retain the historical retrained results under their original identity and evaluate fixed-model reliance separately.
+
+\begin{figure}[!htbp]
+\centering\includegraphics[width=\textwidth]{fig1_estimands}
+\caption{Event-preserving content interventions and two evaluation objects. (a) Irregular numerical observations and independently timed text, with content reassigned among retained slots within an allowed entity/split group. Event times, counts, numerical inputs, targets and forecast units stay paired. (b) Fixed-model evaluation retains one aligned checkpoint. (c) Condition-retrained evaluation fits and selects a checkpoint under each altered condition. The event layout is illustrative.}
+\label{fig:estimands}
+\end{figure}
+
+\subsection{Matched conditions and interpretable contrasts}
+
+Aligned input retains the original content-position pairing. Restricted reassignment draws a bijection according to a stated $Q$. Historical Time-IMM shuffle uses uniform random permutations within entity and chronological split; its full-dose extension uses rejection-sampled uniform derangements. Both generated batches draw uniform nonzero cyclic shifts within each available history. Independent ridge experiments draw uniform nonzero cyclic shifts of ordered content within entity/split, or of the shared within-split report sequence for Fidel-TS. Empty and singleton groups remain unchanged. These laws define different interventions; Table~\ref{tab:capability_overview} reports them alongside the batch evidence.
+
+Time-only input replaces content by a zero vector while preserving occurrence. Numerical-only input removes the text stream, including its event process. Partial-dose replacement and a training-derived neutral representation provide additional controls where the architecture permits them. Retrospective reassignment can use a donor from later in the same test split: recipient slots retain their original eligibility, while donor knowability is a separate question. The resulting experiment measures offline reliance.
+
+With lower loss better, let $A,S,T,N$ denote aligned, shuffled, time-only and numerical-only losses. We report
+\begin{equation}
+\sag=100\frac{S-A}{S},\qquad
+\cbtg=100\frac{T-A}{T},\qquad
+\mmu=100\frac{N-A}{N}.
+\label{eq:gains}
+\end{equation}
+Every reported contrast specifies its evaluation object. SAG retains the historical name semantic-alignment gain, but measures an operational content-position contrast under the chosen reassignment. It cannot separate linguistic meaning from source, identity or temporal cues encoded inside content. CBTG compares content with an occurrence-preserving zero marker, so ``beyond timing'' refers only to the retained external event-metadata control and needs sensitivity to that marker. MMU measures complete-stream utility. A separately trained numerical-only model contributes an information-value comparison, rather than a same-checkpoint MMU estimate.
+
+The historical descriptive support rule requires positive SAG and CBTG and at least two of three paired training-seed wins against each control. It is retained as a historical decision rule, not reinterpreted as a significance test. The new fixed-model analyses report paired effect estimates and uncertainty without converting nonsignificance into evidence of absence.
+
+\subsection{Coverage and strength of the intervention}
+
+Let $P$ be a permitted group of $n$ text positions and $\sigma$ a bijection on $P$. We record source-position coverage $1-n^{-1}\sum_j\mathbb{1}\{\sigma(j)=j\}$ and effective representation coverage $1-n^{-1}\sum_j\mathbb{1}\{x_{\sigma(j)}=x_j\}$. These quantities need not agree when representations repeat. A derangement guarantees source-position coverage one for $n\geq2$, but cannot guarantee different content. For $n=1$, the only bijection maps the position to itself, so an entity-preserving alignment test cannot change that group.
+
+We additionally record the time displacement of each donor and recipient and the cosine similarity of their representations. Cosine is a geometric descriptor, not a semantic annotation: a shared representation direction can produce high cosine even when task-relevant propositions differ. Raw-text duplication and controlled proposition changes are assessed separately from vector geometry. Partial-dose experiments report achieved eligible-position coverage, since a requested fraction can be unattainable in small groups.
+
+Stronger controls trade achieved coverage against distributional change. Their interpretation uses the relevant regular-shuffle or neutral-content comparison and, when available, signal/null calibration. A changed entity restriction defines a different intervention and receives a separate report.
+
+\input{protocol_worked_examples}
+
+\section{Experimental design}
+\label{sec:design}
+
+\subsection{Historical benchmark evidence}
+
+Five Time-IMM datasets cover computing systems (ClusterTrace), network traffic (CESNET), air quality (EPA-Air), financial news (FNSPID) and software development (RepoHealth). Entity-wise chronological splits are 60/20/20 by retained windows. History, forecast horizon and stride are 12 hours for ClusterTrace, seven days for CESNET and EPA-Air, and 31 days for FNSPID and RepoHealth. Numerical scaling uses training observations. All content conditions share window identifiers and targets.
+
+Historical Time-IMM conditions use frozen GPT-2 masked-mean representations and training seeds 53, 67 and 79. The three mechanisms are a selective continuous-time state-space audit subject, official IMM-TSF RecAvg/GR-Add, and official T2V-XAttn/XAttn-Add. The latter two share one pinned codebase and are not independent research lineages. Parameter-matched recurrent, text-only, naive fusion, training-mean, shrinkage and persistence baselines assess simpler explanations. The original implementations and 43 correctness tests remain part of the historical record.
+
+The independent regular Fidel-TS photovoltaic control uses nine Canadian plants and scheduled weather context, with training/validation/test years 2018--2020/2021/2022. It uses the official TGTSF implementation and three paired training seeds. Scheduled future-context availability differs from the historical asynchronous inputs, so this result calibrates the regular task only. The new calibration and external evaluations address distinct settings.
+
+\subsection{New evaluation batches}
+
+\input{new_design}
+
+\subsection{Aggregation, pairing and uncertainty}
+
+For historical and fixed-checkpoint Time-IMM evaluation, we aggregate squared errors over observed target values within a channel, then average available channel MSEs equally. We report MAE and entity summaries alongside the main metric. Per-window squared-error sums and target counts are retained for paired reanalysis. The independent ridge batch instead pools its observed scalar target errors and separately reports entity-macro MSE; its scores and numerical-window population are not a direct reproduction of the historical feature-macro scores. A position count describes intervention coverage and is not an independent sample count.
+
+New fixed-checkpoint comparisons first pair conditions within each checkpoint and forecast unit. Training-seed effects are described separately from entity and temporal variation. Entity-aware resampling and within-entity temporal blocks preserve the chosen pairing; block-length sensitivity is recorded. All intervals from already inspected Time-IMM test data are exploratory and conditional on the evaluated models and realized reassignment maps. Independent simulated entities and independently generated worlds supply the replication layers for controlled calibration. Supplementary records state the exact resampling scheme for each result.
+
+A nonpositive estimate or an interval spanning zero does not establish practical equivalence. Model capability, effective intervention coverage and representation adequacy condition its interpretation. Any equivalence claim would require a separate, prespecified practical margin. We retain adverse and inconclusive results rather than selecting only settings with a positive content-position effect.
+
+\section{Results}
+\label{sec:results}
+
+\input{new_results}
+
+\subsection{Historical retrained gains and alignment contrasts diverge}
+\label{sec:historical_results}
+
+The earlier TGTSF Fidel-TS control obtains aligned MSE $0.171266\pm0.011401$, shuffled MSE $0.229735\pm0.007647$ and zero-content MSE $0.397442\pm0.280453$ across three seeds. Aligned input improves 25.45\% over shuffle and wins every paired seed against both controls, with substantial training variability in the zero condition. This historical condition-retrained result establishes context value in the specified regular experiment.
+
+The five Time-IMM datasets do not provide stable shared support across the three historical retrained mechanisms. For the selective subject, SAG ranges from $-0.162\%$ on FNSPID to $+0.017\%$ on RepoHealth. Every exploratory selective SAG interval includes zero. EPA-Air nevertheless retains a positive content-beyond-timing contrast and multimodal utility, while RepoHealth multimodal utility is negative. The contrasts therefore distinguish useful occurrence, usable content and original alignment.
+
+FNSPID makes the attribution distinction concrete. The aligned selective candidate improves over the matched multimodal GRU by 1.471\% and naive fusion by 7.972\%, with the required historical paired wins. Separately retrained shuffle and time-only conditions nevertheless improve MSE from 0.268230 to 0.267795 and 0.265485. The historical five-condition gate fails its alignment and content-control conditions. Its rule was internally frozen before original test inspection, rather than publicly registered.
+
+\subsection{Intervention coverage reveals an untestable boundary}
+\label{sec:coverage_results}
+
+Reconstructed historical maps retain event metadata, numerical inputs, targets and window identifiers. On CESNET's test set, ten of 16 text positions (62.50\%) retain their original source under the historical shuffle. A derangement reduces the unchanged count to seven (43.75\%), all belonging to singleton groups. Those positions cannot be reassigned while preserving their entity restriction.
+
+For the other four datasets, derangement removes fixed source positions and numerically identical replacements in the evaluated test input. GPT-2 replacement cosine medians remain high; cosine describes geometry rather than semantic equivalence. CESNET's small effect therefore describes a partially altered input, with the singleton pairing outside the intervention's reach. Coverage makes that unresolved portion explicit (Table~\ref{tab:protocol_worked}).
+
+Figure~\ref{fig:coverage}a shows the achieved representation changes, including the nine mutable CESNET positions.
+
+\subsection{Normalization changes the reported metric without improving the forecast}
+
+We isolate a metric effect by evaluating identical physical last-observation persistence under training-only and full-entity normalization. Paired windows require an observed history value for every numerical channel, avoiding a scaler-dependent fallback. Raw squared errors agree within the loader's floating-point tolerance. In contrast, the normalized MSE changes because full-entity standard deviations use future observations and reweight the same physical errors.
+
+\input{normalization_results}
+
+\begin{figure}[!htbp]
+\centering\includegraphics[width=\textwidth]{fig2_coverage}
+\caption{Observable boundaries of the paired evaluation. (a) Changed-representation coverage under the original restricted permutation and full derangement on all five historical test sets. CESNET has nine changed positions out of sixteen; seven singleton positions remain beyond the intervention's reach. The counting unit is a retained text position. (b) Identical physical persistence forecasts and eligible windows scored with training-only or full-entity standard deviations. Labels give the percentage change in the displayed normalized MSE, not a predictive improvement. The paired scaling experiment and window rule are detailed in Table~\ref{tab:normalization}.}
+\label{fig:coverage}
+\label{fig:normalization}
+\end{figure}
+
+The historical RecAvg unit-consistency experiment supplies a separate implementation example: changing the time-unit path alters EPA-Air MSE by 0.977\%, larger than its 0.629\% retrained alignment contrast. The new normalization experiment is a metric-sensitivity demonstration with a fixed simple predictor; it is not a learned forecasting improvement. Together, these comparisons show why content contrasts require a matched preprocessing protocol and a stated aggregation rule.
+
+\section{Discussion}
+
+\subsection{Reliance and value support different fusion decisions}
+
+The central distinction is between a fitted model's reliance and the context value available to its learning procedure. A large perturbation effect identifies a vulnerable input relation; refitting tests how much of the loss the procedure can recover under the altered condition. The photovoltaic comparison demonstrates that these quantities can differ substantially. Targeted edits answer a further question: which stipulated cue drives the response? \prism{} makes these questions separately testable rather than assigning them a single semantic score.
+
+\input{new_discussion}
+
+\subsection{From benchmark contrasts to interpretable evidence}
+
+TimesX shows how context quality and realistic benchmark scale shape multimodal performance \cite{liu2026timesx}. \prism{} complements benchmark construction by making the interpretation of a content contrast explicit for a retained forecasting population. Generated tasks test sensitivity and cue discrimination under known truth; natural-data comparisons test operational reliance and transfer. Their distinct roles allow useful dependence evidence to be retained while its cue-specific interpretation remains open (Table~\ref{tab:capability_overview}).
+
+For reuse, each paired effect should carry the predictor or learning-procedure identity, intervention law, achieved coverage and comparator evidence. Targeted controls address a named cue, while retraining addresses recoverable context value (Table~\ref{tab:protocol_steps}). Extending this evaluation to a capable natural irregular-text system with sufficient mutable content is the next application test. The present irregular-data cases identify the coverage and transfer conditions that such a test must resolve.
+
+\subsection{Scope of the evidence}
+
+The evidence supports a conditional evaluation protocol. Historical Time-IMM intervals describe exploratory reanalysis of a shared benchmark lineage with three training seeds and previously inspected test data. Cue discrimination is calibrated within finite generated templates, fixed empirical clocks and the evaluated linear pipelines; extension to the original neural mechanisms or natural language remains untested. The null calibration provides no general 5\% error-control guarantee, and the construct screen is post-selection and descriptive. Chronological downstream splits and recorded event times also leave pretrained contamination and actual report arrival unresolved. Task-specific language controls and availability logs are needed to extend those interpretations.
+
+\section{Conclusion}
+
+\input{conclusion}
+
+\section*{Data and code availability}
+
+The manuscript, project adapters, evaluation and plotting code, aggregate reporting inputs and generated-task fitted states are available at \url{https://github.com/bianyanbo44-afk/prism-multimodal-forecasting}. Release \texttt{v0.1.0} provides the generated calibration and construct feature/target arrays, with file hashes and a portable verification entry point. Original Time-IMM and Fidel-TS data and pretrained model weights are acquired from their providers under the applicable source terms; acquisition routes and pinned identities are documented in the repository. Natural-data design matrices, cached report representations and the larger local review/replay package are excluded from the public subset. The editable manuscript archive contains LaTeX, bibliography and figure PDFs. No DOI or journal publication is asserted for this release.
+
+\section*{Declarations}
+
+The study uses public research datasets and explicitly generated calibration data. It introduces no participant recruitment or sensitive personal-data collection. The review manuscript retains anonymous author metadata. Generative AI assisted research planning, implementation, execution orchestration, result checking, figure construction and drafting. The authors are responsible for verifying the scientific interpretation, sources, author contributions and final submitted version.
+
+\bibliographystyle{elsarticle-num}
+\bibliography{references}
+\clearpage
+\appendix
+\input{supplement}
+\end{document}

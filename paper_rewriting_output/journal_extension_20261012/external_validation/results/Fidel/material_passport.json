@@ -1,0 +1,118 @@
+{
+  "dataset": "VEWOXIC/Canada_photovoltaics_plants",
+  "data_geometry": "Regular hourly targets, regular daily forecast starts; not irregular-history calibration",
+  "entities": [
+    "164440",
+    "314106",
+    "319086",
+    "331901",
+    "332785",
+    "355827",
+    "551172",
+    "570079",
+    "577650"
+  ],
+  "sample_counts": {
+    "train": 9729,
+    "val": 3285,
+    "test": 3285
+  },
+  "plant_counts": {
+    "train": {
+      "164440": 1081,
+      "314106": 1081,
+      "319086": 1081,
+      "331901": 1081,
+      "332785": 1081,
+      "355827": 1081,
+      "551172": 1081,
+      "570079": 1081,
+      "577650": 1081
+    },
+    "val": {
+      "164440": 365,
+      "314106": 365,
+      "319086": 365,
+      "331901": 365,
+      "332785": 365,
+      "355827": 365,
+      "551172": 365,
+      "570079": 365,
+      "577650": 365
+    },
+    "test": {
+      "164440": 365,
+      "314106": 365,
+      "319086": 365,
+      "331901": 365,
+      "332785": 365,
+      "355827": 365,
+      "551172": 365,
+      "570079": 365,
+      "577650": 365
+    }
+  },
+  "normalization": {
+    "164440": {
+      "mean": 17.25089689781022,
+      "std": 31.775953130530155
+    },
+    "314106": {
+      "mean": 2.0897020605231145,
+      "std": 3.803093556355131
+    },
+    "319086": {
+      "mean": 46.019977684002434,
+      "std": 81.45459722749513
+    },
+    "331901": {
+      "mean": 13.37964598540146,
+      "std": 23.920992620481094
+    },
+    "332785": {
+      "mean": 1.3589002813260342,
+      "std": 2.335388575757992
+    },
+    "355827": {
+      "mean": 29.28246909215328,
+      "std": 55.56584354275805
+    },
+    "551172": {
+      "mean": 3.5488334473844283,
+      "std": 6.546159211090534
+    },
+    "570079": {
+      "mean": 4.368196852189781,
+      "std": 8.014194516925633
+    },
+    "577650": {
+      "mean": 77.06716313108272,
+      "std": 133.67633928297704
+    }
+  },
+  "reports": 7304,
+  "published_representation_shape": [
+    7304,
+    7,
+    256
+  ],
+  "availability": "Report timestamp <= forecast cutoff; no arrival/issuance metadata; timestamp availability assumed",
+  "all_files_sha256": {
+    "weather\\calgary\\report_embedding\\formal_report\\fast_general_formal_embeddings_2018.pkl": "c7b0af09b48bd8852241e64025f58453395db3d9fd7fb2cc120bc7fa36fd80a4",
+    "weather\\calgary\\report_embedding\\formal_report\\fast_general_formal_embeddings_2019.pkl": "9b456bcc2717f15cab17e9487eebcb8be8cfcce7e8457d9422697b46c6373e5b",
+    "weather\\calgary\\report_embedding\\formal_report\\fast_general_formal_embeddings_2020.pkl": "bff9969a00cd2de2d3cfe9cd3cdf721e29ab6ef920d6aeab3da57df03d2721d5",
+    "weather\\calgary\\report_embedding\\formal_report\\fast_general_formal_embeddings_2021.pkl": "13ee35022ee8d919b0b81e98f49038a469f22344fbf3bf1109d16319ffe43a61",
+    "weather\\calgary\\report_embedding\\formal_report\\fast_general_formal_embeddings_2022.pkl": "0aebf74b756bf836f25a94dc2eecdaf9370c9d763877737efea03e0c49acd5b3",
+    "time_series\\id_164440.parquet": "e5875d8eb5dc7effc006000c5367a9f14573af29136a0d214828cb0279047261",
+    "time_series\\id_314106.parquet": "3e8952a48454386af1d272798070fad3034257eb2d173e8fbe19c733951724a9",
+    "time_series\\id_319086.parquet": "daebb7379f70e78274541db84a8fba48f429b16d18f12202ed336e5ff65c5d79",
+    "time_series\\id_331901.parquet": "655d1e09ec755500de4809eea946927b03c5b11788bd16dd5825c625ad5aa717",
+    "time_series\\id_332785.parquet": "52223f6cf1fb2b138343b7248410fb84bd44b62aa709fc96f6526cc3a021e1b3",
+    "time_series\\id_355827.parquet": "1b7fe90a0369291b82a7528aedf6d91fd19af0261f3c082534f23cade568089e",
+    "time_series\\id_551172.parquet": "e6c41e81369ac017a0d1b209685ea324d7bcddae5231cbd54a5e8a08362d340a",
+    "time_series\\id_570079.parquet": "690f1a6e1eb3b427765227f525c2a4f1b6c36df52a26000c06ea80d9424b8844",
+    "time_series\\id_577650.parquet": "625002db96830bbf4b995c65beb854218a2e1144eb27302db5090f680f85fe60"
+  },
+  "protocol_sha256": "f20b0dd5eee9e485f766c7bb801bb631f356220f43d97b12d4578c5cc848eb9e",
+  "script_sha256": "5be9db5db4418f2cc431fca0f5bcba19b1d7347b477255b78d55090920d75508"
+}

@@ -1,0 +1,16 @@
+panel,dataset,condition,changed_percent,positions,changed_positions,train_only_mse,full_entity_mse,displayed_mse_change_percent,eligible_windows,total_windows
+coverage,ClusterTrace,Historical shuffle,99.24242424242425,132,131,,,,,
+coverage,ClusterTrace,Full derangement,100.0,132,132,,,,,
+coverage,CESNET,Historical shuffle,37.5,16,6,,,,,
+coverage,CESNET,Full derangement,56.25,16,9,,,,,
+coverage,EPA-Air,Historical shuffle,96.5909090909091,176,170,,,,,
+coverage,EPA-Air,Full derangement,100.0,176,176,,,,,
+coverage,FNSPID,Historical shuffle,99.83176312247645,5944,5934,,,,,
+coverage,FNSPID,Full derangement,100.0,5944,5944,,,,,
+coverage,RepoHealth,Historical shuffle,99.67728922952803,2479,2471,,,,,
+coverage,RepoHealth,Full derangement,100.0,2479,2479,,,,,
+scaling,ClusterTrace,,,,,2.1311294511703576,0.7960676460820775,-62.64573953286137,16,69
+scaling,CESNET,,,,,1.8616659030243845,1.8311620791473604,-1.6385229931680456,12,12
+scaling,EPA-Air,,,,,1.2595754263375434,0.7198120178424938,-42.85280557310609,39,43
+scaling,FNSPID,,,,,0.3209356844826163,0.1561696922823744,-51.33925585927375,321,321
+scaling,RepoHealth,,,,,1.4108418175800583,1.033574614978038,-26.740574166501997,80,80

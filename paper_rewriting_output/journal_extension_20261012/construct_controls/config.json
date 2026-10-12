@@ -1,0 +1,43 @@
+{
+  "protocol_id": "semaudit_meaning_proxy_timing_construct_v1",
+  "source_root": "F:/CCFA/phase3_prototype/external/Time-IMM/data/EPA-Air/processed",
+  "encoder_path": "F:/CCFA/paper_rewriting_output/journal_extension_20261012/external_validation/models/minilm",
+  "encoder_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "data_seeds": [4001, 4111, 4229, 4349, 4463, 4583, 4703, 4817, 4937, 5051, 5171, 5297, 5413, 5527, 5651, 5779, 5897, 6011, 6133, 6257],
+  "entities_per_split": {"train": 128, "val": 32, "test": 128},
+  "history_days": 7.0,
+  "stride_days": 7.0,
+  "max_queries_per_entity": 40,
+  "forecast_horizon_days": 1.0,
+  "semantic_decay_days": 1.0,
+  "arrival_delay_mean_days": 0.15,
+  "noise_sd": 0.35,
+  "numeric_ar1_phi": 0.985,
+  "pca_max_components": 15,
+  "ridge_alphas": [0.0001, 0.01, 1.0, 100.0],
+  "mechanisms": ["semantic_only", "proxy_only", "timing_only"],
+  "conditions": ["aligned", "whole_permutation", "meaning_flip", "proxy_flip", "meaning_preserving_paraphrase", "zero"],
+  "threads": 2,
+  "paired_alpha_one_sided": 0.05,
+  "capability_min_relative_validation_gain": 0.01,
+  "proxy_positive_suffix": " Bulletin source: Cedar.",
+  "proxy_negative_suffix": " Bulletin source: Maple.",
+  "train_direction_pairs": [
+    ["The next interval will have an increase in demand.", "The next interval will have a decrease in demand."],
+    ["Demand is expected to rise during the next interval.", "Demand is expected to fall during the next interval."],
+    ["The coming period is forecast to show growing demand.", "The coming period is forecast to show declining demand."],
+    ["A higher level of demand is anticipated for the next period.", "A lower level of demand is anticipated for the next period."]
+  ],
+  "test_direction_pairs": [
+    ["We predict that demand will increase in the upcoming interval.", "We predict that demand will decrease in the upcoming interval."],
+    ["In the following period, demand should move upward.", "In the following period, demand should move downward."],
+    ["The forecast points to a rise in demand for the coming interval.", "The forecast points to a fall in demand for the coming interval."],
+    ["Demand in the forthcoming period is projected to be higher.", "Demand in the forthcoming period is projected to be lower."]
+  ],
+  "paraphrase_direction_pairs": [
+    ["An increase in demand is forecast for the interval ahead.", "A decrease in demand is forecast for the interval ahead."],
+    ["Demand is predicted to go up over the upcoming period.", "Demand is predicted to go down over the upcoming period."],
+    ["For the coming period, the anticipated demand trend is rising.", "For the coming period, the anticipated demand trend is falling."],
+    ["The next period is expected to see higher demand.", "The next period is expected to see lower demand."]
+  ]
+}

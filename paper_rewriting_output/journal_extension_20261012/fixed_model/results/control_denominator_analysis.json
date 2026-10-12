@@ -1,0 +1,14 @@
+{
+  "analysis": "control-denominator percentage gain supplement to fixed-checkpoint inference",
+  "script_sha256": "31eebb409dd087800dc1f178ebf65195be321414afa05aba40caa61179973434",
+  "input_manifest_sha256": "44d9547c21cb4c0e368337870e340a0feea082f3e58dd16c734af6f42d4bdc8d",
+  "elapsed_seconds": 11.51114680000137,
+  "comparisons": 105,
+  "repetitions": 2000,
+  "bootstrap_seed": 194,
+  "block_lengths": [
+    2,
+    4,
+    8
+  ]
+}

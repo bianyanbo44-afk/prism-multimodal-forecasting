@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering\small
+\caption{Same-checkpoint loss effects over twenty additional nonzero cyclic-shift maps. Ranges are empirical 2.5th--97.5th percentiles across maps and are not sampling confidence intervals. All rows use scalar-pooled MSE, with predictor state and forecast units fixed.}
+\label{tab:maps}
+\begin{tabular}{lllll}
+\toprule
+Dataset & Input & Mean $\Delta$ MSE & Empirical map range & Positive maps\\
+\midrule
+FNSPID & GPT-2 & -0.001207 & [-0.002175, -0.000401] & 0/20\\
+FNSPID & MiniLM & -0.000886 & [-0.002149, +0.000588] & 3/20\\
+FNSPID & FinBERT & -0.000600 & [-0.001494, +0.000160] & 3/20\\
+EPA-Air & GPT-2 & -0.062968 & [-0.139023, +0.034266] & 2/20\\
+EPA-Air & MiniLM & -0.008230 & [-0.050978, +0.051667] & 6/20\\
+EPA-Air & FinBERT & -0.005435 & [-0.044129, +0.038321] & 8/20\\
+Fidel & Weather & +0.047600 & [+0.032916, +0.064487] & 20/20\\
+\bottomrule
+\end{tabular}
+\end{table}

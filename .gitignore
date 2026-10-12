@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv*/
+*.aux
+*.log
+*.out
+*.blg
+*.spl
+PUBLIC_REPLAY_RESULT.json
+PRISM_Synthetic_Evidence.zip
+**/results/raw/*.npz
+!paper_rewriting_output/journal_extension_20261012/construct_controls/results/raw/world_4001.npz

@@ -1,0 +1,460 @@
+{
+  "dataset": "EPA-Air",
+  "all_source_hashes_unchanged": true,
+  "source_files_checked": 16,
+  "permutation_has_no_index_fixed_points_when_n_gt1": true,
+  "fixed_checkpoint_and_targets_match_across_conditions": true,
+  "csv_metrics": [
+    {
+      "file": "numeric_only.csv",
+      "count": 7508,
+      "recomputed_mse": 27.0565352307332,
+      "sha256": "6fc82d756e604491ccb8c645f70c074bfacdfb887661ab93ba4ec0e25722b76e"
+    },
+    {
+      "file": "event_structure.csv",
+      "count": 7508,
+      "recomputed_mse": 24.12710427563741,
+      "sha256": "f0b276f8619d3452c1e0d6755cf6b54216077bb9bd85f85b071ea0ca17480e68"
+    },
+    {
+      "file": "gpt2_trained_aligned_eval_aligned.csv",
+      "count": 7508,
+      "recomputed_mse": 12.580395573014561,
+      "sha256": "8546b466273d2f393f3cd893caa637dce6617628cf7422e622183d0515ffd2c2"
+    },
+    {
+      "file": "gpt2_trained_aligned_eval_semantic_derangement.csv",
+      "count": 7508,
+      "recomputed_mse": 12.429104058791166,
+      "sha256": "4bca68d7299efa44a1fb7cc161f6daf34e9540ae8be5b754c1440d756fdf9182"
+    },
+    {
+      "file": "gpt2_trained_aligned_eval_zero.csv",
+      "count": 7508,
+      "recomputed_mse": 11.753570210349391,
+      "sha256": "1f47682fb623a52504be6606f4e539d0a9ba01746ec0325f9d69b3bf4b4169ba"
+    },
+    {
+      "file": "gpt2_trained_semantic_derangement_eval_semantic_derangement.csv",
+      "count": 7508,
+      "recomputed_mse": 7.418856452864017,
+      "sha256": "a177bb1cc9595066825c2db319923875de5e04e2303c6740c780de64c290e3f6"
+    },
+    {
+      "file": "minilm_trained_aligned_eval_aligned.csv",
+      "count": 7508,
+      "recomputed_mse": 11.63506151520779,
+      "sha256": "96b50dcbeda3336ad271bee088cfb2a7b416c7a9f73f52c0c7bd512a57415bb7"
+    },
+    {
+      "file": "minilm_trained_aligned_eval_semantic_derangement.csv",
+      "count": 7508,
+      "recomputed_mse": 11.59960809088395,
+      "sha256": "0d1853d52a1d0e6aee7dd3022566ba2da8fe90239f029ec329016cb6840f44bd"
+    },
+    {
+      "file": "minilm_trained_aligned_eval_zero.csv",
+      "count": 7508,
+      "recomputed_mse": 11.815968590985882,
+      "sha256": "86f1b5b320fd77c82c197eeb9e69a54d40138a08a976dae05f9b03d5daf3db80"
+    },
+    {
+      "file": "minilm_trained_aligned_eval_neutral.csv",
+      "count": 7508,
+      "recomputed_mse": 11.666046114946058,
+      "sha256": "73c41a46c10b78ef76ff31d85514713bd56c856c1b92d5ef8740bb698c4dc01e"
+    },
+    {
+      "file": "minilm_trained_semantic_derangement_eval_semantic_derangement.csv",
+      "count": 7508,
+      "recomputed_mse": 8.34322319371558,
+      "sha256": "d1d2c715f570c4a1b9c7db20d43e4bc5ccd8c4fcd99665c87be9f2b2ed397f2a"
+    },
+    {
+      "file": "finbert_trained_aligned_eval_aligned.csv",
+      "count": 7508,
+      "recomputed_mse": 1.9507461355357398,
+      "sha256": "e873c1473ba41d2895f7616ba494ce0eb02b517a92526d11f603046761c1f9a4"
+    },
+    {
+      "file": "finbert_trained_aligned_eval_semantic_derangement.csv",
+      "count": 7508,
+      "recomputed_mse": 1.9452469522366636,
+      "sha256": "7dba81d0d6f024ed50ce554f2ec8c95c088974f30573bf8e919f918edb3af3cf"
+    },
+    {
+      "file": "finbert_trained_aligned_eval_zero.csv",
+      "count": 7508,
+      "recomputed_mse": 2.638124297048845,
+      "sha256": "dfd1cea83d6d14484195736cf2ef4069a902ac5fdb9a51a6f4d8aa5002f7d371"
+    },
+    {
+      "file": "finbert_trained_aligned_eval_neutral.csv",
+      "count": 7508,
+      "recomputed_mse": 2.1027376906107396,
+      "sha256": "9d0dad1d2776c76bc209d567ac7868c7ad68197237b5e8c5aae6c25551ae143c"
+    },
+    {
+      "file": "finbert_trained_semantic_derangement_eval_semantic_derangement.csv",
+      "count": 7508,
+      "recomputed_mse": 17.385431547841883,
+      "sha256": "a733256da0649c4213143d38734a5432cc2e2c4eff5cf7cba798a7d22e6cb180"
+    }
+  ],
+  "baselines": {
+    "train": {
+      "persistence": {
+        "mse": 1.0447598199719064,
+        "mae": 0.7685186682506308,
+        "observations": 23157,
+        "macro_entity_mse": 1.1361104284489778,
+        "entities": {
+          "Bexar": {
+            "mse": 0.9706245940625176,
+            "mae": 0.8280012904419745,
+            "count": 591
+          },
+          "Dallas": {
+            "mse": 1.0683697672079937,
+            "mae": 0.8123107280429825,
+            "count": 2955
+          },
+          "Denver": {
+            "mse": 0.8522101212919694,
+            "mae": 0.7011215896553274,
+            "count": 4531
+          },
+          "Hillsborough": {
+            "mse": 2.1277371587586877,
+            "mae": 1.0621281825331026,
+            "count": 1182
+          },
+          "Los_Angeles": {
+            "mse": 1.1540863108001747,
+            "mae": 0.8042149999244002,
+            "count": 3740
+          },
+          "Maricopa": {
+            "mse": 0.5419554850303169,
+            "mae": 0.5729278598615246,
+            "count": 3144
+          },
+          "Philadelphia": {
+            "mse": 1.351066687950967,
+            "mae": 0.8874049710957546,
+            "count": 2718
+          },
+          "Richmond": {
+            "mse": 1.022833302489196,
+            "mae": 0.7573618248647738,
+            "count": 4296
+          }
+        }
+      },
+      "train_mean_zero": {
+        "mse": 0.9767518639564514,
+        "mae": 0.7754812240600586,
+        "observations": 23157,
+        "macro_entity_mse": 0.9536893069172105,
+        "entities": {
+          "Bexar": {
+            "mse": 0.6236781049554356,
+            "mae": 0.5797804384551432,
+            "count": 591
+          },
+          "Dallas": {
+            "mse": 1.0058072648869112,
+            "mae": 0.7900625757192984,
+            "count": 2955
+          },
+          "Denver": {
+            "mse": 0.999767881678404,
+            "mae": 0.7833792535916811,
+            "count": 4531
+          },
+          "Hillsborough": {
+            "mse": 1.1370112416320786,
+            "mae": 0.808323943038044,
+            "count": 1182
+          },
+          "Los_Angeles": {
+            "mse": 0.9659982083024353,
+            "mae": 0.7724289118911807,
+            "count": 3740
+          },
+          "Maricopa": {
+            "mse": 0.9204947429877761,
+            "mae": 0.7796503489910513,
+            "count": 3144
+          },
+          "Philadelphia": {
+            "mse": 1.0107880226801798,
+            "mae": 0.7730312026352529,
+            "count": 2718
+          },
+          "Richmond": {
+            "mse": 0.965968988214464,
+            "mae": 0.7761638140609326,
+            "count": 4296
+          }
+        }
+      }
+    },
+    "val": {
+      "persistence": {
+        "mse": 1.075034444747001,
+        "mae": 0.7524798297923936,
+        "observations": 8048,
+        "macro_entity_mse": 1.1560133729215527,
+        "entities": {
+          "Bexar": {
+            "mse": 1.3751641029870065,
+            "mae": 0.6328482741423821,
+            "count": 197
+          },
+          "Dallas": {
+            "mse": 1.1400300957730078,
+            "mae": 0.7985563917354997,
+            "count": 985
+          },
+          "Denver": {
+            "mse": 0.8908439602258472,
+            "mae": 0.6914900303398718,
+            "count": 1576
+          },
+          "Hillsborough": {
+            "mse": 1.4239407275092149,
+            "mae": 0.8563786384869405,
+            "count": 394
+          },
+          "Los_Angeles": {
+            "mse": 1.5652774480538705,
+            "mae": 0.9282454895071734,
+            "count": 1379
+          },
+          "Maricopa": {
+            "mse": 0.7961545497897671,
+            "mae": 0.5862732584221453,
+            "count": 1182
+          },
+          "Philadelphia": {
+            "mse": 1.5974643881339026,
+            "mae": 1.0470393412618846,
+            "count": 985
+          },
+          "Richmond": {
+            "mse": 0.45923171089980486,
+            "mae": 0.5282576076265563,
+            "count": 1350
+          }
+        }
+      },
+      "train_mean_zero": {
+        "mse": 3.3906726837158203,
+        "mae": 1.5891857147216797,
+        "observations": 8048,
+        "macro_entity_mse": 3.529708907942459,
+        "entities": {
+          "Bexar": {
+            "mse": 3.4831350702924775,
+            "mae": 1.6048613184599707,
+            "count": 197
+          },
+          "Dallas": {
+            "mse": 2.3887767435391716,
+            "mae": 1.3554147369313398,
+            "count": 985
+          },
+          "Denver": {
+            "mse": 3.157924290859911,
+            "mae": 1.5870231609734786,
+            "count": 1576
+          },
+          "Hillsborough": {
+            "mse": 5.5059634173691485,
+            "mae": 1.917803124235092,
+            "count": 394
+          },
+          "Los_Angeles": {
+            "mse": 5.978346228376452,
+            "mae": 2.1250075839420726,
+            "count": 1379
+          },
+          "Maricopa": {
+            "mse": 2.6092566554316408,
+            "mae": 1.4791765319917811,
+            "count": 1182
+          },
+          "Philadelphia": {
+            "mse": 3.0952659174355532,
+            "mae": 1.4768735631619614,
+            "count": 985
+          },
+          "Richmond": {
+            "mse": 2.0190029402353145,
+            "mae": 1.2950148122840457,
+            "count": 1350
+          }
+        }
+      }
+    },
+    "test": {
+      "persistence": {
+        "mse": 0.7514065928159832,
+        "mae": 0.6296352968597363,
+        "observations": 7508,
+        "macro_entity_mse": 0.7829115514493727,
+        "entities": {
+          "Bexar": {
+            "mse": 0.3754580086481403,
+            "mae": 0.4911644842764032,
+            "count": 394
+          },
+          "Dallas": {
+            "mse": 1.1452188642081185,
+            "mae": 0.6888889239448581,
+            "count": 985
+          },
+          "Denver": {
+            "mse": 0.5520535523379312,
+            "mae": 0.5648209840317455,
+            "count": 689
+          },
+          "Hillsborough": {
+            "mse": 1.3686294286318754,
+            "mae": 0.9004422098038917,
+            "count": 394
+          },
+          "Los_Angeles": {
+            "mse": 1.1154179497229253,
+            "mae": 0.8244783136414694,
+            "count": 1379
+          },
+          "Maricopa": {
+            "mse": 0.30736779974795125,
+            "mae": 0.4332214262255583,
+            "count": 1182
+          },
+          "Philadelphia": {
+            "mse": 1.0761272517453082,
+            "mae": 0.8073077535933961,
+            "count": 985
+          },
+          "Richmond": {
+            "mse": 0.3230195565527322,
+            "mae": 0.4447133771146764,
+            "count": 1500
+          }
+        }
+      },
+      "train_mean_zero": {
+        "mse": 4.4875898361206055,
+        "mae": 1.794433355331421,
+        "observations": 7508,
+        "macro_entity_mse": 4.843436339188905,
+        "entities": {
+          "Bexar": {
+            "mse": 2.8304022146663086,
+            "mae": 1.5548424475689224,
+            "count": 394
+          },
+          "Dallas": {
+            "mse": 3.7462954915114466,
+            "mae": 1.761740475076104,
+            "count": 985
+          },
+          "Denver": {
+            "mse": 2.2325695493298747,
+            "mae": 1.3441457831434613,
+            "count": 689
+          },
+          "Hillsborough": {
+            "mse": 10.868725701031952,
+            "mae": 3.0371083968181902,
+            "count": 394
+          },
+          "Los_Angeles": {
+            "mse": 8.268654143576867,
+            "mae": 2.59292743787807,
+            "count": 1379
+          },
+          "Maricopa": {
+            "mse": 1.812668966902668,
+            "mae": 1.1921853038014343,
+            "count": 1182
+          },
+          "Philadelphia": {
+            "mse": 7.6898706889394575,
+            "mae": 2.5470936599721763,
+            "count": 985
+          },
+          "Richmond": {
+            "mse": 1.2983039575526598,
+            "mae": 1.0054990509288813,
+            "count": 1500
+          }
+        }
+      }
+    }
+  },
+  "validation_capability_descriptive": [
+    {
+      "representation": "none",
+      "condition": "numeric_only",
+      "validation_mse": 0.9017760169621956,
+      "persistence_validation_mse": 1.075034444747001,
+      "relative_validation_improvement": 0.16116546649403424
+    },
+    {
+      "representation": "none",
+      "condition": "event_structure",
+      "validation_mse": 0.9068527490475919,
+      "persistence_validation_mse": 1.075034444747001,
+      "relative_validation_improvement": 0.15644307633230212
+    },
+    {
+      "representation": "gpt2",
+      "condition": "aligned",
+      "validation_mse": 0.9154823250650016,
+      "persistence_validation_mse": 1.075034444747001,
+      "relative_validation_improvement": 0.14841582096427477
+    },
+    {
+      "representation": "gpt2",
+      "condition": "semantic_derangement",
+      "validation_mse": 0.9907902795324933,
+      "persistence_validation_mse": 1.075034444747001,
+      "relative_validation_improvement": 0.0783641544009632
+    },
+    {
+      "representation": "minilm",
+      "condition": "aligned",
+      "validation_mse": 0.9682746537190281,
+      "persistence_validation_mse": 1.075034444747001,
+      "relative_validation_improvement": 0.0993082515166273
+    },
+    {
+      "representation": "minilm",
+      "condition": "semantic_derangement",
+      "validation_mse": 0.9809236156617022,
+      "persistence_validation_mse": 1.075034444747001,
+      "relative_validation_improvement": 0.08754215229582431
+    },
+    {
+      "representation": "finbert",
+      "condition": "aligned",
+      "validation_mse": 0.9011601515918549,
+      "persistence_validation_mse": 1.075034444747001,
+      "relative_validation_improvement": 0.16173834615696037
+    },
+    {
+      "representation": "finbert",
+      "condition": "semantic_derangement",
+      "validation_mse": 0.9858391441823277,
+      "persistence_validation_mse": 1.075034444747001,
+      "relative_validation_improvement": 0.08296971413382447
+    }
+  ],
+  "no_eligibility_threshold_selected_after_test": true
+}

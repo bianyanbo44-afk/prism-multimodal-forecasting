@@ -1,0 +1,320 @@
+{
+  "conditions": [
+    {
+      "mechanism": "semantic_only",
+      "condition": "whole_permutation",
+      "worlds": 20,
+      "mean_delta_MSE": 0.7329635410375712,
+      "delta_world_mean_ci95": [
+        0.7236460140790131,
+        0.7422810679961294
+      ],
+      "rejected_worlds": 20,
+      "rejection_rate": 1.0,
+      "rate_wilson95": [
+        0.8388748419471806,
+        1.0
+      ],
+      "capability_qualified_worlds": 20,
+      "mean_aligned_MSE": 0.3813886150400986,
+      "mean_control_MSE": 1.11435215607767,
+      "mean_numeric_timing_MSE": 0.9115872181785722,
+      "mean_oracle_readout_MSE": 0.12286366712674328
+    },
+    {
+      "mechanism": "semantic_only",
+      "condition": "meaning_flip",
+      "worlds": 20,
+      "mean_delta_MSE": 2.6981589864130227,
+      "delta_world_mean_ci95": [
+        2.667528899993113,
+        2.7287890728329325
+      ],
+      "rejected_worlds": 20,
+      "rejection_rate": 1.0,
+      "rate_wilson95": [
+        0.8388748419471806,
+        1.0
+      ],
+      "capability_qualified_worlds": 20,
+      "mean_aligned_MSE": 0.3813886150400986,
+      "mean_control_MSE": 3.079547601453121,
+      "mean_numeric_timing_MSE": 0.9115872181785722,
+      "mean_oracle_readout_MSE": 0.12286366712674328
+    },
+    {
+      "mechanism": "semantic_only",
+      "condition": "proxy_flip",
+      "worlds": 20,
+      "mean_delta_MSE": -7.109435014205885e-05,
+      "delta_world_mean_ci95": [
+        -0.001688181854310469,
+        0.0015459931540263512
+      ],
+      "rejected_worlds": 0,
+      "rejection_rate": 0.0,
+      "rate_wilson95": [
+        0.0,
+        0.16112515805281938
+      ],
+      "capability_qualified_worlds": 20,
+      "mean_aligned_MSE": 0.3813886150400986,
+      "mean_control_MSE": 0.38131752068995656,
+      "mean_numeric_timing_MSE": 0.9115872181785722,
+      "mean_oracle_readout_MSE": 0.12286366712674328
+    },
+    {
+      "mechanism": "semantic_only",
+      "condition": "meaning_preserving_paraphrase",
+      "worlds": 20,
+      "mean_delta_MSE": -0.03013189678624867,
+      "delta_world_mean_ci95": [
+        -0.04362468594553535,
+        -0.01663910762696199
+      ],
+      "rejected_worlds": 1,
+      "rejection_rate": 0.05,
+      "rate_wilson95": [
+        0.008881448800795402,
+        0.23613119344674205
+      ],
+      "capability_qualified_worlds": 20,
+      "mean_aligned_MSE": 0.3813886150400986,
+      "mean_control_MSE": 0.35125671825384996,
+      "mean_numeric_timing_MSE": 0.9115872181785722,
+      "mean_oracle_readout_MSE": 0.12286366712674328
+    },
+    {
+      "mechanism": "semantic_only",
+      "condition": "zero",
+      "worlds": 20,
+      "mean_delta_MSE": 0.5294199126277567,
+      "delta_world_mean_ci95": [
+        0.5086074342131637,
+        0.5502323910423497
+      ],
+      "rejected_worlds": 20,
+      "rejection_rate": 1.0,
+      "rate_wilson95": [
+        0.8388748419471806,
+        1.0
+      ],
+      "capability_qualified_worlds": 20,
+      "mean_aligned_MSE": 0.3813886150400986,
+      "mean_control_MSE": 0.9108085276678555,
+      "mean_numeric_timing_MSE": 0.9115872181785722,
+      "mean_oracle_readout_MSE": 0.12286366712674328
+    },
+    {
+      "mechanism": "proxy_only",
+      "condition": "whole_permutation",
+      "worlds": 20,
+      "mean_delta_MSE": 0.7708699437346215,
+      "delta_world_mean_ci95": [
+        0.7580122007452865,
+        0.7837276867239564
+      ],
+      "rejected_worlds": 20,
+      "rejection_rate": 1.0,
+      "rate_wilson95": [
+        0.8388748419471806,
+        1.0
+      ],
+      "capability_qualified_worlds": 20,
+      "mean_aligned_MSE": 0.1532732840692401,
+      "mean_control_MSE": 0.9241432278038616,
+      "mean_numeric_timing_MSE": 0.9138644084854759,
+      "mean_oracle_readout_MSE": 0.12286366712674328
+    },
+    {
+      "mechanism": "proxy_only",
+      "condition": "meaning_flip",
+      "worlds": 20,
+      "mean_delta_MSE": -0.00022758622149691906,
+      "delta_world_mean_ci95": [
+        -0.0006400910674974,
+        0.00018491862450356183
+      ],
+      "rejected_worlds": 1,
+      "rejection_rate": 0.05,
+      "rate_wilson95": [
+        0.008881448800795402,
+        0.23613119344674205
+      ],
+      "capability_qualified_worlds": 20,
+      "mean_aligned_MSE": 0.1532732840692401,
+      "mean_control_MSE": 0.15304569784774316,
+      "mean_numeric_timing_MSE": 0.9138644084854759,
+      "mean_oracle_readout_MSE": 0.12286366712674328
+    },
+    {
+      "mechanism": "proxy_only",
+      "condition": "proxy_flip",
+      "worlds": 20,
+      "mean_delta_MSE": 2.872552653707265,
+      "delta_world_mean_ci95": [
+        2.8402522423174137,
+        2.9048530650971163
+      ],
+      "rejected_worlds": 20,
+      "rejection_rate": 1.0,
+      "rate_wilson95": [
+        0.8388748419471806,
+        1.0
+      ],
+      "capability_qualified_worlds": 20,
+      "mean_aligned_MSE": 0.1532732840692401,
+      "mean_control_MSE": 3.025825937776505,
+      "mean_numeric_timing_MSE": 0.9138644084854759,
+      "mean_oracle_readout_MSE": 0.12286366712674328
+    },
+    {
+      "mechanism": "proxy_only",
+      "condition": "meaning_preserving_paraphrase",
+      "worlds": 20,
+      "mean_delta_MSE": -0.005214230985273625,
+      "delta_world_mean_ci95": [
+        -0.010064595767777015,
+        -0.0003638662027702355
+      ],
+      "rejected_worlds": 3,
+      "rejection_rate": 0.15,
+      "rate_wilson95": [
+        0.052368745896216595,
+        0.36041886474075696
+      ],
+      "capability_qualified_worlds": 20,
+      "mean_aligned_MSE": 0.1532732840692401,
+      "mean_control_MSE": 0.14805905308396644,
+      "mean_numeric_timing_MSE": 0.9138644084854759,
+      "mean_oracle_readout_MSE": 0.12286366712674328
+    },
+    {
+      "mechanism": "proxy_only",
+      "condition": "zero",
+      "worlds": 20,
+      "mean_delta_MSE": 0.7593895263411662,
+      "delta_world_mean_ci95": [
+        0.7502111121719606,
+        0.7685679405103718
+      ],
+      "rejected_worlds": 20,
+      "rejection_rate": 1.0,
+      "rate_wilson95": [
+        0.8388748419471806,
+        1.0
+      ],
+      "capability_qualified_worlds": 20,
+      "mean_aligned_MSE": 0.1532732840692401,
+      "mean_control_MSE": 0.9126628104104064,
+      "mean_numeric_timing_MSE": 0.9138644084854759,
+      "mean_oracle_readout_MSE": 0.12286366712674328
+    },
+    {
+      "mechanism": "timing_only",
+      "condition": "whole_permutation",
+      "worlds": 20,
+      "mean_delta_MSE": -0.0001953865645553238,
+      "delta_world_mean_ci95": [
+        -0.0006810532252610796,
+        0.00029028009615043204
+      ],
+      "rejected_worlds": 1,
+      "rejection_rate": 0.05,
+      "rate_wilson95": [
+        0.008881448800795402,
+        0.23613119344674205
+      ],
+      "capability_qualified_worlds": 0,
+      "mean_aligned_MSE": 0.13410568069111573,
+      "mean_control_MSE": 0.1339102941265604,
+      "mean_numeric_timing_MSE": 0.12309270217677995,
+      "mean_oracle_readout_MSE": 0.12286366712674328
+    },
+    {
+      "mechanism": "timing_only",
+      "condition": "meaning_flip",
+      "worlds": 20,
+      "mean_delta_MSE": -4.303004100520382e-06,
+      "delta_world_mean_ci95": [
+        -0.00012815434061355603,
+        0.00011954833241251525
+      ],
+      "rejected_worlds": 0,
+      "rejection_rate": 0.0,
+      "rate_wilson95": [
+        0.0,
+        0.16112515805281938
+      ],
+      "capability_qualified_worlds": 0,
+      "mean_aligned_MSE": 0.13410568069111573,
+      "mean_control_MSE": 0.13410137768701522,
+      "mean_numeric_timing_MSE": 0.12309270217677995,
+      "mean_oracle_readout_MSE": 0.12286366712674328
+    },
+    {
+      "mechanism": "timing_only",
+      "condition": "proxy_flip",
+      "worlds": 20,
+      "mean_delta_MSE": 5.5175756457540155e-05,
+      "delta_world_mean_ci95": [
+        -0.00015063673002320015,
+        0.00026098824293828047
+      ],
+      "rejected_worlds": 2,
+      "rejection_rate": 0.1,
+      "rate_wilson95": [
+        0.027866481213768224,
+        0.3010336452284873
+      ],
+      "capability_qualified_worlds": 0,
+      "mean_aligned_MSE": 0.13410568069111573,
+      "mean_control_MSE": 0.13416085644757328,
+      "mean_numeric_timing_MSE": 0.12309270217677995,
+      "mean_oracle_readout_MSE": 0.12286366712674328
+    },
+    {
+      "mechanism": "timing_only",
+      "condition": "meaning_preserving_paraphrase",
+      "worlds": 20,
+      "mean_delta_MSE": -0.003913677817108762,
+      "delta_world_mean_ci95": [
+        -0.005801795304459498,
+        -0.002025560329758025
+      ],
+      "rejected_worlds": 0,
+      "rejection_rate": 0.0,
+      "rate_wilson95": [
+        0.0,
+        0.16112515805281938
+      ],
+      "capability_qualified_worlds": 0,
+      "mean_aligned_MSE": 0.13410568069111573,
+      "mean_control_MSE": 0.13019200287400695,
+      "mean_numeric_timing_MSE": 0.12309270217677995,
+      "mean_oracle_readout_MSE": 0.12286366712674328
+    },
+    {
+      "mechanism": "timing_only",
+      "condition": "zero",
+      "worlds": 20,
+      "mean_delta_MSE": -0.01073376017554486,
+      "delta_world_mean_ci95": [
+        -0.014727445266731422,
+        -0.006740075084358298
+      ],
+      "rejected_worlds": 0,
+      "rejection_rate": 0.0,
+      "rate_wilson95": [
+        0.0,
+        0.16112515805281938
+      ],
+      "capability_qualified_worlds": 0,
+      "mean_aligned_MSE": 0.13410568069111573,
+      "mean_control_MSE": 0.12337192051557089,
+      "mean_numeric_timing_MSE": 0.12309270217677995,
+      "mean_oracle_readout_MSE": 0.12286366712674328
+    }
+  ],
+  "scope": "Generated construct validation, not unrestricted semantics detection."
+}

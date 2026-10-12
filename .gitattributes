@@ -1,0 +1,2 @@
+# Preserve frozen file bytes across Windows and Linux checkouts.
+* -text

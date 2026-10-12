@@ -1,0 +1,146 @@
+{
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "torch": "2.12.0+cu126",
+  "transformers": "4.51.3",
+  "sklearn": "1.5.2",
+  "new_cache_root": "F:\\CCFA\\paper_rewriting_output\\journal_extension_20261012\\external_validation\\caches",
+  "original_inputs_read_only": true,
+  "encoders": {
+    "gpt2": {
+      "model_id": "openai-community/gpt2",
+      "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+      "pooling": "existing attention-masked token mean",
+      "max_length": 320,
+      "dtype": "original float16 cache read as float32",
+      "new_encoding": false
+    },
+    "minilm": {
+      "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "license": "Apache-2.0 in pinned model-card metadata",
+      "pooling": "attention-masked token mean then L2-normalization",
+      "max_length": 256,
+      "dtype": "float32 CPU",
+      "trust_remote_code": false,
+      "local_files_only": true
+    },
+    "finbert": {
+      "model_id": "ProsusAI/finbert",
+      "revision": "4556d13015211d73dccd3fdd39d39232506f3e43",
+      "license": "Pinned model card has no explicit license metadata; no weight redistribution included in study source package",
+      "pooling": "BertModel hidden token mean then L2-normalization; classifier head excluded",
+      "max_length": 256,
+      "dtype": "float32 CPU",
+      "trust_remote_code": false,
+      "local_files_only": true,
+      "scope": "Finance domain pretraining/sentiment adaptation; not sentence-trained and not in-domain for EPA-Air"
+    }
+  },
+  "FNSPID": {
+    "all_entity_count": 10,
+    "entities": [
+      "AMAT",
+      "AMT",
+      "DVN",
+      "EA",
+      "EXPE",
+      "KO",
+      "PEP",
+      "TXN",
+      "USO",
+      "XLF"
+    ],
+    "window_counts": {
+      "train": 948,
+      "val": 317,
+      "test": 321
+    },
+    "text_counts": {
+      "AMAT": 1654,
+      "AMT": 2005,
+      "DVN": 1617,
+      "EA": 1803,
+      "EXPE": 1441,
+      "KO": 3006,
+      "PEP": 2354,
+      "TXN": 1757,
+      "USO": 2777,
+      "XLF": 2412
+    },
+    "selected_text_counts": {
+      "AMAT": 583,
+      "AMT": 555,
+      "DVN": 591,
+      "EA": 559,
+      "EXPE": 576,
+      "KO": 639,
+      "PEP": 623,
+      "TXN": 614,
+      "USO": 636,
+      "XLF": 637
+    },
+    "selected_text_occurrences": {
+      "train": 3470,
+      "val": 1262,
+      "test": 1281
+    },
+    "all_history_text_occurrences": {
+      "train": 10391,
+      "val": 4192,
+      "test": 5944
+    },
+    "protocol_sha256": "f20b0dd5eee9e485f766c7bb801bb631f356220f43d97b12d4578c5cc848eb9e",
+    "source_hash_checks_passed": true
+  },
+  "EPA-Air": {
+    "all_entity_count": 8,
+    "entities": [
+      "Bexar",
+      "Dallas",
+      "Denver",
+      "Hillsborough",
+      "Los_Angeles",
+      "Maricopa",
+      "Philadelphia",
+      "Richmond"
+    ],
+    "window_counts": {
+      "train": 118,
+      "val": 41,
+      "test": 43
+    },
+    "text_counts": {
+      "Bexar": 17,
+      "Dallas": 209,
+      "Denver": 213,
+      "Hillsborough": 73,
+      "Los_Angeles": 222,
+      "Maricopa": 99,
+      "Philadelphia": 203,
+      "Richmond": 208
+    },
+    "selected_text_counts": {
+      "Bexar": 12,
+      "Dallas": 94,
+      "Denver": 131,
+      "Hillsborough": 18,
+      "Los_Angeles": 116,
+      "Maricopa": 70,
+      "Philadelphia": 84,
+      "Richmond": 120
+    },
+    "selected_text_occurrences": {
+      "train": 377,
+      "val": 134,
+      "test": 134
+    },
+    "all_history_text_occurrences": {
+      "train": 574,
+      "val": 191,
+      "test": 176
+    },
+    "protocol_sha256": "f20b0dd5eee9e485f766c7bb801bb631f356220f43d97b12d4578c5cc848eb9e",
+    "source_hash_checks_passed": true
+  }
+}

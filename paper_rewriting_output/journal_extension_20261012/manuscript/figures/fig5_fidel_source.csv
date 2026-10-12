@@ -1,0 +1,25 @@
+panel,record_type,condition,training_condition,evaluation_condition,mse,observed_scalar_targets,aligned_mse,gain_percent,gain_denominator_mse,contrast_object,plant,delta_mse,uncertainty
+a,aggregate_loss,Aligned,aligned,aligned,0.18178589439311657,78840,0.18178589439311657,,,loss_context,,,
+a,aggregate_loss,Fixed shift,aligned,semantic_derangement,0.22624668862187292,78840,0.18178589439311657,19.651467387027203,0.22624668862187292,fixed_predictor,,,
+a,aggregate_loss,Condition-retrained,semantic_derangement,semantic_derangement,0.19969207262029764,78840,0.18178589439311657,8.966894875806405,0.19969207262029764,condition_retrained,,,
+a,aggregate_loss,Numerical-only,numeric_only,numeric_only,0.19113158731113197,78840,0.18178589439311657,4.889664261931804,0.19113158731113197,complete_stream_utility,,,
+a,aggregate_loss,Daily persistence,persistence,persistence,0.2949422164338245,78840,0.18178589439311657,,,loss_context,,,
+a,aggregate_loss,Zero content,aligned,zero,0.4820445290663778,78840,0.18178589439311657,,,loss_context,,,
+b,paired_plant_effect,Fixed shift,,,0.26470723091244,8760,0.21271717834785203,,,,164440,0.05199005256458794,none; descriptive plant heterogeneity under shared context
+b,paired_plant_effect,Condition-retrained,,,0.2361665362985863,8760,0.21271717834785203,,,,164440,0.023449357950734273,none; descriptive plant heterogeneity under shared context
+b,paired_plant_effect,Fixed shift,,,0.23261752306712136,8760,0.18913694118394928,,,,314106,0.04348058188317208,none; descriptive plant heterogeneity under shared context
+b,paired_plant_effect,Condition-retrained,,,0.20377694705045493,8760,0.18913694118394928,,,,314106,0.014640005866505656,none; descriptive plant heterogeneity under shared context
+b,paired_plant_effect,Fixed shift,,,0.2332353482181816,8760,0.18535268194084994,,,,319086,0.04788266627733165,none; descriptive plant heterogeneity under shared context
+b,paired_plant_effect,Condition-retrained,,,0.20442548582220804,8760,0.18535268194084994,,,,319086,0.019072803881358097,none; descriptive plant heterogeneity under shared context
+b,paired_plant_effect,Fixed shift,,,0.27768259171352005,8760,0.22618965136496327,,,,331901,0.05149294034855678,none; descriptive plant heterogeneity under shared context
+b,paired_plant_effect,Condition-retrained,,,0.2515166927765384,8760,0.22618965136496327,,,,331901,0.025327041411575102,none; descriptive plant heterogeneity under shared context
+b,paired_plant_effect,Fixed shift,,,0.2694866328582269,8760,0.21401702515527923,,,,332785,0.05546960770294765,none; descriptive plant heterogeneity under shared context
+b,paired_plant_effect,Condition-retrained,,,0.24060642939432106,8760,0.21401702515527923,,,,332785,0.026589404239041825,none; descriptive plant heterogeneity under shared context
+b,paired_plant_effect,Fixed shift,,,0.16578438780933472,8760,0.1331477304008272,,,,355827,0.03263665740850752,none; descriptive plant heterogeneity under shared context
+b,paired_plant_effect,Condition-retrained,,,0.14448047133804154,8760,0.1331477304008272,,,,355827,0.011332740937214342,none; descriptive plant heterogeneity under shared context
+b,paired_plant_effect,Fixed shift,,,0.259521803619677,8760,0.20765018340247676,,,,551172,0.051871620217200265,none; descriptive plant heterogeneity under shared context
+b,paired_plant_effect,Condition-retrained,,,0.23294631164655935,8760,0.20765018340247676,,,,551172,0.02529612824408259,none; descriptive plant heterogeneity under shared context
+b,paired_plant_effect,Fixed shift,,,0.13377213721986378,8760,0.09895854251904665,,,,570079,0.03481359470081713,none; descriptive plant heterogeneity under shared context
+b,paired_plant_effect,Condition-retrained,,,0.10498576324471602,8760,0.09895854251904665,,,,570079,0.006027220725669372,none; descriptive plant heterogeneity under shared context
+b,paired_plant_effect,Fixed shift,,,0.19941254217849055,8760,0.16890311522280477,,,,577650,0.030509426955685787,none; descriptive plant heterogeneity under shared context
+b,paired_plant_effect,Condition-retrained,,,0.17832401601125322,8760,0.16890311522280477,,,,577650,0.009420900788448455,none; descriptive plant heterogeneity under shared context

@@ -1,0 +1,51 @@
+The results separated two questions: which content cue drove a response, and how that response changed when the predictor was refitted. Generated tasks tested cue discrimination, and Fidel-TS provided a positive natural-data example. Table~\ref{tab:capability_overview} summarizes capability and coverage evidence for the irregular-data cases.
+
+\input{construct_results}
+
+\subsection{Fixed-model reliance and condition-retrained value differ on photovoltaic data}
+
+Refitting reduced the alignment effect in the independent timestamp-restricted Fidel-TS ridge experiment. All nine plants contributed 3,285 daily test windows and 78,840 hourly targets. Numerical-only MSE was 0.191132, compared with 0.181786 for aligned published weather embeddings, giving 4.89\% complete-stream utility. A nonzero cyclic shift of the shared within-split report sequence raised fixed-predictor MSE to 0.226247, giving 19.65\% SAG. Condition-retrained MSE was 0.199692, or 8.97\% SAG, with the same numerical histories and splits. Saved validation comparisons provide descriptive context for overall predictive capability and complete-stream utility (Table~\ref{tab:capability_overview}).
+
+Fixed-shift minus aligned MSE was positive at every plant (0.030509--0.055470); the pooled effect stayed positive across twenty additional maps (Table~\ref{tab:maps}). Plant differences and repeated daily windows share weather context, so they describe heterogeneity without independent replication. The zero-input contrast gave MSE 0.482045 for the same predictor. Median replacement weather-embedding cosine fell from 0.98272 to 0.05801 after training-centroid centering. High raw embedding similarity thus coexisted with a measurable alignment response.
+
+\begin{figure}[!htbp]
+\centering\includegraphics[width=\textwidth]{fig5_fidel}
+\caption{Fixed-model reliance and condition-retrained value on the photovoltaic task. (a) Aggregate losses compare the saved input/model conditions. (b) Paired effects connect fixed-shift and retrained-shift contrasts for nine plants. Gains use the corresponding altered-condition MSE as denominator. Plant differences describe heterogeneity under shared weather context, rather than independent-map uncertainty. All 3,285 test windows are retained. Aligned inputs use reports timestamped no later than the cutoff; offline shifts can assign later-dated donors. Issuance and arrival metadata are unavailable.}
+\label{fig:fidel}
+\end{figure}
+
+\input{capability_results}
+
+\subsection{Known-signal calibration reveals detection sensitivity and null errors}
+
+Oracle-direction and templated MiniLM predictors detected known signal in 20/20 worlds at each nonzero strength, $\gamma=0.25,0.5,1$. The Wilson 95\% interval for this rate was 83.9--100\%. MiniLM's mean fixed-shift MSE differences were 0.046804, 0.186640 and 0.745574, in strength order. Corresponding across-world 95\% intervals were [0.045030,0.048578], [0.182506,0.190775] and [0.734231,0.756917]. Its held-out direction probe recovered all eight test phrasings, showing recoverability within this controlled vocabulary.
+
+Before screening, null rejection occurred in 3/20 oracle worlds (15\%; Wilson interval 5.2--36.0\%) and 2/20 MiniLM worlds (10\%; 2.8--30.1\%). The descriptive validation screen for incremental content benefit admitted no null world and all tested nonzero worlds. The joint screen-and-detection fraction for null worlds was therefore 0/20, with an upper Wilson bound of 16.1\%. This generator-specific result does not establish a general 5\% error-control guarantee.
+
+Nonzero cyclic shifts within available histories changed 97.27\% of source positions but 48.52\% of direction values. Of test queries, 18.40\% had no available note and 10.41\% had one; all remained in the analysis. Repeated directions preserved some content despite changes in source position. These results describe the evaluated linear pipeline on generated propositions and targets under eight empirical timing templates.
+
+\begin{figure}[!htbp]
+\centering\includegraphics[width=\textwidth]{fig3_calibration}
+\caption{Signal-strength calibration under irregular empirical timing templates. (a) Mean fixed-shift minus aligned MSE with saved 95\% $t$ intervals over twenty generated worlds. (b) Unscreened and screened detection fractions with Wilson 95\% intervals. Filled markers show unscreened detection and open markers screened detection; screened detection is the joint screen-and-detection fraction over all twenty worlds. Each within-world test pairs 128 generated entities after averaging three optimizer seeds. Strengths reuse inputs within a world.}
+\label{fig:calibration}
+\end{figure}
+
+\subsection{Small historical reassignment effects coexist with zero-content sensitivity}
+
+Across fifteen historical dataset/mechanism cells, the largest absolute mean full-derangement change relative to aligned MSE was 0.005868\%, on CESNET cross-attention. Paired block-length 2, 4 and 8 intervals all spanned zero. Four aligned checkpoints selected epoch zero: all three CESNET cross-attention seeds and FNSPID cross-attention seed 53. Tables~\ref{tab:capability_overview} and \ref{tab:fixed_population} provide archived validation context and retained populations; all 45 checkpoints remain formally unassessed for capability screening.
+
+For RecAvg, control-denominator CBTG was 5.119\%, 10.476\%, 10.426\%, 22.726\% and 12.411\% on ClusterTrace, CESNET, EPA-Air, FNSPID and RepoHealth, respectively. The training-content centroid changed MSE by less than 0.005\% of aligned MSE for the same mechanism. Mean zero-content sensitivity thus exceeded sensitivity to content-position pairing. Because zero vectors change representation support as well as information, their loss increase alone does not identify aligned semantic use.
+
+CESNET's nominal doses differed from their achieved interventions. Neither the 25\% nor 50\% dose changed a source position because the per-entity subsets were too small to derange. The 75\% dose changed 12.5\% of all positions, and the full dose changed 56.25\%. These effects concern the selected checkpoints and realized interventions; intervals spanning zero do not establish practical equivalence.
+
+\begin{figure}[!htbp]
+\centering\includegraphics[width=\textwidth]{fig4_fixed_model}
+\caption{Same-checkpoint reassignment and zero-content effects across three mechanisms and five datasets. Points show control-denominator $100(L_{\rm altered}-L_{\rm aligned})/L_{\rm altered}$: fixed SAG for full derangement and CBTG for zero input. Bars are the saved paired entity/window-block bootstrap 95\% intervals with block length two; each cell averages three aligned checkpoints. Both panels use the same percentage scale. All fifteen derangement intervals span zero. Full effect records and retained populations appear in Tables~\ref{tab:fixed_full} and~\ref{tab:fixed_population}.}
+\label{fig:fixed}
+\end{figure}
+
+\subsection{Representation geometry and forecasting transfer require separate checks}
+
+\input{representation_results}
+
+\input{repeated_map_results}

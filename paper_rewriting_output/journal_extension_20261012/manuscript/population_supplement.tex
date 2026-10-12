@@ -1,0 +1,28 @@
+\begin{table}[htbp]
+\centering\small
+\caption{Retained population per aligned checkpoint and historical selection status. Three seeds share each row population, so windows are not multiplied by three. Initialized counts refer to historical best epoch zero. Archived validation comparisons appear in Table~\ref{tab:historical_validation}; no formal capability screen was applied retrospectively.}
+\label{tab:fixed_population}
+\begin{tabular}{llllll}
+\toprule
+Dataset & Mechanism & Entities & Windows & Initialized/3 & Formal screen\\
+\midrule
+ClusterTrace & Selective & 3 & 69 & 0 & Not assessed\\
+ClusterTrace & RecAvg & 3 & 69 & 0 & Not assessed\\
+ClusterTrace & XAttn & 3 & 69 & 0 & Not assessed\\
+CESNET & Selective & 11 & 12 & 0 & Not assessed\\
+CESNET & RecAvg & 11 & 12 & 0 & Not assessed\\
+CESNET & XAttn & 11 & 12 & 3 & Not assessed\\
+EPA-Air & Selective & 8 & 43 & 0 & Not assessed\\
+EPA-Air & RecAvg & 8 & 43 & 0 & Not assessed\\
+EPA-Air & XAttn & 8 & 43 & 0 & Not assessed\\
+FNSPID & Selective & 10 & 321 & 0 & Not assessed\\
+FNSPID & RecAvg & 10 & 321 & 0 & Not assessed\\
+FNSPID & XAttn & 10 & 321 & 1 & Not assessed\\
+RepoHealth & Selective & 4 & 80 & 0 & Not assessed\\
+RepoHealth & RecAvg & 4 & 80 & 0 & Not assessed\\
+RepoHealth & XAttn & 4 & 80 & 0 & Not assessed\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Entity resampling in Table~\ref{tab:fixed_full} varies the empirical mixture of these retained entities; the circular blocks vary the sampled window sequences within them. It does not add independent entities. With only three ClusterTrace or four RepoHealth entities, the reported ranges are exploratory descriptions under that resampling scheme, rather than precise coverage guarantees for a wider application population. CESNET has eleven entities but only twelve test windows, a further limit on within-entity temporal information.

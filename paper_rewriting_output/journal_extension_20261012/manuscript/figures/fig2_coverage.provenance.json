@@ -1,0 +1,20 @@
+{
+  "name": "fig2_coverage",
+  "pdf": "fig2_coverage.pdf",
+  "panels": 2,
+  "width_in": 7.2,
+  "height_in": 3.7,
+  "source_files": [
+    {
+      "path": "diagnostics/control_strength.json",
+      "sha256": "9707e9b1d57946731b2847028c7f1ad80d8f17448837a0d0ec210ca039404870"
+    },
+    {
+      "path": "diagnostics/normalization_sensitivity.json",
+      "sha256": "2793081ea6c0e09a5232f50266cfb32ca47cd401892594cf5bed447c46491ce1"
+    }
+  ],
+  "source_csv": "fig2_coverage_source.csv",
+  "note": "All five datasets. Coverage counts retained text slots; paired scaling scores retain identical raw forecasts and eligible windows. Percentage score changes are descriptive arithmetic, not predictive improvements.",
+  "all_observations_preserved": true
+}

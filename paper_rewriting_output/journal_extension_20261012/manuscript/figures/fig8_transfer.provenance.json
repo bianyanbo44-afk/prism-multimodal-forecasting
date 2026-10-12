@@ -1,0 +1,28 @@
+{
+  "name": "fig8_transfer",
+  "pdf": "fig8_transfer.pdf",
+  "panels": 3,
+  "width_in": 7.2,
+  "height_in": 3.55,
+  "source_files": [
+    {
+      "path": "external_validation/results/EPA-Air/results.json",
+      "sha256": "6439bd9921a538c38039b01194895d4dbb1cf485f0b8ff9e6580833ba8690661"
+    },
+    {
+      "path": "external_validation/results/FNSPID/results.json",
+      "sha256": "9f216c08df62528650d6782c15da7097e62dc0ab4c839265697311269dd4a844"
+    },
+    {
+      "path": "external_validation/results/Fidel/results.json",
+      "sha256": "b98018f1bc6e88ed4370421addb5b8e150c148b771244e2dd9c39721f5bb8661"
+    },
+    {
+      "path": "external_validation/results/summary_table.json",
+      "sha256": "3f8c7e6e8a008d7012703b2b061578652b91e36e6ed2c976e2cef1eaffb18616"
+    }
+  ],
+  "source_csv": "fig8_transfer_source.csv",
+  "note": "24 saved model/split means plus 6 persistence references; ratios use split-specific persistence. EPA-Air: validation gains fail to transfer; FNSPID: later test gains do not retrospectively qualify validation; Fidel: both configurations improve in both splits. Panel-specific log-axis ranges; small horizontal offsets separate configurations within categorical splits. Positive finite guard, no new uncertainty or gate decision.",
+  "all_observations_preserved": true
+}

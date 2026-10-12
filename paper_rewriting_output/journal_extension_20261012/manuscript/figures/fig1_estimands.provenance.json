@@ -1,0 +1,28 @@
+{
+  "name": "fig1_estimands",
+  "pdf": "fig1_estimands.pdf",
+  "panels": 3,
+  "width_in": 7.2,
+  "height_in": 4.6,
+  "source_files": [
+    {
+      "path": "manuscript/main.tex",
+      "sha256": "a271758c802f8ed2ec98ea81a36f48b2654090d6c8416cf798820988d98caa69"
+    },
+    {
+      "path": "manuscript/protocol_worked_examples.tex",
+      "sha256": "710dcd7557f664a7c8c590307d05ecc68b777ea9a2348d16579f89450455e9ee"
+    },
+    {
+      "path": "scripts/figure_style.py",
+      "sha256": "bc311facf9956c77a503dd3ea5d68849e7c5d06205450d23e68600b1d835c219"
+    },
+    {
+      "path": "scripts/figures_protocol.py",
+      "sha256": "32e7802c49b0d395ccdcc7470154e4336e343a35ec4e3328dfb1ba8ba996e9b5"
+    }
+  ],
+  "source_csv": "fig1_estimands_source.csv",
+  "note": "Illustrative event-slot schematic only; no experimental timestamps, numerical observations or loss values are fabricated. Panels b and c separate one frozen function from condition-specific refitting.",
+  "all_observations_preserved": true
+}

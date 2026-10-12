@@ -1,0 +1,20 @@
+{
+  "name": "fig9_map_sensitivity",
+  "pdf": "fig9_map_sensitivity.pdf",
+  "panels": 3,
+  "width_in": 7.2,
+  "height_in": 4.5,
+  "source_files": [
+    {
+      "path": "intervention_repeats/results/map_aggregate.csv",
+      "sha256": "71f2ebbff5d280638bd01429311e979ef1f199b4e47858bf447c4578d9c3d229"
+    },
+    {
+      "path": "intervention_repeats/results/between_map_summary.csv",
+      "sha256": "e8fb1713679a13db980db7172eb96f56dda06f6815047f8312adfda5c757fea8"
+    }
+  ],
+  "source_csv": "fig9_map_sensitivity_source.csv",
+  "note": "All 140 map draws and all 7 saved summary cells retained. FNSPID and EPA-Air strips use raw altered-minus-aligned MSE with separate dataset axes (FNSPID tick units \u00d70.001); vertical jitter is display-only. Fidel ECDF orders the 20 effects by magnitude, not seed/time. Bars and shading show saved empirical 2.5\u201397.5 percentiles, not confidence intervals; Fidel maps share weather context across all nine plants.",
+  "all_observations_preserved": true
+}

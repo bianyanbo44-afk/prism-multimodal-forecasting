@@ -1,0 +1,218 @@
+{
+  "status": "complete",
+  "analysis": "exploratory metric normalization sensitivity",
+  "predictor": "identical physical last-observation persistence",
+  "window_rule": "all channels have an observed history value; paired window IDs",
+  "aggregation": "micro-average observed values within channel, then equal available-channel average",
+  "script_sha256": "ba125fa8cca1bee2d5fd5a2ddb832846217187d2a64e38198c75dcd8f5d33ea7",
+  "rows": [
+    {
+      "dataset": "ClusterTrace",
+      "train_only_normalized_mse": 2.1311294511703576,
+      "full_entity_normalized_mse": 0.7960676460820775,
+      "normalized_mse_change_percent": -62.64573953286136,
+      "train_raw_feature_mse": [
+        9.939863605326943,
+        1.6607929357950413,
+        1.6607929135186883,
+        1.126922244037576e-06,
+        0.8530833617767463,
+        18.36686800524696,
+        169.62033183677477,
+        28.14225444074292,
+        1.0476510947484436e+16,
+        0.9329754978545217,
+        24.303565710038317
+      ],
+      "full_raw_feature_mse": [
+        9.939863376473795,
+        1.660792948878515,
+        1.6607929654008196,
+        1.1269222632556641e-06,
+        0.8530833694021875,
+        18.366868058781215,
+        169.62031625050463,
+        28.142254285747246,
+        1.047651082373816e+16,
+        0.9329754708101913,
+        24.303565186906713
+      ],
+      "max_window_relative_raw_sse_difference": 3.861667201895752e-06,
+      "total_windows": 69,
+      "analyzed_windows": 16,
+      "excluded_missing_history_windows": 53,
+      "observed_values": 17423,
+      "features": [
+        "n_inst",
+        "n_task",
+        "n_job",
+        "machine_cpu_iowait",
+        "machine_cpu_kernel",
+        "machine_cpu_usr",
+        "machine_gpu",
+        "machine_load_1",
+        "machine_net_receive",
+        "machine_num_worker",
+        "machine_cpu"
+      ]
+    },
+    {
+      "dataset": "CESNET",
+      "train_only_normalized_mse": 1.8616659030243845,
+      "full_entity_normalized_mse": 1.8311620791473604,
+      "normalized_mse_change_percent": -1.6385229931680474,
+      "train_raw_feature_mse": [
+        18182.94756089079,
+        1665732.6694758066,
+        1253654948.4672859,
+        194.85631466145955,
+        0.18425021375710407,
+        0.20522761301435416,
+        267.99931198151506,
+        8254.615832746253,
+        20400.549581383697,
+        0.0005400956580093446
+      ],
+      "full_raw_feature_mse": [
+        18182.948240053265,
+        1665732.6932821346,
+        1253654954.9864686,
+        194.85631780889483,
+        0.18425021010171427,
+        0.2052276166690016,
+        267.999311676101,
+        8254.615717178585,
+        20400.549179960904,
+        0.0005400956670775865
+      ],
+      "max_window_relative_raw_sse_difference": 1.0337351131493393e-07,
+      "total_windows": 12,
+      "analyzed_windows": 12,
+      "excluded_missing_history_windows": 0,
+      "observed_values": 17260,
+      "features": [
+        "n_flows",
+        "n_packets",
+        "n_bytes",
+        "n_dest_ip",
+        "tcp_udp_ratio",
+        "dir_ratio_packets",
+        "avg_duration",
+        "avg_ttl",
+        "connection_count",
+        "error_rate"
+      ]
+    },
+    {
+      "dataset": "EPA-Air",
+      "train_only_normalized_mse": 1.2595754263375434,
+      "full_entity_normalized_mse": 0.7198120178424938,
+      "normalized_mse_change_percent": -42.85280557310609,
+      "train_raw_feature_mse": [
+        102.07180742488974,
+        26.84484380199537,
+        694.483520111373,
+        2.8000249767000264e-05
+      ],
+      "full_raw_feature_mse": [
+        102.07181164706847,
+        26.844843324985007,
+        694.4835098469894,
+        2.80002489348975e-05
+      ],
+      "max_window_relative_raw_sse_difference": 3.1182558947103796e-06,
+      "total_windows": 43,
+      "analyzed_windows": 39,
+      "excluded_missing_history_windows": 4,
+      "observed_values": 7414,
+      "features": [
+        "temp",
+        "pm2_5",
+        "aqi",
+        "ozone"
+      ]
+    },
+    {
+      "dataset": "FNSPID",
+      "train_only_normalized_mse": 0.3209356844826163,
+      "full_entity_normalized_mse": 0.1561696922823744,
+      "normalized_mse_change_percent": -51.33925585927374,
+      "train_raw_feature_mse": [
+        59.32543637243616,
+        57.08605754026657,
+        59.08882478304263,
+        59.95505727383496,
+        56.395410075068405,
+        79553657477727.7
+      ],
+      "full_raw_feature_mse": [
+        59.325437399782984,
+        57.08605879952821,
+        59.08882259019433,
+        59.95505714397383,
+        56.39541035941545,
+        79553656109094.19
+      ],
+      "max_window_relative_raw_sse_difference": 8.441127842984233e-06,
+      "total_windows": 321,
+      "analyzed_windows": 321,
+      "excluded_missing_history_windows": 0,
+      "observed_values": 41220,
+      "features": [
+        "open",
+        "high",
+        "low",
+        "close",
+        "adj close",
+        "volume"
+      ]
+    },
+    {
+      "dataset": "RepoHealth",
+      "train_only_normalized_mse": 1.4108418175800583,
+      "full_entity_normalized_mse": 1.033574614978038,
+      "normalized_mse_change_percent": -26.740574166501997,
+      "train_raw_feature_mse": [
+        4377.886509734441,
+        469.73691055726925,
+        551.1101377180848,
+        227184.69694846438,
+        317830.0951600899,
+        277986.9103857735,
+        935.5526812440041,
+        258.7987740489176,
+        43568.313355028986,
+        16731.544317020896
+      ],
+      "full_raw_feature_mse": [
+        4377.886808392274,
+        469.73691309936623,
+        551.1101240414017,
+        227184.67014607007,
+        317830.09247572074,
+        277987.2311668593,
+        935.5526778952147,
+        258.7987762362577,
+        43568.29761798622,
+        16731.544218555508
+      ],
+      "max_window_relative_raw_sse_difference": 5.952732486779386e-05,
+      "total_windows": 80,
+      "analyzed_windows": 80,
+      "excluded_missing_history_windows": 0,
+      "observed_values": 14710,
+      "features": [
+        "open_issues",
+        "new_issues",
+        "closed_issues",
+        "avg_age_open_issues_hr",
+        "issue_comment_volume",
+        "open_prs",
+        "new_prs",
+        "merged_prs",
+        "avg_age_open_prs_hr",
+        "pr_comment_volume"
+      ]
+    }
+  ]
+}

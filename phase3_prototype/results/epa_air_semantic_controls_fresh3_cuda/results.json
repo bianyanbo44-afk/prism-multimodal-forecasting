@@ -1,0 +1,1235 @@
+{
+  "material_passport": {
+    "source": "Time-IMM EPA-Air local sparse checkout",
+    "data_commit": "e934cef23d526817dcf0d1a66c6f82274c96c04b",
+    "normalization": "train_only",
+    "split": "per-entity chronological 60/20/20 by retained window",
+    "task": "semantic negative controls",
+    "text_preprocessing": "parameter-free per-note LayerNorm",
+    "semantic_shuffle": "independent within each entity and split; timestamps/counts/marginals preserved",
+    "time_only": "all text vectors zero; timestamps and counts preserved",
+    "control_seed": 9101
+  },
+  "runtime": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.12.0+cu126",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "config": {
+    "seeds": [
+      53,
+      67,
+      79
+    ],
+    "semantic_control_seed": 9101,
+    "models": [
+      "last_value",
+      "set_decay_gru_matched",
+      "selective_eventmamba_no_reliability"
+    ],
+    "normalization": "train_only",
+    "model": {
+      "event_width": 32,
+      "state_dim": 32,
+      "readout_width": 64
+    },
+    "training": {
+      "epochs": 20,
+      "patience": 5,
+      "batch_size": 32,
+      "learning_rate": 0.0015,
+      "weight_decay": 0.0001,
+      "grad_clip": 1.0,
+      "torch_threads": 8
+    }
+  },
+  "effective_training": {
+    "epochs": 20,
+    "patience": 5,
+    "batch_size": 32,
+    "learning_rate": 0.0015,
+    "weight_decay": 0.0001,
+    "grad_clip": 1.0,
+    "torch_threads": 8
+  },
+  "results": [
+    {
+      "model": "mean_text_fusion_semantic_shuffle",
+      "seed": 53,
+      "parameters": 28548,
+      "initial_val_mse": 1.919197198279441,
+      "best_epoch": 6,
+      "completed_epochs": 11,
+      "val_metrics": {
+        "mse": 1.793554998668676,
+        "rmse": 1.3392367224164203,
+        "mae": 0.8794111974526057,
+        "raw_smape": 0.23874855561240643,
+        "feature_mse": [
+          0.6497541686799053,
+          2.046635769880735,
+          4.012195175117732,
+          0.46563488099633193
+        ],
+        "feature_mae": [
+          0.6351236305724176,
+          0.8550918377362765,
+          1.524645708994583,
+          0.5027836125071455
+        ],
+        "raw_feature_mse": [
+          113.48047101843787,
+          78.36754314716046,
+          1080.3216939786585,
+          2.099391464825447e-05
+        ],
+        "raw_feature_mae": [
+          8.652611000335728,
+          4.800369849571815,
+          24.97924124156141,
+          0.003482584364530517
+        ],
+        "entity_mse": {
+          "Bexar": 4.219230616376514,
+          "Dallas": 1.896979291865691,
+          "Denver": 2.114870061564943,
+          "Hillsborough": 3.327439237186419,
+          "Los_Angeles": 2.439503912148731,
+          "Maricopa": 1.4182398005105492,
+          "Philadelphia": 0.8275504379022182,
+          "Richmond": 0.843987240479615
+        },
+        "windows": 41,
+        "query_rows": 6888,
+        "observed_values": 8048
+      },
+      "test_metrics": {
+        "mse": 1.1836375746146217,
+        "rmse": 1.0879510901757588,
+        "mae": 0.7373340464871627,
+        "raw_smape": 0.21355422612553057,
+        "feature_mse": [
+          0.5418913708472812,
+          0.9644794616351242,
+          2.563518384762381,
+          0.6646610812137002
+        ],
+        "feature_mae": [
+          0.576963430745391,
+          0.6134474089915015,
+          1.15132483295428,
+          0.6076005132574784
+        ],
+        "raw_feature_mse": [
+          88.26707028766688,
+          24.147268297462944,
+          663.8084769518273,
+          2.810675313843316e-05
+        ],
+        "raw_feature_mae": [
+          7.639798988298633,
+          3.234463107762614,
+          18.626310532275227,
+          0.003969795413707432
+        ],
+        "entity_mse": {
+          "Bexar": 0.5866126499715305,
+          "Dallas": 2.5568889108841266,
+          "Denver": 0.6356846003790962,
+          "Hillsborough": 1.56077631332335,
+          "Los_Angeles": 1.878322061736362,
+          "Maricopa": 0.44928396066340304,
+          "Philadelphia": 1.2727426572481082,
+          "Richmond": 0.6661138245714949
+        },
+        "windows": 43,
+        "query_rows": 6390,
+        "observed_values": 7508
+      },
+      "duration_seconds": 1.3660308999969857,
+      "peak_cuda_memory_bytes": 160403456,
+      "checkpoint": "F:\\CCFA\\phase3_prototype\\results\\epa_air_semantic_controls_fresh3_cuda\\mean_text_fusion_semantic_shuffle_seed53.pt",
+      "control": "semantic_shuffle"
+    },
+    {
+      "model": "mean_text_fusion_semantic_shuffle",
+      "seed": 67,
+      "parameters": 28548,
+      "initial_val_mse": 1.919197198279441,
+      "best_epoch": 5,
+      "completed_epochs": 10,
+      "val_metrics": {
+        "mse": 1.7809681537711972,
+        "rmse": 1.3345291880551722,
+        "mae": 0.875541379461763,
+        "raw_smape": 0.23565474886639898,
+        "feature_mse": [
+          0.6351551405921076,
+          2.008698197511526,
+          3.9968217856377257,
+          0.48319749134342843
+        ],
+        "feature_mae": [
+          0.6308734464036186,
+          0.8420597223135141,
+          1.5227222774917655,
+          0.5065100716381539
+        ],
+        "raw_feature_mse": [
+          110.97597610881243,
+          76.62092091487004,
+          1071.3773478331882,
+          2.1679110387794493e-05
+        ],
+        "raw_feature_mae": [
+          8.59562642344476,
+          4.7249967868511495,
+          24.925418016387194,
+          0.003501242435559994
+        ],
+        "entity_mse": {
+          "Bexar": 4.386963922353018,
+          "Dallas": 1.8673883590370506,
+          "Denver": 2.108230898252389,
+          "Hillsborough": 3.357480707576975,
+          "Los_Angeles": 2.380772109118094,
+          "Maricopa": 1.3725590984451255,
+          "Philadelphia": 0.8361316506785528,
+          "Richmond": 0.8596328085025964
+        },
+        "windows": 41,
+        "query_rows": 6888,
+        "observed_values": 8048
+      },
+      "test_metrics": {
+        "mse": 1.1637340586890492,
+        "rmse": 1.0787650618596476,
+        "mae": 0.7322867517361568,
+        "raw_smape": 0.21072219917659107,
+        "feature_mse": [
+          0.530238768134387,
+          0.9285860050771229,
+          2.5242216293993978,
+          0.6718898321452894
+        ],
+        "feature_mae": [
+          0.5718651909170375,
+          0.6011733747806354,
+          1.1459459070351432,
+          0.6101625342118112
+        ],
+        "raw_feature_mse": [
+          86.4452864252225,
+          23.271312056816562,
+          654.7651513185216,
+          2.855568431856993e-05
+        ],
+        "raw_feature_mae": [
+          7.573670869258582,
+          3.169069053101839,
+          18.552985207186982,
+          0.003991754039337761
+        ],
+        "entity_mse": {
+          "Bexar": 0.5876984156313396,
+          "Dallas": 2.5014642739879145,
+          "Denver": 0.630104298879215,
+          "Hillsborough": 1.5464421764370941,
+          "Los_Angeles": 1.8277509564622527,
+          "Maricopa": 0.45651080494324936,
+          "Philadelphia": 1.2521317414534723,
+          "Richmond": 0.6566315544990842
+        },
+        "windows": 43,
+        "query_rows": 6390,
+        "observed_values": 7508
+      },
+      "duration_seconds": 0.9228625999967335,
+      "peak_cuda_memory_bytes": 160403456,
+      "checkpoint": "F:\\CCFA\\phase3_prototype\\results\\epa_air_semantic_controls_fresh3_cuda\\mean_text_fusion_semantic_shuffle_seed67.pt",
+      "control": "semantic_shuffle"
+    },
+    {
+      "model": "mean_text_fusion_semantic_shuffle",
+      "seed": 79,
+      "parameters": 28548,
+      "initial_val_mse": 1.919197198279441,
+      "best_epoch": 8,
+      "completed_epochs": 13,
+      "val_metrics": {
+        "mse": 1.790846419019694,
+        "rmse": 1.3382251002801038,
+        "mae": 0.8755829318177015,
+        "raw_smape": 0.24269775791333506,
+        "feature_mse": [
+          0.6381647196380934,
+          2.084846469072195,
+          3.982144398971717,
+          0.4582300883967702
+        ],
+        "feature_mae": [
+          0.6280315988432101,
+          0.8718373592083271,
+          1.4953261451854107,
+          0.5071366240338582
+        ],
+        "raw_feature_mse": [
+          111.4104012412892,
+          72.55051040649414,
+          1065.3270769817073,
+          2.0866173677282726e-05
+        ],
+        "raw_feature_mae": [
+          8.558664355128485,
+          4.803018423227163,
+          24.445540265339176,
+          0.003542786418664746
+        ],
+        "entity_mse": {
+          "Bexar": 4.706388947509584,
+          "Dallas": 1.91043861319444,
+          "Denver": 2.1878263408441505,
+          "Hillsborough": 3.3063846289158043,
+          "Los_Angeles": 2.5364928796323536,
+          "Maricopa": 1.2247142228459578,
+          "Philadelphia": 0.7496539133714534,
+          "Richmond": 0.7925345506258141
+        },
+        "windows": 41,
+        "query_rows": 6888,
+        "observed_values": 8048
+      },
+      "test_metrics": {
+        "mse": 1.175768707433847,
+        "rmse": 1.0843286897587128,
+        "mae": 0.7342689503652577,
+        "raw_smape": 0.21561664846107587,
+        "feature_mse": [
+          0.5479508464835059,
+          0.908763594067355,
+          2.5881385169552016,
+          0.6582218722293252
+        ],
+        "feature_mae": [
+          0.5791405000583578,
+          0.6196286539667145,
+          1.1260388269772956,
+          0.6122678204586631
+        ],
+        "raw_feature_mse": [
+          88.89644340034965,
+          22.633761224344354,
+          685.2627764223422,
+          2.769801128459604e-05
+        ],
+        "raw_feature_mae": [
+          7.6653989875536395,
+          3.243340834788341,
+          18.388342163491487,
+          0.003996710440045909
+        ],
+        "entity_mse": {
+          "Bexar": 0.56599783826442,
+          "Dallas": 2.3087318142720807,
+          "Denver": 0.5873840090215561,
+          "Hillsborough": 1.4187483406137853,
+          "Los_Angeles": 2.2093240048619127,
+          "Maricopa": 0.44573126630515736,
+          "Philadelphia": 1.179179847448887,
+          "Richmond": 0.638178077836463
+        },
+        "windows": 43,
+        "query_rows": 6390,
+        "observed_values": 7508
+      },
+      "duration_seconds": 1.1604250999953365,
+      "peak_cuda_memory_bytes": 160403456,
+      "checkpoint": "F:\\CCFA\\phase3_prototype\\results\\epa_air_semantic_controls_fresh3_cuda\\mean_text_fusion_semantic_shuffle_seed79.pt",
+      "control": "semantic_shuffle"
+    },
+    {
+      "model": "selective_ssm_semantic_shuffle",
+      "seed": 53,
+      "parameters": 78520,
+      "initial_val_mse": 1.919197198279441,
+      "best_epoch": 4,
+      "completed_epochs": 9,
+      "val_metrics": {
+        "mse": 1.8124347695817709,
+        "rmse": 1.3462669755965089,
+        "mae": 0.8828081048883276,
+        "raw_smape": 0.23477299888587919,
+        "feature_mse": [
+          0.6333973848030542,
+          1.9984181064825792,
+          4.093810211075308,
+          0.5241133759661418
+        ],
+        "feature_mae": [
+          0.6261473333378702,
+          0.8374643967701838,
+          1.5435451813275807,
+          0.5240755081176758
+        ],
+        "raw_feature_mse": [
+          109.82133556547619,
+          81.43726436908429,
+          1098.162388392857,
+          2.3189573633916132e-05
+        ],
+        "raw_feature_mae": [
+          8.5166214113313,
+          4.769671073326697,
+          25.318427853467988,
+          0.0036296212091678527
+        ],
+        "entity_mse": {
+          "Bexar": 4.1349451293547945,
+          "Dallas": 1.7905828008738658,
+          "Denver": 2.097675116244881,
+          "Hillsborough": 3.667980479159658,
+          "Los_Angeles": 2.415556491918064,
+          "Maricopa": 1.525692138920671,
+          "Philadelphia": 0.8089445030901559,
+          "Richmond": 0.9140148950504401
+        },
+        "windows": 41,
+        "query_rows": 6888,
+        "observed_values": 8048
+      },
+      "test_metrics": {
+        "mse": 1.201886795450694,
+        "rmse": 1.0963059771116337,
+        "mae": 0.7444546663960946,
+        "raw_smape": 0.2149039265100824,
+        "feature_mse": [
+          0.5767725261244437,
+          0.9880997452251995,
+          2.5578137774800145,
+          0.6848611329731188
+        ],
+        "feature_mae": [
+          0.5878231681537568,
+          0.6190024259560736,
+          1.1542779916148644,
+          0.6167150798596834
+        ],
+        "raw_feature_mse": [
+          91.64072681579783,
+          25.282711503171324,
+          659.9143609842192,
+          2.952685424947719e-05
+        ],
+        "raw_feature_mae": [
+          7.744368158475048,
+          3.3162982379561003,
+          18.6485226653343,
+          0.004048991360162434
+        ],
+        "entity_mse": {
+          "Bexar": 0.5934587646098364,
+          "Dallas": 2.5926695327230154,
+          "Denver": 0.6460768010261796,
+          "Hillsborough": 1.6018789231422401,
+          "Los_Angeles": 1.8338007284383777,
+          "Maricopa": 0.4725130480688272,
+          "Philadelphia": 1.3192160068007763,
+          "Richmond": 0.7025718895561219
+        },
+        "windows": 43,
+        "query_rows": 6390,
+        "observed_values": 7508
+      },
+      "duration_seconds": 21.5429226999986,
+      "peak_cuda_memory_bytes": 207546880,
+      "checkpoint": "F:\\CCFA\\phase3_prototype\\results\\epa_air_semantic_controls_fresh3_cuda\\selective_ssm_semantic_shuffle_seed53.pt",
+      "control": "semantic_shuffle"
+    },
+    {
+      "model": "selective_ssm_semantic_shuffle",
+      "seed": 67,
+      "parameters": 78520,
+      "initial_val_mse": 1.919197198279441,
+      "best_epoch": 4,
+      "completed_epochs": 9,
+      "val_metrics": {
+        "mse": 1.8258972689276414,
+        "rmse": 1.3512576619311512,
+        "mae": 0.8850497142522848,
+        "raw_smape": 0.236081921627212,
+        "feature_mse": [
+          0.6585566114188626,
+          2.0125130048164954,
+          4.12085941859654,
+          0.511660040878668
+        ],
+        "feature_mae": [
+          0.6347522802053843,
+          0.8398511593158429,
+          1.5466380235625476,
+          0.5189573939253644
+        ],
+        "raw_feature_mse": [
+          114.52745717189315,
+          80.90174865722656,
+          1108.1985450239547,
+          2.265807948211526e-05
+        ],
+        "raw_feature_mae": [
+          8.633734052881824,
+          4.762228819040152,
+          25.37450746542901,
+          0.0035842031967349168
+        ],
+        "entity_mse": {
+          "Bexar": 4.274201912539345,
+          "Dallas": 1.8256379082577217,
+          "Denver": 2.109487826026106,
+          "Hillsborough": 3.639761380285823,
+          "Los_Angeles": 2.4670772039344167,
+          "Maricopa": 1.5195370376228339,
+          "Philadelphia": 0.8077655209263045,
+          "Richmond": 0.8955101147636055
+        },
+        "windows": 41,
+        "query_rows": 6888,
+        "observed_values": 8048
+      },
+      "test_metrics": {
+        "mse": 1.202840898661334,
+        "rmse": 1.096741035368575,
+        "mae": 0.741547019578309,
+        "raw_smape": 0.21409828400051642,
+        "feature_mse": [
+          0.5869211826215333,
+          0.9893704439378519,
+          2.5639936123971525,
+          0.6710783556887978
+        ],
+        "feature_mae": [
+          0.5881681060305993,
+          0.6151601863152081,
+          1.1505459883680376,
+          0.612313797599391
+        ],
+        "raw_feature_mse": [
+          92.81548990781945,
+          25.007208968785633,
+          661.192600186877,
+          2.8642213835969176e-05
+        ],
+        "raw_feature_mae": [
+          7.7324198573088845,
+          3.2656362048576466,
+          18.58658232324543,
+          0.004007953366166667
+        ],
+        "entity_mse": {
+          "Bexar": 0.5782737224584534,
+          "Dallas": 2.6053472382204963,
+          "Denver": 0.6604053822542275,
+          "Hillsborough": 1.6006034069827626,
+          "Los_Angeles": 1.847556760160056,
+          "Maricopa": 0.45678157750103665,
+          "Philadelphia": 1.346799122109743,
+          "Richmond": 0.6740799964493807
+        },
+        "windows": 43,
+        "query_rows": 6390,
+        "observed_values": 7508
+      },
+      "duration_seconds": 21.783158800011734,
+      "peak_cuda_memory_bytes": 207667200,
+      "checkpoint": "F:\\CCFA\\phase3_prototype\\results\\epa_air_semantic_controls_fresh3_cuda\\selective_ssm_semantic_shuffle_seed67.pt",
+      "control": "semantic_shuffle"
+    },
+    {
+      "model": "selective_ssm_semantic_shuffle",
+      "seed": 79,
+      "parameters": 78520,
+      "initial_val_mse": 1.919197198279441,
+      "best_epoch": 4,
+      "completed_epochs": 9,
+      "val_metrics": {
+        "mse": 1.8256161211376845,
+        "rmse": 1.351153626031357,
+        "mae": 0.8887346418168242,
+        "raw_smape": 0.236532514564241,
+        "feature_mse": [
+          0.634209919751175,
+          2.0040235336010275,
+          4.1191526140485495,
+          0.5450784171499857
+        ],
+        "feature_mae": [
+          0.6314213804805459,
+          0.839537473825308,
+          1.5562488409700295,
+          0.5277308719914134
+        ],
+        "raw_feature_mse": [
+          111.17078614982579,
+          81.78905369685246,
+          1106.8697054660279,
+          2.457785403083374e-05
+        ],
+        "raw_feature_mae": [
+          8.609536059088269,
+          4.778268153850849,
+          25.522167458351483,
+          0.003670119294306127
+        ],
+        "entity_mse": {
+          "Bexar": 4.184450202754566,
+          "Dallas": 1.8373410853845555,
+          "Denver": 2.124589727288323,
+          "Hillsborough": 3.574810334368175,
+          "Los_Angeles": 2.401100333326268,
+          "Maricopa": 1.5320304772599014,
+          "Philadelphia": 0.8592454334704338,
+          "Richmond": 0.9194638484085031
+        },
+        "windows": 41,
+        "query_rows": 6888,
+        "observed_values": 8048
+      },
+      "test_metrics": {
+        "mse": 1.2004492885932594,
+        "rmse": 1.0956501670666872,
+        "mae": 0.7471862663633744,
+        "raw_smape": 0.21464696631223396,
+        "feature_mse": [
+          0.5388227439730015,
+          0.9984304325882358,
+          2.5521843235358053,
+          0.7123596542759946
+        ],
+        "feature_mae": [
+          0.5785587453872477,
+          0.6156638046490833,
+          1.1613595652025799,
+          0.6331629502145868
+        ],
+        "raw_feature_mse": [
+          87.73198481206293,
+          25.448047877173604,
+          653.4424574335549,
+          3.121806596601872e-05
+        ],
+        "raw_feature_mae": [
+          7.6652814958479025,
+          3.2929552484945126,
+          18.705478402071222,
+          0.0041893220653659415
+        ],
+        "entity_mse": {
+          "Bexar": 0.6258763940561385,
+          "Dallas": 2.671223952157778,
+          "Denver": 0.6669514681167701,
+          "Hillsborough": 1.6118593419946374,
+          "Los_Angeles": 1.7435805491806764,
+          "Maricopa": 0.4795120361830212,
+          "Philadelphia": 1.3063507861923427,
+          "Richmond": 0.7007270424438354
+        },
+        "windows": 43,
+        "query_rows": 6390,
+        "observed_values": 7508
+      },
+      "duration_seconds": 22.407271799995215,
+      "peak_cuda_memory_bytes": 207566848,
+      "checkpoint": "F:\\CCFA\\phase3_prototype\\results\\epa_air_semantic_controls_fresh3_cuda\\selective_ssm_semantic_shuffle_seed79.pt",
+      "control": "semantic_shuffle"
+    },
+    {
+      "model": "mean_text_fusion_time_only_zero_text",
+      "seed": 53,
+      "parameters": 28548,
+      "initial_val_mse": 1.919197198279441,
+      "best_epoch": 4,
+      "completed_epochs": 9,
+      "val_metrics": {
+        "mse": 1.783175184429464,
+        "rmse": 1.335355826897634,
+        "mae": 0.8798040635174895,
+        "raw_smape": 0.23484035231553124,
+        "feature_mse": [
+          0.6184052169392195,
+          2.00777962574592,
+          4.005372927994678,
+          0.5011429670380383
+        ],
+        "feature_mae": [
+          0.630171506662402,
+          0.8438126674065223,
+          1.5370899692229694,
+          0.5081421107780643
+        ],
+        "raw_feature_mse": [
+          109.99801625108886,
+          80.47484119121845,
+          1076.0669778963415,
+          2.233580957314499e-05
+        ],
+        "raw_feature_mae": [
+          8.625879870336092,
+          4.782887092003455,
+          25.219822262222344,
+          0.003525230760981397
+        ],
+        "entity_mse": {
+          "Bexar": 4.0302690381095525,
+          "Dallas": 1.8061667457588815,
+          "Denver": 2.109512898240826,
+          "Hillsborough": 3.3975425000251067,
+          "Los_Angeles": 2.311617476244767,
+          "Maricopa": 1.4781184958551348,
+          "Philadelphia": 0.8592874109722851,
+          "Richmond": 0.9186569622764214
+        },
+        "windows": 41,
+        "query_rows": 6888,
+        "observed_values": 8048
+      },
+      "test_metrics": {
+        "mse": 1.1905280098085587,
+        "rmse": 1.0911131975228596,
+        "mae": 0.7463582860549451,
+        "raw_smape": 0.21355531908004102,
+        "feature_mse": [
+          0.5323728160045743,
+          0.988777360731275,
+          2.5473439162751763,
+          0.6936179462232088
+        ],
+        "feature_mae": [
+          0.5855383851766132,
+          0.6156719560090329,
+          1.1701761290084485,
+          0.6140466740256861
+        ],
+        "raw_feature_mse": [
+          90.15950313890654,
+          25.15496499073546,
+          655.0992200477575,
+          2.9612166001338903e-05
+        ],
+        "raw_feature_mae": [
+          7.825141300460903,
+          3.291477042429803,
+          18.885740970852368,
+          0.004030175605102589
+        ],
+        "entity_mse": {
+          "Bexar": 0.6331451425240153,
+          "Dallas": 2.651782473541341,
+          "Denver": 0.6413358485807908,
+          "Hillsborough": 1.6290514336100648,
+          "Los_Angeles": 1.7113737320269262,
+          "Maricopa": 0.48501121695730876,
+          "Philadelphia": 1.2773408003250508,
+          "Richmond": 0.7251976684538817
+        },
+        "windows": 43,
+        "query_rows": 6390,
+        "observed_values": 7508
+      },
+      "duration_seconds": 0.8999006999947596,
+      "peak_cuda_memory_bytes": 160403456,
+      "checkpoint": "F:\\CCFA\\phase3_prototype\\results\\epa_air_semantic_controls_fresh3_cuda\\mean_text_fusion_time_only_zero_text_seed53.pt",
+      "control": "time_only_zero_text"
+    },
+    {
+      "model": "mean_text_fusion_time_only_zero_text",
+      "seed": 67,
+      "parameters": 28548,
+      "initial_val_mse": 1.919197198279441,
+      "best_epoch": 4,
+      "completed_epochs": 9,
+      "val_metrics": {
+        "mse": 1.771757151091811,
+        "rmse": 1.3310736835697006,
+        "mae": 0.8784154426963147,
+        "raw_smape": 0.2337444392678182,
+        "feature_mse": [
+          0.6174955999394327,
+          1.9738864944531367,
+          3.983421777598949,
+          0.5122247323757265
+        ],
+        "feature_mae": [
+          0.6313093320556357,
+          0.8366079880641057,
+          1.5308737140083977,
+          0.5148707366571194
+        ],
+        "raw_feature_mse": [
+          110.26839476263066,
+          78.86214623084435,
+          1067.198708351481,
+          2.300278915421719e-05
+        ],
+        "raw_feature_mae": [
+          8.64786415233014,
+          4.75051945906419,
+          25.096454048821318,
+          0.0035774529707141038
+        ],
+        "entity_mse": {
+          "Bexar": 4.089684029420217,
+          "Dallas": 1.7836171663249845,
+          "Denver": 2.1054426227809535,
+          "Hillsborough": 3.4208094792775228,
+          "Los_Angeles": 2.279926986240332,
+          "Maricopa": 1.441837435836778,
+          "Philadelphia": 0.8594574175913641,
+          "Richmond": 0.9218393406786245
+        },
+        "windows": 41,
+        "query_rows": 6888,
+        "observed_values": 8048
+      },
+      "test_metrics": {
+        "mse": 1.178435873599031,
+        "rmse": 1.0855578628516451,
+        "mae": 0.7450538633432491,
+        "raw_smape": 0.21241306861199227,
+        "feature_mse": [
+          0.5337987124957784,
+          0.9558633175787932,
+          2.5213010921034704,
+          0.7027803722180819
+        ],
+        "feature_mae": [
+          0.5864838286713286,
+          0.6080680072919264,
+          1.1648140080347409,
+          0.620849609375
+        ],
+        "raw_feature_mse": [
+          90.32488676096631,
+          24.410460242659635,
+          650.3429389015781,
+          3.03134074783884e-05
+        ],
+        "raw_feature_mae": [
+          7.835477156011602,
+          3.2576000252770454,
+          18.81520217439265,
+          0.004086904717903388
+        ],
+        "entity_mse": {
+          "Bexar": 0.6499148170862878,
+          "Dallas": 2.5966386117567755,
+          "Denver": 0.635032229629152,
+          "Hillsborough": 1.6003124626974263,
+          "Los_Angeles": 1.703600837081294,
+          "Maricopa": 0.49340484626332504,
+          "Philadelphia": 1.2681656343820837,
+          "Richmond": 0.7098561221886859
+        },
+        "windows": 43,
+        "query_rows": 6390,
+        "observed_values": 7508
+      },
+      "duration_seconds": 0.874007000005804,
+      "peak_cuda_memory_bytes": 160403456,
+      "checkpoint": "F:\\CCFA\\phase3_prototype\\results\\epa_air_semantic_controls_fresh3_cuda\\mean_text_fusion_time_only_zero_text_seed67.pt",
+      "control": "time_only_zero_text"
+    },
+    {
+      "model": "mean_text_fusion_time_only_zero_text",
+      "seed": 79,
+      "parameters": 28548,
+      "initial_val_mse": 1.919197198279441,
+      "best_epoch": 4,
+      "completed_epochs": 9,
+      "val_metrics": {
+        "mse": 1.7857104333813705,
+        "rmse": 1.3363047681503537,
+        "mae": 0.8808217439086595,
+        "raw_smape": 0.23462000887824014,
+        "feature_mse": [
+          0.617683844837716,
+          1.9928248203717744,
+          4.013902218915029,
+          0.5184308494009623
+        ],
+        "feature_mae": [
+          0.6319487036728277,
+          0.8398513793945312,
+          1.536899978690862,
+          0.5145869138764172
+        ],
+        "raw_feature_mse": [
+          110.77330593060395,
+          78.62181502122145,
+          1074.7861021885888,
+          2.325299655927754e-05
+        ],
+        "raw_feature_mae": [
+          8.665401729003339,
+          4.7487305861253,
+          25.189293838128812,
+          0.003576253427237999
+        ],
+        "entity_mse": {
+          "Bexar": 4.111769691109657,
+          "Dallas": 1.810590148383441,
+          "Denver": 2.130675193221101,
+          "Hillsborough": 3.4563020217479092,
+          "Los_Angeles": 2.3018882356324317,
+          "Maricopa": 1.4325058317220296,
+          "Philadelphia": 0.8566079686168537,
+          "Richmond": 0.9286857305082344
+        },
+        "windows": 41,
+        "query_rows": 6888,
+        "observed_values": 8048
+      },
+      "test_metrics": {
+        "mse": 1.1807583533198285,
+        "rmse": 1.086627053463988,
+        "mae": 0.7452062346117496,
+        "raw_smape": 0.21280659805395763,
+        "feature_mse": [
+          0.5362103869031359,
+          0.9559336437194894,
+          2.529463403644752,
+          0.7014259790119372
+        ],
+        "feature_mae": [
+          0.5895199202763678,
+          0.606719875009465,
+          1.1642296876622198,
+          0.6203554554989463
+        ],
+        "raw_feature_mse": [
+          91.51396614748887,
+          24.22459155858039,
+          652.7716076619602,
+          3.026063763842869e-05
+        ],
+        "raw_feature_mae": [
+          7.892188865821678,
+          3.2321603355277224,
+          18.81271575218023,
+          0.004081992824610911
+        ],
+        "entity_mse": {
+          "Bexar": 0.6558162499041784,
+          "Dallas": 2.5873114902326573,
+          "Denver": 0.6399819238830796,
+          "Hillsborough": 1.585285677441529,
+          "Los_Angeles": 1.7175118597327306,
+          "Maricopa": 0.4960610561584684,
+          "Philadelphia": 1.2657040357005565,
+          "Richmond": 0.7138134685758104
+        },
+        "windows": 43,
+        "query_rows": 6390,
+        "observed_values": 7508
+      },
+      "duration_seconds": 0.6968787000078009,
+      "peak_cuda_memory_bytes": 160403456,
+      "checkpoint": "F:\\CCFA\\phase3_prototype\\results\\epa_air_semantic_controls_fresh3_cuda\\mean_text_fusion_time_only_zero_text_seed79.pt",
+      "control": "time_only_zero_text"
+    },
+    {
+      "model": "selective_ssm_time_only_zero_text",
+      "seed": 53,
+      "parameters": 78520,
+      "initial_val_mse": 1.919197198279441,
+      "best_epoch": 4,
+      "completed_epochs": 9,
+      "val_metrics": {
+        "mse": 1.8163546202109389,
+        "rmse": 1.3477220114737827,
+        "mae": 0.883410272021657,
+        "raw_smape": 0.23527950232165074,
+        "feature_mse": [
+          0.6441136093228259,
+          2.0022342801094055,
+          4.099547808178626,
+          0.5195227832328982
+        ],
+        "feature_mae": [
+          0.6294575158450385,
+          0.8387508575732892,
+          1.5430785654313888,
+          0.5223541492369117
+        ],
+        "raw_feature_mse": [
+          111.5230700130662,
+          81.1614503126878,
+          1100.3799270470383,
+          2.285311915684582e-05
+        ],
+        "raw_feature_mae": [
+          8.557230844176466,
+          4.771615541898287,
+          25.304862311492812,
+          0.0036159758342475426
+        ],
+        "entity_mse": {
+          "Bexar": 4.106939273930731,
+          "Dallas": 1.8036664667672346,
+          "Denver": 2.098358812976152,
+          "Hillsborough": 3.6724097420339517,
+          "Los_Angeles": 2.438741610486846,
+          "Maricopa": 1.522019801342616,
+          "Philadelphia": 0.809150727186352,
+          "Richmond": 0.9091244950039621
+        },
+        "windows": 41,
+        "query_rows": 6888,
+        "observed_values": 8048
+      },
+      "test_metrics": {
+        "mse": 1.2079087296435596,
+        "rmse": 1.099049011483819,
+        "mae": 0.7458643091447965,
+        "raw_smape": 0.21579283315724818,
+        "feature_mse": [
+          0.5916272046379579,
+          0.9855840806950186,
+          2.5682413601796097,
+          0.6861822730616519
+        ],
+        "feature_mae": [
+          0.59315826357813,
+          0.6195933517055882,
+          1.1538527605937565,
+          0.6168528607017115
+        ],
+        "raw_feature_mse": [
+          93.62203492530197,
+          25.168938631342645,
+          663.3873611399501,
+          2.958041180758492e-05
+        ],
+        "raw_feature_mae": [
+          7.804759205638112,
+          3.315664363152081,
+          18.65012458471761,
+          0.004048469525418784
+        ],
+        "entity_mse": {
+          "Bexar": 0.6003981108466784,
+          "Dallas": 2.5837854168887824,
+          "Denver": 0.6467717047038812,
+          "Hillsborough": 1.6006808933757601,
+          "Los_Angeles": 1.8666583208860608,
+          "Maricopa": 0.47471720963210196,
+          "Philadelphia": 1.331308538132968,
+          "Richmond": 0.6972818547750306
+        },
+        "windows": 43,
+        "query_rows": 6390,
+        "observed_values": 7508
+      },
+      "duration_seconds": 19.846324099999038,
+      "peak_cuda_memory_bytes": 207546880,
+      "checkpoint": "F:\\CCFA\\phase3_prototype\\results\\epa_air_semantic_controls_fresh3_cuda\\selective_ssm_time_only_zero_text_seed53.pt",
+      "control": "time_only_zero_text"
+    },
+    {
+      "model": "selective_ssm_time_only_zero_text",
+      "seed": 67,
+      "parameters": 78520,
+      "initial_val_mse": 1.919197198279441,
+      "best_epoch": 4,
+      "completed_epochs": 9,
+      "val_metrics": {
+        "mse": 1.828416146576953,
+        "rmse": 1.352189390054867,
+        "mae": 0.8855332188234353,
+        "raw_smape": 0.23660586042537518,
+        "feature_mse": [
+          0.6675361518106671,
+          2.01634602363293,
+          4.123278840493658,
+          0.5065035703705578
+        ],
+        "feature_mae": [
+          0.6378531107088414,
+          0.841492432814378,
+          1.5458017409055491,
+          0.5169855908649724
+        ],
+        "raw_feature_mse": [
+          116.11973268728222,
+          80.73776655930739,
+          1109.4884990200349,
+          2.231032810480584e-05
+        ],
+        "raw_feature_mae": [
+          8.675229877821936,
+          4.768168669480544,
+          25.35876932709059,
+          0.0035679792849028984
+        ],
+        "entity_mse": {
+          "Bexar": 4.253375308854239,
+          "Dallas": 1.8338596632571094,
+          "Denver": 2.109408040058389,
+          "Hillsborough": 3.6390490411182066,
+          "Los_Angeles": 2.483902310084577,
+          "Maricopa": 1.5179057455430982,
+          "Philadelphia": 0.8071766057204166,
+          "Richmond": 0.8924430874034579
+        },
+        "windows": 41,
+        "query_rows": 6888,
+        "observed_values": 8048
+      },
+      "test_metrics": {
+        "mse": 1.2076597519697132,
+        "rmse": 1.098935736050891,
+        "mae": 0.7427652013293458,
+        "raw_smape": 0.2147685713402713,
+        "feature_mse": [
+          0.5976268770735657,
+          0.9891765511837898,
+          2.572833241814395,
+          0.6710023378071032
+        ],
+        "feature_mae": [
+          0.592403608299105,
+          0.6160266489096351,
+          1.1509053683360153,
+          0.611725179772628
+        ],
+        "raw_feature_mse": [
+          94.42306202320407,
+          24.96744717431585,
+          663.9699309593024,
+          2.859549376329309e-05
+        ],
+        "raw_feature_mae": [
+          7.784085011224571,
+          3.266983571590828,
+          18.598090998754152,
+          0.004001060010571229
+        ],
+        "entity_mse": {
+          "Bexar": 0.5816392110926765,
+          "Dallas": 2.602337843229595,
+          "Denver": 0.6612135267731113,
+          "Hillsborough": 1.6002965855101743,
+          "Los_Angeles": 1.8709255794376423,
+          "Maricopa": 0.45762615848480703,
+          "Philadelphia": 1.35570279419023,
+          "Richmond": 0.6718874826717018
+        },
+        "windows": 43,
+        "query_rows": 6390,
+        "observed_values": 7508
+      },
+      "duration_seconds": 20.74366839999857,
+      "peak_cuda_memory_bytes": 207667200,
+      "checkpoint": "F:\\CCFA\\phase3_prototype\\results\\epa_air_semantic_controls_fresh3_cuda\\selective_ssm_time_only_zero_text_seed67.pt",
+      "control": "time_only_zero_text"
+    },
+    {
+      "model": "selective_ssm_time_only_zero_text",
+      "seed": 79,
+      "parameters": 78520,
+      "initial_val_mse": 1.919197198279441,
+      "best_epoch": 4,
+      "completed_epochs": 9,
+      "val_metrics": {
+        "mse": 1.8276720858499957,
+        "rmse": 1.3519142302121077,
+        "mae": 0.8890734147548376,
+        "raw_smape": 0.23679253364987468,
+        "feature_mse": [
+          0.641837418010149,
+          2.0050091926868143,
+          4.120957324729148,
+          0.542884407973871
+        ],
+        "feature_mae": [
+          0.6335308770546376,
+          0.8401196186359112,
+          1.5557669928680313,
+          0.5268761704607707
+        ],
+        "raw_feature_mse": [
+          112.23015003448026,
+          81.59077248206505,
+          1107.790321483014,
+          2.4387171057552643e-05
+        ],
+        "raw_feature_mae": [
+          8.632226959476625,
+          4.7786407470703125,
+          25.511213880798127,
+          0.003666112153995328
+        ],
+        "entity_mse": {
+          "Bexar": 4.145861688823928,
+          "Dallas": 1.846003942941094,
+          "Denver": 2.1236869671749794,
+          "Hillsborough": 3.582294430538414,
+          "Los_Angeles": 2.412278513420931,
+          "Maricopa": 1.5300118257975324,
+          "Philadelphia": 0.8635933608553299,
+          "Richmond": 0.9171132775067257
+        },
+        "windows": 41,
+        "query_rows": 6888,
+        "observed_values": 8048
+      },
+      "test_metrics": {
+        "mse": 1.2033923001225775,
+        "rmse": 1.0969923883612764,
+        "mae": 0.7469009039285772,
+        "raw_smape": 0.21492720839046744,
+        "feature_mse": [
+          0.5435950490826645,
+          0.9958893483421821,
+          2.557346001811994,
+          0.7167388012534693
+        ],
+        "feature_mae": [
+          0.5789179623089091,
+          0.6150893034113989,
+          1.1606223527775255,
+          0.6329739972164756
+        ],
+        "raw_feature_mse": [
+          88.16007554235537,
+          25.344866310041333,
+          655.2295084094684,
+          3.143159043056106e-05
+        ],
+        "raw_feature_mae": [
+          7.662726943688414,
+          3.287350314237101,
+          18.699529603470204,
+          0.00418839250740252
+        ],
+        "entity_mse": {
+          "Bexar": 0.6354441326998529,
+          "Dallas": 2.6636696949512473,
+          "Denver": 0.6669433346336398,
+          "Hillsborough": 1.6165019507919038,
+          "Los_Angeles": 1.7567933649938035,
+          "Maricopa": 0.4836161110794083,
+          "Philadelphia": 1.3122185481981088,
+          "Richmond": 0.6968414482211925
+        },
+        "windows": 43,
+        "query_rows": 6390,
+        "observed_values": 7508
+      },
+      "duration_seconds": 20.329842199993436,
+      "peak_cuda_memory_bytes": 207566848,
+      "checkpoint": "F:\\CCFA\\phase3_prototype\\results\\epa_air_semantic_controls_fresh3_cuda\\selective_ssm_time_only_zero_text_seed79.pt",
+      "control": "time_only_zero_text"
+    }
+  ]
+}

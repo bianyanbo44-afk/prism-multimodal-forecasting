@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\centering\small
+\caption{Paired metric sensitivity of an identical physical persistence predictor. Negative changes indicate a lower displayed normalized MSE under full-entity scaling. The forecast does not improve. Windows with an unobserved history channel are excluded from both sides; the same rule and units are retained.}
+\label{tab:normalization}
+\begin{tabular}{lrrrr}
+\toprule
+Dataset & Windows used/total & Train-only MSE & Full-entity MSE & Change (\%)\\
+\midrule
+ClusterTrace & 16/69 & 2.131129 & 0.796068 & $-62.646$\\
+CESNET & 12/12 & 1.861666 & 1.831162 & $-1.639$\\
+EPA-Air & 39/43 & 1.259575 & 0.719812 & $-42.853$\\
+FNSPID & 321/321 & 0.320936 & 0.156170 & $-51.339$\\
+RepoHealth & 80/80 & 1.410842 & 1.033575 & $-26.741$\\
+\bottomrule
+\end{tabular}
+\end{table}
+The displayed changes range from $-1.639\%$ to $-62.646\%$ (Table~\ref{tab:normalization}), although the largest per-window relative raw squared-error difference is below $6\times10^{-5}$. These persistence windows use the numerical loader and are not claimed to be the identical text-retained population in the historical semantic experiment. Their role is to isolate the numerical scaling effect on the same prediction and target within this paired experiment.

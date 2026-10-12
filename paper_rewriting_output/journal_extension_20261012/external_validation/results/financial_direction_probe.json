@@ -1,0 +1,121 @@
+{
+  "protocol_sha256": "b80601411540f87f87a5971835eee027133c603251ee5295df0fa205a62ad641",
+  "protocol": {
+    "frozen_date": "2026-10-12 Asia/Shanghai; before new directional probe scores",
+    "train_templates": [
+      "The company's profits increased.",
+      "The company's profits decreased.",
+      "The company reported higher revenue.",
+      "The company reported lower revenue.",
+      "The stock price rose today.",
+      "The stock price fell today.",
+      "Demand for the company's products grew.",
+      "Demand for the company's products declined.",
+      "The company achieved positive earnings growth.",
+      "The company experienced negative earnings growth.",
+      "The company raised its sales forecast.",
+      "The company cut its sales forecast."
+    ],
+    "labels": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "test_templates": [
+      "Acme's net income improved substantially.",
+      "Acme's net income deteriorated substantially.",
+      "Beta Corporation's quarterly sales climbed.",
+      "Beta Corporation's quarterly sales dropped.",
+      "Shares of Gamma gained five percent.",
+      "Shares of Gamma lost five percent.",
+      "Delta announced expanding operating margins.",
+      "Delta announced shrinking operating margins.",
+      "Epsilon upgraded its full-year guidance.",
+      "Epsilon downgraded its full-year guidance.",
+      "Zeta's business posted a strong gain.",
+      "Zeta's business posted a severe loss."
+    ],
+    "test_labels": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "probe": "Train fixed C=1 balanced logistic regression on L2 normalized masked token means; score twelve fixed held-out sentences; also opposite-direction paired raw cosine. No hyperparameter search; no target-data use. Narrow synthetic financial direction representability check, not complete embedding validation or causality proof."
+  },
+  "results": {
+    "minilm": {
+      "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "test_accuracy": 1.0,
+      "test_predictions": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "opposite_pair_cosines": [
+        0.7890599966049194,
+        0.7179335355758667,
+        0.8306037783622742,
+        0.8393757343292236,
+        0.8822485208511353,
+        0.7717028260231018
+      ],
+      "opposite_pair_cosine_median": 0.8098318576812744
+    },
+    "finbert": {
+      "model_id": "ProsusAI/finbert",
+      "revision": "4556d13015211d73dccd3fdd39d39232506f3e43",
+      "test_accuracy": 1.0,
+      "test_predictions": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "opposite_pair_cosines": [
+        0.17320965230464935,
+        0.3856906294822693,
+        0.7388708591461182,
+        0.10199327766895294,
+        0.5011278390884399,
+        0.24737399816513062
+      ],
+      "opposite_pair_cosine_median": 0.31653231382369995
+    }
+  }
+}

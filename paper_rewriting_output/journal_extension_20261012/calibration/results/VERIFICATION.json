@@ -1,0 +1,12 @@
+{
+  "frozen_source_hashes_match": true,
+  "checkpoint_prediction_loss_checks": 102400,
+  "maximum_absolute_loss_error": 0.0,
+  "fit_count": 1200,
+  "convergence_warning_fits": 0,
+  "iteration_range": [
+    7,
+    43
+  ],
+  "scope": "All fixed-model variants use the exact same saved aligned parameters; loss values are independently recomputed without fitting."
+}

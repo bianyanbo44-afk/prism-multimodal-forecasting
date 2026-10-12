@@ -1,0 +1,31 @@
+\section{Full construct-specific control outcomes}
+
+\begin{table}[htbp]
+\centering\small
+\caption{All predefined construct/control outcomes on independent test entities. Rejected means an unscreened one-sided paired entity test at 0.05. Effect intervals concern the mean over twenty generated worlds. The descriptive validation screen retains 20/20 direction and source worlds and 0/20 timing worlds; its lower bound is nominal after ridge selection. A 20/20 rejection fraction has Wilson 95\% interval [83.9,100]\%; zero rejections still have upper bound 16.1\%.}
+\label{tab:construct_full}
+\begin{tabular}{lllll}
+\toprule
+Target & Control & $\Delta$ MSE & Across-world 95\% interval & Rejected\\
+\midrule
+Direction & Whole permutation & +0.732964 & [+0.723646, +0.742281] & 20/20\\
+Direction & Direction flip & +2.698159 & [+2.667529, +2.728789] & 20/20\\
+Direction & Source flip & -0.000071 & [-0.001688, +0.001546] & 0/20\\
+Direction & Paraphrase & -0.030132 & [-0.043625, -0.016639] & 1/20\\
+Direction & Zero & +0.529420 & [+0.508607, +0.550232] & 20/20\\
+Source & Whole permutation & +0.770870 & [+0.758012, +0.783728] & 20/20\\
+Source & Direction flip & -0.000228 & [-0.000640, +0.000185] & 1/20\\
+Source & Source flip & +2.872553 & [+2.840252, +2.904853] & 20/20\\
+Source & Paraphrase & -0.005214 & [-0.010065, -0.000364] & 3/20\\
+Source & Zero & +0.759390 & [+0.750211, +0.768568] & 20/20\\
+Timing & Whole permutation & -0.000195 & [-0.000681, +0.000290] & 1/20\\
+Timing & Direction flip & -0.000004 & [-0.000128, +0.000120] & 0/20\\
+Timing & Source flip & +0.000055 & [-0.000151, +0.000261] & 2/20\\
+Timing & Paraphrase & -0.003914 & [-0.005802, -0.002026] & 0/20\\
+Timing & Zero & -0.010734 & [-0.014727, -0.006740] & 0/20\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Construct and intervention identities.}
+Direction/source signs are independent per note. A direction flip inverts the demand proposition and retains the exact source suffix; a source flip exchanges Cedar/Maple and retains exact proposition text. Paraphrases preserve both latent cues but need not preserve embedding geometry. The validation screen measures incremental content benefit over the numerical/timing comparator by Eq.~\ref{eq:validation_content_screen}. For each model, ridge selection first minimizes mean entity loss over four penalties on the same 32 validation entities subsequently used in that equation. The resulting post-selection nominal lower bound is a descriptive screen, with no unadjusted 95\% coverage claim. Direction and source worlds meet this screen, yet whole permutation alone cannot isolate the directional proposition. Test entities are independently generated and remain in all outcome summaries. No numerical-only comparator was trained for this batch; the available comparator retains numerical and timing features. Full templates, validation candidates and saved predictions are in the local replay package.

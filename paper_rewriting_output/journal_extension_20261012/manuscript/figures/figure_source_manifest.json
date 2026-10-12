@@ -1,0 +1,285 @@
+{
+  "backend": "Python/Matplotlib",
+  "main_figure_count": 8,
+  "main_figures": [
+    "fig1_estimands",
+    "fig7_construct",
+    "fig5_fidel",
+    "fig3_calibration",
+    "fig4_fixed_model",
+    "fig8_transfer",
+    "fig9_map_sensitivity",
+    "fig2_coverage"
+  ],
+  "figures": [
+    {
+      "name": "fig1_estimands",
+      "pdf": "fig1_estimands.pdf",
+      "panels": 3,
+      "width_in": 7.2,
+      "height_in": 4.6,
+      "source_files": [
+        {
+          "path": "manuscript/main.tex",
+          "sha256": "a271758c802f8ed2ec98ea81a36f48b2654090d6c8416cf798820988d98caa69"
+        },
+        {
+          "path": "manuscript/protocol_worked_examples.tex",
+          "sha256": "710dcd7557f664a7c8c590307d05ecc68b777ea9a2348d16579f89450455e9ee"
+        },
+        {
+          "path": "scripts/figure_style.py",
+          "sha256": "bc311facf9956c77a503dd3ea5d68849e7c5d06205450d23e68600b1d835c219"
+        },
+        {
+          "path": "scripts/figures_protocol.py",
+          "sha256": "32e7802c49b0d395ccdcc7470154e4336e343a35ec4e3328dfb1ba8ba996e9b5"
+        }
+      ],
+      "source_csv": "fig1_estimands_source.csv",
+      "note": "Illustrative event-slot schematic only; no experimental timestamps, numerical observations or loss values are fabricated. Panels b and c separate one frozen function from condition-specific refitting.",
+      "all_observations_preserved": true
+    },
+    {
+      "name": "fig7_construct",
+      "pdf": "fig7_construct.pdf",
+      "panels": 4,
+      "width_in": 7.2,
+      "height_in": 4.6,
+      "source_files": [
+        {
+          "path": "construct_controls/results/summary.csv",
+          "sha256": "386b0c212d09632829ca16ec3aff29a24407a86543c1f776d2d39cf367cea217"
+        },
+        {
+          "path": "construct_controls/config.json",
+          "sha256": "bc9d724e2db5f8c4f084be1befa319d914c7801ec807263efc276070fe1117cd"
+        },
+        {
+          "path": "scripts/figure_style.py",
+          "sha256": "bc311facf9956c77a503dd3ea5d68849e7c5d06205450d23e68600b1d835c219"
+        },
+        {
+          "path": "scripts/figures_protocol.py",
+          "sha256": "32e7802c49b0d395ccdcc7470154e4336e343a35ec4e3328dfb1ba8ba996e9b5"
+        }
+      ],
+      "source_csv": "fig7_construct_source.csv",
+      "note": "All 15 saved means and existing across-world 95% t intervals are shown. No new test or fit. Direction/source panels share an MSE scale; the timing boundary has an explicitly expanded \u00d71000 horizontal scale. Cue cards abbreviate actual frozen sentence templates.",
+      "all_observations_preserved": true
+    },
+    {
+      "name": "fig5_fidel",
+      "pdf": "fig5_fidel.pdf",
+      "panels": 2,
+      "width_in": 7.2,
+      "height_in": 4.0,
+      "source_files": [
+        {
+          "path": "external_validation/results/Fidel/results.json",
+          "sha256": "b98018f1bc6e88ed4370421addb5b8e150c148b771244e2dd9c39721f5bb8661"
+        }
+      ],
+      "source_csv": "fig5_fidel_source.csv",
+      "note": "Six saved aggregate loss conditions and all nine plants retained. Fixed SAG 19.65146739% uses fixed-shift MSE 0.226246688622; condition-retrained SAG 8.96689488% uses retrained-shift MSE 0.199692072620. Complete-stream utility 4.88966426% uses numerical-only MSE 0.191131587311. Plant effects are descriptive matched altered-minus-aligned MSE, with no plant-independence CI or repeated-map distribution.",
+      "all_observations_preserved": true
+    },
+    {
+      "name": "fig3_calibration",
+      "pdf": "fig3_calibration.pdf",
+      "panels": 2,
+      "width_in": 7.2,
+      "height_in": 3.55,
+      "source_files": [
+        {
+          "path": "calibration/results/summary.json",
+          "sha256": "e436edb43a5dc5e90b0889554f3f9e95bc65b3ba91e3a762bc2e4cac63d515eb"
+        }
+      ],
+      "source_csv": "fig3_calibration_source.csv",
+      "note": "All eight cells retained. Effect intervals are saved 20-world t intervals; detection intervals are saved Wilson intervals with denominator 20. Screened detection is a joint fraction, not conditional null error among passing worlds.",
+      "all_observations_preserved": true
+    },
+    {
+      "name": "fig4_fixed_model",
+      "pdf": "fig4_fixed_model.pdf",
+      "panels": 2,
+      "width_in": 7.2,
+      "height_in": 3.9,
+      "source_files": [
+        {
+          "path": "fixed_model/results/paired_summary_control_denominator.csv",
+          "sha256": "3fd11e80faa308c7b7d5ab23b895177f3db78a7737478ca7cc302fd8a061f340"
+        }
+      ],
+      "source_csv": "fig4_fixed_model_source.csv",
+      "note": "All 30 cells retained: 15 dataset/mechanism cells for each of derangement and zero content. Points use gain_percent_control_denominator; intervals use the matched gain_control_ci95_block2_low/high fields, all already in percentage units. A common linear axis keeps the tiny reassignment effects in scale with zero-content responses.",
+      "all_observations_preserved": true
+    },
+    {
+      "name": "fig8_transfer",
+      "pdf": "fig8_transfer.pdf",
+      "panels": 3,
+      "width_in": 7.2,
+      "height_in": 3.55,
+      "source_files": [
+        {
+          "path": "external_validation/results/EPA-Air/results.json",
+          "sha256": "6439bd9921a538c38039b01194895d4dbb1cf485f0b8ff9e6580833ba8690661"
+        },
+        {
+          "path": "external_validation/results/FNSPID/results.json",
+          "sha256": "9f216c08df62528650d6782c15da7097e62dc0ab4c839265697311269dd4a844"
+        },
+        {
+          "path": "external_validation/results/Fidel/results.json",
+          "sha256": "b98018f1bc6e88ed4370421addb5b8e150c148b771244e2dd9c39721f5bb8661"
+        },
+        {
+          "path": "external_validation/results/summary_table.json",
+          "sha256": "3f8c7e6e8a008d7012703b2b061578652b91e36e6ed2c976e2cef1eaffb18616"
+        }
+      ],
+      "source_csv": "fig8_transfer_source.csv",
+      "note": "24 saved model/split means plus 6 persistence references; ratios use split-specific persistence. EPA-Air: validation gains fail to transfer; FNSPID: later test gains do not retrospectively qualify validation; Fidel: both configurations improve in both splits. Panel-specific log-axis ranges; small horizontal offsets separate configurations within categorical splits. Positive finite guard, no new uncertainty or gate decision.",
+      "all_observations_preserved": true
+    },
+    {
+      "name": "fig9_map_sensitivity",
+      "pdf": "fig9_map_sensitivity.pdf",
+      "panels": 3,
+      "width_in": 7.2,
+      "height_in": 4.5,
+      "source_files": [
+        {
+          "path": "intervention_repeats/results/map_aggregate.csv",
+          "sha256": "71f2ebbff5d280638bd01429311e979ef1f199b4e47858bf447c4578d9c3d229"
+        },
+        {
+          "path": "intervention_repeats/results/between_map_summary.csv",
+          "sha256": "e8fb1713679a13db980db7172eb96f56dda06f6815047f8312adfda5c757fea8"
+        }
+      ],
+      "source_csv": "fig9_map_sensitivity_source.csv",
+      "note": "All 140 map draws and all 7 saved summary cells retained. FNSPID and EPA-Air strips use raw altered-minus-aligned MSE with separate dataset axes (FNSPID tick units \u00d70.001); vertical jitter is display-only. Fidel ECDF orders the 20 effects by magnitude, not seed/time. Bars and shading show saved empirical 2.5\u201397.5 percentiles, not confidence intervals; Fidel maps share weather context across all nine plants.",
+      "all_observations_preserved": true
+    },
+    {
+      "name": "fig2_coverage",
+      "pdf": "fig2_coverage.pdf",
+      "panels": 2,
+      "width_in": 7.2,
+      "height_in": 3.7,
+      "source_files": [
+        {
+          "path": "diagnostics/control_strength.json",
+          "sha256": "9707e9b1d57946731b2847028c7f1ad80d8f17448837a0d0ec210ca039404870"
+        },
+        {
+          "path": "diagnostics/normalization_sensitivity.json",
+          "sha256": "2793081ea6c0e09a5232f50266cfb32ca47cd401892594cf5bed447c46491ce1"
+        }
+      ],
+      "source_csv": "fig2_coverage_source.csv",
+      "note": "All five datasets. Coverage counts retained text slots; paired scaling scores retain identical raw forecasts and eligible windows. Percentage score changes are descriptive arithmetic, not predictive improvements.",
+      "all_observations_preserved": true
+    }
+  ],
+  "source_files": [
+    {
+      "path": "calibration/results/summary.json",
+      "sha256": "e436edb43a5dc5e90b0889554f3f9e95bc65b3ba91e3a762bc2e4cac63d515eb"
+    },
+    {
+      "path": "construct_controls/config.json",
+      "sha256": "bc9d724e2db5f8c4f084be1befa319d914c7801ec807263efc276070fe1117cd"
+    },
+    {
+      "path": "construct_controls/results/summary.csv",
+      "sha256": "386b0c212d09632829ca16ec3aff29a24407a86543c1f776d2d39cf367cea217"
+    },
+    {
+      "path": "diagnostics/control_strength.json",
+      "sha256": "9707e9b1d57946731b2847028c7f1ad80d8f17448837a0d0ec210ca039404870"
+    },
+    {
+      "path": "diagnostics/normalization_sensitivity.json",
+      "sha256": "2793081ea6c0e09a5232f50266cfb32ca47cd401892594cf5bed447c46491ce1"
+    },
+    {
+      "path": "external_validation/results/EPA-Air/results.json",
+      "sha256": "6439bd9921a538c38039b01194895d4dbb1cf485f0b8ff9e6580833ba8690661"
+    },
+    {
+      "path": "external_validation/results/FNSPID/results.json",
+      "sha256": "9f216c08df62528650d6782c15da7097e62dc0ab4c839265697311269dd4a844"
+    },
+    {
+      "path": "external_validation/results/Fidel/results.json",
+      "sha256": "b98018f1bc6e88ed4370421addb5b8e150c148b771244e2dd9c39721f5bb8661"
+    },
+    {
+      "path": "external_validation/results/summary_table.json",
+      "sha256": "3f8c7e6e8a008d7012703b2b061578652b91e36e6ed2c976e2cef1eaffb18616"
+    },
+    {
+      "path": "fixed_model/results/paired_summary_control_denominator.csv",
+      "sha256": "3fd11e80faa308c7b7d5ab23b895177f3db78a7737478ca7cc302fd8a061f340"
+    },
+    {
+      "path": "intervention_repeats/results/between_map_summary.csv",
+      "sha256": "e8fb1713679a13db980db7172eb96f56dda06f6815047f8312adfda5c757fea8"
+    },
+    {
+      "path": "intervention_repeats/results/map_aggregate.csv",
+      "sha256": "71f2ebbff5d280638bd01429311e979ef1f199b4e47858bf447c4578d9c3d229"
+    },
+    {
+      "path": "manuscript/main.tex",
+      "sha256": "a271758c802f8ed2ec98ea81a36f48b2654090d6c8416cf798820988d98caa69"
+    },
+    {
+      "path": "manuscript/protocol_worked_examples.tex",
+      "sha256": "710dcd7557f664a7c8c590307d05ecc68b777ea9a2348d16579f89450455e9ee"
+    },
+    {
+      "path": "scripts/figure_style.py",
+      "sha256": "bc311facf9956c77a503dd3ea5d68849e7c5d06205450d23e68600b1d835c219"
+    },
+    {
+      "path": "scripts/figures_protocol.py",
+      "sha256": "32e7802c49b0d395ccdcc7470154e4336e343a35ec4e3328dfb1ba8ba996e9b5"
+    }
+  ],
+  "scripts": [
+    {
+      "path": "scripts/make_journal_figures.py",
+      "sha256": "928fae236a03386661c8e3c85dcd6b76390a8f30a00a37af71fc02d86a18cd58"
+    },
+    {
+      "path": "scripts/figure_style.py",
+      "sha256": "bc311facf9956c77a503dd3ea5d68849e7c5d06205450d23e68600b1d835c219"
+    },
+    {
+      "path": "scripts/figure_alignment.py",
+      "sha256": "43958e6b49d897f326ff64e73cbed0bf057e17c06533b5b57d3dededf8111e76"
+    },
+    {
+      "path": "scripts/figures_protocol.py",
+      "sha256": "32e7802c49b0d395ccdcc7470154e4336e343a35ec4e3328dfb1ba8ba996e9b5"
+    },
+    {
+      "path": "scripts/figures_evidence.py",
+      "sha256": "c470569c3511f7c77c79e11a27d033d1bd732adaf8d72f79df0cbafc04384da2"
+    },
+    {
+      "path": "scripts/figures_transfer_maps.py",
+      "sha256": "d0ec572c28c676fb4828225311bf29d4ab454cceb5cbbf907c4db0c7f2a98de3"
+    },
+    {
+      "path": "scripts/figures_boundaries.py",
+      "sha256": "5c147d9b40139fa6e0bdd81f30d1f0e1c6c1686966cbaae39af169d3f9b6c5cb"
+    }
+  ],
+  "no_empirical_fitting_or_new_tests": true
+}

@@ -1,0 +1,16 @@
+{
+  "name": "fig4_fixed_model",
+  "pdf": "fig4_fixed_model.pdf",
+  "panels": 2,
+  "width_in": 7.2,
+  "height_in": 3.9,
+  "source_files": [
+    {
+      "path": "fixed_model/results/paired_summary_control_denominator.csv",
+      "sha256": "3fd11e80faa308c7b7d5ab23b895177f3db78a7737478ca7cc302fd8a061f340"
+    }
+  ],
+  "source_csv": "fig4_fixed_model_source.csv",
+  "note": "All 30 cells retained: 15 dataset/mechanism cells for each of derangement and zero content. Points use gain_percent_control_denominator; intervals use the matched gain_control_ci95_block2_low/high fields, all already in percentage units. A common linear axis keeps the tiny reassignment effects in scale with zero-content responses.",
+  "all_observations_preserved": true
+}

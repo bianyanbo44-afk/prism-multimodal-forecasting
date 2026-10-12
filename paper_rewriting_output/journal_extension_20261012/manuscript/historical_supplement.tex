@@ -1,0 +1,143 @@
+
+
+\section{Historical experimental and reproducibility details}
+\label{app:setup}
+
+\subsection{Time-IMM Data and Training}
+
+The five datasets span computing systems (ClusterTrace), network traffic (CESNET), air quality (EPA-Air), financial news (FNSPID), and software development (RepoHealth). History, horizon, and stride are each 12 hours for ClusterTrace; 7 days for CESNET and EPA-Air; and 31 days for FNSPID and RepoHealth. FNSPID contains 20,826 nonempty notes; median notes per window are 10/13/19 for train/validation/test. CESNET has only 23 training windows across 11 entities and is treated as a low-sample boundary case.
+
+We freeze \texttt{openai-community/gpt2} at commit \texttt{607a30d783df}; mean pooling over the attention mask yields one 768-dimensional vector per note. FNSPID uses maximum token length 320; the maximum observed length is 252. Learned Time-IMM conditions use at most 20 epochs, patience 5, batch size 32, learning rate 0.0015, and weight decay 0.0001. All conditions share seeds, splits, caches, optimization budgets, and validation-based selection.
+
+The selective audit subject maps numerical and text events to 16-dimensional messages, applies learned continuous-time decay to shared/private states, aggregates simultaneous events symmetrically, and updates them through reliability-aware gates. It is an audit instrument, not a proposed Mamba architecture. Public RecAvg/GR-Add and T2V-XAttn/XAttn-Add modules are imported from IMM-TSF commit \texttt{b9e245f2238a}. The attention audit uses text width 128, one head, dropout 0.1, and $\kappa=1.0$; a 768-wide compute pilot was quarantined before the uniform final run. The official TGTSF source is pinned at \texttt{d499d25ee795}; its peak allocated memory is 2.88~GB on an RTX 4060 Laptop GPU.
+
+\subsection{Positive-Control Protocol}
+
+The Canada photovoltaic task uses 360 history hours to forecast 24 hours. Daily window starts produce 9,729 training, 3,285 validation, and 3,285 test examples across nine plants. Per-plant scaling uses training data only. TGTSF trains with AdamW, batch 256, learning rate 0.0005, at most 10 epochs, patience 3, gradient clipping 1.0, and seeds 53/67/79. Aligned, shuffled, and zero conditions retain seven weather-note slots plus one padding slot through an explicit mask.
+
+\begin{table}[htbp]
+\caption{Fidel-TS positive-control MSE by seed.}
+\label{tab:fidel-seeds}
+\centering
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Condition & Mean $\pm$ SD & 53 & 67 & 79 \\
+\midrule
+Aligned & \textbf{0.171266 $\pm$ 0.011401} & 0.163542 & 0.184360 & 0.165895 \\
+Shuffle & 0.229735 $\pm$ 0.007647 & 0.223793 & 0.227050 & 0.238361 \\
+Zero & 0.397442 $\pm$ 0.280453 & 0.226916 & 0.721126 & 0.244285 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Complete Time-IMM Results}
+\label{app:results}
+
+\begin{table}[!htbp]
+\caption{Selective-family normalized test MSE (mean $\pm$ sample SD across three seeds). Lower is better.}
+\label{tab:selective-full}
+\centering
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccc}
+\toprule
+Dataset & Numeric & Aligned & Shuffle & Time-only & Naive fusion \\
+\midrule
+ClusterTrace & 1.851027 $\pm$ .013201 & 1.855864 $\pm$ .045990 & 1.855858 $\pm$ .045984 & \textbf{1.848807 $\pm$ .045440} & 1.891028 $\pm$ .038990 \\
+CESNET & 1.817116 $\pm$ .003541 & 1.818135 $\pm$ .002036 & 1.818133 $\pm$ .002037 & 1.818094 $\pm$ .001744 & \textbf{1.787256 $\pm$ .080064} \\
+EPA-Air & 1.210852 $\pm$ .000900 & 1.201653 $\pm$ .001182 & 1.201726 $\pm$ .001204 & 1.206320 $\pm$ .002539 & \textbf{1.181144 $\pm$ .016645} \\
+FNSPID & 0.267905 $\pm$ .007393 & 0.268230 $\pm$ .015631 & 0.267795 $\pm$ .016069 & \textbf{0.265485 $\pm$ .012080} & 0.291467 $\pm$ .005704 \\
+RepoHealth & \textbf{1.149093 $\pm$ .017372} & 1.225356 $\pm$ .086849 & 1.225559 $\pm$ .087316 & 1.229270 $\pm$ .091079 & 1.214531 $\pm$ .009684 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\begin{table}[!htbp]
+\caption{Selective-family shortcut-aware metrics and exact exploratory SAG intervals.}
+\label{tab:selective-metrics}
+\centering
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Dataset & SAG & SAG 95\% interval & CBTG & MMU \\
+\midrule
+ClusterTrace & $-0.000\%$ & $[-0.0077,\ 0.0048]\%$ & $-0.382\%$ & $-0.261\%$ \\
+CESNET & $-0.000\%$ & $[-0.0003,\ 0.0001]\%$ & $-0.002\%$ & $-0.056\%$ \\
+EPA-Air & $+0.006\%$ & $[-0.0194,\ 0.0203]\%$ & $+0.387\%$ & $+0.760\%$ \\
+FNSPID & $-0.162\%$ & $[-0.6413,\ 0.0682]\%$ & $-1.034\%$ & $-0.121\%$ \\
+RepoHealth & $+0.017\%$ & $[-0.0959,\ 0.1040]\%$ & $+0.318\%$ & $-6.637\%$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]
+\caption{FNSPID per-seed normalized test MSE.}
+\label{tab:fnspid-seeds}
+\centering
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Model & Mean $\pm$ SD & 53 & 67 & 79 \\
+\midrule
+Numeric matched GRU & 0.270994 $\pm$ .006331 & 0.278281 & 0.267863 & 0.266839 \\
+Numeric selective SSM & 0.267905 $\pm$ .007393 & 0.264918 & 0.262474 & 0.276324 \\
+Multimodal matched GRU & 0.272236 $\pm$ .006122 & 0.269688 & 0.279220 & 0.267799 \\
+Aligned selective SSM & 0.268230 $\pm$ .015631 & 0.283774 & 0.268401 & 0.252514 \\
+Naive mean-text fusion & 0.291467 $\pm$ .005704 & 0.290480 & 0.297600 & 0.286320 \\
+Text-only GRU & 12.600705 $\pm$ .227987 & 12.412091 & 12.854061 & 12.535963 \\
+Selective + shuffle & 0.267795 $\pm$ .016069 & 0.283494 & 0.268512 & 0.251380 \\
+Selective + time-only & \textbf{0.265485 $\pm$ .012080} & 0.277018 & 0.266514 & 0.252923 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Public-Family and Uncertainty Audits}
+\label{app:uncertainty}
+
+\begin{table}[!htbp]
+\caption{Official RecAvg/GR-Add audit under consistent and released time-unit variants.}
+\label{tab:recavg}
+\centering
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+Dataset & Aligned consistent & Shuffle & Time-only & Released mixed units & Aligned vs. shuffle \\
+\midrule
+ClusterTrace & 1.908095 & 1.908020 & 1.909383 & 1.908033 & $-0.004\%$ \\
+CESNET & 1.842265 & 1.826834 & 1.852595 & 1.842469 & $-0.845\%$ \\
+EPA-Air & 1.220996 & 1.213368 & 1.222664 & 1.209068 & $-0.629\%$ \\
+FNSPID & 0.320933 & 0.320935 & 0.320936 & 0.320930 & $+0.0008\%$ \\
+RepoHealth & 1.409524 & 1.409896 & 1.407048 & 1.407283 & $+0.026\%$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]
+\caption{Frozen T2V-XAttn/XAttn-Add audit. Seed wins are aligned wins against shuffle/time-only.}
+\label{tab:xattn}
+\centering
+\small
+\begin{tabular}{lrrrrcc}
+\toprule
+Dataset & Aligned & Shuffle & Time-only & Aligned vs. shuffle & Seed wins & Support \\
+\midrule
+ClusterTrace & 3.422577 & 3.419326 & 3.394558 & $-0.095\%$ & 1/1 & no \\
+CESNET & 1.464911 & 1.464825 & 1.467543 & $-0.006\%$ & 1/2 & no \\
+EPA-Air & 1.482479 & 1.483506 & 1.472632 & $+0.069\%$ & 2/1 & no \\
+FNSPID & 3.782890 & 3.812364 & 3.343304 & $+0.773\%$ & 2/0 & no \\
+RepoHealth & 2.075604 & 2.055707 & 2.072985 & $-0.968\%$ & 0/1 & no \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The hierarchical moving-block bootstrap uses 10,000 replicates, an outer resampling of the three training seeds, and contiguous within-entity blocks of test windows. Block length 3 is primary, with lengths 1 and 5 as sensitivity checks. The analysis was conducted after the frozen FNSPID decision and is not multiplicity-adjusted.
+
+\section{Source Audit and Reproducibility Checklist}
+\label{app:repro}
+
+The source audit pins Time-IMM commit \texttt{e934cef23d52} and IMM-TSF commit \texttt{b9e245f2238a}. The released loader standardizes each entity before its chronological split; the released window builder removes histories with no text even when text is disabled; cached and raw text paths use different timestamp origins; and the released RecAvg path subtracts raw within-window text times from normalized query times. Our controlled path fits scaling on training observations, fixes one retained-window set, anchors text to the first numerical timestamp, and compares query/text time on the same axis. These are observable source behaviors; no claim is made about author intent.
+
+Forty-three automated tests cover event availability, grouped-event symmetry, unchanged counterfactual entities, splits, times, counts, targets, and windows, plus batching, CPU/GPU agreement, explicit masks, and source-adapter behavior. Primary tables are generated from frozen JSON artifacts. The artifact records dataset/split identifiers, encoder and upstream commits, maximum length and pooling, cache hashes, all three seeds, model selection rules, internally frozen decisions, per-seed values, and figure source data. Raw benchmark data are excluded.
+

@@ -1,0 +1,19 @@
+{
+  "seed": 101,
+  "semantic_control_seed": 9101,
+  "normalization": "train_only",
+  "model": {
+    "event_width": 32,
+    "state_dim": 32,
+    "readout_width": 64
+  },
+  "training": {
+    "epochs": 20,
+    "patience": 5,
+    "batch_size": 32,
+    "learning_rate": 0.0015,
+    "weight_decay": 0.0001,
+    "grad_clip": 1.0,
+    "torch_threads": 8
+  }
+}

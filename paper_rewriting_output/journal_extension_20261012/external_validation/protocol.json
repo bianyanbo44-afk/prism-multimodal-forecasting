@@ -1,0 +1,39 @@
+{
+  "frozen_date": "2026-10-12 Asia/Shanghai",
+  "classification": "Exploratory extension: historical Time-IMM and Fidel test results already viewed; no untouched-test claim",
+  "timeimm": {
+    "datasets": ["FNSPID", "EPA-Air"],
+    "entities": "All released local entities; no entity selection by outcome",
+    "windows": "All numeric-adapter retained windows, same 60/20/20 chronological entity split",
+    "numeric_normalization": "Per-entity train-only original adapter",
+    "content_cap": 4,
+    "content_cap_rule": "Latest four texts strictly within historical window; all event counts and latest age available separately",
+    "max_length": 256,
+    "representations": ["existing_gpt2_masked_mean_320", "sentence-transformers/all-MiniLM-L6-v2@1110a243fdf4706b3f48f1d95db1a4f5529b4d41", "ProsusAI/finbert@4556d13015211d73dccd3fdd39d39232506f3e43"],
+    "pooling": "Modern encoders: attention-mask token mean then L2-normalization; FinBERT classifier head excluded, not claimed as sentence-trained",
+    "independent_model": "Last numeric observation plus independent standardized ridge residual; numeric last/mean/std/count/age, forecast horizon/horizon squared, event count/recency; content = latest4 mean projected onto 32 train-fitted PCA components",
+    "ridge_alphas": [1.0, 10.0, 100.0, 1000.0],
+    "selection": "Validation scalar MSE only, each retrained condition separately; no test selection",
+    "variants": ["numeric_only", "event_structure", "aligned", "semantic_derangement"],
+    "fixed_model_conditions": ["aligned", "semantic_derangement", "zero", "neutral"],
+    "neutral": "Only modern encoders; A report is available. No task-specific information is provided.",
+    "semantic_derangement": "One seeded nonzero circular content permutation over selected text slots within each entity and split; timestamps/counts unchanged; report raw duplicate replacements",
+    "control_seed": 91801,
+    "endpoints": "Observed scalar target MSE/MAE, entity macro MSE, per-entity/time records; descriptive effects; no overlap-window independence or p-value claims",
+    "runtime": "CPU; encoder frozen and eval; no downloaded repository code executed"
+  },
+  "fidel": {
+    "dataset": "VEWOXIC/Canada_photovoltaics_plants; all 9 local plants",
+    "task": "Regular hourly solar generation; 360h history, next24h forecast, 24h stride",
+    "split": {"train": ["2018-01-01", "2021-01-01"], "val": ["2021-01-01", "2022-01-01"], "test": ["2022-01-01", "2023-01-01"]},
+    "availability": "New independent model uses latest weather report at or before numeric forecast cutoff ONLY, never per-future-query reports; report time assumed availability, issuance/arrival metadata unavailable",
+    "representation": "Existing published 7x256 weather embeddings, mean over seven slots; no raw-text modern re-encoding claim",
+    "model": "Independent standardized multi-output ridge; persistence residual; numeric last24h/previous24h/previous7day hour-means and std, annual sine/cos; pooled historical weather train-only PCA32",
+    "variants": ["numeric_only", "aligned", "semantic_derangement"],
+    "fixed_conditions": ["aligned", "semantic_derangement", "zero"],
+    "ridge_alphas": [1.0, 10.0, 100.0, 1000.0],
+    "control_seed": 91801,
+    "selection": "Validation MSE only; no test-informed tuning",
+    "endpoints": "All 24 scalar hour errors per window; plant/time records; descriptive plant-macro and scalar MSE"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "fig5_fidel",
+  "pdf": "fig5_fidel.pdf",
+  "panels": 2,
+  "width_in": 7.2,
+  "height_in": 4.0,
+  "source_files": [
+    {
+      "path": "external_validation/results/Fidel/results.json",
+      "sha256": "b98018f1bc6e88ed4370421addb5b8e150c148b771244e2dd9c39721f5bb8661"
+    }
+  ],
+  "source_csv": "fig5_fidel_source.csv",
+  "note": "Six saved aggregate loss conditions and all nine plants retained. Fixed SAG 19.65146739% uses fixed-shift MSE 0.226246688622; condition-retrained SAG 8.96689488% uses retrained-shift MSE 0.199692072620. Complete-stream utility 4.88966426% uses numerical-only MSE 0.191131587311. Plant effects are descriptive matched altered-minus-aligned MSE, with no plant-independence CI or repeated-map distribution.",
+  "all_observations_preserved": true
+}

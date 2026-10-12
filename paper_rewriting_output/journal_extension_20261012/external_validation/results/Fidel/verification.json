@@ -1,0 +1,37 @@
+{
+  "all_sources_unchanged": true,
+  "all_weather_report_timestamps_not_after_forecast_cutoff": true,
+  "same_checkpoint_and_targets_for_fixed_conditions": true,
+  "csv_metrics": [
+    {
+      "file": "trained_numeric_only_eval_numeric_only.csv",
+      "observations": 78840,
+      "recomputed_mse": 0.1911315873111311,
+      "sha256": "997e0ef193b5506951557b5c5328132f2916be261cb4e0ffdfd3404b42f7fc0e"
+    },
+    {
+      "file": "trained_aligned_eval_aligned.csv",
+      "observations": 78840,
+      "recomputed_mse": 0.18178589439311668,
+      "sha256": "8a3406d3251c4ea3c7437f94761458165855cd73a9836bfb6fe5864415e4c317"
+    },
+    {
+      "file": "trained_aligned_eval_semantic_derangement.csv",
+      "observations": 78840,
+      "recomputed_mse": 0.2262466886218743,
+      "sha256": "710fdac13d0ee7be1fd7ea7581ffbed418acb216d0d4b25ea29742d44f2de24c"
+    },
+    {
+      "file": "trained_aligned_eval_zero.csv",
+      "observations": 78840,
+      "recomputed_mse": 0.4820445290663787,
+      "sha256": "2cd0884a72cdaf4133be6b5041000d74e38349c86f0b32fa5dc2b4441ae88e51"
+    },
+    {
+      "file": "trained_semantic_derangement_eval_semantic_derangement.csv",
+      "observations": 78840,
+      "recomputed_mse": 0.19969207262029487,
+      "sha256": "a80107c5ad2138879cce12987ffa8d5d9a3b16a10a8149a922c56ff344803934"
+    }
+  ]
+}

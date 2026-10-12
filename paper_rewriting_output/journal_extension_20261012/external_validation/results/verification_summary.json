@@ -1,0 +1,139 @@
+{
+  "EPA-Air": {
+    "dataset": "EPA-Air",
+    "all_source_hashes_unchanged": true,
+    "source_files_checked": 16,
+    "permutation_has_no_index_fixed_points_when_n_gt1": true,
+    "fixed_checkpoint_and_targets_match_across_conditions": true,
+    "validation_capability_descriptive": [
+      {
+        "representation": "none",
+        "condition": "numeric_only",
+        "validation_mse": 0.9017760169621956,
+        "persistence_validation_mse": 1.075034444747001,
+        "relative_validation_improvement": 0.16116546649403424
+      },
+      {
+        "representation": "none",
+        "condition": "event_structure",
+        "validation_mse": 0.9068527490475919,
+        "persistence_validation_mse": 1.075034444747001,
+        "relative_validation_improvement": 0.15644307633230212
+      },
+      {
+        "representation": "gpt2",
+        "condition": "aligned",
+        "validation_mse": 0.9154823250650016,
+        "persistence_validation_mse": 1.075034444747001,
+        "relative_validation_improvement": 0.14841582096427477
+      },
+      {
+        "representation": "gpt2",
+        "condition": "semantic_derangement",
+        "validation_mse": 0.9907902795324933,
+        "persistence_validation_mse": 1.075034444747001,
+        "relative_validation_improvement": 0.0783641544009632
+      },
+      {
+        "representation": "minilm",
+        "condition": "aligned",
+        "validation_mse": 0.9682746537190281,
+        "persistence_validation_mse": 1.075034444747001,
+        "relative_validation_improvement": 0.0993082515166273
+      },
+      {
+        "representation": "minilm",
+        "condition": "semantic_derangement",
+        "validation_mse": 0.9809236156617022,
+        "persistence_validation_mse": 1.075034444747001,
+        "relative_validation_improvement": 0.08754215229582431
+      },
+      {
+        "representation": "finbert",
+        "condition": "aligned",
+        "validation_mse": 0.9011601515918549,
+        "persistence_validation_mse": 1.075034444747001,
+        "relative_validation_improvement": 0.16173834615696037
+      },
+      {
+        "representation": "finbert",
+        "condition": "semantic_derangement",
+        "validation_mse": 0.9858391441823277,
+        "persistence_validation_mse": 1.075034444747001,
+        "relative_validation_improvement": 0.08296971413382447
+      }
+    ],
+    "no_eligibility_threshold_selected_after_test": true
+  },
+  "FNSPID": {
+    "dataset": "FNSPID",
+    "all_source_hashes_unchanged": true,
+    "source_files_checked": 20,
+    "permutation_has_no_index_fixed_points_when_n_gt1": true,
+    "fixed_checkpoint_and_targets_match_across_conditions": true,
+    "validation_capability_descriptive": [
+      {
+        "representation": "none",
+        "condition": "numeric_only",
+        "validation_mse": 0.6753811186646489,
+        "persistence_validation_mse": 0.6482142889486792,
+        "relative_validation_improvement": -0.04191026050973184
+      },
+      {
+        "representation": "none",
+        "condition": "event_structure",
+        "validation_mse": 0.6752218629731649,
+        "persistence_validation_mse": 0.6482142889486792,
+        "relative_validation_improvement": -0.04166457679957744
+      },
+      {
+        "representation": "gpt2",
+        "condition": "aligned",
+        "validation_mse": 0.6738524776625056,
+        "persistence_validation_mse": 0.6482142889486792,
+        "relative_validation_improvement": -0.03955202646860541
+      },
+      {
+        "representation": "gpt2",
+        "condition": "semantic_derangement",
+        "validation_mse": 0.6724693021847428,
+        "persistence_validation_mse": 0.6482142889486792,
+        "relative_validation_improvement": -0.03741820205074797
+      },
+      {
+        "representation": "minilm",
+        "condition": "aligned",
+        "validation_mse": 0.679577609665023,
+        "persistence_validation_mse": 0.6482142889486792,
+        "relative_validation_improvement": -0.048384185987647925
+      },
+      {
+        "representation": "minilm",
+        "condition": "semantic_derangement",
+        "validation_mse": 0.6736693622884904,
+        "persistence_validation_mse": 0.6482142889486792,
+        "relative_validation_improvement": -0.039269534432966775
+      },
+      {
+        "representation": "finbert",
+        "condition": "aligned",
+        "validation_mse": 0.6802054346399417,
+        "persistence_validation_mse": 0.6482142889486792,
+        "relative_validation_improvement": -0.04935273139866763
+      },
+      {
+        "representation": "finbert",
+        "condition": "semantic_derangement",
+        "validation_mse": 0.6740669051411915,
+        "persistence_validation_mse": 0.6482142889486792,
+        "relative_validation_improvement": -0.0398828236792527
+      }
+    ],
+    "no_eligibility_threshold_selected_after_test": true
+  },
+  "Fidel": {
+    "all_sources_unchanged": true,
+    "all_weather_report_timestamps_not_after_forecast_cutoff": true,
+    "same_checkpoint_and_targets_for_fixed_conditions": true
+  }
+}

@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+\centering\footnotesize
+\setlength{\tabcolsep}{4pt}
+\caption{Independent ridge representation comparisons, with task baselines shown above each dataset. Loss is pooled observed-scalar standardized test MSE; $\Delta_{\rm fix}=L_{\rm fixed\ shuffle}-L_A$ is the primary effect scale. Fixed shuffle retains the aligned checkpoint, whereas retrained shuffle has its own validation-selected checkpoint. All numerical-adapter windows remain, with at most four historical notes in the content summary. Validation evidence is reported in Table~\ref{tab:ridge_capability_details}; these scores differ from the historical feature-macro endpoint.}
+\label{tab:representations}
+\begin{tabular}{llllll}
+\toprule
+Dataset & Representation & Aligned & Fixed shuffle & $\Delta_{\rm fix}$ & Retrained shuffle\\
+\midrule
+\multicolumn{6}{l}{EPA-Air: persistence 0.751407; numerical/timing 24.127104}\\
+EPA-Air & GPT-2 & 12.580396 & 12.429104 & -0.151292 & 7.418856\\
+EPA-Air & MiniLM & 11.635062 & 11.599608 & -0.035453 & 8.343223\\
+EPA-Air & FinBERT & 1.950746 & 1.945247 & -0.005499 & 17.385432\\
+\multicolumn{6}{l}{FNSPID: persistence 0.320936; numerical/timing 0.265127}\\
+FNSPID & GPT-2 & 0.270960 & 0.270116 & -0.000844 & 0.267337\\
+FNSPID & MiniLM & 0.266150 & 0.264747 & -0.001404 & 0.273117\\
+FNSPID & FinBERT & 0.268555 & 0.266923 & -0.001632 & 0.268484\\
+\bottomrule
+\end{tabular}
+\end{table}

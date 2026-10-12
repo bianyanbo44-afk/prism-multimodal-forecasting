@@ -1,0 +1,45 @@
+\subsection{Capability evidence and protocol execution}
+\label{sec:protocol_execution}
+
+Overall predictive capability compares the aligned predictor with a task-appropriate baseline, such as persistence. Incremental content benefit compares it with a matched predictor retaining numerical history and noncontent event timing/counts. Removing the complete text stream instead measures complete-stream utility. Comparator identity, training/validation losses and selection history are recorded for each question, including when no formal screen was applied.
+
+Capability evidence determines how far a functional response informs useful content use, especially when the measured effect is small. The generated batches additionally screen cases using a positive nominal validation lower bound and more than 1\% relative incremental content benefit (Eq.~\ref{eq:validation_content_screen}). This margin is specific to these batches. Dependence measurement itself remains defined without a screen pass; the construct bound is reported as post-selection nominal evidence.
+
+Table~\ref{tab:protocol_steps} gives the execution sequence. Steps 1--4 provide an operational reliance report. Step 5 is optional for that question and necessary for a claim about a named proposition; step 6 extends the report to learning-procedure information value. This structure returns separate judgments when a cue or an unmodifiable pairing remains unresolved.
+
+\begin{table}[!ht]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.12}
+\caption{Execution and reusable outputs. Required operations produce a conditional reliance measurement and its interpretation context; the two extensions answer additional questions. Recording capability evidence does not require passing a universal gate.}
+\label{tab:protocol_steps}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.17\textwidth}>{\raggedright\arraybackslash}p{0.44\textwidth}>{\raggedright\arraybackslash}p{0.34\textwidth}@{}}
+\toprule
+Operation & Execution & Reusable output\\
+\midrule
+1. Required: object and units & Fix checkpoint $f$ or learning procedure $\mathcal A$, retained forecast units, availability assumptions, numerical inputs, targets and loss aggregation. & Model/procedure identity, paired unit identifiers and preserved event-process fields.\\
+2. Required: intervention & Specify $Q$, permitted donor groups and sampler; record the realized map, changed source positions, changed representations and immutable groups. & Map law and achieved coverage, with donor/recipient displacement and repetition descriptors.\\
+3. Required: capability context & Record overall predictive capability and incremental content benefit against named comparators on training/validation data, including selection history or an unassessed status. & Comparator losses and descriptive or screened status, distinct from the test perturbation.\\
+4. Required: reliance effect & Pair aligned and reassigned losses at the same fitted state; preserve the unit weighting and report effect uncertainty. Identify the object of any zero, neutral or numerical contrast. & $\Delta_{\fixed}$, its scale and uncertainty; supporting content/stream contrasts. Multiple-map sensitivity is reported separately.\\
+5. Proposition extension & Edit the named proposition while retaining the rival cue, and conversely. Use generated truth or task-specific annotations; paraphrase can assess wording sensitivity. & Evidence discriminating the specified cues, or an unresolved proposition-specific interpretation.\\
+6. Retraining extension & Fit and select altered-input models using the same learning procedure and corresponding validation condition. & $\Delta_{\retrain}$ and its adaptation term, reported separately from the original function's response.\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!ht]
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.12}
+\caption{Worked comparisons using the existing experiments. The second column gives the legitimate reading of aligned/reassigned/zero controls; the remaining columns show what additional operations reveal. Source effects are altered-minus-aligned MSE; SAG and CBTG use Eq.~\ref{eq:gains}. Full uncertainty and population records appear in Tables~\ref{tab:fixed_full}, \ref{tab:construct_full} and~\ref{tab:capability_overview}, and Fig.~\ref{fig:fidel}.}
+\label{tab:protocol_worked}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.13\textwidth}>{\raggedright\arraybackslash}p{0.30\textwidth}>{\raggedright\arraybackslash}p{0.28\textwidth}>{\raggedright\arraybackslash}p{0.23\textwidth}@{}}
+\toprule
+Case & Existing contrasts, correctly interpreted & Additional evidence & Resulting judgment\\
+\midrule
+CESNET historical checkpoints & Full-derangement intervals span zero. RecAvg has zero-content CBTG 10.476\%. These characterize responses to the specified content controls. & Original shuffle leaves 10/16 source positions unchanged; full derangement leaves 7/16, all in singleton groups (Fig.~\ref{fig:coverage}). Historical screening is not assigned retrospectively. & The fixed-function effect is retained, with seven positions outside the reassignment's reach. The small effect leaves those pairings unresolved.\\
+Source-only generated target & Whole rotation raises MSE by 0.770870 and zero content by 0.759390. Restricted permutation already establishes operational dependence on the reassigned content. & Direction flip gives $-0.000228$, with an interval spanning zero; source flip gives $+2.872553$. The directional target shows the complementary response (Fig.~\ref{fig:construct}). & Selective sensitivity supports the stipulated source cue within this generator. The controls distinguish the two cue hypotheses beyond whole-content dependence.\\
+Fidel-TS independent ridge & Separately fitted aligned/numerical-only models give 4.89\% utility. Fixed-model SAG is 19.65\% under a shared within-split nonzero report shift. & Condition-retrained SAG is 8.97\% under the same intervention law; validation comparator evidence is descriptive (Table~\ref{tab:capability_overview}). & Refitting partly accommodates changed content. The fitted function's reliance and the learning procedure's information-value contrast require separate estimates.\\
+\bottomrule
+\end{tabular}
+\end{table}

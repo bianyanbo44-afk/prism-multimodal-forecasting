@@ -1,0 +1,5 @@
+record_type,slot,original_token,reassigned_token,event_layout
+illustrative_event_slot,1,A,B,Illustrative; no empirical times or values
+illustrative_event_slot,2,B,C,Illustrative; no empirical times or values
+illustrative_event_slot,3,C,D,Illustrative; no empirical times or values
+illustrative_event_slot,4,D,A,Illustrative; no empirical times or values

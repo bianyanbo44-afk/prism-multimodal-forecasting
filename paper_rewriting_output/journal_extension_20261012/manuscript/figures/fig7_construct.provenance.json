@@ -1,0 +1,28 @@
+{
+  "name": "fig7_construct",
+  "pdf": "fig7_construct.pdf",
+  "panels": 4,
+  "width_in": 7.2,
+  "height_in": 4.6,
+  "source_files": [
+    {
+      "path": "construct_controls/results/summary.csv",
+      "sha256": "386b0c212d09632829ca16ec3aff29a24407a86543c1f776d2d39cf367cea217"
+    },
+    {
+      "path": "construct_controls/config.json",
+      "sha256": "bc9d724e2db5f8c4f084be1befa319d914c7801ec807263efc276070fe1117cd"
+    },
+    {
+      "path": "scripts/figure_style.py",
+      "sha256": "bc311facf9956c77a503dd3ea5d68849e7c5d06205450d23e68600b1d835c219"
+    },
+    {
+      "path": "scripts/figures_protocol.py",
+      "sha256": "32e7802c49b0d395ccdcc7470154e4336e343a35ec4e3328dfb1ba8ba996e9b5"
+    }
+  ],
+  "source_csv": "fig7_construct_source.csv",
+  "note": "All 15 saved means and existing across-world 95% t intervals are shown. No new test or fit. Direction/source panels share an MSE scale; the timing boundary has an explicitly expanded \u00d71000 horizontal scale. Cue cards abbreviate actual frozen sentence templates.",
+  "all_observations_preserved": true
+}

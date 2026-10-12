@@ -1,0 +1,428 @@
+{
+  "huggingface_dataset": "VEWOXIC/Canada_photovoltaics_plants",
+  "local_download_metadata": [
+    {
+      "file": "static_info.json",
+      "revision": "752799306917192f05f0846ffc897ec70efb0998",
+      "etag": "e998d5b058bc4f5ee3028ac0df8f6e164ef996f2",
+      "sha256": "14537bd0e845153d22d2fae05c14f5a234456fc9028c6cf998636dd98646c74b",
+      "etag_matches_local_sha256": false
+    },
+    {
+      "file": "static_info_embeddings.pkl",
+      "revision": "752799306917192f05f0846ffc897ec70efb0998",
+      "etag": "e8855046688179bad3b6d70c0a7db90a0cc88002ba25386ec935275ecc55d1e4",
+      "sha256": "e8855046688179bad3b6d70c0a7db90a0cc88002ba25386ec935275ecc55d1e4",
+      "etag_matches_local_sha256": true
+    },
+    {
+      "file": "time_series/id_164440.parquet",
+      "revision": "752799306917192f05f0846ffc897ec70efb0998",
+      "etag": "e5875d8eb5dc7effc006000c5367a9f14573af29136a0d214828cb0279047261",
+      "sha256": "e5875d8eb5dc7effc006000c5367a9f14573af29136a0d214828cb0279047261",
+      "etag_matches_local_sha256": true
+    },
+    {
+      "file": "time_series/id_314106.parquet",
+      "revision": "752799306917192f05f0846ffc897ec70efb0998",
+      "etag": "3e8952a48454386af1d272798070fad3034257eb2d173e8fbe19c733951724a9",
+      "sha256": "3e8952a48454386af1d272798070fad3034257eb2d173e8fbe19c733951724a9",
+      "etag_matches_local_sha256": true
+    },
+    {
+      "file": "time_series/id_319086.parquet",
+      "revision": "752799306917192f05f0846ffc897ec70efb0998",
+      "etag": "daebb7379f70e78274541db84a8fba48f429b16d18f12202ed336e5ff65c5d79",
+      "sha256": "daebb7379f70e78274541db84a8fba48f429b16d18f12202ed336e5ff65c5d79",
+      "etag_matches_local_sha256": true
+    },
+    {
+      "file": "time_series/id_331901.parquet",
+      "revision": "752799306917192f05f0846ffc897ec70efb0998",
+      "etag": "655d1e09ec755500de4809eea946927b03c5b11788bd16dd5825c625ad5aa717",
+      "sha256": "655d1e09ec755500de4809eea946927b03c5b11788bd16dd5825c625ad5aa717",
+      "etag_matches_local_sha256": true
+    },
+    {
+      "file": "time_series/id_332785.parquet",
+      "revision": "752799306917192f05f0846ffc897ec70efb0998",
+      "etag": "52223f6cf1fb2b138343b7248410fb84bd44b62aa709fc96f6526cc3a021e1b3",
+      "sha256": "52223f6cf1fb2b138343b7248410fb84bd44b62aa709fc96f6526cc3a021e1b3",
+      "etag_matches_local_sha256": true
+    },
+    {
+      "file": "time_series/id_355827.parquet",
+      "revision": "752799306917192f05f0846ffc897ec70efb0998",
+      "etag": "1b7fe90a0369291b82a7528aedf6d91fd19af0261f3c082534f23cade568089e",
+      "sha256": "1b7fe90a0369291b82a7528aedf6d91fd19af0261f3c082534f23cade568089e",
+      "etag_matches_local_sha256": true
+    },
+    {
+      "file": "time_series/id_551172.parquet",
+      "revision": "752799306917192f05f0846ffc897ec70efb0998",
+      "etag": "e6c41e81369ac017a0d1b209685ea324d7bcddae5231cbd54a5e8a08362d340a",
+      "sha256": "e6c41e81369ac017a0d1b209685ea324d7bcddae5231cbd54a5e8a08362d340a",
+      "etag_matches_local_sha256": true
+    },
+    {
+      "file": "time_series/id_570079.parquet",
+      "revision": "752799306917192f05f0846ffc897ec70efb0998",
+      "etag": "690f1a6e1eb3b427765227f525c2a4f1b6c36df52a26000c06ea80d9424b8844",
+      "sha256": "690f1a6e1eb3b427765227f525c2a4f1b6c36df52a26000c06ea80d9424b8844",
+      "etag_matches_local_sha256": true
+    },
+    {
+      "file": "time_series/id_577650.parquet",
+      "revision": "752799306917192f05f0846ffc897ec70efb0998",
+      "etag": "625002db96830bbf4b995c65beb854218a2e1144eb27302db5090f680f85fe60",
+      "sha256": "625002db96830bbf4b995c65beb854218a2e1144eb27302db5090f680f85fe60",
+      "etag_matches_local_sha256": true
+    }
+  ],
+  "revisions": [
+    "752799306917192f05f0846ffc897ec70efb0998"
+  ],
+  "remote_revision_check": {
+    "752799306917192f05f0846ffc897ec70efb0998": {
+      "url": "https://huggingface.co/api/datasets/VEWOXIC/Canada_photovoltaics_plants/revision/752799306917192f05f0846ffc897ec70efb0998",
+      "status": 200,
+      "metadata": {
+        "_id": "680376bdcd336b3e9f32c0ce",
+        "id": "VEWOXIC/Canada_photovoltaics_plants",
+        "author": "VEWOXIC",
+        "sha": "752799306917192f05f0846ffc897ec70efb0998",
+        "lastModified": "2025-04-22T05:37:05.000Z",
+        "private": false,
+        "gated": false,
+        "disabled": false,
+        "tags": [
+          "task_categories:time-series-forecasting",
+          "language:en",
+          "size_categories:1B<n<10B",
+          "region:us",
+          "TimeSeries,",
+          "Multimodal,",
+          "Heterogeneous"
+        ],
+        "description": "\n\t\n\t\t\n\t\n\t\n\t\tWIATS: Weather-centric Intervention-Aware Time Series Multimodal Dataset\n\t\n\n\n\t\n\t\t\n\t\n\t\n\t\tDataset Structure\n\t\n\nThe dataset is organized into the following structure:\n|-- subdataset1\n\n|   |-- raw_data  # Original data files\n|   |-- time_series # Rule-based Imputed data files\n|   |   |-- id_1.parquet # Time series data for each subject can be multivariate, can be in csv, parquet, etc.\n|   |   |-- id_2.parquet\n|   |   |-- ...\n|   |   |-- id_info.json # Metadata for each subject\n\n|   |--\u2026 See the full description on the dataset page: https://huggingface.co/datasets/VEWOXIC/Canada_photovoltaics_plants.",
+        "downloads": 173,
+        "likes": 0,
+        "cardData": {
+          "task_categories": [
+            "time-series-forecasting"
+          ],
+          "language": [
+            "en"
+          ],
+          "tags": [
+            "TimeSeries,",
+            "Multimodal,",
+            "Heterogeneous"
+          ],
+          "size_categories": [
+            "1B<n<10B"
+          ]
+        },
+        "siblings": [
+          {
+            "rfilename": ".gitattributes"
+          },
+          {
+            "rfilename": "README.md"
+          },
+          {
+            "rfilename": "id_info.json"
+          },
+          {
+            "rfilename": "raw_data/Solar_Energy_Production_20250310.zip"
+          },
+          {
+            "rfilename": "scripts/cleaning&impute.ipynb"
+          },
+          {
+            "rfilename": "scripts/embed.ipynb"
+          },
+          {
+            "rfilename": "scripts/split.ipynb"
+          },
+          {
+            "rfilename": "static_info.json"
+          },
+          {
+            "rfilename": "static_info_embeddings.pkl"
+          },
+          {
+            "rfilename": "time_series/id_164440.parquet"
+          },
+          {
+            "rfilename": "time_series/id_314106.parquet"
+          },
+          {
+            "rfilename": "time_series/id_319086.parquet"
+          },
+          {
+            "rfilename": "time_series/id_331901.parquet"
+          },
+          {
+            "rfilename": "time_series/id_332785.parquet"
+          },
+          {
+            "rfilename": "time_series/id_355827.parquet"
+          },
+          {
+            "rfilename": "time_series/id_551172.parquet"
+          },
+          {
+            "rfilename": "time_series/id_570079.parquet"
+          },
+          {
+            "rfilename": "time_series/id_577650.parquet"
+          },
+          {
+            "rfilename": "time_series/id_info_imputed.json"
+          },
+          {
+            "rfilename": "wasted_id.json"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/daily_weather_2015.csv"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/daily_weather_2016.csv"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/daily_weather_2017.csv"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/daily_weather_2018.csv"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/daily_weather_2019.csv"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/daily_weather_2020.csv"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/daily_weather_2021.csv"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/daily_weather_2022.csv"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/daily_weather_2023.csv"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/daily_weather_2024.csv"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/daily_weather_2025.csv"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/daily_weather_raw_2011.json"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/daily_weather_raw_2015.json"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/daily_weather_raw_2016.json"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/daily_weather_raw_2017.json"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/daily_weather_raw_2018.json"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/daily_weather_raw_2019.json"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/daily_weather_raw_2020.json"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/daily_weather_raw_2021.json"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/daily_weather_raw_2022.json"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/daily_weather_raw_2023.json"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/daily_weather_raw_2024.json"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/daily_weather_raw_2025.json"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/hourly_weather_raw_2015.csv"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/hourly_weather_raw_2016.csv"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/hourly_weather_raw_2017.csv"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/hourly_weather_raw_2018.csv"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/hourly_weather_raw_2019.csv"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/hourly_weather_raw_2020.csv"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/hourly_weather_raw_2021.csv"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/hourly_weather_raw_2022.csv"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/hourly_weather_raw_2023.csv"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/hourly_weather_raw_2024.csv"
+          },
+          {
+            "rfilename": "weather/calgary/raw_data/hourly_weather_raw_2025.csv"
+          },
+          {
+            "rfilename": "weather/calgary/report_embedding/formal_report/fast_general_formal_embeddings_2015.pkl"
+          },
+          {
+            "rfilename": "weather/calgary/report_embedding/formal_report/fast_general_formal_embeddings_2016.pkl"
+          },
+          {
+            "rfilename": "weather/calgary/report_embedding/formal_report/fast_general_formal_embeddings_2017.pkl"
+          },
+          {
+            "rfilename": "weather/calgary/report_embedding/formal_report/fast_general_formal_embeddings_2018.pkl"
+          },
+          {
+            "rfilename": "weather/calgary/report_embedding/formal_report/fast_general_formal_embeddings_2019.pkl"
+          },
+          {
+            "rfilename": "weather/calgary/report_embedding/formal_report/fast_general_formal_embeddings_2020.pkl"
+          },
+          {
+            "rfilename": "weather/calgary/report_embedding/formal_report/fast_general_formal_embeddings_2021.pkl"
+          },
+          {
+            "rfilename": "weather/calgary/report_embedding/formal_report/fast_general_formal_embeddings_2022.pkl"
+          },
+          {
+            "rfilename": "weather/calgary/report_embedding/formal_report/fast_general_formal_embeddings_2023.pkl"
+          },
+          {
+            "rfilename": "weather/calgary/report_embedding/formal_report/fast_general_formal_embeddings_2024.pkl"
+          },
+          {
+            "rfilename": "weather/calgary/report_embedding/formal_report/fast_general_formal_embeddings_2025.pkl"
+          },
+          {
+            "rfilename": "weather/calgary/report_embedding/general_report/fast_general_weather_embeddings_2015.pkl"
+          },
+          {
+            "rfilename": "weather/calgary/report_embedding/general_report/fast_general_weather_embeddings_2016.pkl"
+          },
+          {
+            "rfilename": "weather/calgary/report_embedding/general_report/fast_general_weather_embeddings_2017.pkl"
+          },
+          {
+            "rfilename": "weather/calgary/report_embedding/general_report/fast_general_weather_embeddings_2018.pkl"
+          },
+          {
+            "rfilename": "weather/calgary/report_embedding/general_report/fast_general_weather_embeddings_2019.pkl"
+          },
+          {
+            "rfilename": "weather/calgary/report_embedding/general_report/fast_general_weather_embeddings_2020.pkl"
+          },
+          {
+            "rfilename": "weather/calgary/report_embedding/general_report/fast_general_weather_embeddings_2021.pkl"
+          },
+          {
+            "rfilename": "weather/calgary/report_embedding/general_report/fast_general_weather_embeddings_2022.pkl"
+          },
+          {
+            "rfilename": "weather/calgary/report_embedding/general_report/fast_general_weather_embeddings_2023.pkl"
+          },
+          {
+            "rfilename": "weather/calgary/report_embedding/general_report/fast_general_weather_embeddings_2024.pkl"
+          },
+          {
+            "rfilename": "weather/calgary/report_embedding/general_report/fast_general_weather_embeddings_2025.pkl"
+          },
+          {
+            "rfilename": "weather/calgary/weather_report/formal_report/fast_general_formal_forecast_2015.json"
+          },
+          {
+            "rfilename": "weather/calgary/weather_report/formal_report/fast_general_formal_forecast_2016.json"
+          },
+          {
+            "rfilename": "weather/calgary/weather_report/formal_report/fast_general_formal_forecast_2017.json"
+          },
+          {
+            "rfilename": "weather/calgary/weather_report/formal_report/fast_general_formal_forecast_2018.json"
+          },
+          {
+            "rfilename": "weather/calgary/weather_report/formal_report/fast_general_formal_forecast_2019.json"
+          },
+          {
+            "rfilename": "weather/calgary/weather_report/formal_report/fast_general_formal_forecast_2020.json"
+          },
+          {
+            "rfilename": "weather/calgary/weather_report/formal_report/fast_general_formal_forecast_2021.json"
+          },
+          {
+            "rfilename": "weather/calgary/weather_report/formal_report/fast_general_formal_forecast_2022.json"
+          },
+          {
+            "rfilename": "weather/calgary/weather_report/formal_report/fast_general_formal_forecast_2023.json"
+          },
+          {
+            "rfilename": "weather/calgary/weather_report/formal_report/fast_general_formal_forecast_2024.json"
+          },
+          {
+            "rfilename": "weather/calgary/weather_report/formal_report/fast_general_formal_forecast_2025.json"
+          },
+          {
+            "rfilename": "weather/calgary/weather_report/general_report/fast_general_weather_forecast_2015.json"
+          },
+          {
+            "rfilename": "weather/calgary/weather_report/general_report/fast_general_weather_forecast_2016.json"
+          },
+          {
+            "rfilename": "weather/calgary/weather_report/general_report/fast_general_weather_forecast_2017.json"
+          },
+          {
+            "rfilename": "weather/calgary/weather_report/general_report/fast_general_weather_forecast_2018.json"
+          },
+          {
+            "rfilename": "weather/calgary/weather_report/general_report/fast_general_weather_forecast_2019.json"
+          },
+          {
+            "rfilename": "weather/calgary/weather_report/general_report/fast_general_weather_forecast_2020.json"
+          },
+          {
+            "rfilename": "weather/calgary/weather_report/general_report/fast_general_weather_forecast_2021.json"
+          },
+          {
+            "rfilename": "weather/calgary/weather_report/general_report/fast_general_weather_forecast_2022.json"
+          },
+          {
+            "rfilename": "weather/calgary/weather_report/general_report/fast_general_weather_forecast_2023.json"
+          },
+          {
+            "rfilename": "weather/calgary/weather_report/general_report/fast_general_weather_forecast_2024.json"
+          },
+          {
+            "rfilename": "weather/calgary/weather_report/general_report/fast_general_weather_forecast_2025.json"
+          }
+        ],
+        "createdAt": "2025-04-19T10:11:09.000Z",
+        "usedStorage": 138380067
+      }
+    }
+  },
+  "code_execution": "Published source repository not executed by the independent residual ridge implementation"
+}

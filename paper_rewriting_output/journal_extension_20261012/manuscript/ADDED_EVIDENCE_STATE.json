@@ -1,0 +1,8 @@
+{
+  "sources": {
+    "construct_controls/results/summary.json": "9117fae8238d0562ad8e53f4226affcde3b975e4b883f798e4a569423a07b18c",
+    "intervention_repeats/results/between_map_summary.csv": "e8fb1713679a13db980db7172eb96f56dda06f6815047f8312adfda5c757fea8",
+    "fixed_model/results/manifest.json": "44d9547c21cb4c0e368337870e340a0feea082f3e58dd16c734af6f42d4bdc8d"
+  },
+  "generator_sha256": "07a0cc2657e3b718cce1e2e3ba0cde28276de90ed2e1f3c200a1903bd49bf824"
+}

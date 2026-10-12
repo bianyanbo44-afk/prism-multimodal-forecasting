@@ -1,0 +1,8 @@
+{
+  "checkpoint_prediction_checks": 1440000,
+  "max_absolute_prediction_error": 0.0,
+  "fixed_checkpoint_shared_for_all_controls": true,
+  "model_fits": 480,
+  "saved_selected_checkpoints": 120,
+  "all_candidates_use_only_train_and_validation": true
+}

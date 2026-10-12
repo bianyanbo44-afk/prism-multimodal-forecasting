@@ -1,0 +1,12 @@
+\section{Transformation laws and map conditioning}
+\label{sec:map_conditioning}
+
+The original fixed-neural batch uses control seed 9103 with entity/split random permutations, derangements and nested dose subsets, shared across architecture/training-seed conditions. Each condition has one realized map and its entity/block bootstrap conditions on that map. The original independent ridge batches also use seed 91801, with a nonzero cyclic rotation per entity/split (the shared report sequence within split for Fidel), rather than unrestricted random derangements. The signal-strength and construct batches use nonzero cyclic shifts within available histories, with empty/singleton histories unchanged; targeted construct edits use deterministic cue mappings. These intervention laws define different perturbation distributions and are not interchangeable.
+
+The repeated ridge maps use the additional twenty seeds 120001--120020, with independent uniform nonzero shifts per permitted group. Source maps are shared across GPT-2/MiniLM/FinBERT for each dataset/draw. The batch retains 140 map-by-cell aggregates, 1,260 entity/plant effect rows and 94,000 donor/recipient timing rows. The minimum and maximum effects, changed-slot counts, donor timing distributions and all per-unit directions are retained, alongside baseline prediction replay, state and target checks. The twenty draws characterize this particular shift distribution; they are not exhaustive permutations or calibrated uncertainty over the original neural models.
+
+\paragraph{Donor timing under offline shifts.}
+The fraction of later-dated donors ranges from 1.10\% to 98.90\% of Fidel recipient windows, 33.96\% to 70.96\% of selected FNSPID text slots and 28.36\% to 59.70\% of selected EPA-Air text slots. These denominators differ because the regular batch maps recipient windows and the irregular batches map selected text slots. Aligned inputs remain timestamp-restricted; the shifted conditions measure offline dependence and do not establish deployment-time donor availability.
+
+\paragraph{Supporting prediction replays.}
+All 45 historical aligned-checkpoint replays pass, with maximum feature-level MSE discrepancy $1.93\times10^{-8}$. Complete entity losses reconstructed from the signal-strength calibration's saved model states agree with all 102,400 recorded condition-specific entity losses. These checks verify the paired evaluation record and are separate from the evidence for cue discrimination, forecasting capability or natural-data transfer.

@@ -1,0 +1,31 @@
+dataset,configuration,display_name,split,mse,persistence_mse,error_ratio,baseline_kind,observed_scalar_targets,training_condition,evaluation_condition,selected_alpha
+EPA-Air,persistence,Last-value persistence,val,1.075034444747001,1.075034444747001,1.0,Last-value persistence,8048,,,
+EPA-Air,persistence,Last-value persistence,test,0.7514065928159832,0.7514065928159832,1.0,Last-value persistence,7508,,,
+EPA-Air,numeric_only,Numerical,val,0.9017760169621956,1.075034444747001,0.8388345335059658,Last-value persistence,8048,numeric_only,numeric_only,1.0
+EPA-Air,numeric_only,Numerical,test,27.056535230733168,0.7514065928159832,36.00784913176722,Last-value persistence,7508,numeric_only,numeric_only,1.0
+EPA-Air,event_structure,Numerical/timing,val,0.9068527490475919,1.075034444747001,0.8435569236676979,Last-value persistence,8048,event_structure,event_structure,1.0
+EPA-Air,event_structure,Numerical/timing,test,24.1271042756373,0.7514065928159832,32.1092528416848,Last-value persistence,7508,event_structure,event_structure,1.0
+EPA-Air,gpt2,GPT-2,val,0.9154823250650016,1.075034444747001,0.8515841790357253,Last-value persistence,8048,aligned,aligned,100.0
+EPA-Air,gpt2,GPT-2,test,12.580395573014549,0.7514065928159832,16.742460996872627,Last-value persistence,7508,aligned,aligned,100.0
+EPA-Air,minilm,MiniLM,val,0.9682746537190281,1.075034444747001,0.9006917484833727,Last-value persistence,8048,aligned,aligned,10.0
+EPA-Air,minilm,MiniLM,test,11.635061515207783,0.7514065928159832,15.484375072627513,Last-value persistence,7508,aligned,aligned,10.0
+EPA-Air,finbert,FinBERT,val,0.9011601515918549,1.075034444747001,0.8382616538430396,Last-value persistence,8048,aligned,aligned,100.0
+EPA-Air,finbert,FinBERT,test,1.9507461355357423,0.7514065928159832,2.5961259246143893,Last-value persistence,7508,aligned,aligned,100.0
+FNSPID,persistence,Last-value persistence,val,0.6482142889486792,0.6482142889486792,1.0,Last-value persistence,40590,,,
+FNSPID,persistence,Last-value persistence,test,0.32093568448261617,0.32093568448261617,1.0,Last-value persistence,41220,,,
+FNSPID,numeric_only,Numerical,val,0.6753811186646489,0.6482142889486792,1.041910260509732,Last-value persistence,40590,numeric_only,numeric_only,1000.0
+FNSPID,numeric_only,Numerical,test,0.26714116720544606,0.32093568448261617,0.8323822501574021,Last-value persistence,41220,numeric_only,numeric_only,1000.0
+FNSPID,event_structure,Numerical/timing,val,0.6752218629731649,0.6482142889486792,1.0416645767995774,Last-value persistence,40590,event_structure,event_structure,1000.0
+FNSPID,event_structure,Numerical/timing,test,0.2651273412678641,0.32093568448261617,0.8261073918759726,Last-value persistence,41220,event_structure,event_structure,1000.0
+FNSPID,gpt2,GPT-2,val,0.6738524776625056,0.6482142889486792,1.0395520264686053,Last-value persistence,40590,aligned,aligned,1000.0
+FNSPID,gpt2,GPT-2,test,0.2709600566575516,0.32093568448261617,0.8442814861624663,Last-value persistence,41220,aligned,aligned,1000.0
+FNSPID,minilm,MiniLM,val,0.679577609665023,0.6482142889486792,1.048384185987648,Last-value persistence,40590,aligned,aligned,1000.0
+FNSPID,minilm,MiniLM,test,0.2661503209688789,0.32093568448261617,0.8292948831724422,Last-value persistence,41220,aligned,aligned,1000.0
+FNSPID,finbert,FinBERT,val,0.6802054346399417,0.6482142889486792,1.0493527313986677,Last-value persistence,40590,aligned,aligned,1000.0
+FNSPID,finbert,FinBERT,test,0.2685549904839911,0.32093568448261617,0.8367875666955872,Last-value persistence,41220,aligned,aligned,1000.0
+Fidel,persistence,Seasonal persistence,val,0.3507112483447097,0.3507112483447097,1.0,Seasonal persistence,78840,,,
+Fidel,persistence,Seasonal persistence,test,0.2949422164338245,0.2949422164338245,1.0,Seasonal persistence,78840,,,
+Fidel,numeric_only,Numerical,val,0.22102256844329327,0.3507112483447097,0.630212374101138,Seasonal persistence,78840,numeric_only,numeric_only,100.0
+Fidel,numeric_only,Numerical,test,0.19113158731113197,0.2949422164338245,0.6480306197672306,Seasonal persistence,78840,numeric_only,numeric_only,100.0
+Fidel,published_weather,Weather,val,0.2088603699885797,0.3507112483447097,0.5955337074997192,Seasonal persistence,78840,aligned,aligned,100.0
+Fidel,published_weather,Weather,test,0.18178589439311657,0.2949422164338245,0.6163440981460971,Seasonal persistence,78840,aligned,aligned,100.0

@@ -1,0 +1,128 @@
+{
+  "dataset": "EPA-Air",
+  "features": [
+    "temp",
+    "pm2_5",
+    "aqi",
+    "ozone"
+  ],
+  "source_commit": "e934cef23d526817dcf0d1a66c6f82274c96c04b",
+  "entities": [
+    "Bexar",
+    "Dallas",
+    "Denver",
+    "Hillsborough",
+    "Los_Angeles",
+    "Maricopa",
+    "Philadelphia",
+    "Richmond"
+  ],
+  "window_counts": {
+    "Bexar": {
+      "train": 3,
+      "val": 1,
+      "test": 2
+    },
+    "Dallas": {
+      "train": 15,
+      "val": 5,
+      "test": 5
+    },
+    "Denver": {
+      "train": 23,
+      "val": 8,
+      "test": 8
+    },
+    "Hillsborough": {
+      "train": 6,
+      "val": 2,
+      "test": 2
+    },
+    "Los_Angeles": {
+      "train": 19,
+      "val": 7,
+      "test": 7
+    },
+    "Maricopa": {
+      "train": 16,
+      "val": 6,
+      "test": 6
+    },
+    "Philadelphia": {
+      "train": 14,
+      "val": 5,
+      "test": 5
+    },
+    "Richmond": {
+      "train": 22,
+      "val": 7,
+      "test": 8
+    }
+  },
+  "dropped_no_text": {
+    "Bexar": 19,
+    "Dallas": 0,
+    "Denver": 0,
+    "Hillsborough": 15,
+    "Los_Angeles": 0,
+    "Maricopa": 10,
+    "Philadelphia": 1,
+    "Richmond": 1
+  },
+  "selected_text_counts": {
+    "Bexar": 12,
+    "Dallas": 94,
+    "Denver": 131,
+    "Hillsborough": 18,
+    "Los_Angeles": 116,
+    "Maricopa": 70,
+    "Philadelphia": 84,
+    "Richmond": 120
+  },
+  "full_text_counts": {
+    "Bexar": 17,
+    "Dallas": 209,
+    "Denver": 213,
+    "Hillsborough": 73,
+    "Los_Angeles": 222,
+    "Maricopa": 99,
+    "Philadelphia": 203,
+    "Richmond": 208
+  },
+  "source_sha256": {
+    "Bexar": {
+      "text.csv": "1be07464c56e7b113decfc5fe0c385075b4a18281ea65a305141561c7387d8ea",
+      "time_series.csv": "a5d617678336629ad4d7b76b5ae884b931eb6dbe7e7f7aa9bd5642851893a168"
+    },
+    "Dallas": {
+      "text.csv": "789e8e5eee1d4b4c01a3d16fe6c84076bbe1e34f60e39eb7c67dfa4f2ccf64e5",
+      "time_series.csv": "b85d75087336adbc537e4bceac81bd1911912ea894afba79444afd378ec1da64"
+    },
+    "Denver": {
+      "text.csv": "4500efdfe23e7a49ddbf514a76d380b8f553049913e2cfd50aef831690a1a7c9",
+      "time_series.csv": "b6b2d07b6069060f4348e80eb3f29845820182d8321d9f04b364f874d49b2989"
+    },
+    "Hillsborough": {
+      "text.csv": "f661bf39ea6da46ec2a1d94d30b9fa6506d6c632775f53e956e3ed8eff737bc8",
+      "time_series.csv": "9fc3b86023d3c3172a027853b33cac216ea033a4a33ddee4d70d99f8c04be097"
+    },
+    "Los_Angeles": {
+      "text.csv": "a7ce1e53190c089610b76e4e7f85535a44bfbf2ff6a441807c63a9e9a460393e",
+      "time_series.csv": "07ca6a0f3a7e3242ef844f162c6106cf3cb4628a25d6b41d0d1103a491066972"
+    },
+    "Maricopa": {
+      "text.csv": "c975962e2c08115ac953f90e4061e1d433ebfa4524c18ef94e75840be105ff40",
+      "time_series.csv": "492df0a7943c3163d44bdb6b977147ed8193e9e8a4b3b3e22dff56a8edb8a0b6"
+    },
+    "Philadelphia": {
+      "text.csv": "2877b0cc17313185fdac1d6356feae413ad304072be0b45febc93697ac9bfd99",
+      "time_series.csv": "b44360f432c6acd0318fa0b497f41316faaf467ba81fcba3b371aa3779c1d9ac"
+    },
+    "Richmond": {
+      "text.csv": "37d4d5c46e235e05e05082519dbf95747cddcb0b33d2ff7c03fb51257bc7e67c",
+      "time_series.csv": "89f0a18c3f58f3f6917236ab041c828b828121267ce7e340a7d578b37d363f9a"
+    }
+  },
+  "all_windows_retained": true,
+  "latest4_cap": true
+}

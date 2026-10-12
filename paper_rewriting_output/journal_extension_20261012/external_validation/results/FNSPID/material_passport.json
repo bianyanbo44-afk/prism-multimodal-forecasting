@@ -1,0 +1,156 @@
+{
+  "dataset": "FNSPID",
+  "features": [
+    "open",
+    "high",
+    "low",
+    "close",
+    "adj close",
+    "volume"
+  ],
+  "source_commit": "e934cef23d526817dcf0d1a66c6f82274c96c04b",
+  "entities": [
+    "AMAT",
+    "AMT",
+    "DVN",
+    "EA",
+    "EXPE",
+    "KO",
+    "PEP",
+    "TXN",
+    "USO",
+    "XLF"
+  ],
+  "window_counts": {
+    "AMAT": {
+      "train": 94,
+      "val": 32,
+      "test": 32
+    },
+    "AMT": {
+      "train": 88,
+      "val": 29,
+      "test": 30
+    },
+    "DVN": {
+      "train": 97,
+      "val": 32,
+      "test": 33
+    },
+    "EA": {
+      "train": 84,
+      "val": 28,
+      "test": 28
+    },
+    "EXPE": {
+      "train": 94,
+      "val": 31,
+      "test": 32
+    },
+    "KO": {
+      "train": 98,
+      "val": 33,
+      "test": 33
+    },
+    "PEP": {
+      "train": 96,
+      "val": 32,
+      "test": 33
+    },
+    "TXN": {
+      "train": 97,
+      "val": 33,
+      "test": 33
+    },
+    "USO": {
+      "train": 99,
+      "val": 33,
+      "test": 33
+    },
+    "XLF": {
+      "train": 101,
+      "val": 34,
+      "test": 34
+    }
+  },
+  "dropped_no_text": {
+    "AMAT": 2,
+    "AMT": 17,
+    "DVN": 3,
+    "EA": 0,
+    "EXPE": 2,
+    "KO": 1,
+    "PEP": 4,
+    "TXN": 1,
+    "USO": 5,
+    "XLF": 1
+  },
+  "selected_text_counts": {
+    "AMAT": 583,
+    "AMT": 555,
+    "DVN": 591,
+    "EA": 559,
+    "EXPE": 576,
+    "KO": 639,
+    "PEP": 623,
+    "TXN": 614,
+    "USO": 636,
+    "XLF": 637
+  },
+  "full_text_counts": {
+    "AMAT": 1654,
+    "AMT": 2005,
+    "DVN": 1617,
+    "EA": 1803,
+    "EXPE": 1441,
+    "KO": 3006,
+    "PEP": 2354,
+    "TXN": 1757,
+    "USO": 2777,
+    "XLF": 2412
+  },
+  "source_sha256": {
+    "AMAT": {
+      "text.csv": "8e3f3997b6430b90f0e27741257cba3220e580d25a0bf65d7f33270f396f6445",
+      "time_series.csv": "e6a44820295644b8e843f96726d6e00b855664cc836dee37b0c8230116c446a2"
+    },
+    "AMT": {
+      "text.csv": "d9acd426ad63f7de2084d9f00a645f2454c59429b7a680473cf0707af83dd432",
+      "time_series.csv": "cb84da5fa8edc691fd375192524ffd0abc16299e435bab11c4e92a0e43ac4a96"
+    },
+    "DVN": {
+      "text.csv": "a0cd20e89033900f3a92397f0dbf1b8e72b12718d350d9a8a710f173db4a3165",
+      "time_series.csv": "470456304413019f517cb50da7dc4f699b831fa98fb0e345ec64bbbe0d8f807d"
+    },
+    "EA": {
+      "text.csv": "ac3a9f2bd7f14721237cd208ebe77d9f483b8b38e68081343533ff3d415ebf54",
+      "time_series.csv": "5d6379a70de15c4368c2a3425aa07a5e6aeb5edcf2cf9c80d29762062027e5ac"
+    },
+    "EXPE": {
+      "text.csv": "a6fdb9be8052e63aa2bc59af630556ac0b469121fbd6766c4dc30c18260fbbd0",
+      "time_series.csv": "0f216faf5ec0149d5d0ec33d10817d0694b49b7c40eb009a12129ecff3296f97"
+    },
+    "KO": {
+      "text.csv": "535f566597940f0acfc6c14612cdb95905feeff72a36e91a6f8d87385465f371",
+      "time_series.csv": "3e9908c43daefec1a88c3991b7a64e213abd6d17a7b501c826a5e48c3b8ea61b"
+    },
+    "PEP": {
+      "text.csv": "9a244b0b27c57b5d5a0ca3e8995404a4bce746b7aa538624e5b2e6c30390076f",
+      "time_series.csv": "569c63c669786b0d8d254c1af339e7d70dbc2a373c43c7f5297c541ad5992f72"
+    },
+    "TXN": {
+      "text.csv": "84bda4804d0ccad875a93768e98543a3e09c834e3d4fac1cdbb4223a30aefdcb",
+      "time_series.csv": "ea5f935f4d1facdc2d08979cfe732a94def206f245c88f04177573eb5a55aa34"
+    },
+    "USO": {
+      "text.csv": "1a370eab5785e91b135f73efea59fcc524379d06ed9418c39f591dab4fd81bfc",
+      "time_series.csv": "760a9b1f59d401fe2b95f6c9b9a342e709d1a9a9d7ad7613f3eb7ccb8d3a1efa"
+    },
+    "XLF": {
+      "text.csv": "d2f9c6c9f65a34611e166cdc6b4f56c838d16b7f5891d78198e5506500047b81",
+      "time_series.csv": "8bea45378a9bd1cf6da7d95e529167a9ec107a61dbc46b8d27cbce9a8a8e2010"
+    }
+  },
+  "all_windows_retained": true,
+  "latest4_cap": true
+}

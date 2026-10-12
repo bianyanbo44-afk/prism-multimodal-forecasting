@@ -1,0 +1,227 @@
+{
+  "forecasting": [
+    {
+      "dataset": "FNSPID",
+      "representation": "gpt2",
+      "numeric_mse": 0.26714116720544606,
+      "event_structure_mse": 0.2651273412678641,
+      "aligned_mse": 0.2709600566575516,
+      "fixed_deranged_mse": 0.2701162260453337,
+      "retrained_deranged_mse": 0.2673369403906686,
+      "fixed_zero_mse": 0.24024310003353247,
+      "fixed_neutral_mse": null,
+      "fixed_aligned_relative_gain": -0.0031239538052640235,
+      "retrained_aligned_relative_gain": -0.013552621128933452,
+      "aligned_validation_mse": 0.6738524776625056,
+      "validation_persistence_mse": 0.6482142889486792,
+      "test_persistence_mse": 0.32093568448261617,
+      "entity_count": 10,
+      "test_scalar_targets": 41220,
+      "macro_entity_aligned_mse": 0.2685507080075292,
+      "macro_entity_deranged_mse": 0.26772314400992253,
+      "entities_fixed_positive": 4
+    },
+    {
+      "dataset": "FNSPID",
+      "representation": "minilm",
+      "numeric_mse": 0.26714116720544606,
+      "event_structure_mse": 0.2651273412678641,
+      "aligned_mse": 0.2661503209688789,
+      "fixed_deranged_mse": 0.26474651564115587,
+      "retrained_deranged_mse": 0.27311684705018513,
+      "fixed_zero_mse": 0.25864844918180996,
+      "fixed_neutral_mse": 0.2720897105999192,
+      "fixed_aligned_relative_gain": -0.005302450626492114,
+      "retrained_aligned_relative_gain": 0.025507493062213463,
+      "aligned_validation_mse": 0.679577609665023,
+      "validation_persistence_mse": 0.6482142889486792,
+      "test_persistence_mse": 0.32093568448261617,
+      "entity_count": 10,
+      "test_scalar_targets": 41220,
+      "macro_entity_aligned_mse": 0.2636436944572264,
+      "macro_entity_deranged_mse": 0.2622572684933118,
+      "entities_fixed_positive": 2
+    },
+    {
+      "dataset": "FNSPID",
+      "representation": "finbert",
+      "numeric_mse": 0.26714116720544606,
+      "event_structure_mse": 0.2651273412678641,
+      "aligned_mse": 0.2685549904839911,
+      "fixed_deranged_mse": 0.26692288324898766,
+      "retrained_deranged_mse": 0.2684841906477089,
+      "fixed_zero_mse": 0.28104868222796714,
+      "fixed_neutral_mse": 0.25971535242480065,
+      "fixed_aligned_relative_gain": -0.006114527219013339,
+      "retrained_aligned_relative_gain": -0.00026370206793710363,
+      "aligned_validation_mse": 0.6802054346399417,
+      "validation_persistence_mse": 0.6482142889486792,
+      "test_persistence_mse": 0.32093568448261617,
+      "entity_count": 10,
+      "test_scalar_targets": 41220,
+      "macro_entity_aligned_mse": 0.26603736383136134,
+      "macro_entity_deranged_mse": 0.26447437312266375,
+      "entities_fixed_positive": 4
+    },
+    {
+      "dataset": "EPA-Air",
+      "representation": "gpt2",
+      "numeric_mse": 27.056535230733168,
+      "event_structure_mse": 24.1271042756373,
+      "aligned_mse": 12.580395573014549,
+      "fixed_deranged_mse": 12.429104058791111,
+      "retrained_deranged_mse": 7.418856452864027,
+      "fixed_zero_mse": 11.753570210349373,
+      "fixed_neutral_mse": null,
+      "fixed_aligned_relative_gain": -0.012172358804609823,
+      "retrained_aligned_relative_gain": -0.6957324424518182,
+      "aligned_validation_mse": 0.9154823250650016,
+      "validation_persistence_mse": 1.075034444747001,
+      "test_persistence_mse": 0.7514065928159832,
+      "entity_count": 8,
+      "test_scalar_targets": 7508,
+      "macro_entity_aligned_mse": 16.924979632082806,
+      "macro_entity_deranged_mse": 16.743455682743303,
+      "entities_fixed_positive": 2
+    },
+    {
+      "dataset": "EPA-Air",
+      "representation": "minilm",
+      "numeric_mse": 27.056535230733168,
+      "event_structure_mse": 24.1271042756373,
+      "aligned_mse": 11.635061515207783,
+      "fixed_deranged_mse": 11.599608090883942,
+      "retrained_deranged_mse": 8.343223193715605,
+      "fixed_zero_mse": 11.815968590985921,
+      "fixed_neutral_mse": 11.666046114946038,
+      "fixed_aligned_relative_gain": -0.0030564329454977955,
+      "retrained_aligned_relative_gain": -0.39455235045991577,
+      "aligned_validation_mse": 0.9682746537190281,
+      "validation_persistence_mse": 1.075034444747001,
+      "test_persistence_mse": 0.7514065928159832,
+      "entity_count": 8,
+      "test_scalar_targets": 7508,
+      "macro_entity_aligned_mse": 15.577540022444515,
+      "macro_entity_deranged_mse": 15.526847337235516,
+      "entities_fixed_positive": 5
+    },
+    {
+      "dataset": "EPA-Air",
+      "representation": "finbert",
+      "numeric_mse": 27.056535230733168,
+      "event_structure_mse": 24.1271042756373,
+      "aligned_mse": 1.9507461355357423,
+      "fixed_deranged_mse": 1.9452469522366613,
+      "retrained_deranged_mse": 17.38543154784184,
+      "fixed_zero_mse": 2.638124297048855,
+      "fixed_neutral_mse": 2.102737690610746,
+      "fixed_aligned_relative_gain": -0.0028269846626712038,
+      "retrained_aligned_relative_gain": 0.8877942068813415,
+      "aligned_validation_mse": 0.9011601515918549,
+      "validation_persistence_mse": 1.075034444747001,
+      "test_persistence_mse": 0.7514065928159832,
+      "entity_count": 8,
+      "test_scalar_targets": 7508,
+      "macro_entity_aligned_mse": 2.3885707328133994,
+      "macro_entity_deranged_mse": 2.3989290573612236,
+      "entities_fixed_positive": 3
+    }
+  ],
+  "representation_diagnostics": [
+    {
+      "dataset": "FNSPID",
+      "representation": "gpt2",
+      "test_raw_cosine": 0.9989644835932255,
+      "test_centered_cosine": 0.18821402559930092,
+      "test_raw_text_unchanged_fraction": 0.0,
+      "test_vector_unchanged_fraction": 0.0,
+      "token_audit": {
+        "cache": "text_embeddings_model=GPT2_pool=masked_mean_maxlen=320_timebase=numeric.pt",
+        "no_new_encoding": true
+      }
+    },
+    {
+      "dataset": "FNSPID",
+      "representation": "minilm",
+      "test_raw_cosine": 0.454058564667315,
+      "test_centered_cosine": 0.1421766671506384,
+      "test_raw_text_unchanged_fraction": 0.0,
+      "test_vector_unchanged_fraction": 0.0,
+      "token_audit": {
+        "selected_notes": 6013,
+        "max_length": 256,
+        "truncated_fraction": 0.00016630633627141194,
+        "median_length": 162.0,
+        "max_length_observed": 261
+      }
+    },
+    {
+      "dataset": "FNSPID",
+      "representation": "finbert",
+      "test_raw_cosine": 0.8012474664102943,
+      "test_centered_cosine": 0.13092225335374735,
+      "test_raw_text_unchanged_fraction": 0.0,
+      "test_vector_unchanged_fraction": 0.0,
+      "token_audit": {
+        "selected_notes": 6013,
+        "max_length": 256,
+        "truncated_fraction": 0.00016630633627141194,
+        "median_length": 162.0,
+        "max_length_observed": 261
+      }
+    },
+    {
+      "dataset": "EPA-Air",
+      "representation": "gpt2",
+      "test_raw_cosine": 0.9989116067888056,
+      "test_centered_cosine": -0.05238308187085533,
+      "test_raw_text_unchanged_fraction": 0.0,
+      "test_vector_unchanged_fraction": 0.0,
+      "token_audit": {
+        "cache": "text_embeddings_model=GPT2_pool=masked_mean_maxlen=320_timebase=numeric.pt",
+        "no_new_encoding": true
+      }
+    },
+    {
+      "dataset": "EPA-Air",
+      "representation": "minilm",
+      "test_raw_cosine": 0.33498973600161713,
+      "test_centered_cosine": 0.04084982428273794,
+      "test_raw_text_unchanged_fraction": 0.0,
+      "test_vector_unchanged_fraction": 0.0,
+      "token_audit": {
+        "selected_notes": 645,
+        "max_length": 256,
+        "truncated_fraction": 0.0015503875968992248,
+        "median_length": 120.0,
+        "max_length_observed": 261
+      }
+    },
+    {
+      "dataset": "EPA-Air",
+      "representation": "finbert",
+      "test_raw_cosine": 0.768842312041151,
+      "test_centered_cosine": -0.013962303144269723,
+      "test_raw_text_unchanged_fraction": 0.0,
+      "test_vector_unchanged_fraction": 0.0,
+      "token_audit": {
+        "selected_notes": 645,
+        "max_length": 256,
+        "truncated_fraction": 0.0015503875968992248,
+        "median_length": 120.0,
+        "max_length_observed": 261
+      }
+    }
+  ],
+  "fidel_plant_deltas": {
+    "164440": 0.05199005256458794,
+    "314106": 0.04348058188317208,
+    "319086": 0.04788266627733165,
+    "331901": 0.05149294034855678,
+    "332785": 0.05546960770294765,
+    "355827": 0.03263665740850752,
+    "551172": 0.051871620217200265,
+    "570079": 0.03481359470081713,
+    "577650": 0.030509426955685787
+  }
+}

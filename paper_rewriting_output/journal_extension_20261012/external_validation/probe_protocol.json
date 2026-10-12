@@ -1,0 +1,8 @@
+{
+  "frozen_date": "2026-10-12 Asia/Shanghai; before new directional probe scores",
+  "train_templates": ["The company's profits increased.", "The company's profits decreased.", "The company reported higher revenue.", "The company reported lower revenue.", "The stock price rose today.", "The stock price fell today.", "Demand for the company's products grew.", "Demand for the company's products declined.", "The company achieved positive earnings growth.", "The company experienced negative earnings growth.", "The company raised its sales forecast.", "The company cut its sales forecast."],
+  "labels": [1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0],
+  "test_templates": ["Acme's net income improved substantially.", "Acme's net income deteriorated substantially.", "Beta Corporation's quarterly sales climbed.", "Beta Corporation's quarterly sales dropped.", "Shares of Gamma gained five percent.", "Shares of Gamma lost five percent.", "Delta announced expanding operating margins.", "Delta announced shrinking operating margins.", "Epsilon upgraded its full-year guidance.", "Epsilon downgraded its full-year guidance.", "Zeta's business posted a strong gain.", "Zeta's business posted a severe loss."],
+  "test_labels": [1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0],
+  "probe": "Train fixed C=1 balanced logistic regression on L2 normalized masked token means; score twelve fixed held-out sentences; also opposite-direction paired raw cosine. No hyperparameter search; no target-data use. Narrow synthetic financial direction representability check, not complete embedding validation or causality proof."
+}

@@ -1,0 +1,66 @@
+\section{Saved validation comparisons and their interpretation}
+\label{sec:capability_records}
+
+The following tables report existing validation records. Historical checkpoints remain \emph{Not assessed} by a formal screen, and the independent real-data ridge batch did not calculate a paired validation lower bound for screening. The summaries provide comparator context without changing checkpoint selection, introducing test-driven qualifications or excluding outcomes.
+
+\begin{table}[htbp]
+\centering\footnotesize
+\setlength{\tabcolsep}{4pt}
+\caption{Historical selected-model validation MSE and epochs. Persistence is the archived last-observation baseline. Time-only is a separately fitted and validation-selected condition with zero text vectors and retained event metadata. Train-only standardized loss uses the original feature-macro endpoint; stochastic-model losses are means over seeds 53/67/79. Epochs list the aligned selections in that order, with zero indicating initialization. The validation window/query/observed-value counts match within each dataset comparison. All 45 checkpoints retain formal screening status \emph{Not assessed}; retained test populations appear in Table~\ref{tab:fixed_population}.}
+\label{tab:historical_validation}
+\begin{tabular}{llllll}
+\toprule
+Dataset & Mechanism & Persistence & Time-only & Aligned & Epochs\\
+\midrule
+ClusterTrace & Selective & 1.377858 & 1.173743 & 1.175134 & 9/10/9\\
+ClusterTrace & RecAvg & 1.377858 & 1.377450 & 1.377379 & 2/1/1\\
+ClusterTrace & XAttn & 1.377858 & 1.630176 & 1.604316 & 3/8/12\\
+CESNET & Selective & 1.841027 & 1.805790 & 1.805676 & 8/8/8\\
+CESNET & RecAvg & 1.841027 & 1.798278 & 1.853441 & 2/3/4\\
+CESNET & XAttn & 1.841027 & 1.544668 & 1.531246 & 0/0/0\\
+EPA-Air & Selective & 1.919197 & 1.824148 & 1.821315 & 4/4/4\\
+EPA-Air & RecAvg & 1.919197 & 1.901226 & 1.902137 & 1/5/9\\
+EPA-Air & XAttn & 1.919197 & 2.004410 & 2.022130 & 4/1/6\\
+FNSPID & Selective & 0.648214 & 0.598148 & 0.599187 & 4/4/15\\
+FNSPID & RecAvg & 0.648214 & 0.648214 & 0.648210 & 1/1/3\\
+FNSPID & XAttn & 0.648214 & 1.793357 & 2.057320 & 0/11/1\\
+RepoHealth & Selective & 1.527539 & 1.185689 & 1.189478 & 17/15/11\\
+RepoHealth & RecAvg & 1.527539 & 1.527807 & 1.525833 & 9/2/1\\
+RepoHealth & XAttn & 1.527539 & 1.441968 & 1.427807 & 1/5/5\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+These validation means answer distinct descriptive questions: persistence contextualizes overall prediction, while the condition-retrained time-only model contextualizes content beyond retained occurrence information. An epoch-zero selection identifies a checkpoint state; by itself it does not establish inferiority to persistence. The historical seed average is not an independent sample count or a new confidence estimate.
+
+\begin{table}[htbp]
+\centering\footnotesize
+\setlength{\tabcolsep}{4pt}
+\caption{Saved independent ridge validation and test losses. All losses pool observed standardized scalar targets; $\lambda$ is selected from 1, 10, 100 and 1000 using validation MSE. Numerical/timing adds available-note counts and recency to the numerical design; it supplies the matched comparator for incremental content benefit on Time-IMM. Fidel numerical features include calendar and lag summaries, with no separate weather-event comparator fitted. Validation means are reported after selection and confer no formal screen pass. Test losses contextualize transfer and did not select configurations.}
+\label{tab:ridge_capability_details}
+\begin{tabular}{lllll}
+\toprule
+Dataset & Configuration & Selected $\lambda$ & Validation MSE & Test MSE\\
+\midrule
+EPA-Air & Persistence & -- & 1.075034 & 0.751407\\
+EPA-Air & Numerical & 1 & 0.901776 & 27.056535\\
+EPA-Air & Numerical/timing & 1 & 0.906853 & 24.127104\\
+EPA-Air & GPT-2 aligned & 100 & 0.915482 & 12.580396\\
+EPA-Air & MiniLM aligned & 10 & 0.968275 & 11.635062\\
+EPA-Air & FinBERT aligned & 100 & 0.901160 & 1.950746\\
+FNSPID & Persistence & -- & 0.648214 & 0.320936\\
+FNSPID & Numerical & 1000 & 0.675381 & 0.267141\\
+FNSPID & Numerical/timing & 1000 & 0.675222 & 0.265127\\
+FNSPID & GPT-2 aligned & 1000 & 0.673852 & 0.270960\\
+FNSPID & MiniLM aligned & 1000 & 0.679578 & 0.266150\\
+FNSPID & FinBERT aligned & 1000 & 0.680205 & 0.268555\\
+Fidel-TS & Seasonal persistence & -- & 0.350711 & 0.294942\\
+Fidel-TS & Numerical & 100 & 0.221023 & 0.191132\\
+Fidel-TS & Aligned weather & 100 & 0.208860 & 0.181786\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+For EPA-Air, all three aligned configurations improve the persistence validation mean, but only FinBERT improves the numerical/timing mean (0.63\%). For FNSPID, none improves the persistence mean; only GPT-2 improves the numerical/timing mean (0.20\%). These point comparisons do not supply the paired lower bound of Eq.~\ref{eq:validation_content_screen}. For Fidel, the aligned validation mean improves by 5.50\% over numerical-only ridge. That comparison measures descriptive complete-stream utility; it does not isolate incremental content benefit with an event-preserving comparator. Seasonal persistence repeats the preceding daily profile, and all plants share weather context.
+
+Time-IMM validation comprises 41 EPA-Air windows and 317 FNSPID windows, with 8,048 and 40,590 observed scalar targets, respectively. Test counts are 43/321 windows and 7,508/41,220 targets. These targets and overlapping windows are scoring units rather than independent replications. Fidel has 3,285 validation and 3,285 test windows, each with 24 hourly targets, across nine plants. Condition-retrained controls have their own validation selection and remain separate from fixed-model effects. Entity-macro results are reported alongside pooled MSE where their directions differ.
